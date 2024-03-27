@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "nueu_montreal_bold";
+  src: url("fonts/NeueMontreal-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "nueu_montreal_light";
+  src: url("fonts/NeueMontreal-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "nueu_montreal_medium";
+  src: url("fonts/NeueMontreal-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "nueu_montreal_regular";
+  src: url("fonts/NeueMontreal-Regular.otf") format("opentype");
+}
+h1 {
+  font-family: "nueu_montreal_regular";
+}
+h2 {
+  font-family: "nueu_montreal_regular";
+}
+h3 {
+  font-family: "nueu_montreal_regular";
+}
+h4 {
+  font-family: "nueu_montreal_regular";
+}
+h5 {
+  font-family: "nueu_montreal_regular";
+}
+h6 {
+  font-family: "nueu_montreal_regular";
+}
+p {
+  font-family: "nueu_montreal_regular";
+}
+a {
+  font-family: "nueu_montreal_regular";
+}
+ul {
+  font-family: "nueu_montreal_regular";
+  list-style: none;
+}
+li {
+  font-family: "nueu_montreal_regular";
+}
+div {
+  font-family: "nueu_montreal_regular";
+}
+
