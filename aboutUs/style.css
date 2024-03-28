@@ -11,7 +11,7 @@
   top: 36%;
   left: 10%;
   color: white;
-  font-family: "DM Sans";
+  
   font-size: 82px;
   font-weight: 400;
   line-height: 105.78px;
@@ -24,7 +24,7 @@
   top: 40%;
   left: 40%;
   color: white;
-  font-family: "DM Sans";
+  
   font-size: 13px;
   font-weight: 400;
   line-height: 16.77px;
@@ -45,7 +45,7 @@
   /* padding: 30px; */
 }
 .box_heading {
-  font-family: "DM Sans";
+  
   color: #4d5f75;
   font-size: 25px;
   font-weight: 400;
@@ -59,7 +59,7 @@
   color: white;
 } */
 .box_para {
-  font-family: "DM Sans";
+  
   font-size: 13px;
   font-weight: 400;
   margin-top: 1rem;
@@ -115,7 +115,7 @@
   font-family: "Fira Sans", sans-serif;
 }
 .thirdflex_heading {
-  /* font-family: "DM Sans"; */
+  /*  */
   font-size: 30px;
   font-weight: 400;
   line-height: 38.7px;
@@ -123,7 +123,7 @@
   margin-top: 6rem;
 }
 .thirdflex_para {
-  /* font-family: "DM Sans"; */
+  /*  */
   font-size: 13px;
   margin-top: 20px;
   font-weight: 400;
