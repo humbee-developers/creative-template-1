@@ -30,3 +30,43 @@
 .inner_banner_wrapper {
   padding: 0 100px;
 }
+
+/* Card section */
+
+.servicesBox {
+}
+.servicesBox .box_heading {
+  color: #dfa621;
+  font-size: 18px;
+  font-family: "nueu_montreal_bold";
+  line-height: 129%;
+}
+.servicesBox .box_para {
+  color: #636363;
+}
+.about_secondflex .box:hover .box_para {
+  color: #fff;
+}
+.box_size img {
+  margin: 0 0 1rem;
+}
+.services_card_wrapper {
+  display: flex;
+}
+.services_card_wrapper .about_secondflex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+}
+.service_card_list {
+  width: 50%;
+}
+.services_card_big_image {
+  width: 50%;
+}
+.services_card_big_image img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  padding: 40px;
+}
