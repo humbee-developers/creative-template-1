@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about_text {
+  position: absolute;
+  width: 549px;
+  height: 107px;
+  top: 36%;
+  left: 10%;
+  color: white;
+  
+  font-size: 82px;
+  font-weight: 400;
+  line-height: 105.78px;
+  text-align: left;
+}
+.about_para {
+  position: absolute;
+  width: 549px;
+  height: 107px;
+  top: 40%;
+  left: 40%;
+  color: white;
+  
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16.77px;
+  text-align: left;
+}
+.about_img {
+  height: 43vw;
+  width: 100%;
+}
+.about_secondflex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.box {
+  border: 1px solid grey;
+  background-color: white;
+  /* padding: 30px; */
+}
+.box_heading {
+  
+  color: #4d5f75;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 32.25px;
+  text-align: left;
+}
+/* .blue {
+  background: #4d5f75;
+}
+.blue_head {
+  color: white;
+} */
+.box_para {
+  
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 1rem;
+  line-height: 16.77px;
+  text-align: left;
+}
+
+/* .box_para_white{
+    color: white;
+} */
+.box_size {
+  padding: 4rem 2rem;
+}
+
+/* secondflex hover effect */
+
+.about_secondflex .box {
+  overflow: hidden;
+  position: relative;
+}
+
+.about_secondflex .box:hover .box_size {
+  color: #fff;
+}
+.about_secondflex .box:hover h1 {
+  color: #fff;
+}
+
+.about_secondflex .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5f75;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about_secondflex .box:hover:before {
+  transform: scaleX(1);
+}
+
+.parent {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  color: #070606;
+  margin-top: 10rem;
+  font-family: "Fira Sans", sans-serif;
+}
+.thirdflex_heading {
+  /*  */
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 38.7px;
+  text-align: left;
+  margin-top: 6rem;
+}
+.thirdflex_para {
+  /*  */
+  font-size: 13px;
+  margin-top: 20px;
+  font-weight: 400;
+  line-height: 16.77px;
+  text-align: left;
+  color: #000000;
+}
+.thirdflex_checklist_text {
+  display: flex;
+  gap: 1rem;
+}
+/* .thirdflex_checklist{
+    display: flex;
+} */
+.right_accord {
+  width: 542px;
+  height: 337px;
+  top: 1876px;
+  left: 716px;
+  gap: 0px;
+  opacity: 0px;
+}
+.acc_num {
+  font-size: 24px;
+  color: grey;
+  padding-right: 25px;
+}
+.accordion-body-para {
+  color: #636363;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.crousal-item {
+  background-color: grey;
+}
+.slider {
+  background-color: grey;
+}
+
+.fifth_slide {
+  margin-top: 5rem;
+}
+.fifth_img {
+  width: 100%;
+}
+
+.carousel {
+  width: 100%;
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid black !important ;
+}
+
+.accordion-button {
+  font-size: 28px !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+}
+
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.carousel {
+  /* height: 80vh !important; */
+  background-color: rgb(201, 199, 199) !important;
+}
+
+.carousalHeaderText {
+  font-size: 59px;
+  font-weight: 400;
+}
+
+.carousel-inner {
+  /* width: 79%; */
+  padding: 12rem 14rem;
+}
+
+.carousalSpacingOuter {
+  width: 93%;
+}
+
+.carousalFlex {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.carousalFlex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-control-prev {
+  left: 63rem;
+  top: 25rem;
+  height: fit-content;
+  width: fit-content;
+  color: black !important;
+}
+
+.carousel-control-next {
+  left: 68rem;
+  top: 25rem;
+  height: fit-content;
+  width: fit-content;
+}
+
+.arrow2 {
+  color: black;
+}
+
+.lastSectionImageOuter {
+  position: relative;
+}
+
+.lastSectionSecImage {
+  position: absolute;
+  right: 0;
+  top: -8rem;
+}
