@@ -577,6 +577,303 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
+/* Card Slider */
+
+.cardSlider {
+  background-color: #002d70;
+  padding: 100px 0;
+}
+.cardSlider_heading {
+  color: #ff7e47;
+  font-size: 156px;
+  line-height: 83.5%;
+  padding: 20px 20px 70px 80px;
+  width: 870px;
+}
+.cardSlider_item_wrapper {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_text {
+  color: #fff;
+  font-size: 20px;
+  width: 250px;
+  line-height: 129%;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 35px;
+  left: 23px;
+}
+.cardSldier_item {
+  padding: 0 20px;
+}
+
+.cardSlider_item_wrapper img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+.card_img_text {
+  position: relative;
+}
+.cardSlider_arrows {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.cardSlider_arrows img {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 6px 10px;
+  width: 28px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.leftArrow img {
+  transform: rotate(180deg);
+}
+.cardSlider_arrows img:hover {
+  background-color: #ff7e47;
+}
+
+/* Map */
+.map_item {
+  height: 755px;
+}
+.map_wrapper {
+  position: relative;
+}
+.map_item iframe {
+  width: 100%;
+  height: 755px;
+  float: left;
+  filter: grayscale(1);
+}
+.contactForm {
+  width: 420px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 110px;
+  transform: translateY(-50%);
+  padding: 62px 0 0 15px;
+}
+.contactForm_heading {
+  color: #002d70;
+  font-size: 34px;
+  line-height: 62.9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "poppins";
+  font-weight: 600;
+  margin: 0 0 10px;
+  padding-left: 15px;
+}
+.contactInput {
+  border: none;
+  border-bottom: 1px solid #b8b8b8;
+  height: 45px;
+  width: 248px;
+  padding: 10px 10px 10px 5px;
+  margin: 0 0 25px;
+  font-size: 16px;
+  color: #000;
+  font-family: "poppins";
+}
+.form_input {
+  padding-left: 15px;
+}
+.contactInput:focus {
+  outline: none;
+}
+.contactInput::placeholder {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "poppins";
+  color: #b8b8b8;
+}
+.selectric-selectDrp {
+  width: 287px;
+  background-color: #fff;
+  margin: 0 0 60px;
+}
+.selectric-selectDrp .selectric {
+  background-color: #fff;
+  position: relative;
+  border: 1px solid #000 !important;
+  padding: 3px 0;
+}
+.selectric-selectDrp .selectric::before {
+  content: "";
+  background-image: url("../images//drpdwn_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 9px;
+  transition: all 0.4s;
+}
+.selectric-open .selectric::before {
+  transform: rotate(180deg) translateY(50%);
+}
+.selectric-items li.highlighted {
+  background: #fff !important;
+  color: #444;
+}
+.selectric-items li:hover {
+  background: #002d70 !important;
+  color: #fff !important;
+}
+.selectric-items li {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  background: #fff !important;
+  color: #444;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "poppins";
+  color: #b8b8b8;
+}
+.selectric-selectDrp .selectric .button {
+  display: none;
+}
+.selectric-selectDrp .selectric .label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 0.3px;
+}
+.form_input.last .contactInput {
+  margin: 0 0 20px;
+}
+.submit_btn {
+  text-align: right;
+}
+.submit_btn button {
+  border: none;
+  width: 162px;
+  background-color: #ff7e47;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  padding: 20px 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.submit_btn button:hover {
+  background-color: #002d70;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 128px 60px 30px;
+  height: 565px;
+}
+.footer_logo {
+  transform: translateY(-30px);
+}
+.footer_logo img {
+  max-width: 100%;
+  display: block;
+}
+.footer_wrapper {
+  display: flex;
+  align-items: end;
+  height: 100%;
+}
+.footer_col {
+  width: 25%;
+  border-right: 1px solid #c7c7c7;
+  height: 100%;
+}
+.footer_col:last-child {
+  border: none;
+}
+.footer_col_wrapper {
+  padding: 0 30px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: end;
+}
+
+.footer_col_wrapper_item p {
+  font-size: 14px;
+  line-height: 129%;
+  margin: 0 0 30px;
+}
+.footer_col2 .footer_col_wrapper p {
+  font-size: 10px;
+  line-height: 129%;
+}
+.footer_col_wrapper_item p:last-child {
+  margin: 0;
+}
+.footer_col3 .footer_col_wrapper ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: "poppins";
+  line-height: 142.5%;
+  letter-spacing: 6.5%;
+  text-transform: uppercase;
+}
+.footer_col1 .footer_col_wrapper {
+  justify-content: space-between;
+}
+.footer_col3 .footer_col_wrapper ul {
+  margin: 0 0 40px;
+}
+.newsletter_label {
+  font-family: "poppins";
+  font-size: 13px;
+  line-height: 142.5%;
+  letter-spacing: 0.5px;
+  margin: 0 0 10px;
+}
+.footer_col_wrapper input {
+  border: none;
+  background-color: #3c3c3c;
+  color: #fff;
+  height: 42px;
+  width: 100%;
+  padding: 5px 10px;
+}
+.footer_col_wrapper input:focus {
+  outline: navajowhite;
+}
+.footer_col_wrapper input::placeholder {
+  color: #fff;
+}
+.terms_and_condition ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  line-height: 142.5%;
+  letter-spacing: 0.5px;
+}
+.terms_and_condition {
+  margin: 0 0 30px;
+}
+.social_links ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  line-height: 142.5%;
+  letter-spacing: 0.5px;
+}
 @media (max-width: 1600px) {
   .banner_content_wrapper {
     padding: 0 120px;
@@ -675,6 +972,12 @@ nav {
   .home_card_section_wrapper {
     margin: 0 0 50px;
   }
+  .threecards_list {
+    padding: 0 60px;
+  }
+  .cardSlider_heading {
+    font-size: 120px;
+  }
 }
 @media (max-width: 991px) {
   .navigation {
@@ -692,6 +995,22 @@ nav {
   .home_card_section {
     padding: 196px 40px 154px;
   }
+  .item_card_big_heading {
+    font-size: 26px;
+    margin: 0 0 15px;
+  }
+  .item_card_content {
+    font-size: 12px;
+    padding: 0 0 20px;
+  }
+  .item_card_email_id {
+    padding: 0 0 10px;
+    font-size: 17px;
+  }
+  .cardSlider_heading {
+    font-size: 110px;
+    width: 100%;
+  }
 }
 @media (max-width: 767px) {
   .home_cards_item {
@@ -700,5 +1019,9 @@ nav {
   }
   .home_card_section {
     padding: 196px 20px 154px;
+  }
+  .cardSlider_heading {
+    font-size: 70px;
+    padding: 20px 20px 60px;
   }
 }
