@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>services</title>
+    <link rel="stylesheet" href="services.css" />
+  </head>
+  <body>
+    <div>
+      <img class="secrvices_home_img" src="../images/serviceshome.png" />
+      <h2 class="services_home_text">
+        LOREM IPSUM<span class="simply"
+          ><img src="../images/dot.svg" /> SIMPLY</span
+        ><span>DUMMY - (DUMMY)</span>
+      </h2>
+    </div>
+    <div>
+      <h2 class="services_centertext">
+        Lorem Ipsum is simply dummy text of<br />
+        the printing and typesetting industry.
+      </h2>
+    </div>
+
+    <div class="services_secondflex">
+      <div>
+        <h2 class="services_secondflex_heading">01 | Lorem Ipsum is simply</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy
+        </p>
+      </div>
+      <div>
+        <h2 class="services_secondflex_heading">02 | Lorem Ipsum is simply</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy
+        </p>
+      </div>
+      <div>
+        <h2 class="services_secondflex_heading">03 | Lorem Ipsum is simply</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="services_thirdLine">
+        <img class="services_thirdimg" src="../images/ServicesthirdLine.png" />
+
+        <!-- <img class="services_thirdimgtwo" src="../images/ServicesthirdLinetwo.png"> -->
+        <div class="bunny">
+          <h2 class="services_thirdheading">
+            Lorem Ipsum is simply dummy text of the printing.
+          </h2>
+          <p class="services_thirdpara">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy
+          </p>
+          <p class="services_thirdparatwo">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.Lorem Ipsum has been the industry's standard dummy
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- card expending -->
+    <div class="container">
+      <input type="radio" name="slide" id="c1" checked />
+      <label for="c1" class="card" onclick="toggleVisibility()">
+        <!-- <div class="card_slider">
+          <div>
+            <img src="../images/Cardslider1.png" alt="cardimg" />
+          </div>
+          <div>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+          <div>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="arrowflexgap">
+            <img src="../images/arrowcard.svg" alt="img" />
+          </div>
+          <div class="icon">01</div>
+          <div class="description">
+            Lorem Ipsum
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c2" />
+      <label for="c2" class="card" onclick="toggleVisibility()">
+        <!-- <div class="card_slider">
+            <div>
+              <img src="../images/Cardslider1.png" alt="cardimg" />
+            </div>
+            <div>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
+            <div>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </div>
+          </div> -->
+        <div class="row">
+          <div class="arrowflexgap">
+            <img src="../images/arrowcard.svg" alt="img" />
+          </div>
+          <div class="icon">02</div>
+          <div class="description">
+            Lorem Ipsum
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c3" />
+      <label for="c3" class="card" onclick="toggleVisibility()">
+        <!-- <div class="card_slider">
+            <div>
+              <img src="../images/Cardslider1.png" alt="cardimg" />
+            </div>
+            <div>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
+            <div>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </div>
+          </div> -->
+        <div class="row">
+          <div class="arrowflexgap">
+            <img src="../images/arrowcard.svg" alt="img" />
+          </div>
+          <div class="icon">03</div>
+
+          <div class="description">
+            Lorem Ipsum
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c4" />
+      <label for="c4" class="card">
+        <!-- <div>
+            <div>
+              <img src="../images/Cardslider1.png" alt="cardimg" />
+            </div>
+            <div>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
+            <div>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </div>
+          </div> -->
+        <div class="row">
+          <div class="arrowflexgap">
+            <img src="../images/arrowcard.svg" alt="img" />
+          </div>
+          <div class="icon">04</div>
+          <div class="description">
+            Lorem Ipsum
+          </div>
+        </div>
+      </label>
+    </div>
+  </body>
+  <script>
+    function toggleVisibility() {
+      var childDiv = document.querySelector('.card .card_slider');
+      childDiv.classList.toggle('hidden');
+    }
+    </script>
+    
+</html>
