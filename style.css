@@ -595,6 +595,13 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+img.slider_link_arrow{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 27px !important;
 }
 
 .card_text {
