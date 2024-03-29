@@ -1,0 +1,77 @@
+/* Hero Section */
+
+.inner_banner_image {
+  position: relative;
+  height: 100vh !important;
+}
+.inner_banner_image img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.inner_banner_title {
+  font-size: 30px;
+  line-height: 129%;
+  color: #fff;
+  margin: 0 0 25px;
+}
+.inner_banner_heading {
+  font-size: 71px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 77px;
+  width: 85%;
+}
+.inner_banner {
+  position: absolute;
+  top: 45%;
+}
+.inner_banner_wrapper {
+  padding: 0 100px;
+}
+
+/* 4 cards section */
+.Service_Cards_Section{
+  padding: 80px 0;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 50px;
+}
+
+.card {
+  flex: 1;
+  margin: 10px;
+  /* padding: 20px; */
+  border: 1px solid #ccc;
+}
+.service_card_text {
+  font-family: Neue Montreal;
+  font-size: 21.71px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #dfa621;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+.card img {
+  display: block;
+  width: 100%;
+  /* max-width: 100%; */
+  height: auto;
+}
+.card_main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 35px 140px;
+}
+.card .card_innertext {
+  color: black;
+  font-family: Neue Montreal;
+  font-size: 18.09px;
+  font-weight: 400;
+  line-height: 27.86px;
+  text-align: left;
+}
