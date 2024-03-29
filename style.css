@@ -3,6 +3,68 @@ header {
   z-index: 1;
   padding: 43px 37px 0 50px;
 }
+.dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  position: relative;
+  font-size: 18px;
+  perspective: 1000px;
+  z-index: 100;
+}
+
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  left: -15px;
+  width: 250px;
+  perspective: 1000px;
+  z-index: -1;
+}
+.dropdown_menu li {
+  display: none;
+  color: #002d70;
+  background-color: #d9d9d9;
+  padding: 10px 20px;
+  font-size: 16px;
+  opacity: 0;
+  padding: 10px 20px !important;
+}
+.dropdown_menu li a {
+  color: #002d70 !important;
+}
+.dropdown:hover .dropdown_menu li {
+  display: block;
+}
+.dropdown_menu--animated {
+  display: none;
+}
+.dropdown:hover .dropdown_menu--animated {
+  display: block;
+}
+
+.dropdown_menu--animated li {
+  display: block;
+  opacity: 1;
+}
+.dropdown_menu-6 {
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -18,16 +80,18 @@ nav {
   display: flex;
   width: 700px;
   justify-content: space-between;
-  padding: 0 5px 20px;
+  padding: 0 5px 0;
   border-bottom: 1px solid #fff;
 }
-.navigation ul {
+.navigation .nav {
   display: flex;
+  align-items: center;
 }
 .navigation ul li {
-  padding-right: 100px;
+  margin-right: 100px;
+  padding-bottom: 20px;
 }
-.navigation ul li a {
+.navigation .nav li a {
   color: #fff;
   font-size: 12px;
   font-weight: 400;
@@ -44,6 +108,7 @@ nav {
 .contact_menu {
   padding-left: 45px;
   border-left: 1px solid #fff;
+  margin: 0 0 20px;
 }
 .hero_section {
   height: calc(100vh - 117px);
@@ -595,6 +660,13 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+img.slider_link_arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 27px !important;
 }
 
 .card_text {
