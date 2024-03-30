@@ -274,35 +274,47 @@
     <div>
       <div class="card_container">
         <div class="cards">
-          <h2>Lorem Ipsum</h2>
-          <p>$100.52</p>
+          <div class="cards_content_services">
+           <h2 class="servicescards_heading">Lorem Ipsum</h2>
+           <p class="servicescards_text">$100.52</p>
+          </div>
         </div>
 
         <div class="cards">
-          <h2>Lorem Ipsum</h2>
-          <p>$ 100.52</p>
+          <div class="cards_content_services">
+            <h2 class="servicescards_heading">Lorem Ipsum</h2>
+            <p class="servicescards_text">$100.52</p>
+          </div>
         </div>
 
         <div class="cards">
-          <h2>Lorem Ipsum</h2>
-          <p>$ 100.52</p>
+          <div class="cards_content_services">
+            <h2 class="servicescards_heading">Lorem Ipsum</h2>
+            <p class="servicescards_text">$100.52</p>
+          </div>
         </div>
       </div>
 
       <div class="card_container">
         <div class="cards">
-          <h2>Lorem Ipsum</h2>
-          <p>$ 100.52</p>
+          <div class="cards_content_services">
+            <h2 class="servicescards_heading">Lorem Ipsum</h2>
+            <p class="servicescards_text">$100.52</p>
+          </div>
         </div>
 
         <div class="cards">
-          <h2>Lorem Ipsum</h2>
-          <p>$ 100.52</p>
+          <div class="cards_content_services">
+            <h2 class="servicescards_heading">Lorem Ipsum</h2>
+            <p class="servicescards_text">$100.52</p>
+          </div>
         </div>
 
         <div class="cards">
-          <h2>Lorem Ipsum</h2>
-          <p>$ 100.52</p>
+          <div class="cards_content_services">
+            <h2 class="servicescards_heading">Lorem Ipsum</h2>
+            <p class="servicescards_text">$100.52</p>
+          </div>
         </div>
       </div>
     </div>
@@ -339,6 +351,29 @@
     </div>
 
     <!-- 8th section -->
+   <div>
+    <svg width="500" height="100">
+      <!--  22% -->
+      <circle r="40" cx="80" cy="50" class="track"></circle>
+      <circle r="40" cx="80" cy="50" class="progress" id="progress1"></circle>
+      <text x="80" y="50" class="percentage">25%</text>
+
+      <!--  55% -->
+      <circle r="40" cx="200" cy="50" class="track"></circle>
+      <circle r="40" cx="200" cy="50" class="progress" id="progress2"></circle>
+      <text x="200" y="50" class="percentage">55%</text>
+
+      <!-- 65% -->
+      <circle r="40" cx="320" cy="50" class="track"></circle>
+      <circle r="40" cx="320" cy="50" class="progress" id="progress3"></circle>
+      <text x="320" y="50" class="percentage">60%</text>
+
+      <!--  95% -->
+      <circle r="40" cx="440" cy="50" class="track"></circle>
+      <circle r="40" cx="440" cy="50" class="progress" id="progress4"></circle>
+      <text x="440" y="50" class="percentage">85%</text>
+  </svg>
+   </div>
     <div class="services_eightflex">
       <div>
         <h2 class="services_eightflex_heading">01 | Lorem Ipsum is simply</h2>
@@ -522,4 +557,36 @@
       </div>
     </div>
   </body>
+  <script>
+    // Progress Bar 1
+    let progressCircle1 = document.getElementById("progress1");
+    let radius1 = progressCircle1.r.baseVal.value;
+    let circumference1 = 2 * Math.PI * radius1;
+
+    // Progress Bar 2
+    let progressCircle2 = document.getElementById("progress2");
+    let radius2 = progressCircle2.r.baseVal.value;
+    let circumference2 = 2 * Math.PI * radius2;
+
+    // Progress Bar 3
+    let progressCircle3 = document.getElementById("progress3");
+    let radius3 = progressCircle3.r.baseVal.value;
+    let circumference3 = 2 * Math.PI * radius3;
+
+    // Progress Bar 4
+    let progressCircle4 = document.getElementById("progress4");
+    let radius4 = progressCircle4.r.baseVal.value;
+    let circumference4 = 2 * Math.PI * radius4;
+
+    setProgress(progressCircle1, circumference1, 25);
+    setProgress(progressCircle2, circumference2, 55);
+    setProgress(progressCircle3, circumference3, 60);
+    setProgress(progressCircle4, circumference4, 85);
+
+    function setProgress(progressCircle, circumference, percent) {
+        let offset = circumference - (percent / 100) * circumference;
+        progressCircle.style.strokeDasharray = circumference;
+        progressCircle.style.strokeDashoffset = offset;
+    }
+</script>
 </html>
