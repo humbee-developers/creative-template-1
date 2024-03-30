@@ -243,7 +243,7 @@
   align-items: center;
   flex-direction: row;
 }
-.left_right_image_text_item:nth-child(even){
+.left_right_image_text_item:nth-child(even) {
   flex-direction: row-reverse;
 }
 .left_right_image_text_item_image {
@@ -280,10 +280,221 @@
   text-align: center;
   width: fit-content;
   font-size: 18px;
-    line-height: 129%;
+  line-height: 129%;
 }
-@media(max-width:1199px){
+@media (max-width: 1199px) {
   .left_right_image_text_wrapper {
     max-width: 767px;
+  }
+}
+
+/* Pricing Sec */
+
+.pricing_sec_wrapper {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.pricing_sec_content_wrap {
+  padding: 20px;
+  width: 620px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.pricing_sec_heading {
+  text-align: center;
+  font-size: 51px;
+  color: #dfa621;
+  line-height: 129%;
+  margin: 0 0 15px;
+}
+.pricing_sec_content {
+  font-size: 18px;
+  text-align: center;
+  line-height: 129%;
+  color: #4d5f75;
+}
+
+/* BG Image with Text */
+
+.bgImage_with_text_wrapper {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 729px;
+  position: relative;
+}
+.bgImage_with_text_content {
+  position: absolute;
+  top: 50%;
+  left: 90px;
+  transform: translateY(-50%);
+}
+.bgImage_with_text_content_heading {
+  font-size: 59px;
+  line-height: 129%;
+  color: #fff;
+  width: 528px;
+  margin: 0 0 20px;
+}
+.bgImage_with_text_content_text {
+  font-size: 15px;
+  line-height: 143%;
+  color: #fff;
+  width: 400px;
+}
+@media (max-width: 1199px) {
+  .bgImage_with_text_wrapper {
+    min-height: 600px;
+  }
+}
+@media (max-width: 991px) {
+  .bgImage_with_text_content {
+    left: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .bgImage_with_text_wrapper {
+    min-height: 500px;
+  }
+  .bgImage_with_text_content {
+    left: 30px;
+  }
+  .bgImage_with_text_content_heading {
+    font-size: 45px;
+    line-height: 129%;
+    color: #fff;
+    width: 400px;
+    margin: 0 0 20px;
+  }
+  .bgImage_with_text_content_text {
+    font-size: 15px;
+    line-height: 143%;
+    color: #fff;
+    width: 400px;
+  }
+}
+@media (max-width: 575px) {
+  .bgImage_with_text_content {
+    left: 20px;
+  }
+  .bgImage_with_text_content_heading {
+    font-size: 28px;
+    width: 90%;
+    margin: 0 0 20px;
+  }
+  .bgImage_with_text_content_text {
+    width: 90%;
+  }
+}
+
+/* Service Form */
+
+.services_form {
+  padding: 120px 350px;
+}
+
+.services_form_wrapper_form .contactForm {
+  position: static;
+  transform: none;
+  background-color: #ececec;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.services_form_wrapper_form .contactForm .contactForm_heading {
+  color: #4d5f75;
+  font-size: 41px;
+  font-weight: 600;
+  line-height: 44px;
+}
+.services_form_wrapper_form .contactForm form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.services_form_wrapper_form .contactForm form .contactInput {
+  background-color: transparent;
+  margin: 0 0 36px;
+  width: 293px;
+}
+.services_form_wrapper_form .contactForm form .selectric-selectDrp {
+  width: 343px;
+  background-color: transparent;
+  margin: 0 0 90px;
+}
+.services_form_wrapper_form .contactForm form .selectric-selectDrp .selectric {
+  padding: 9px 0;
+  background-color: transparent;
+}
+.services_form_wrapper_form .contactForm form .submit_btn {
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.services_form_wrapper_form .contactForm form .submit_btn button {
+  background-color: #dfa621;
+}
+.services_form_wrapper_form .contactForm form .submit_btn button:hover {
+  background-color: #4d5f75;
+}
+
+.services_form_wrapper {
+  display: flex;
+  justify-content: center;
+}
+.services_form_wrapper_form {
+  width: 44%;
+}
+.services_form_wrapper_image {
+  width: 55%;
+}
+.services_form_wrapper_image img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1600px) {
+  .services_form {
+    padding: 120px 180px;
+  }
+}
+@media (max-width: 1359px) {
+  .services_form_wrapper_form .contactForm .contactForm_heading {
+    font-size: 34px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 1199px) {
+  .services_form {
+    padding: 80px;
+  }
+}
+@media (max-width: 991px) {
+  .services_form_wrapper_form .contactForm form .contactInput {
+    width: 90%;
+  }
+  .services_form_wrapper_form .contactForm form .selectric-selectDrp {
+    width: 96%;
+    margin: 0 0 80px;
+  }
+  .services_form {
+    padding: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .services_form_wrapper {
+    flex-direction: column-reverse;
+  }
+  .services_form_wrapper_form {
+    width: 100%;
+  }
+  .services_form_wrapper_image {
+    width: 100%;
   }
 }

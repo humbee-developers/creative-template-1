@@ -65,6 +65,6 @@ jQuery(document).ready(function ($) {
       },
     ],
   });
-  $("#inquiry").selectric();
+  $("select").selectric();
 });
 
