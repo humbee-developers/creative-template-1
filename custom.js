@@ -26,12 +26,16 @@ jQuery(document).ready(function ($) {
     arrows: false,
   });
   $(".servicesslides").slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
+    fade: true,
+    cssEase: 'linear',
+    prevArrow: $(".service_op_1_slider_arrow_left"),
+    nextArrow: $(".service_op_1_slider_arrow_right"),
   });
   $(".cardSlider_list").slick({
     dots: false,
