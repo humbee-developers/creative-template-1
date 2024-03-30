@@ -25,6 +25,14 @@ jQuery(document).ready(function ($) {
     slidesToScroll: 1,
     arrows: false,
   });
+  $(".servicesslides").slick({
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  });
   $(".cardSlider_list").slick({
     dots: false,
     infinite: true,
