@@ -160,9 +160,9 @@
     text-transform: uppercase;
 }
 
-input {
+/* input {
     display: none;
-}
+} */
 
 input:checked + label {
     width: 100%;

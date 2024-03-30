@@ -294,6 +294,39 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 55px 0 168px;
+}
+.pricecard h2{
+  font-family: "DM Sans";
+  font-weight: 700;
+}
+.business_header {
+  font-family: "DM Sans";
+  font-weight: 700;
+}
+.ptag{
+  color: #000 !important;
+}
+.pricecard button {
+  font-size: 18px;
+  color: #000;
+  font-family: "nueu_montreal_medium";
+}
+.ptag span{
+  font-size: 60px;
+  position: relative;
+}
+.ptag sup{
+  font-size: 15px;
+  position: absolute;
+  top: 10px;
+  left: -8px;
+}
+.active_plan{
+  color: #dfa621 !important;
+}
+.pricecard {
+  background: #fff;
 }
 .pricing_sec_content_wrap {
   padding: 20px;

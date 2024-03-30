@@ -1,0 +1,142 @@
+/* Two Button */
+
+.two_btn_sec {
+  margin-top: -4%;
+  position: relative;
+}
+
+.two_btn_wrap {
+  display: flex;
+  justify-content: end;
+}
+.two_btn_left {
+  width: 36%;
+  background-color: #4d5f75;
+}
+.two_btn_left a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 129%;
+  font-family: "nueu_montreal_bold";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 10px;
+}
+.two_btn_left a span {
+  font-size: 24px;
+  font-family: "nueu_montreal_regular";
+}
+.two_btn_right {
+  width: 36%;
+  background-color: #d9d9d9;
+}
+.two_btn_right a {
+  color: #757575;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 129%;
+  font-family: "nueu_montreal_bold";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 10px;
+}
+.two_btn_right a span {
+  font-size: 24px;
+  font-family: "nueu_montreal_regular";
+}
+
+/* Image Card Index */
+
+.image_card_index_wrapper {
+  padding: 126px 113px;
+}
+.image_card_index_title {
+  color: #989898;
+  font-size: 30px;
+  line-height: 129%;
+  margin: 0 0 26px;
+}
+.image_card_index_heading {
+  font-size: 71px;
+  line-height: 129%;
+  color: #4d5f75;
+  width: 95%;
+  margin: 0 0 80px;
+}
+.image_card_index_image_list {
+  display: flex;
+  justify-content: center;
+  padding: 0 100px;
+}
+.image_card_index_image_item {
+  width: 33.33%;
+  position: relative;
+  overflow: hidden;
+}
+.image_index{
+    position: absolute;
+    top: -20px;
+    left: -53px;
+    font-size: 150px;
+    color: #fff;
+}
+.image_card_index_image_item img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+@media (max-width: 1600px) {
+  .image_card_index_image_list {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .image_card_index_wrapper {
+    padding: 100px 80px;
+  }
+  .image_index{
+    left: -42px;
+    font-size: 110px;
+}
+  .image_card_index_heading {
+    font-size: 62px;
+  }
+}
+@media (max-width: 991px) {
+  .image_card_index_wrapper {
+    padding: 100px 50px;
+  }
+  .image_card_index_heading {
+    font-size: 55px;
+  }
+  .image_index{
+    left: -32px;
+    font-size: 90px;
+}
+}
+@media (max-width: 767px) {
+  .image_card_index_wrapper {
+    padding: 100px 40px;
+  }
+  .image_card_index_heading {
+    font-size: 45px;
+  }
+  .image_card_index_image_list {
+    padding: 0 20px;
+  }
+}
+@media(max-width:575px){
+    .image_card_index_wrapper {
+        padding: 100px 20px;
+    }
+    .image_card_index_image_list {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .image_card_index_image_item {
+        width: 100%;
+    }
+}

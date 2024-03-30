@@ -33,7 +33,7 @@ jQuery(document).ready(function ($) {
     slidesToScroll: 1,
     arrows: true,
     fade: true,
-    cssEase: 'linear',
+    cssEase: "linear",
     prevArrow: $(".service_op_1_slider_arrow_left"),
     nextArrow: $(".service_op_1_slider_arrow_right"),
   });
@@ -67,4 +67,5 @@ jQuery(document).ready(function ($) {
   });
   $("select").selectric();
 });
+
 
