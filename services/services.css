@@ -267,6 +267,15 @@ input:checked + label .description {
   .rankingsection{
     display: flex;
   }
+  .rankingsection_heading{
+    color: #4D5F75;
+    font-size: 51px;
+  }
+  .rankingsection_text{
+    font-size: 15px;
+    width: 50%;
+  }
+  
 
   .factoryservicesimg{
     width: 100%;
@@ -280,6 +289,23 @@ input:checked + label .description {
     font-size: 15px;
     width: 60%;
   }
+  /* section eight */
+  .services_eightflex{
+    display: flex;
+    gap: 2rem;
+    padding: 5rem 11rem;
+}
+.services_eightflex_heading{
+    color: #DFA621 ;
+    padding: 20px 0px;
+}
+
+
+
+
+
+
+
 /* section nine  */
   .servicesninesection {
     display: flex;
@@ -327,12 +353,18 @@ input:checked + label .description {
     column-gap: 40px;
     grid-template-columns: auto auto;
   }
-  
+  .gridboximg{
+    padding: 1rem 0rem;
+  }
   .griditem_heading{
     font-size: 21px;
+    color: #000000;
+    padding: 15px 0px;
   }
   .griditem_text{
+    color: #636363;
     font-size: 12px;
+    padding: 0rem 6rem 0rem 0rem;
   }
   /* pricing section */
 .price_plan{
@@ -347,6 +379,8 @@ input:checked + label .description {
   }
   .pricing_plan_heading{
     color: #DFA621;
+    font-size: 42px;
+    padding: 1rem 0rem;
   }
 
 
@@ -366,20 +400,23 @@ input:checked + label .description {
   }
   
   .pricecard {
-    background-color: #f4f4f4;
-    /* border-radius: 8px;
-    padding: 20px; */
+    border: 1px solid lightgray;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .pricecard h2 {
     color: #ffffff;
-    background-color: #DFA621;
+    background-color: grey;
     width: 100%;
     padding: 10px 0px;
   }
-  
+  .business_header {
+     color: #ffffff;
+     background-color: #DFA621 !important;
+     width: 100%;
+     padding: 10px 0px;
+  }
   .pricecard p {
     color: #777;
   }
@@ -402,10 +439,6 @@ input:checked + label .description {
     transition: background-color 0.3s ease;
   }
   
-  .pricecard button:hover {
-    background-color: blue;
-  }
-  
 
   .plan{
     font-size: 30px;
@@ -423,4 +456,28 @@ padding: 15px 8px;
   .ptag{
     font-size: 35px;
     color: black;
+    margin-bottom: 1rem;
+  }
+
+  /* servies contact last section */
+  .servicescontact{
+    display: flex;
+    padding: 5rem 16rem 5rem 16rem;
+  }
+  .servicecontact_heading{
+    color: #DFA621;
+    font-size: 42px;
+  }
+  .servicecontact_text{
+    width: 70%;
+  }
+  .services_contactbtn_flex{
+    width: 25%;
+  }
+  .services_contactbtn{
+    background-color: #4D5F75;
+    color: white;
+    font-size: 26px;
+    border: none;
+    padding: 1rem;
   }
