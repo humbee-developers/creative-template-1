@@ -213,6 +213,7 @@ input:checked + label .description {
 }
 .card_main_para{
     font-size: 15px;
+    width: 24%;
 }
 
 .card_container {
@@ -335,14 +336,17 @@ input:checked + label .description {
   
   .pricecard {
     background-color: #f4f4f4;
-    border-radius: 8px;
-    padding: 20px;
+    /* border-radius: 8px;
+    padding: 20px; */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .pricecard h2 {
-    color: #333;
+    color: #ffffff;
+    background-color: #DFA621;
+    width: 100%;
+    padding: 10px 0px;
   }
   
   .pricecard p {
@@ -359,11 +363,10 @@ input:checked + label .description {
   }
   
   .pricecard button {
-    background-color: grey;
+    background-color: lightgrey;
     color: #000;
     border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
+    padding: 1rem 7rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
@@ -372,3 +375,21 @@ input:checked + label .description {
     background-color: blue;
   }
   
+
+  .plan{
+    font-size: 30px;
+    padding: 2rem 2rem 3rem 2rem;
+  }
+
+
+  .lorem{
+font-size: 15px;
+color: gray;
+border-top: 1px solid gray;
+padding: 15px 8px;
+  }
+
+  .ptag{
+    font-size: 35px;
+    color: black;
+  }
