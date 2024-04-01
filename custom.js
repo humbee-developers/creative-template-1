@@ -25,6 +25,18 @@ jQuery(document).ready(function ($) {
     slidesToScroll: 1,
     arrows: false,
   });
+  $(".servicesslides").slick({
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    cssEase: "linear",
+    prevArrow: $(".service_op_1_slider_arrow_left"),
+    nextArrow: $(".service_op_1_slider_arrow_right"),
+  });
   $(".cardSlider_list").slick({
     dots: false,
     infinite: true,
@@ -53,6 +65,7 @@ jQuery(document).ready(function ($) {
       },
     ],
   });
-  $("#inquiry").selectric();
+  $("select").selectric();
 });
+
 

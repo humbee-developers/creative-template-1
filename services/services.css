@@ -94,7 +94,7 @@
 
 .card {
     width: 500px;
-    height: 100vh;
+    /* height: 100vh; */
     /* border-radius: .75rem; */
     background-size: cover;
     cursor: pointer;
@@ -160,9 +160,9 @@
     text-transform: uppercase;
 }
 
-input {
+/* input {
     display: none;
-}
+} */
 
 input:checked + label {
     width: 100%;
@@ -185,3 +185,330 @@ input:checked + label .description {
 .card[for="c4"] {
     background-color: rgb(192, 186, 186);
 }
+
+.services_sliders{
+    display: flex !important;
+}
+.services_sliders_left{
+    background-color: #4d5f75;
+    padding: 7rem 2rem;
+    width: 50%;
+}
+.services_sliders_right{
+  width: 50%;
+}
+.services_sliders_right img{
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+.service_op1_slider_wrapper{
+  position: relative;
+}
+.service_op_1_slider_arrow{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.service_op_1_slider_arrow_left{
+  background-color: #D9D9D9;
+  padding: 29px 19px;
+  cursor: pointer;
+}
+.service_op_1_slider_arrow_right{
+  background-color: #000;
+  padding: 29px 19px;
+  cursor: pointer;
+}
+
+.services_sliders_heading{
+    color: white;
+    font-size: 59px;
+    padding: 2rem 3rem;
+}
+.services_sliders_para{
+    color: white;
+    font-size: 15px;
+    padding: 0rem 3rem;
+}
+
+.services_cards{
+    padding: 5rem;
+}
+.card_main_heading{
+    color: #DFA621;
+    font-size: 51px;
+}
+.card_main_para{
+    font-size: 15px;
+    width: 24%;
+}
+
+.card_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .cards {
+    background-color: #D9D9D9;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+  }
+  .servicescards_heading{
+    font-size: 27px;
+  }
+  .servicescards_text{
+    font-size: 49px;
+  }
+  .cards_content_services{
+    padding: 18rem 0rem;
+  }
+  
+
+  .rankingsection{
+    display: flex;
+  }
+  .rankingsection_heading{
+    color: #4D5F75;
+    font-size: 51px;
+  }
+  .rankingsection_text{
+    font-size: 15px;
+    width: 50%;
+  }
+  
+
+  .factoryservicesimg{
+    width: 100%;
+    height: autos;
+  }
+  .factoryservicesheading{
+    font-size: 59px;
+    
+  }
+  .factoryservicestext{
+    font-size: 15px;
+    width: 60%;
+  }
+  /* section eight */
+
+  .track {
+    stroke-width: 10;
+    stroke: lightgrey;
+    fill: none;
+}
+
+.progress {
+    stroke-width: 10;
+    stroke-linecap: round;
+    fill: none;
+    transform-origin: center;
+    stroke: #DFA621; 
+}
+
+.percentage {
+    font-size: 15px;
+    text-anchor: middle;
+    fill: #333;
+}
+
+
+  .services_eightflex{
+    display: flex;
+    gap: 2rem;
+    padding: 5rem 11rem;
+}
+.services_eightflex_heading{
+    color: #DFA621 ;
+    padding: 20px 0px;
+}
+
+
+
+
+
+
+
+/* section nine  */
+  .servicesninesection {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #F6F6F6;
+    justify-content: space-around;
+    color: #070606;
+   
+  }
+
+  .x1button{
+    padding: 5px 10px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+  .nineflex_main_heading{
+    color: #DFA621;
+    font-size: 42.5px;
+  }
+  .rightflex{
+    width: 50%;
+  }
+  .leftflex{
+    width: 50%;
+    padding: 5rem;
+  }
+  .nineflex_para {
+    font-size: 19px;
+    margin-top: 20px;
+    font-weight: 400;
+    line-height: 16.77px;
+    text-align: left;
+    padding: 1rem 0rem;
+    color: #000000;
+  }
+  .nineflex_checklist_text {
+    display: flex;
+    gap: 1rem;
+  }
+  .grid-container {
+    display: grid;
+    height: 100%;
+    padding: 2rem;
+    column-gap: 40px;
+    grid-template-columns: auto auto;
+  }
+  .gridboximg{
+    padding: 1rem 0rem;
+  }
+  .griditem_heading{
+    font-size: 21px;
+    color: #000000;
+    padding: 15px 0px;
+  }
+  .griditem_text{
+    color: #636363;
+    font-size: 12px;
+    padding: 0rem 6rem 0rem 0rem;
+  }
+  /* pricing section */
+.price_plan{
+    padding: 5rem;
+}
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  .pricing_plan_heading{
+    color: #DFA621;
+    font-size: 42px;
+    padding: 1rem 0rem;
+  }
+
+
+  .x1{
+    position: relative;
+  }
+
+  .xx1{
+    width: 35%;
+    top: 22rem;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    position: absolute;
+    padding: 0rem 4rem;
+    gap: 1rem;
+  }
+  
+  .pricecard {
+    border: 1px solid lightgray;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pricecard h2 {
+    color: #ffffff;
+    background-color: grey;
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .business_header {
+     color: #ffffff;
+     background-color: #DFA621 !important;
+     width: 100%;
+     padding: 10px 0px;
+  }
+  .pricecard p {
+    color: #777;
+  }
+  
+  .pricecard ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pricecard ul li {
+    margin-bottom: 5px;
+  }
+  
+  .pricecard button {
+    background-color: lightgrey;
+    color: #000;
+    border: none;
+    padding: 1rem 7rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  .plan{
+    font-size: 30px;
+    padding: 2rem 2rem 3rem 2rem;
+  }
+
+
+  .lorem{
+font-size: 15px;
+color: gray;
+border-top: 1px solid gray;
+padding: 15px 8px;
+  }
+
+  .ptag{
+    font-size: 35px;
+    color: black;
+    margin-bottom: 1rem;
+  }
+
+  /* servies contact last section */
+  .servicescontact{
+    display: flex;
+    padding: 5rem 16rem 5rem 16rem;
+  }
+  .servicecontact_heading{
+    color: #DFA621;
+    font-size: 42px;
+  }
+  .servicecontact_text{
+    width: 70%;
+  }
+  .services_contactbtn_flex{
+    width: 25%;
+  }
+  .services_contactbtn{
+    background-color: #4D5F75;
+    color: white;
+    font-size: 26px;
+    border: none;
+    padding: 1rem;
+  }
