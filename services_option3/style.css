@@ -1,5 +1,4 @@
 /* Hero Section */
-
 .inner_banner_image {
   position: relative;
   height: 100vh !important;
@@ -32,20 +31,19 @@
 }
 
 /* 4 cards section */
-.Service_Cards_Section{
+.Service_Cards_Section {
   padding: 80px 0;
+  background: #4d5f75;
 }
 .card-container {
   display: flex;
   flex-wrap: wrap;
   margin: 0 50px;
 }
-
 .card {
   flex: 1;
-  margin: 10px;
-  /* padding: 20px; */
-  border: 1px solid #ccc;
+  margin: 20px;
+  background: #3c5370;
 }
 .service_card_text {
   font-family: Neue Montreal;
@@ -59,19 +57,105 @@
 .card img {
   display: block;
   width: 100%;
-  /* max-width: 100%; */
   height: auto;
 }
 .card_main {
   width: 100%;
   margin: 0 auto;
-  padding: 35px 140px;
+  padding: 35px 130px;
 }
 .card .card_innertext {
-  color: black;
+  color: white;
   font-family: Neue Montreal;
   font-size: 18.09px;
   font-weight: 400;
   line-height: 27.86px;
   text-align: left;
+}
+@media (min-width: 1600px) {
+  .card_main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px 250px;
+  }
+}
+
+/* 1 image section */
+.Service_img_Section {
+  position: relative;
+}
+.service_img3 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.service_img3_text {
+  font-family: Neue Montreal;
+  font-size: 193.74px;
+  font-weight: 400;
+  line-height: 249.92px;
+  position: absolute;
+  top: 15%;
+  left: 23%;
+  color: #4d5f7594;
+  transform: translate(-50%, -50%);
+}
+
+/* service 3 cards section */
+.Service_opt3_cards {
+  background: #d9d9d9;
+}
+.Service_opt3_cards_inner {
+  width: 60%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.Service_opt3_cards_text {
+  font-family: Neue Montreal;
+  font-size: 53px;
+  font-weight: 400;
+  line-height: 68.37px;
+  text-align: center;
+}
+.Service_opt3_cardstext {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 130px;
+}
+.Service_opt3_cardstext_one {
+  padding: 0 90px;
+  margin: 0 auto;
+}
+.Service_opt3_cardstext_one_header {
+  color: #dfa621;
+  padding-bottom: 1rem;
+  font-family: Neue Montreal;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.22px;
+  text-align: left;
+}
+.Service_opt3_cardstext_one_text {
+  color: #636363;
+  font-family: Neue Montreal;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23.1px;
+  text-align: left;
+}
+@media (min-width: 1600px) {
+  .Service_opt3_cards_inner {
+    width: 45%;
+  }
+  .Service_opt3_cardstext_one {
+    padding: 0 150px;
+  }
+}
+@media (max-width: 1024px) {
+  .Service_opt3_cards_inner {
+    width: 85%;
+  }
+  .Service_opt3_cardstext_one {
+    padding: 0 50px;
+  }
 }
