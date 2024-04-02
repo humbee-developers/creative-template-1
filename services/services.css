@@ -1,31 +1,32 @@
 *{
     margin: 0;
 }
-.secrvices_home_img{
+/* .secrvices_home_img{
     width: 100%;
     height: auto;
-}
+} */
 .services_home_text{
     position: absolute;
     color: white;
-    /* top: 30rem; */
     top: 22rem;
-    /* left: 18rem; */
     left: 8rem;
     font-size: 82px;
 }
+.services_centertext{
+  padding: 6rem 20rem 0 20rem;
+  font-size: 53px;
+  color: #000000;
+}
+/* 
 .simply{
     display: flex;
     gap: 2rem;
     align-items: center;
     justify-content: center;
-} 
-.services_centertext{
-    padding: 6rem 20rem 0 20rem;
-    font-size: 53px;
-    color: #000000;
-}
-.services_secondflex{
+}  
+
+
+ .services_secondflex{
     display: flex;
     gap: 6rem;
     padding: 5rem 11rem;
@@ -33,20 +34,19 @@
 .services_secondflex_heading{
     color: #DFA621;
     padding: 20px 0px;
-}
-
+} 
 .services_thirdLine{
     position: relative;
 }
-/* .services_thirdimgtwo{
-    position: absolute;
-    right: 0rem;
-    bottom: 2rem;
-      
-} */
+.services_thirdimg{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+}  */
 
 
-.bunny{
+.servicesthirdlinetwo{
     background: rgb(255, 255, 255);
     position: absolute;
     width: 40%;
@@ -57,12 +57,7 @@
     flex-direction: column;
     gap: 2rem;
 }
-.services_thirdimg{
-    width: 100%;
-    height: auto;
-    aspect-ratio: 5 / 3;
-    object-fit: cover;
-}
+
 .services_thirdheading{
     color: #DFA621;
     /* position: absolute;

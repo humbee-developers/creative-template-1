@@ -31,12 +31,27 @@
     <script src="../custom.js"></script>
     <!-- cdn scrollreveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- cdn tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellowcolor:'#DFA621',
+            }
+          }
+        }
+      }
+    </script>
+
   </head>
   <body>
     <div>
-      <img class="secrvices_home_img" src="../images/serviceshome.png" />
+      <img class="w-full h-auto" src="../images/serviceshome.png" />
       <h2 class="services_home_text">
-        LOREM IPSUM<span class="simply"
+        LOREM IPSUM<span class="flex gap-8 items-center justify-center"
           ><img src="../images/dot.svg" /> SIMPLY</span
         ><span>DUMMY - (DUMMY)</span>
       </h2>
@@ -49,23 +64,23 @@
     </div>
 
    <!-- second section -->
-    <div class="services_secondflex">
+    <div class="flex gap-24 px-44 py-20">
       <div>
-        <h2 class="services_secondflex_heading">01 | Lorem Ipsum is simply</h2>
+        <h2 class="text-yellowcolor text-2xl py-5 px-0">01 | Lorem Ipsum is simply</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy
         </p>
       </div>
       <div>
-        <h2 class="services_secondflex_heading">02 | Lorem Ipsum is simply</h2>
+        <h2 class="text-yellowcolor text-2xl py-5 px-0">02 | Lorem Ipsum is simply</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy
         </p>
       </div>
       <div>
-        <h2 class="services_secondflex_heading">03 | Lorem Ipsum is simply</h2>
+        <h2 class="text-yellowcolor text-2xl py-5 px-0">03 | Lorem Ipsum is simply</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy
@@ -75,12 +90,11 @@
 
 <!-- third section -->
     <div>
-
-      <div class="services_thirdLine">
-        <img class="services_thirdimg" src="../images/ServicesthirdLine.png" />
+       <div class="relative">
+        <img class="w-full h-auto object-cover" src="../images/ServicesthirdLine.png" />
 
         <!-- <img class="services_thirdimgtwo" src="../images/ServicesthirdLinetwo.png"> -->
-        <div class="bunny">
+        <div class="servicesthirdlinetwo">
           <h2 class="services_thirdheading">
             Lorem Ipsum is simply dummy text of the printing.
           </h2>
