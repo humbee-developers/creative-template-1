@@ -52,14 +52,14 @@
   <body>
     <div>
       <img class="w-full h-auto" src="../images/serviceshome.png" />
-      <h2 class="services_home_text">
+      <h2 class="services_home_text absolute text-white top-56 left-32 text-6xl">
         LOREM IPSUM<span class="flex gap-8 items-center justify-center"
           ><img src="../images/dot.svg" /> SIMPLY</span
         ><span>DUMMY - (DUMMY)</span>
       </h2>
     </div>
     <div>
-      <h2 class="services_centertext">
+      <h2 class="services_centertext px-80 pt-24 text-4xl text-black">
         Lorem Ipsum is simply dummy text of<br />
         the printing and typesetting industry.
       </h2>
@@ -96,15 +96,15 @@
         <img class="w-full h-auto object-cover" src="../images/ServicesthirdLine.png" />
 
         <!-- <img class="services_thirdimgtwo" src="../images/ServicesthirdLinetwo.png"> -->
-        <div class="bg-white absolute w-2/4 h-2/5 flex right-0 bottom-0 flex-col gap-8">
-          <h2 class="text-yellowcolor text-5xl mt-8 ml-8">
+        <div class="bg-white py-0 pl-8 absolute h-2/5 w-[42%]  flex right-0 bottom-0 flex-col gap-8">
+          <h2 class="text-yellowcolor text-5xl mt-8 w-[90%]">
             Lorem Ipsum is simply dummy text of the printing.
           </h2>
-          <p class="text-xl ml-8">
+          <p class="text-xl w-11/12 ">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy
           </p>
-          <p class="text-xl mb-8 ml-8">
+          <p class="text-xl mb-8 w-11/12">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.Lorem Ipsum has been the industry's standard dummy
           </p>
@@ -554,10 +554,10 @@
     </div>
 
     <!-- last contact section -->
-    <div class="flex px-64 py-20">
+    <div class="flex justify-center items-center mx-auto py-12 px-0 w-2/3 mt-[5rem] shadow-md" style="--tw-shadow: 0 -3px 11px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0);">
       <div class="w-9/12">
         <h2 class="text-yellowcolor text-4xl">Build Your Own Business</h2>
-        <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
+        <p class="w-3/4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
       </div>
       <div class="w-1/5">
         <button class="bg-bluecolor text-white text-xl py-4 px-6">Contact Us</button>
@@ -567,23 +567,43 @@
   </body>
   <script>
     // circularprogress bar
-           let circularProgress = document.querySelector(".circular-progress"),
-    progressValue = document.querySelector(".progress-value");
 
-let progressStartValue = 0,    
-    progressEndValue = 25,    
-    speed = 100;
-    
-let progress = setInterval(() => {
-    progressStartValue++;
+let circularProgresses = document.querySelectorAll(".circular-progress");
+let speeds = [20, 20, 20, 20]; 
 
-    progressValue.textContent = `${progressStartValue}%`
-    circularProgress.style.background = `conic-gradient(#dfa621 ${progressStartValue * 3.6}deg, #ededed 0deg)`
 
-    if(progressStartValue == progressEndValue){
-        clearInterval(progress);
-    }    
-}, speed);
+let observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            startProgressAnimation(entry.target);
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold:0.5 }); 
+
+
+circularProgresses.forEach(circularProgress => {
+    observer.observe(circularProgress);
+});
+
+function startProgressAnimation(element) {
+    let progressValue = element.querySelector(".progress-value");
+    let progressStartValue = 0;
+    let progressEndValue = parseInt(progressValue.textContent);
+    let speed = speeds.shift();
+
+    let progress = setInterval(() => {
+        progressStartValue++;
+
+        progressValue.textContent = `${progressStartValue}%`;
+        element.style.background = `conic-gradient(#dfa621 ${progressStartValue * 3.6}deg, #ededed 0deg)`;
+
+        if (progressStartValue == progressEndValue) {
+            clearInterval(progress);
+        }
+    }, speed);
+}
+
 
   // animation
       ScrollReveal({

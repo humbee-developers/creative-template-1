@@ -1,11 +1,11 @@
-*{
+/* *{
     margin: 0;
-}
+} */
 /* .secrvices_home_img{
     width: 100%;
     height: auto;
 } */
-.services_home_text{
+/* .services_home_text{
     position: absolute;
     color: white;
     top: 22rem;
@@ -16,7 +16,7 @@
   padding: 6rem 20rem 0 20rem;
   font-size: 53px;
   color: #000000;
-}
+} */
 /* 
 .simply{
     display: flex;
