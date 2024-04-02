@@ -45,7 +45,7 @@
   object-fit: cover;
 }  */
 
-
+/* 
 .servicesthirdlinetwo{
     background: rgb(255, 255, 255);
     position: absolute;
@@ -60,23 +60,14 @@
 
 .services_thirdheading{
     color: #DFA621;
-    /* position: absolute;
-    right: 5rem;
-    bottom: 21rem; */
     font-size: 51px;
 }
 .services_thirdpara{
-    /* position: absolute;
-    right: 4rem;
-    bottom: 14rem; */
     font-size: 24px;
 }
 .services_thirdparatwo{
-    /* position: absolute;
-    right: 4rem;
-    bottom: 8rem; */
     font-size: 24px;
-}
+} */
 
 
 
@@ -157,10 +148,6 @@
     text-transform: uppercase;
 }
 
-/* input {
-    display: none;
-} */
-
 input:checked + label {
     width: 100%;
 }
@@ -231,8 +218,10 @@ input:checked + label .description {
     font-size: 15px;
     padding: 0rem 3rem;
 }
+/* 5thsection */
 
-.services_cards{
+/* 
+ .services_cards{
     padding: 3rem 13rem;
 }
 .card_main_heading{
@@ -243,7 +232,7 @@ input:checked + label .description {
     font-size: 15px;
     padding: 1rem;
     width: 24%;
-}
+} 
 
 .card_container {
     display: flex;
@@ -268,10 +257,11 @@ input:checked + label .description {
   }
   .cards_content_services{
     padding: 18rem 0rem;
-  }
+  } */
   
+/* 6th ranking section */
 
-  .rankingsection{
+  /* .rankingsection{
     display: flex;
   }
   .rankingsection_heading{
@@ -282,11 +272,16 @@ input:checked + label .description {
     font-size: 15px;
     width: 50%;
   }
-  
+   */
 
+
+ /* 7thfactoryimgservice */
+
+
+/* 
   .factoryservicesimg{
     width: 100%;
-    height: autos;
+    height: auto;
   }
   .factoryservicesheading{
     font-size: 51px;
@@ -296,6 +291,23 @@ input:checked + label .description {
     font-size: 15px;
     width: 60%;
   }
+
+  .x1{
+    position: relative;
+  }  */
+
+  .xx1{
+    width: 35%;
+    top: 22rem;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    position: absolute;
+    padding: 1rem 3rem;
+    gap: 1rem;
+  }
+
+
   /* section eight */
 
   .circless{
@@ -328,7 +340,7 @@ input:checked + label .description {
     position: relative;
     font-size: 40px;
     font-weight: 600;
-    color: black;
+    color: rgb(129, 128, 128);
 }
 .text{
     font-size: 30px;
@@ -336,6 +348,7 @@ input:checked + label .description {
     color: #606060;
 }
 
+/* 
   .services_eightflex{
     display: flex;
     gap: 2rem;
@@ -345,11 +358,13 @@ input:checked + label .description {
     color: #DFA621 ;
     padding: 20px 0px;
 }
-
+ */
 
 
 /* section nine  */
-  .servicesninesection {
+
+
+ /* .servicesninesection {
     display: flex;
     width: 100%;
     height: 100vh;
@@ -357,23 +372,6 @@ input:checked + label .description {
     justify-content: space-around;
     color: #070606;
    
-  }
-
-  .x1button{
-    padding: 5px 10px;
-    margin-left: 2rem;
-    margin-top: 1rem;
-  }
-  .nineflex_main_heading{
-    color: #DFA621;
-    font-size: 42.5px;
-  }
-  .rightflex{
-    width: 50%;
-  }
-  .leftflex{
-    width: 50%;
-    padding: 5rem;
   }
   .nineflex_para {
     font-size: 19px;
@@ -384,10 +382,28 @@ input:checked + label .description {
     padding: 1rem 0rem;
     color: #000000;
   }
+  .nineflex_main_heading{
+    color: #DFA621;
+    font-size: 42.5px;
+  }
   .nineflex_checklist_text {
     display: flex;
     gap: 1rem;
   }
+  .x1button{
+    padding: 5px 10px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  } 
+  
+  .rightflex{
+    width: 50%;
+  }
+  .leftflex{
+    width: 50%;
+    padding: 5rem;
+  }
+
   .grid-container {
     display: grid;
     height: 100%;
@@ -407,11 +423,26 @@ input:checked + label .description {
     color: #636363;
     font-size: 12px;
     padding: 0rem 6rem 0rem 0rem;
-  }
+  } 
+  */
+
+
+
   /* pricing section */
-.price_plan{
+
+
+
+ /* .price_plan{
     padding: 5rem;
 }
+.ptag{
+  font-size: 35px;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.ptagyellow{
+  color: #DFA621!important;
+} 
 .pricing {
     display: flex;
     justify-content: center;
@@ -424,90 +455,53 @@ input:checked + label .description {
     font-size: 42px;
     padding: 1rem 0rem;
   }
-
-
-  .x1{
-    position: relative;
-  }
-
-  .xx1{
-    width: 35%;
-    top: 22rem;
-    color: white;
-    flex-direction: column;
-    display: flex;
-    position: absolute;
-    padding: 1rem 3rem;
-    gap: 1rem;
-  }
   
-  .pricecard {
+  .lorem{
+    font-size: 15px;
+    color: gray;
+    border-top: 1px solid gray;
+    padding: 15px 8px;
+      } 
+   .pricecard button {
+        background-color: lightgrey;
+        color: #000;
+        border: none;
+        padding: 1rem 7rem;
+        cursor: pointer;
+        font-size: 17px;
+        margin-top: 15px;
+        transition: background-color 0.3s ease;
+    } 
+    .pricecard h2 {
+      color: #ffffff;
+      background-color: grey;
+      width: 100%;
+      padding: 10px 0px;
+    }
+    .business_header {
+       color: #ffffff;
+       background-color: #DFA621 !important;
+       width: 100%;
+       padding: 10px 0px;
+    }
+     .pricecard {
     border: 1px solid lightgray;
     text-align: center;
     
   }
-  
-  .pricecard h2 {
-    color: #ffffff;
-    background-color: grey;
-    width: 100%;
-    padding: 10px 0px;
-  }
-  .business_header {
-     color: #ffffff;
-     background-color: #DFA621 !important;
-     width: 100%;
-     padding: 10px 0px;
-  }
-  /* .pricecard p {
-    color: #777;
-  } */
-  
-  .pricecard ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .pricecard ul li {
-    margin-bottom: 5px;
-  }
-  
-  .pricecard button {
-    background-color: lightgrey;
-    color: #000;
-    border: none;
-    padding: 1rem 7rem;
-    cursor: pointer;
-    font-size: 17px;
-    margin-top: 15px;
-    transition: background-color 0.3s ease;
-  }
-  
-
   .plan{
     font-size: 30px;
     padding: 2rem 2rem 3rem 2rem;
-  }
+  } */
 
-
-  .lorem{
-font-size: 15px;
-color: gray;
-border-top: 1px solid gray;
-padding: 15px 8px;
-  }
-
-  .ptag{
-    font-size: 35px;
-    color: #000000;
-    margin-bottom: 1rem;
-  }
-  .ptagyellow{
-    color: #DFA621!important;
-  }
+  
+ 
 
   /* servies contact last section */
-  .servicescontact{
+
+
+
+  /* .servicescontact{
     display: flex;
     padding: 5rem 16rem 5rem 16rem;
   }
@@ -527,4 +521,4 @@ padding: 15px 8px;
     font-size: 26px;
     border: none;
     padding: 1rem 2rem 1rem 2rem;
-  }
+  } */
