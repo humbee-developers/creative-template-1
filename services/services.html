@@ -29,12 +29,29 @@
     ></script>
     <link rel="stylesheet" href="../global.css" />
     <script src="../custom.js"></script>
+    <!-- cdn scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- cdn tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellowcolor:'#DFA621',
+            }
+          }
+        }
+      }
+    </script>
+
   </head>
   <body>
     <div>
-      <img class="secrvices_home_img" src="../images/serviceshome.png" />
+      <img class="w-full h-auto" src="../images/serviceshome.png" />
       <h2 class="services_home_text">
-        LOREM IPSUM<span class="simply"
+        LOREM IPSUM<span class="flex gap-8 items-center justify-center"
           ><img src="../images/dot.svg" /> SIMPLY</span
         ><span>DUMMY - (DUMMY)</span>
       </h2>
@@ -47,23 +64,23 @@
     </div>
 
    <!-- second section -->
-    <div class="services_secondflex">
+    <div class="flex gap-24 px-44 py-20">
       <div>
-        <h2 class="services_secondflex_heading">01 | Lorem Ipsum is simply</h2>
+        <h2 class="text-yellowcolor text-2xl py-5 px-0">01 | Lorem Ipsum is simply</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy
         </p>
       </div>
       <div>
-        <h2 class="services_secondflex_heading">02 | Lorem Ipsum is simply</h2>
+        <h2 class="text-yellowcolor text-2xl py-5 px-0">02 | Lorem Ipsum is simply</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy
         </p>
       </div>
       <div>
-        <h2 class="services_secondflex_heading">03 | Lorem Ipsum is simply</h2>
+        <h2 class="text-yellowcolor text-2xl py-5 px-0">03 | Lorem Ipsum is simply</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy
@@ -73,12 +90,11 @@
 
 <!-- third section -->
     <div>
-
-      <div class="services_thirdLine">
-        <img class="services_thirdimg" src="../images/ServicesthirdLine.png" />
+       <div class="relative">
+        <img class="w-full h-auto object-cover" src="../images/ServicesthirdLine.png" />
 
         <!-- <img class="services_thirdimgtwo" src="../images/ServicesthirdLinetwo.png"> -->
-        <div class="bunny">
+        <div class="servicesthirdlinetwo">
           <h2 class="services_thirdheading">
             Lorem Ipsum is simply dummy text of the printing.
           </h2>
@@ -351,29 +367,24 @@
     </div>
 
     <!-- 8th section -->
-   <div>
-    <svg width="500" height="100">
-      <!--  22% -->
-      <circle r="40" cx="80" cy="50" class="track"></circle>
-      <circle r="40" cx="80" cy="50" class="progress" id="progress1"></circle>
-      <text x="80" y="50" class="percentage">25%</text>
+    <div class="circless">
+      <div class="circular-progress">
+          <span class="progress-value">25%</span>
+      </div>
 
-      <!--  55% -->
-      <circle r="40" cx="200" cy="50" class="track"></circle>
-      <circle r="40" cx="200" cy="50" class="progress" id="progress2"></circle>
-      <text x="200" y="50" class="percentage">55%</text>
-
-      <!-- 65% -->
-      <circle r="40" cx="320" cy="50" class="track"></circle>
-      <circle r="40" cx="320" cy="50" class="progress" id="progress3"></circle>
-      <text x="320" y="50" class="percentage">60%</text>
-
-      <!--  95% -->
-      <circle r="40" cx="440" cy="50" class="track"></circle>
-      <circle r="40" cx="440" cy="50" class="progress" id="progress4"></circle>
-      <text x="440" y="50" class="percentage">85%</text>
-  </svg>
-   </div>
+      <div class="circular-progress">
+          <span class="progress-value">55%</span>
+      </div>
+  
+      <div class="circular-progress">
+          <span class="progress-value">60%</span>
+      </div>
+ 
+      <div class="circular-progress">
+          <span class="progress-value">85%</span>
+      </div>
+  </div>
+  
     <div class="services_eightflex">
       <div>
         <h2 class="services_eightflex_heading">01 | Lorem Ipsum is simply</h2>
@@ -522,7 +533,7 @@
       <div class="pricecard">
         <h2 class="business_header">Business</h2>
         <div class="plan">
-          <p class="ptag">$99/month</p>
+          <p class="ptag ptagyellow">$99/month</p>
           <div class="lorem">Lorem Ipsum is simply dummy text of the.</div>
           <div class="lorem">Lorem Ipsum is simply dummy text of the.</div>
           <div class="lorem">Lorem Ipsum is simply dummy text of the.</div>
@@ -553,40 +564,42 @@
         <p class="servicecontact_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
       </div>
       <div class="services_contactbtn_flex">
-        <button class="services_contactbtn">CONTACT US</button>
+        <button class="services_contactbtn">Contact Us</button>
       </div>
     </div>
   </body>
   <script>
-    // Progress Bar 1
-    let progressCircle1 = document.getElementById("progress1");
-    let radius1 = progressCircle1.r.baseVal.value;
-    let circumference1 = 2 * Math.PI * radius1;
+    // circularprogress bar
+           let circularProgress = document.querySelector(".circular-progress"),
+    progressValue = document.querySelector(".progress-value");
 
-    // Progress Bar 2
-    let progressCircle2 = document.getElementById("progress2");
-    let radius2 = progressCircle2.r.baseVal.value;
-    let circumference2 = 2 * Math.PI * radius2;
+let progressStartValue = 0,    
+    progressEndValue = 25,    
+    speed = 100;
+    
+let progress = setInterval(() => {
+    progressStartValue++;
 
-    // Progress Bar 3
-    let progressCircle3 = document.getElementById("progress3");
-    let radius3 = progressCircle3.r.baseVal.value;
-    let circumference3 = 2 * Math.PI * radius3;
+    progressValue.textContent = `${progressStartValue}%`
+    circularProgress.style.background = `conic-gradient(#dfa621 ${progressStartValue * 3.6}deg, #ededed 0deg)`
 
-    // Progress Bar 4
-    let progressCircle4 = document.getElementById("progress4");
-    let radius4 = progressCircle4.r.baseVal.value;
-    let circumference4 = 2 * Math.PI * radius4;
+    if(progressStartValue == progressEndValue){
+        clearInterval(progress);
+    }    
+}, speed);
 
-    setProgress(progressCircle1, circumference1, 25);
-    setProgress(progressCircle2, circumference2, 55);
-    setProgress(progressCircle3, circumference3, 60);
-    setProgress(progressCircle4, circumference4, 85);
+  // animation
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        delay: 400,
+        duration: 2500,
+      });
 
-    function setProgress(progressCircle, circumference, percent) {
-        let offset = circumference - (percent / 100) * circumference;
-        progressCircle.style.strokeDasharray = circumference;
-        progressCircle.style.strokeDashoffset = offset;
-    }
+      ScrollReveal().reveal(
+        ".services_home_text,.services_centertext",
+        { delay: 200, origin: "left" }
+      );
+      ScrollReveal().reveal(".services_secondflex_heading", { delay: 500, origin: "left" });
 </script>
 </html>
