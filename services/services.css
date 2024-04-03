@@ -170,6 +170,8 @@ input:checked + label .description {
     background-color: rgb(192, 186, 186);
 }
 
+/* slider */
+
 .services_sliders{
     display: flex !important;
 }
@@ -178,26 +180,26 @@ input:checked + label .description {
     padding: 7rem 2rem;
     width: 50%;
 }
-.services_sliders_right{
+ .services_sliders_right{
   width: 50%;
 }
 .services_sliders_right img{
   max-width: 100%;
   display: block;
   width: 100%;
-}
-.service_op1_slider_wrapper{
+} 
+ /* .service_op1_slider_wrapper{
   position: relative;
-}
-.service_op_1_slider_arrow{
+} 
+ .service_op_1_slider_arrow{
   display: flex;
   align-items: center;
   position: absolute;
   bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
-}
-.service_op_1_slider_arrow_left{
+} 
+ .service_op_1_slider_arrow_left{
   background-color: #D9D9D9;
   padding: 29px 19px;
   cursor: pointer;
@@ -212,12 +214,13 @@ input:checked + label .description {
     color: white;
     font-size: 59px;
     padding: 2rem 3rem;
-}
+} 
 .services_sliders_para{
     color: white;
     font-size: 15px;
     padding: 0rem 3rem;
-}
+}   */
+
 /* 5thsection */
 
 /* 
@@ -310,13 +313,13 @@ input:checked + label .description {
 
   /* section eight */
 
-  .circless{
+  /* .circless{
     display: flex;
     gap: 3rem;
     margin-top: 10rem;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .circular-progress{
     position: relative;
@@ -336,17 +339,18 @@ input:checked + label .description {
     border-radius: 50%;
     background-color: #fff;
 }
-.progress-value{
+
+/* .progress-value{
     position: relative;
     font-size: 40px;
     font-weight: 600;
     color: rgb(129, 128, 128);
 }
-.text{
+ .text{
     font-size: 30px;
     font-weight: 500;
     color: #606060;
-}
+}  */
 
 /* 
   .services_eightflex{
