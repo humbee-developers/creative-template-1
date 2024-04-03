@@ -34,57 +34,59 @@
     <link rel="stylesheet" href="../global.css" />
     <!-- cdn scrollreveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Document</title>
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Aboutus</title>
   </head>
   <body>
     <div>
-      <img class="about_img" src="../images/imgone.png" alt="" />
-      <h1 class="about_text">ABOUT US</h1>
-      <p class="about_para">
+      <img class="w-full" src="../images/imgone.png" alt="" />
+      <h1 class="about_text absolute w-549 h-107 top-[46%] left-[10%] text-white text-8xl font-normal leading-106 text-left">ABOUT US</h1>
+      <p class="about_para absolute w-549 h-107 top-[50%] left-[43%] text-white text-base font-normal leading-5 text-left">
         Lorem Ipsum is simply dummy text of the printing <br />and typesetting
         industry. Lorem Ipsum has been<br />
         the industry's standard dummy
       </p>
     </div>
     <!-- 2nd aboutflex  -->
-    <div class="about_secondflex">
-      <div class="box">
-        <div class="box_size">
+    <div class="about_secondflex grid grid-cols-4">
+      <div class="box border border-gray-300 bg-white overflow-hidden relative ">
+        <div class="p-32 md:p-16  hover:text-white">
           <img class="box_icon" src="../images/GlobeStand.png" />
-          <h1 class="box_heading">Lorem Ipsum is simply.</h1>
-          <p class="box_para">
+          <h1 class="text-gray-700  text-2xl font-normal leading-8 text-left ">Lorem Ipsum is simply.</h1>
+          <p class="text-xs font-normal mt-4 leading-4 text-left">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy
           </p>
         </div>
       </div>
-      <div class="box">
-        <div class="box_size">
+      <div class="box border border-gray-300 bg-white">
+        <div class="p-32 md:p-16  hover:text-white">
           <img class="box_icon" src="../images/Grains.png" />
-          <h1 class="box_heading">Lorem Ipsum is simply.</h1>
-          <p class="box_para">
+          <h1 class="text-gray-700 text-2xl font-normal leading-8 text-left">Lorem Ipsum is simply.</h1>
+          <p class="text-xs font-normal mt-4 leading-4 text-left">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy
           </p>
         </div>
       </div>
-      <div class="box">
-        <div class="box_size">
+      <div class="box border border-gray-300 bg-white">
+        <div class="p-32 md:p-16  hover:text-white">
           <!-- <img class="box_icon" src="Vector.png" /> -->
           <img class="box_icon" src="../images/GlobeStand.png" />
-          <h1 class="box_heading">Lorem Ipsum is simply.</h1>
-          <p class="box_para">
+          <h1 class="text-gray-700 text-2xl font-normal leading-8 text-left">Lorem Ipsum is simply.</h1>
+          <p class="text-xs font-normal mt-4 leading-4 text-left">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy
           </p>
         </div>
       </div>
-      <div class="box">
-        <div class="box_size">
+      <div class="box border border-gray-300 bg-white">
+        <div class="p-32 md:p-16  hover:text-white">
           <img class="box_icon" src="../images/Medal.png" alt="image" />
           <!-- <img class="box_icon" src="GlobeStand.png" /> -->
-          <h1 class="box_heading">Lorem Ipsum is simply.</h1>
-          <p class="box_para">
+          <h1 class="text-gray-700 text-2xl font-normal leading-8 text-left">Lorem Ipsum is simply.</h1>
+          <p class="text-xs font-normal mt-4 leading-4 text-left">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy
           </p>
@@ -92,29 +94,29 @@
       </div>
     </div>
     <!-- 3rd aboutflex -->
-    <div class="parent">
+    <div class="flex w-full justify-around text-black mt-40">
       <div class="left">
-        <h1 class="thirdflex_heading">
+        <h1 class="thirdflex_heading text-4xl font-normal leading-9 text-left mt-24">
           Lorem Ipsum is simply <br />dummy text of the printing and
           <br />typesetting industry.
         </h1>
-        <p class="thirdflex_para">
+        <p class="thirdflex_para text-base mt-4 font-normal leading-4 text-left text-black">
           Lorem Ipsum is simply dummy text of the printing<br />
           and typesetting industry. Lorem Ipsum has been <br />the industry's
           standard dummy
         </p>
 
         <div>
-          <div class="thirdflex_checklist">
-            <div class="thirdflex_checklist_text">
+          <div class="thirdflex_checklist mt-4">
+            <div class="flex gap-4">
               <span><img src="../images/check.svg" /></span>Lorem Ipsum is
               simply
             </div>
-            <div class="thirdflex_checklist_text">
+            <div class="flex gap-4">
               <span><img src="../images/check.svg" /></span>Lorem Ipsum is
               simply
             </div>
-            <div class="thirdflex_checklist_text">
+            <div class="flex gap-4">
               <span><img src="../images/check.svg" /></span>Lorem Ipsum is
               simply
             </div>
@@ -126,27 +128,27 @@
       </div>
     </div>
     <!-- 4th aboutflex -->
-    <div class="second parent">
+    <div class="flex w-full justify-around text-black mt-40">
       <div class="left">
         <img src="../images/img3.png" alt="Image" />
       </div>
-      <div class="right right_accord">
+      <div class="right ">
         <div
           class="accordion accordion-flush"
           id="accordionExample"
           data-bs-ride="carousel"
         >
-          <div class="accordion-item border-0">
+          <div class="accordion-item border-b border-black">
             <h2 class="accordion-header">
               <button
-                class="accordion-button"
+                class="accordion-button text-3xl"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                <span class="acc_num">01</span>Lorem Ipsum is simply.
+                <span class="text-gray-500 text-3xl pr-6">01</span>Lorem Ipsum is simply.
               </button>
             </h2>
             <div
@@ -155,7 +157,7 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <p class="accordion-body-para">
+                <p class="text-gray-700 text-sm text-left ml-12">
                   Lorem Ipsum is simply dummy text of the printing <br />
                   and typesetting industry. Lorem Ipsum has been <br />
                   the industry's standard dummy
@@ -163,17 +165,17 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item border-0">
+          <div class="accordion-item border-b border-black">
             <h2 class="accordion-header">
               <button
-                class="accordion-button collapsed"
+                class="accordion-button text-3xl collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                <span class="acc_num">02</span>Lorem Ipsum is simply.
+                <span class="text-gray-500 text-3xl pr-6">02</span>Lorem Ipsum is simply.
               </button>
             </h2>
             <div
@@ -182,7 +184,7 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <p>
+                <p class="text-gray-700 text-sm text-left ml-12">
                   Lorem Ipsum is simply dummy text of the printing <br />
                   and typesetting industry. Lorem Ipsum has been <br />
                   the industry's standard dummy
@@ -190,17 +192,17 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item border-0">
+          <div class="accordion-item border-b border-black">
             <h2 class="accordion-header">
               <button
-                class="accordion-button collapsed"
+                class="accordion-button text-3xl collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                <span class="acc_num">03</span>Lorem Ipsum is simply.
+                <span class="text-gray-500 text-3xl pr-6">03</span>Lorem Ipsum is simply.
               </button>
             </h2>
             <div
@@ -209,7 +211,7 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <p>
+                <p class="text-gray-700 text-sm text-left ml-12">
                   Lorem Ipsum is simply dummy text of the printing <br />
                   and typesetting industry. Lorem Ipsum has been <br />
                   the industry's standard dummy
@@ -221,12 +223,12 @@
       </div>
     </div>
     <!-- 5th slide image -->
-    <div class="fifth_slide">
-      <img class="fifth_img" src="../images/img4.png" alt="img4" />
+    <div class="mt-20">
+      <img class="w-full" src="../images/img4.png" alt="img4" />
     </div>
 
     <!-- 6th flex slider -->
-    <div class="slider">
+    <div class="bg-gray-300">
       <div
         id="carouselExampleAutoplaying"
         class="carousel slide"
@@ -234,70 +236,70 @@
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="carousalSpacingOuter">
-              <h1 class="carousalHeaderText">
+            <div class="w-11/12 mx-auto">
+              <h1 class="text-6xl font-normal">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </h1>
-              <div>
+              <div class="flex">
                 <img src="../images/Star 1.svg" alt="" />
                 <img src="../images/Star 1.svg" alt="" />
                 <img src="../images/Star 1.svg" alt="" />
                 <img src="../images/Star 1.svg" alt="" />
                 <img src="../images/Star 1.svg" alt="" />
               </div>
-              <div class="carousalFlex">
+              <div class="flex flex-wrap mt-4 gap-4">
                 <div class="carousalFlex1">
                   <img src="../images/iconimg.svg" alt="" />
                 </div>
-                <div class="carousalFlex2">Lorem Ipsum</div>
+                <div class="flex justify-center items-center text-base">Lorem Ipsum</div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="carousalSpacingOuter">
-              <h1 class="carousalHeaderText">
+            <div class="w-11/12 mx-auto">
+              <h1 class="text-6xl font-normal">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. velit.
               </h1>
-              <div>
+              <div class="flex">
                 <img src="../images/Star 1.svg" alt="" />
                 <img src="../images/Star 1.svg" alt="" />
                 <img src="../images/Star 1.svg" alt="" />
                 <img src="../images/Star 1.svg" alt="" />
                 <img src="../images/Star 1.svg" alt="" />
               </div>
-              <div class="carousalFlex">
+              <div class="flex flex-wrap mt-4 gap-4">
                 <div class="carousalFlex1">
                   <img src="../images/iconimg.svg" alt="" />
                 </div>
-                <div class="carousalFlex2">Lorem Ipsum</div>
+                <div class="flex justify-center items-center text-base">Lorem Ipsum</div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="carousalSpacingOuter">
-              <h1 class="carousalHeaderText">
+            <div class="w-11/12 mx-auto">
+              <h1 class="text-6xl font-normal">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
                 quae.
               </h1>
-              <div>
+              <div class="flex">
                 <img src="../images/Star 1.svg" alt="" />
                 <img src="../images/Star 1.svg" alt="" />
                 <img src="../images/Star 1.svg" alt="" />
                 <img src="../images/Star 1.svg" alt="" />
                 <img src="../images/Star 1.svg" alt="" />
               </div>
-              <div class="carousalFlex">
+              <div class="flex flex-wrap mt-4 gap-4">
                 <div class="carousalFlex1">
                   <img src="../images/iconimg.svg" alt="" />
                 </div>
-                <div class="carousalFlex2">Lorem Ipsum</div>
+                <div class="flex justify-center items-center text-base">Lorem Ipsum</div>
               </div>
             </div>
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          class="carousel-control-prev absolute left-[63rem] top-[10rem] h-auto w-auto text-black"
           type="button"
           data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="prev"
@@ -307,13 +309,13 @@
           <span class="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next"
+          class="carousel-control-next absolute right-[23rem] top-[10rem] h-auto w-auto"
           type="button"
           data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="next"
         >
           <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-          <i class="fa-solid fa-arrow-right-long fa-2x arrow2"></i>
+          <i class="fa-solid fa-arrow-right-long fa-2x text-black"></i>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -321,9 +323,9 @@
 
     <!-- 7th section -->
     <div>
-      <div class="lastSectionImageOuter">
+      <div class="relative">
         <img src="../images/transparent.png" />
-        <img class="lastSectionSecImage" src="../images/men.png" alt="" />
+        <img class="absolute right-0 top-[-8rem]" src="../images/men.png" alt="" />
       </div>
     </div>
 
@@ -337,7 +339,7 @@
       });
 
       ScrollReveal().reveal(
-        ".about_text,.thirdflex_heading,.thirdflex_heading",
+        ".about_text,.thirdflex_heading,.thirdflex_para,.thirdflex_checklist",
         { delay: 300, origin: "left" }
       );
       ScrollReveal().reveal(".about_para", { delay: 900, origin: "left" });
