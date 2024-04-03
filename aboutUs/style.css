@@ -71,13 +71,17 @@
   overflow: hidden;
   position: relative;
 } */
-/* 
-.about_secondflex .box:hover .box_size {
+
+/* .about_secondflex .box:hover .box_size {
   color: #fff;
-} */
+} 
 .about_secondflex .box:hover h1 {
   color: #fff;
 }
+
+.about_secondflex .box:hover .just {
+  color: #fff;
+} */
 
 .about_secondflex .box:before {
   content: "";
