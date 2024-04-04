@@ -169,7 +169,7 @@
 .carousel {
   width: 100%;
 } */
-
+/* 
 html.sr .load-hidden {
   visibility: hidden;
 }
@@ -180,12 +180,14 @@ html.sr .load-hidden {
 :focus {
   outline: 0 !important;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
-}
+} */
 
-
+/* 
 .carousel-inner {
   padding: 12rem 14rem;
-}
+} */
+
+
 /* 
 .accordion-item {
   border-bottom: 1px solid black !important ;
