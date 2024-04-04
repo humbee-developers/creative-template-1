@@ -544,27 +544,27 @@
   color: #fff;
   width: 164px;
 } */
-.image{
+/* .image{
   width: 25%;
-}
+} */
 /* three cards */
 
-.threecards {
+/* .threecards {
   padding: 50px 0 125px;
-}
+} */
 
-.threecards_heading {
+/* .threecards_heading {
   color: #ff7e47;
   font-size: 67px;
   margin: 0 auto 30px;
   width: 750px;
-}
-.threecards_text {
+} */
+/* .threecards_text {
   width: 733px;
   margin: 0 auto 60px;
   font-size: 20px;
   color: #002d70;
-}
+} */
 .threecards_list {
   display: flex;
   padding: 0 350px;
