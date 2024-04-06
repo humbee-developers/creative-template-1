@@ -50,7 +50,7 @@
           </a>
         </div>
         <div
-          class="navigation flex w-[65%] lg:w-[700px] justify-between px-[5px] py-0 border-b-white border-b border-solid"
+          class="navigation flex w-[65%] lg:w-[700px] justify-between px-[5px] py-0 border-b-white border-b border-solid hidden md:flex"
         >
           <ul class="nav flex items-center">
             <li class="pr-5 pb-5 mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20">
@@ -282,9 +282,13 @@
         </div>
       </section>
       <section>
-        <div class="tab_section px-[20px] md:px-[60px] lg:px-[120px] xl:px-[200px] py-[122px]">
-          <div class="tab_section_wrapper flex justify-between">
-            <div class="tabs w-3/5">
+        <div
+          class="tab_section px-[20px] sm:px-[40px] md:px-[60px] lg:px-[120px] xl:px-[200px] py-[122px]"
+        >
+          <div
+            class="tab_section_wrapper flex flex-col md:flex-row justify-between"
+          >
+            <div class="tabs w-full md:w-3/5">
               <div class="tabs_wrapper flex">
                 <div
                   class="tab1 tab md:text-xl lg:text-3xl font-normal text-white cursor-pointer pt-2.5 pb-2 px-[15px] rounded-t-[20px] bg-[#002d70]"
@@ -312,7 +316,7 @@
                 >
                   <div class="tab1_content_wrapper tab_content_wrapper">
                     <div
-                      class="tab1_content_title tab_content_title text-4xl font-normal leading-[46px] mt-0 mb-[22px] mx-0 pr-[20px] md:pr-[0] lg:pr-[60px] xl:pr-[135px]"
+                      class="tab1_content_title tab_content_title text-4xl font-normal leading-[46px] mt-0 mb-[22px] mx-0 pr-[0] lg:pr-[60px] xl:pr-[135px]"
                     >
                       Tab1 Ipsum is simply dummy text of the printing and
                       typesetting industry.
@@ -325,11 +329,11 @@
                       standard dummy text ever since the
                     </div>
                     <div
-                      class="tab_content_btn_and_link tab1_links flex justify-between items-center"
+                      class="tab_content_btn_and_link tab1_links flex flex-col md:flex-row justify-between md:items-center flex-wrap gap-[20px] sm:gap-[10px]"
                     >
                       <a
                         href=""
-                        class="readmore bg-white text-black no-underline inline-flex text-xs items-center px-[15px] py-2.5"
+                        class="readmore bg-white text-black no-underline inline-flex text-xs items-center px-[15px] py-2.5 w-max"
                         ><img
                           class="w-[30px] mr-[15px] pr-2.5 border-r-black border-r border-solid"
                           src="images/plus.svg"
@@ -338,36 +342,36 @@
                       >
                       <a
                         href="#"
-                        class="link text-white text-[11px] font-normal pr-[65px]"
+                        class="link text-white text-[11px] font-normal lg:pr-[0] xl:pr-[65px]"
                         >Lorem Ipsum is simply dummy text of the printing
                       </a>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="tab2_content tab_content bg-[#ff7e47] text-white pl-11 pr-[46px] pt-[91px] pb-[63px] rounded-tr-[20px] rounded-br-[20px] rounded-bl-[20px]"
+                  class="tab2_content tab_content bg-[#ff7e47] text-white px-[20px] md:px-[30px] lg:px-[46px] pt-[91px] pb-[63px] rounded-tr-[20px] rounded-br-[20px] rounded-bl-[20px]"
                   id="tab2"
                 >
                   <div class="tab2_content_wrapper tab_content_wrapper">
                     <div
-                      class="tab2_content_title tab_content_title text-4xl font-normal leading-[46px] mt-0 mb-[22px] mx-0 pr-[135px]"
+                      class="tab2_content_title tab_content_title text-4xl font-normal leading-[46px] mt-0 mb-[22px] mx-0 pr-[0] lg:pr-[60px] xl:pr-[135px]"
                     >
                       Tab2 Ipsum is simply dummy text of the printing and
                       typesetting industry.
                     </div>
                     <div
-                      class="tab2_content_text tab_content_text text-base font-normal leading-[22px] mt-0 mb-[23px] mx-0 pr-[135px]"
+                      class="tab2_content_text tab_content_text text-base font-normal leading-[22px] mt-0 mb-[23px] mx-0 pr-[20px] lg:pr-[60px] xl:pr-[135px]"
                     >
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the
                     </div>
                     <div
-                      class="tab_content_btn_and_link tab2_links flex justify-between items-center"
+                      class="tab_content_btn_and_link tab2_links flex flex-col md:flex-row justify-between md:items-center flex-wrap gap-[20px] sm:gap-[10px]"
                     >
                       <a
                         href=""
-                        class="readmore bg-white text-black no-underline inline-flex text-xs items-center px-[15px] py-2.5"
+                        class="readmore bg-white text-black no-underline inline-flex text-xs items-center px-[15px] py-2.5 w-max"
                         ><img
                           class="w-[30px] mr-[15px] pr-2.5 border-r-black border-r border-solid"
                           src="images/plus.svg"
@@ -377,36 +381,36 @@
                       >
                       <a
                         href="#"
-                        class="link text-white text-[11px] font-normal pr-[65px]"
+                        class="link text-white text-[11px] font-normal lg:pr-[0] xl:pr-[65px]"
                         >Lorem Ipsum is simply dummy text of the printing
                       </a>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="tab3_content tab_content bg-[#dedede] hidden pl-11 pr-[46px] pt-[91px] pb-[63px] rounded-tr-[20px] rounded-br-[20px] rounded-bl-[20px] text-black"
+                  class="tab3_content tab_content text-black bg-[#dedede] px-[20px] md:px-[30px] lg:px-[46px] pt-[91px] pb-[63px] rounded-tr-[20px] rounded-br-[20px] rounded-bl-[20px]"
                   id="tab3"
                 >
-                  <div class="tab3_content_wrapper tab_content_wrapper">
+                  <div class="tab3_content_wrapper">
                     <div
-                      class="tab3_content_title tab_content_title text-4xl font-normal leading-[46px] mt-0 mb-[22px] mx-0 pr-[135px]"
+                      class="tab3_content_title tab_content_title text-4xl font-normal leading-[46px] mt-0 mb-[22px] mx-0 pr-[0] lg:pr-[60px] xl:pr-[135px]"
                     >
                       Tab3 Ipsum is simply dummy text of the printing and
                       typesetting industry.
                     </div>
                     <div
-                      class="tab3_content_text tab_content_text text-base font-normal leading-[22px] mt-0 mb-[23px] mx-0 pr-[135px]"
+                      class="tab3_content_text tab_content_text text-base font-normal leading-[22px] mt-0 mb-[23px] mx-0 pr-[20px] lg:pr-[60px] xl:pr-[135px]"
                     >
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the
                     </div>
                     <div
-                      class="tab_content_btn_and_link tab3_links flex justify-between items-center"
+                      class="tab_content_btn_and_link tab3_links flex flex-col md:flex-row justify-between md:items-center flex-wrap gap-[20px] sm:gap-[10px]"
                     >
                       <a
                         href=""
-                        class="readmore bg-white text-black no-underline inline-flex text-xs items-center px-[15px] py-2.5"
+                        class="readmore bg-white text-black no-underline inline-flex text-xs items-center px-[15px] py-2.5 w-max"
                         ><img
                           class="w-[30px] mr-[15px] pr-2.5 border-r-black border-r border-solid"
                           src="images/plus.svg"
@@ -416,7 +420,7 @@
                       >
                       <a
                         href="#"
-                        class="link text-black text-[11px] font-normal pr-[65px]"
+                        class="link text-white text-[11px] font-normal lg:pr-[0] xl:pr-[65px]"
                         >Lorem Ipsum is simply dummy text of the printing
                       </a>
                     </div>
@@ -424,10 +428,12 @@
                 </div>
               </div>
             </div>
-            <div class="tab_section_right w-2/5 pl-5 pr-0 pt-16 pb-0">
+            <div
+              class="tab_section_right w-full md:w-2/5 pl-0 md:pl-5 pr-0 pt-16 pb-0"
+            >
               <div class="tab_section_right_wrapper">
                 <div
-                  class="tab_section_right_wrapper_image mt-0 mb-[29px] mx-0"
+                  class="tab_section_right_wrapper_image hidden md:block mt-0 mb-[29px] mx-0"
                 >
                   <img
                     class="max-w-full block"
@@ -435,7 +441,7 @@
                     alt="dot_image"
                   />
                 </div>
-                <div class="tab_section_right_link w-max ml-auto pr-5">
+                <div class="tab_section_right_link w-max m-0 md:ml-auto pr-5">
                   <div
                     class="tab_section_right_wrapper_link pl-[20px] md:pl-[10px] lg:pl-6 border-l-black border-l border-solid tab_right_link_1"
                   >
@@ -473,16 +479,16 @@
           class="home_card_section bg-black text-white pt-[196px] pb-[154px] px-[20px] sm:px-[20px] md:px-[40px] lg:px-[60px] xl:px-[150px] 2xl:px-[300px]"
         >
           <div
-            class="home_card_section_wrapper flex justify-between items-end mt-0 mb-[83px] mx-0"
+            class="home_card_section_wrapper flex flex-col md:flex-row justify-between items-center items-end mt-0 mb-[83px] mx-0"
           >
             <div
-              class="home_card_section_left_text text-[42px] font-normal leading-[54px] w-[45%]"
+              class="home_card_section_left_text text-[34px] md:text-[38px] lg:text-[42px] font-normal leading-[54px] md:w-[49%] xl:w-[48%] mb-[20px] md:mb-[0]"
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </div>
             <div
-              class="home_card_section_right_text text-[25px] font-normal leading-8 w-[38%]"
+              class="home_card_section_right_text text-[20px] md:text-[22px] lg:text-[25px] font-normal leading-8 md:w-[42%] lg:w-[40%] xl:w-[38%]"
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum is simply dummy text of the printing and
@@ -502,7 +508,7 @@
                   01
                 </div>
                 <div
-                  class="home_cards_item_wrapper flex items-center h-full justify-between pl-[46px] pr-[55px] pt-5 pb-10"
+                  class="home_cards_item_wrapper flex items-center h-full justify-between md:pl-[10px] lg:pl-[46px] md:pr-[10px] lg:pr-[55px] pt-5 pb-10"
                 >
                   <div class="home_cards_item_left w-2/5">
                     <img
@@ -553,7 +559,7 @@
                   02
                 </div>
                 <div
-                  class="home_cards_item_wrapper flex items-center h-full justify-between pl-[46px] pr-[55px] pt-5 pb-10"
+                  class="home_cards_item_wrapper flex items-center h-full justify-between md:pl-[10px] lg:pl-[46px] md:pr-[10px] lg:pr-[55px] pt-5 pb-10"
                 >
                   <div class="home_cards_item_left w-2/5">
                     <img
@@ -604,7 +610,7 @@
                   03
                 </div>
                 <div
-                  class="home_cards_item_wrapper flex items-center h-full justify-between pl-[46px] pr-[55px] pt-5 pb-10"
+                  class="home_cards_item_wrapper flex items-center h-full justify-between md:pl-[10px] lg:pl-[46px] md:pr-[10px] lg:pr-[55px] pt-5 pb-10"
                 >
                   <div class="home_cards_item_left w-2/5">
                     <img
@@ -655,7 +661,7 @@
                   04
                 </div>
                 <div
-                  class="home_cards_item_wrapper flex items-center h-full justify-between pl-[46px] pr-[55px] pt-5 pb-10"
+                  class="home_cards_item_wrapper flex items-center h-full justify-between md:pl-[10px] lg:pl-[46px] md:pr-[10px] lg:pr-[55px] pt-5 pb-10"
                 >
                   <div class="home_cards_item_left w-2/5">
                     <img
@@ -710,7 +716,7 @@
               WHY CHOOSE US
             </div>
             <div
-              class="why_choose_us_text text-xl text-[#888888] mx-auto my-0 w-full md:w-full xl:w-[936px]"
+              class="why_choose_us_text text-[18px] md:text-xl text-[#888888] mx-auto my-0 w-full md:w-full xl:w-[936px]"
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -718,10 +724,10 @@
               type and scrambled it
             </div>
             <div
-              class="circle_image_section flex justify-center mt-[110px] mb-[66px] mx-0 py-0"
+              class="circle_image_section flex justify-center mt-[40px] md:mt-[110px] mb-[20px] md:mb-[66px] mx-0 py-0"
             >
               <div
-                class="circle_image_section_left flex flex-col justify-between px-0 py-[60px] pr-[20px]"
+                class="circle_image_section_left flex-col justify-between px-0 py-[60px] pr-[20px] hidden md:flex"
               >
                 <div class="circle_image_section_left_top w-[190px]">
                   <div
@@ -760,7 +766,7 @@
                 />
               </div>
               <div
-                class="circle_image_section_right flex flex-col justify-between px-0 py-[60px] pl-[20px]"
+                class="circle_image_section_right flex-col justify-between px-0 py-[60px] pl-[20px] hidden md:flex"
               >
                 <div class="circle_image_section_right_top w-[190px]">
                   <div class="circle_image_heading text-[#002d70] text-xl">
@@ -773,6 +779,64 @@
                   </div>
                 </div>
                 <div class="circle_image_section_right_bottom w-[190px]">
+                  <div class="circle_image_heading text-[#002d70] text-xl">
+                    SPARKLING CLEAN
+                  </div>
+                  <div class="circle_image_text text-[#ff7e47] text-xs">
+                    We keep your home sparkling clean and germ free. Our
+                    disinfecting process kills 99% of common bacteria and
+                    viruses.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between md:hidden">
+              <div
+                class="circle_image_section_left flex flex-col justify-between px-0 py-[20px] pr-[10px] gap-4 w-[50%]"
+              >
+                <div class="circle_image_section_left_top w-full">
+                  <div
+                    class="circle_image_heading text-[#002d70] text-xl text-left"
+                  >
+                    SPARKLING CLEAN
+                  </div>
+                  <div
+                    class="circle_image_text text-[#ff7e47] text-xs text-left"
+                  >
+                    We keep your home sparkling clean and germ free. Our
+                    disinfecting process kills 99% of common bacteria and
+                    viruses.
+                  </div>
+                </div>
+                <div class="circle_image_section_left_bottom w-full">
+                  <div
+                    class="circle_image_heading text-[#002d70] text-xl text-left"
+                  >
+                    SPARKLING CLEAN
+                  </div>
+                  <div
+                    class="circle_image_text text-[#ff7e47] text-xs text-left"
+                  >
+                    We keep your home sparkling clean and germ free. Our
+                    disinfecting process kills 99% of common bacteria and
+                    viruses.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="circle_image_section_right flex flex-col justify-between px-0 py-[20px] pl-[10px] w-[50%]"
+              >
+                <div class="circle_image_section_right_top w-full">
+                  <div class="circle_image_heading text-[#002d70] text-xl">
+                    SPARKLING CLEAN
+                  </div>
+                  <div class="circle_image_text text-[#ff7e47] text-xs">
+                    We keep your home sparkling clean and germ free. Our
+                    disinfecting process kills 99% of common bacteria and
+                    viruses.
+                  </div>
+                </div>
+                <div class="circle_image_section_right_bottom w-full">
                   <div class="circle_image_heading text-[#002d70] text-xl">
                     SPARKLING CLEAN
                   </div>
@@ -805,92 +869,100 @@
             style="background-image: url('images//factoryFullImage.png')"
           >
             <div class="factoryImage_content flex justify-center">
-              <div class="factoryImage_content_item pr-10 md:w-3/12 lg:w-auto">
+              <div
+                class="factoryImage_content_item pr-5 xl:pr-10 w-3/12 md:w-[22%] lg:w-auto"
+              >
                 <div class="factory_item_wrapper flex">
-                  <div class="factory_item_line md:w-[10px]">
+                  <div class="factory_item_line">
                     <img
                       class="h-[90%]"
                       src="images/factoryFirstLine.svg"
                       alt="factoryFirstLine"
                     />
                   </div>
-                  <div class="factory_image_text pl-10 pr-0 pt-5 pb-0 lg:pl-5">
+                  <div class="factory_image_text pl-5 xl:pl-10 pr-0 pt-5 pb-0">
                     <div
-                      class="big_num text-[107px] text-white md:text-[60px] lg:text-[80px]"
+                      class="big_num text-[50px] text-white md:text-[60px] lg:text-[80px] xl:text-[107px]"
                     >
                       20%
                     </div>
                     <div
-                      class="image_text text-[15px] text-white w-[164px] md:w-full"
+                      class="image_text text-[15px] text-white md:w-[164px] w-full"
                     >
                       essentially unchanged. It was popularised
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="factoryImage_content_item pr-10 md:w-3/12 lg:w-auto">
+              <div
+                class="factoryImage_content_item pr-5 xl:pr-10 w-3/12 md:w-[22%] lg:w-auto"
+              >
                 <div class="factory_item_wrapper flex">
-                  <div class="factory_item_line md:w-[10px]">
+                  <div class="factory_item_line">
                     <img
                       class="h-[90%]"
                       src="images/factorySecondLine.svg"
                       alt="factoryFirstLine"
                     />
                   </div>
-                  <div class="factory_image_text pl-10 pr-0 pt-5 pb-0 lg:pl-5">
+                  <div class="factory_image_text pl-5 xl:pl-10 pr-0 pt-5 pb-0">
                     <div
-                      class="big_num text-[107px] text-white md:text-[60px] lg:text-[80px]"
+                      class="big_num text-[107px] text-[50px] text-white md:text-[60px] lg:text-[80px] xl:text-[107px]"
                     >
                       30%
                     </div>
                     <div
-                      class="image_text text-[15px] text-white w-[164px] md:w-full"
+                      class="image_text text-[15px] text-white md:w-[164px] w-full"
                     >
                       essentially unchanged. It was popularised
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="factoryImage_content_item pr-10 md:w-3/12 lg:w-auto">
+              <div
+                class="factoryImage_content_item pr-5 xl:pr-10 w-3/12 md:w-[22%] lg:w-auto"
+              >
                 <div class="factory_item_wrapper flex">
-                  <div class="factory_item_line md:w-[10px]">
+                  <div class="factory_item_line">
                     <img
                       class="h-[90%]"
                       src="images/factoryThirdLine.svg"
                       alt="factoryFirstLine"
                     />
                   </div>
-                  <div class="factory_image_text pl-10 pr-0 pt-5 pb-0 lg:pl-5">
+                  <div class="factory_image_text pl-5 xl:pl-10 pr-0 pt-5 pb-0">
                     <div
-                      class="big_num text-[107px] text-white md:text-[60px] lg:text-[80px]"
+                      class="big_num text-[50px] text-white md:text-[60px] lg:text-[80px] xl:text-[107px]"
                     >
                       50%
                     </div>
                     <div
-                      class="image_text text-[15px] text-white w-[164px] md:w-full"
+                      class="image_text text-[15px] text-white md:w-[164px] w-full"
                     >
                       essentially unchanged. It was popularised
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="factoryImage_content_item pr-10 md:w-3/12 lg:w-auto">
+              <div
+                class="factoryImage_content_item pr-5 xl:pr-10 w-3/12 md:w-[22%] lg:w-auto"
+              >
                 <div class="factory_item_wrapper flex">
-                  <div class="factory_item_line md:w-[10px]">
+                  <div class="factory_item_line">
                     <img
                       class="h-auto"
                       src="images/factoryForthLine.svg"
                       alt="factoryFirstLine"
                     />
                   </div>
-                  <div class="factory_image_text pl-10 pr-0 pt-5 pb-0 lg:pl-5">
+                  <div class="factory_image_text pl-5 xl:pl-10 pr-0 pt-5 pb-0">
                     <div
-                      class="big_num text-[107px] text-white md:text-[60px] lg:text-[80px]"
+                      class="big_num text-[107px] text-[50px] text-white md:text-[60px] lg:text-[80px] xl:text-[107px]"
                     >
                       5%
                     </div>
                     <div
-                      class="image_text text-[15px] text-white w-[164px] md:w-full"
+                      class="image_text text-[15px] text-white md:w-[164px] w-full"
                     >
                       essentially unchanged. It was popularised
                     </div>
@@ -1205,7 +1277,7 @@
               ></iframe>
             </div>
             <div
-              class="contactForm w-[420px] bg-white absolute -translate-y-2/4 pl-[15px] pr-0 pt-[62px] pb-0 right-[110px] top-2/4"
+              class="contactForm w-[90%] sm:w-[420px] bg-white absolute translate-x-[-50%] translate-y-[-50%] md:translate-x-[0] pl-[15px] pr-0 pt-[62px] pb-0 top-[50%] left-[50%] md:left-[auto] right-[auto] sm:right-[60px] md:right-[110px] md:top-2/4"
             >
               <div
                 class="contactForm_heading text-[#002d70] text-[34px] leading-[62.9px] tracking-[1px] uppercase font-semibold mt-0 mb-2.5 mx-0 pl-[15px]"
@@ -1217,24 +1289,28 @@
                   <input
                     type="text"
                     placeholder="Full Name:"
-                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
+                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] sm:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
                   />
                 </div>
                 <div class="form_input pl-[15px]">
                   <input
                     type="text"
                     placeholder="Email:"
-                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
+                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] sm:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
                   />
                 </div>
                 <div class="form_input pl-[15px]">
                   <input
                     type="text"
                     placeholder="Phone Number:"
-                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
+                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] sm:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
                   />
                 </div>
-                <select name="inquiry" id="inquiry" class="selectDrp">
+                <select
+                  name="inquiry"
+                  id="inquiry"
+                  class="selectDrp w-[90%] sm:w-[248px]"
+                >
                   <option value="">Business Inquiry</option>
                   <option value="Business Inquiry 1">Business Inquiry 1</option>
                   <option value="Business Inquiry 2">Business Inquiry 2</option>
@@ -1244,7 +1320,7 @@
                   <input
                     type="text"
                     placeholder="Message :"
-                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
+                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] sm:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
                   />
                 </div>
                 <div class="submit_btn text-right">
@@ -1260,7 +1336,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <!-- <footer>
       <div class="footer_wrapper">
         <div class="footer_col1 footer_col">
           <div class="footer_col_wrapper">
@@ -1338,6 +1414,103 @@
                 <li><a href="#">Medium</a></li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+    <footer
+      class="bg-black text-white pt-20 pb-12 px-[20px] sm:px-12 flex justify-center items-end"
+    >
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-4"
+      >
+        <div
+          class="col-span-1 md:col-span-1 sm:border-r sm:border-gray-300 md:pr-5 sm:px-5 xl:pr-8 flex justify-end flex-col"
+        >
+          <div
+            class="flex items-center justify-center md:justify-start lg:justify-center mb-8"
+          >
+            <a href="/index.html">
+              <img
+                src="../images//footerLogo.png"
+                alt="footerLogo"
+                class="w-60"
+              />
+            </a>
+          </div>
+          <div class="pt-[20px] sm:pt-16">
+            <p class="text-sm leading-5 mb-4">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
+            <p class="text-sm leading-5">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-span-1 md:col-span-1 lg:col-span-1 lg:border-r lg:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex items-end"
+        >
+          <div>
+            <p class="text-sm leading-5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-span-1 lg:col-span-1 sm:border-r sm:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex flex-col justify-end"
+        >
+          <ul class="mb-8">
+            <li><a href="#" class="text-lg uppercase">Home</a></li>
+            <li><a href="#" class="text-lg uppercase">Company</a></li>
+            <li><a href="#" class="text-lg uppercase">Products</a></li>
+            <li>
+              <a href="./services/services.html" class="text-lg uppercase"
+                >Service option 1</a
+              >
+            </li>
+            <li>
+              <a href="./services_option2/index.html" class="text-lg uppercase"
+                >Service option 2</a
+              >
+            </li>
+            <li><a href="#" class="text-lg uppercase">Blogs</a></li>
+          </ul>
+          <form>
+            <div class="text-sm leading-5 mb-4">Newsletter signup</div>
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="bg-[#3C3C3C] text-white w-full px-4 py-2 focus:outline-none placeholder-white placeholder:text-[15px]"
+            />
+          </form>
+        </div>
+        <div
+          class="col-span-1 lg:col-span-1 sm:px-5 xl:pr-8 pt-[20px] flex flex-row sm:flex-col justify-between sm:justify-end"
+        >
+          <div class="mb-8">
+            <ul>
+              <li><a href="#" class="text-sm">Terms & Conditions</a></li>
+              <li><a href="#" class="text-sm">Privacy Policy</a></li>
+              <li><a href="#" class="text-sm">Investor Privacy Notice</a></li>
+              <li><a href="#" class="text-sm">Cookies Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#" class="text-sm">Twitter</a></li>
+              <li><a href="#" class="text-sm">LinkedIn</a></li>
+              <li><a href="#" class="text-sm">Medium</a></li>
+            </ul>
           </div>
         </div>
       </div>
