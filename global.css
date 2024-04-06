@@ -53,4 +53,64 @@ li {
 div {
   font-family: "nueu_montreal_regular";
 }
-
+.selectric-selectDrp {
+  width: 287px;
+  background-color: #fff;
+  margin: 0 0 60px;
+}
+.selectric-selectDrp .selectric {
+  background-color: #fff;
+  position: relative;
+  border: 1px solid #000 !important;
+  padding: 3px 0;
+}
+.selectric-selectDrp .selectric::before {
+  content: "";
+  background-image: url("../images//drpdwn_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 9px;
+  transition: all 0.4s;
+}
+.selectric-open .selectric::before {
+  transform: rotate(180deg) translateY(50%);
+}
+.selectric-items li.highlighted {
+  background: #fff !important;
+  color: #444;
+}
+.selectric-items li:hover {
+  background: #002d70 !important;
+  color: #fff !important;
+}
+.selectric-items li {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  background: #fff !important;
+  color: #444;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "poppins";
+  color: #b8b8b8;
+}
+.selectric-selectDrp .selectric .button {
+  display: none;
+}
+.selectric-selectDrp .selectric .label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 0.3px;
+}
+@media(max-width:640px){
+  .selectric-selectDrp {
+    width: 90%;
+  }
+}
