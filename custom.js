@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
     var dataTab = $(this).attr("data-tab");
     if ($(this).hasClass("active")) {
       $(".tab").removeClass("active");
-      $(".tab1_content").removeClass("active");
+      $(".tab_content").removeClass("active");
     } else {
       $(".tab").removeClass("active");
       $(this).addClass("active");
