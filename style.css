@@ -820,6 +820,11 @@ img.slider_link_arrow {
   color: #000;
   letter-spacing: 0.3px;
 }
+@media(max-width:640px){
+  .selectric-selectDrp {
+    width: 90%;
+  }
+}
 /* .form_input.last .contactInput {
   margin: 0 0 20px;
 } */
@@ -841,8 +846,8 @@ img.slider_link_arrow {
   background-color: #002d70;
 } */
 
-/* Footer */
-footer {
+/* Footer
+/* footer {
   background-color: #000;
   color: #fff;
   padding: 128px 60px 30px;
@@ -942,7 +947,7 @@ footer {
   font-size: 13px;
   line-height: 142.5%;
   letter-spacing: 0.5px;
-}
+} */ */
 /* @media (max-width: 1600px) {
   .banner_content_wrapper {
     padding: 0 120px;
