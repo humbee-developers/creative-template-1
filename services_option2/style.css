@@ -27,14 +27,14 @@
   position: absolute;
   top: 45%;
 }
+translate-x:auto
 .inner_banner_wrapper {
   padding: 0 100px;
 } */
 
 /* Card section */
 
-.servicesBox {
-}
+
 /* .servicesBox .box_heading {
   color: #dfa621;
   font-size: 18px;
@@ -290,13 +290,13 @@
 
 /* Pricing Sec */
 
-.pricing_sec_wrapper {
+/* .pricing_sec_wrapper {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 55px 0 168px;
-}
-.pricecard h2 {
+} */
+/* .pricecard h2 {
   font-family: "DM Sans";
   font-weight: 700;
 }
@@ -327,30 +327,30 @@
 }
 .pricecard {
   background: #fff;
-}
-.pricing_sec_content_wrap {
+} */
+/* .pricing_sec_content_wrap {
   padding: 20px;
   width: 620px;
   margin: 0 auto;
   background-color: #fff;
-}
-.pricing_sec_heading {
+} */
+/* .pricing_sec_heading {
   text-align: center;
   font-size: 51px;
   color: #dfa621;
   line-height: 129%;
   margin: 0 0 15px;
-}
-.pricing_sec_content {
+} */
+/* .pricing_sec_content {
   font-size: 18px;
   text-align: center;
   line-height: 129%;
   color: #4d5f75;
-}
+} */
 
 /* BG Image with Text */
 
-.bgImage_with_text_wrapper {
+/* .bgImage_with_text_wrapper {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -375,8 +375,8 @@
   line-height: 143%;
   color: #fff;
   width: 400px;
-}
-@media (max-width: 1199px) {
+} */
+/* @media (max-width: 1199px) {
   .bgImage_with_text_wrapper {
     min-height: 600px;
   }
@@ -419,11 +419,11 @@
   .bgImage_with_text_content_text {
     width: 90%;
   }
-}
+} */
 
 /* Service Form */
 
-.services_form {
+/* .services_form {
   padding: 120px 350px;
 }
 
@@ -442,39 +442,40 @@
   font-size: 41px;
   font-weight: 600;
   line-height: 44px;
-}
+  text-transform: uppercase;
+} */
 .services_form_wrapper_form .contactForm form {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.services_form_wrapper_form .contactForm form .contactInput {
+/* .services_form_wrapper_form .contactForm form .contactInput {
   background-color: transparent;
   margin: 0 0 36px;
   width: 293px;
-}
-.services_form_wrapper_form .contactForm form .selectric-selectDrp {
+}  */
+/* .services_form_wrapper_form .contactForm form .selectric-selectDrp {
   width: 343px;
   background-color: transparent;
   margin: 0 0 90px;
-}
+} */
 .services_form_wrapper_form .contactForm form .selectric-selectDrp .selectric {
   padding: 9px 0;
   background-color: transparent;
 }
-.services_form_wrapper_form .contactForm form .submit_btn {
+/* .services_form_wrapper_form .contactForm form .submit_btn {
   height: 100%;
   display: flex;
   align-items: end;
   justify-content: end;
-}
-.services_form_wrapper_form .contactForm form .submit_btn button {
+} */
+/* .services_form_wrapper_form .contactForm form .submit_btn button {
   background-color: #dfa621;
-}
-.services_form_wrapper_form .contactForm form .submit_btn button:hover {
+} */
+/* .services_form_wrapper_form .contactForm form .submit_btn button:hover {
   background-color: #4d5f75;
-}
-
+} */
+/* 
 .services_form_wrapper {
   display: flex;
   justify-content: center;
@@ -491,27 +492,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-@media (max-width: 1600px) {
-  .services_form {
-    padding: 120px 180px;
-  }
-}
-@media (max-width: 1359px) {
-  .services_form_wrapper_form .contactForm .contactForm_heading {
-    font-size: 34px;
-    padding-right: 10px;
-  }
-}
-@media (max-width: 1199px) {
-  .services_form {
-    padding: 80px;
-  }
-}
+} */
+
+
+
 @media (max-width: 991px) {
-  .services_form_wrapper_form .contactForm form .contactInput {
-    width: 90%;
-  }
+ 
   .services_form_wrapper_form .contactForm form .selectric-selectDrp {
     width: 96%;
     margin: 0 0 80px;

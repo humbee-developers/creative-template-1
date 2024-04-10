@@ -114,3 +114,66 @@ div {
     width: 90%;
   }
 }
+
+
+.herosection_wrapper .slick-dots {
+  position: absolute;
+  bottom: 48px;
+  right: 48px;
+  display: flex;
+}
+.herosection_wrapper .slick-dots li {
+  margin: 0 2px;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.herosection_wrapper .slick-dots li.slick-active {
+  background-color: #fff;
+}
+.herosection_wrapper .slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.tab_content {
+  display: none;
+}
+.tab_content.active {
+  display: block;
+}
+
+
+.dropdown:hover .dropdown_menu li {
+  display: block;
+}
+
+.dropdown:hover .dropdown_menu--animated {
+  display: block;
+}
+
+.dropdown_menu-6 {
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
