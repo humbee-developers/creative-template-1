@@ -109,12 +109,11 @@ div {
   color: #000;
   letter-spacing: 0.3px;
 }
-@media(max-width:640px){
+@media (max-width: 640px) {
   .selectric-selectDrp {
     width: 90%;
   }
 }
-
 
 .herosection_wrapper .slick-dots {
   position: absolute;
@@ -153,7 +152,6 @@ div {
   display: block;
 }
 
-
 .dropdown:hover .dropdown_menu li {
   display: block;
 }
@@ -178,6 +176,9 @@ div {
   }
 }
 
-.image_index_sldier_item .slick-slide{
+.image_index_sldier_item .slick-slide {
   margin-right: 20px;
+}
+.s_op4_tab.active {
+  color: #dfa621;
 }
