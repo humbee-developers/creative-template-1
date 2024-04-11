@@ -17,6 +17,25 @@ jQuery(document).ready(function ($) {
       }
     }
   });
+  $(".s_op4_tab_content").hide();
+  $(".s_op4_tab_content1").addClass("active").show();
+  $(".s_op4_tab1").addClass("active");
+  $(".s_op4_tab").on("click", function () {
+    var dataTab = $(this).attr("data-tab");
+    if ($(this).hasClass("active")) {
+      $(".s_op4_tab").removeClass("active");
+      $(".tab_content").removeClass("active");
+    } else {
+      $(".s_op4_tab").removeClass("active");
+      $(this).addClass("active");
+      if ($("#" + dataTab).length > 0) {
+        jQuery("#" + dataTab)
+          .addClass("active").show()
+          .siblings()
+          .removeClass("active").hide();
+      }
+    }
+  });
   $(".herosection_wrapper").slick({
     dots: true,
     infinite: true,
@@ -69,7 +88,8 @@ jQuery(document).ready(function ($) {
   $(".image_index_sldier_item")
     .slick({
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 5000,
+      speed: 1000,
       arrows: false,
       dots: false,
       centerMode: false,
