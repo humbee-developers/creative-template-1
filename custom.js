@@ -65,7 +65,27 @@ jQuery(document).ready(function ($) {
       },
     ],
   });
+
+  $(".image_index_sldier_item")
+    .slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: false,
+      centerMode: false,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            variableWidth: false,
+            slidesToShow: 1,
+          },
+        },
+      ],
+    })
+    .on("afterChange", function (event, slick, currentSlide) {
+      $("#currentSlideIndex").text(`0${currentSlide + 1}`);
+    });
   $("select").selectric();
 });
-
-
