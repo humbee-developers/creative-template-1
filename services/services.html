@@ -70,14 +70,115 @@
 
   </head>
   <body>
-    <div>
-      <img class="w-full h-auto" src="../images/serviceshome.png" />
-      <h2 class="services_home_text absolute text-white top-[10%] left-8 text-4xl sm:top-[25%] sm:left-16 sm:text-6xl md:top-[33%] md:text-[5.0rem] lg:text-8xl lg:top-[50%]">
-        LOREM IPSUM <span class="flex gap-4 items-center justify-center sm:gap-6 md:gap-8"
-          ><img class="w-auto h-auto" src="../images/dot.svg" /> SIMPLY</span
-        ><span>DUMMY - (DUMMY)</span>
-      </h2>
-    </div>
+    <header class="z-[100] relative pt-[43px] pr-[37px] pb-[0] pl-[50px]">
+      <nav class="flex justify-between items-center">
+        <div class="logo" data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="10">
+          <a href="/index.html">
+            <img src="/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div
+          class="navigation flex w-[65%] lg:w-[700px] justify-between px-[5px] py-0 border-b-white border-b border-solid hidden md:flex"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="10"
+        >
+          <ul class="nav flex items-center">
+            <li class="pr-5 pb-5 mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20">
+              <a
+                class="text-white text-xs font-normal leading-8 no-underline"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li
+              class="dropdown dropdown-6 pr-5 pb-5 mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]"
+            >
+              <a
+                class="text-white text-xs font-normal leading-8 no-underline"
+                href="#"
+                >Company</a
+              >
+              <ul
+                class="dropdown_menu dropdown_menu--animated dropdown_menu-6 pr-[5rem] md:pr-[5rem] lg:pr-10 mr-5 absolute top-[100%] left-[-15px] w-64 z-[-1] hidden"
+              >
+                <li
+                  class="dropdown_item-1 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="./aboutUs/index.html"
+                    >About Us</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-2 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="./services/services.html"
+                    >Service Option 1</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="./services_option2/index.html"
+                    >Service Option 2</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="./services_option4/index.html"
+                    >Service Option 4</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="pb-5">
+              <a
+                class="text-white text-xs font-normal leading-8 no-underline"
+                href="./aboutUs/index.html"
+                >Products</a
+              >
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="contact_menu text-white text-xs font-normal leading-8 no-underline mt-0 mb-5 mx-0 pl-[45px] border-l-white border-l border-solid"
+            >Contact Us</a
+          >
+        </div>
+      </nav>
+    </header>
+      <section class="hero_section h-[calc(100vh_-_117px)]">
+        <div class="herosection absolute top-0 left-0 w-full ">
+          <div class="inner_banner_image relative h-screen">
+            <img src="./../images/serviceBanner.png" alt="banner_image" class="max-w-full block w-full h-full" />
+            <div class="inner_banner absolute top-[45%]">
+              <div class="inner_banner_wrapper px-[20px] md:px-[60px] lg:px-[100px] py-0">
+              <div class="inner_banner_heading text-[40px] md:text-[50px] lg:text-[60px] xl:text-[60px] 2xl:text-[71px] text-white font-normal leading-[140%] md:leading-[50px] lg:leading-[77px] w-full md:w-[100%] "
+                data-aos="slide-right"
+                data-aos-duration="1000"
+                data-aos-delay="10" >
+                    LOREM IPSUM <span class="flex gap-4 items-center justify-center sm:gap-6 md:gap-8"
+                      ><img class="w-auto h-auto" src="../images/dot.svg" /> SIMPLY</span>DUMMY - (DUMMY)
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     <!-- centertext -->
     <div>
       <h2 class="services_centertext  flex justify-center pt-12 text-[22px] text-black sm:text-2xl  sm:pt-16 md:text-[2rem] md:pt-20 lg:text-5xl lg:pt-24 ">
