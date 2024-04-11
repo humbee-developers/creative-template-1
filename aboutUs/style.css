@@ -83,7 +83,7 @@
   color: #fff;
 } */
 
-.about_secondflex .box:before {
+/* .about_secondflex .box:before {
   content: "";
   position: absolute;
   top: 0;
@@ -99,7 +99,7 @@
 
 .about_secondflex .box:hover:before {
   transform: scaleX(1);
-}
+} */
 
 
 
