@@ -179,3 +179,34 @@ div {
 .image_index_sldier_item .slick-slide {
   margin-right: 20px;
 }
+.about_secondflex .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5f75;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about_secondflex .box:hover:before {
+  transform: scaleX(1);
+} 
+.card > .row > .description {
+  rotate: -90deg;
+}
+input:checked + label {
+  width: 100%;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+.services_sliders{
+  display: flex !important;
+}
