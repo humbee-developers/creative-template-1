@@ -36,6 +36,9 @@
       tailwind.config = {
         theme: {
           extend: {
+            screens: {
+              "3xl": "1600px",
+            },
             colors: {
               yellowcolor: "#DFA621",
             },
@@ -160,11 +163,6 @@
                 >
                   <div
                     class="banner_content_heading text-[35px] md:text-[40px] lg:text-[50px] xl:text-[59px] text-white font-normal lg:leading-[70px] xl:leading-[77px] w-full md:w-[62%]"
-                    data-aos="flip-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="10"
-                    data-aos-once="true"
-                    data-aos-easing="ease-in-out"
                   >
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
@@ -198,18 +196,18 @@
               />
               <div class="banner_content absolute bottom-[100px]">
                 <div
-                  class="banner_content_wrapper flex justify-between px-[150px] py-0"
+                  class="banner_content_wrapper flex flex-col md:flex-row justify-between px-[20px] md:px-[60px] lg:px-[100px] xl:px-[150px] py-0"
                 >
                   <div
-                    class="banner_content_heading text-[59px] text-white font-normal leading-[77px] w-[62%]"
+                    class="banner_content_heading text-[35px] md:text-[40px] lg:text-[50px] xl:text-[59px] text-white font-normal lg:leading-[70px] xl:leading-[77px] w-full md:w-[62%]"
                   >
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
                   </div>
                   <div
-                    class="banner_content_text text-white w-[38%] text-base font-normal leading-[21px] pl-[85px] pr-0 py-0"
+                    class="banner_content_text text-white w-full md:w-[38%] text-base font-normal leading-[21px] mt-[20px] md:mt-0 p-0 md:pl-[50px] lg:pl-[85px] pr-0 py-0 overflow-x-hidden"
                   >
-                    <p class="mt-0 mb-20 mx-0">
+                    <p class="mt-0 mb-[30px] lg:mb-[50px] xl:mb-20 mx-0">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy
@@ -235,18 +233,18 @@
               />
               <div class="banner_content absolute bottom-[100px]">
                 <div
-                  class="banner_content_wrapper flex justify-between px-[150px] py-0"
+                  class="banner_content_wrapper flex flex-col md:flex-row justify-between px-[20px] md:px-[60px] lg:px-[100px] xl:px-[150px] py-0"
                 >
                   <div
-                    class="banner_content_heading text-[59px] text-white font-normal leading-[77px] w-[62%]"
+                    class="banner_content_heading text-[35px] md:text-[40px] lg:text-[50px] xl:text-[59px] text-white font-normal lg:leading-[70px] xl:leading-[77px] w-full md:w-[62%]"
                   >
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
                   </div>
                   <div
-                    class="banner_content_text text-white w-[38%] text-base font-normal leading-[21px] pl-[85px] pr-0 py-0"
+                    class="banner_content_text text-white w-full md:w-[38%] text-base font-normal leading-[21px] mt-[20px] md:mt-0 p-0 md:pl-[50px] lg:pl-[85px] pr-0 py-0 overflow-x-hidden"
                   >
-                    <p class="mt-0 mb-20 mx-0">
+                    <p class="mt-0 mb-[30px] lg:mb-[50px] xl:mb-20 mx-0">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy
@@ -272,18 +270,18 @@
               />
               <div class="banner_content absolute bottom-[100px]">
                 <div
-                  class="banner_content_wrapper flex justify-between px-[150px] py-0"
+                  class="banner_content_wrapper flex flex-col md:flex-row justify-between px-[20px] md:px-[60px] lg:px-[100px] xl:px-[150px] py-0"
                 >
                   <div
-                    class="banner_content_heading text-[59px] text-white font-normal leading-[77px] w-[62%]"
+                    class="banner_content_heading text-[35px] md:text-[40px] lg:text-[50px] xl:text-[59px] text-white font-normal lg:leading-[70px] xl:leading-[77px] w-full md:w-[62%]"
                   >
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
                   </div>
                   <div
-                    class="banner_content_text text-white w-[38%] text-base font-normal leading-[21px] pl-[85px] pr-0 py-0"
+                    class="banner_content_text text-white w-full md:w-[38%] text-base font-normal leading-[21px] mt-[20px] md:mt-0 p-0 md:pl-[50px] lg:pl-[85px] pr-0 py-0 overflow-x-hidden"
                   >
-                    <p class="mt-0 mb-20 mx-0">
+                    <p class="mt-0 mb-[30px] lg:mb-[50px] xl:mb-20 mx-0">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy
@@ -1126,7 +1124,7 @@
               more recently
             </div>
             <div
-              class="threecards_list flex flex-col md:flex-row px-[20px] md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[350px]"
+              class="threecards_list flex flex-col md:flex-row px-[20px] md:px-[50px] lg:px-[100px] xl:px-[150px] 3xl:px-[300px]"
             >
               <div
                 class="threecards_item flex flex-col px-[5px] py-0 mb-[20px] md:mb-[0] w-full lg:w-[33.33%]"
@@ -1587,9 +1585,9 @@
           <div
             class="flex items-center justify-center md:justify-start lg:justify-center mb-8"
           >
-            <a href="/index.html">
+            <a href="./index.html">
               <img
-                src="../images//footerLogo.png"
+                src="./images/footerLogo.png"
                 alt="footerLogo"
                 class="w-60"
               />
@@ -1628,7 +1626,7 @@
           
         >
           <ul class="mb-8">
-            <li><a href="#" class="text-lg uppercase">Home</a></li>
+            <li><a href="./index.html" class="text-lg uppercase">Home</a></li>
             <li><a href="#" class="text-lg uppercase">Company</a></li>
             <li><a href="#" class="text-lg uppercase">Products</a></li>
             <li>

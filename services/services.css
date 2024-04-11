@@ -162,9 +162,9 @@ input:checked + label .description {
 
 /* slider */
 
-.services_sliders{
+/* .services_sliders{
     display: flex !important;
-}
+} */
 
 /* .services_sliders_left{
     background-color: #4d5f75;

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Service Option3</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../services_option2/style.css" />
-    <link rel="stylesheet" href="../aboutUs/style.css" />
+    <!-- <link rel="stylesheet" href="../style.css" /> -->
+    <!-- <link rel="stylesheet" href="../services_option2/style.css" /> -->
+    <!-- <link rel="stylesheet" href="../aboutUs/style.css" /> -->
     <link rel="stylesheet" href="../global.css" />
     <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../custom.js"></script>
@@ -27,54 +27,147 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="jquery.selectric.min.js"></script>
+    <link rel="stylesheet" href="selectric.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              "3xl": "1600px",
+            },
+
+            colors: {
+              yellowcolor: "#DFA621",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <a href="/index.html">
+    <header class="z-[100] relative pt-[43px] pr-[37px] pb-[0] pl-[50px]">
+      <nav class="flex justify-between items-center">
+        <div
+          class="logo"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="10"
+        >
+          <a href="../index.html">
             <img src="../images/logo.svg" alt="logo" />
           </a>
         </div>
-        <div class="navigation">
-          <ul class="nav">
-            <li>
-              <a href="#">Home</a>
+        <div
+          class="navigation flex w-[65%] lg:w-[700px] justify-between px-[5px] py-0 border-b-white border-b border-solid hidden md:flex"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="10"
+        >
+          <ul class="nav flex items-center">
+            <li class="pr-5 pb-5 mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20">
+              <a
+                class="text-white text-xs font-normal leading-8 no-underline"
+                href="../index.html"
+                >Home</a
+              >
             </li>
-            <li class="dropdown dropdown-6">
-              <a href="#">Company</a>
-              <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
-                <li class="dropdown_item-1">
-                  <a href="../aboutUs/index.html">About Us</a>
+            <li
+              class="dropdown dropdown-6 pr-5 pb-5 mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]"
+            >
+              <a
+                class="text-white text-xs font-normal leading-8 no-underline"
+                href="#"
+                >Company</a
+              >
+              <ul
+                class="dropdown_menu dropdown_menu--animated dropdown_menu-6 pr-[5rem] md:pr-[5rem] lg:pr-10 mr-5 absolute top-[100%] left-[-15px] w-64 z-[-1] hidden"
+              >
+                <li
+                  class="dropdown_item-1 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../aboutUs/index.html"
+                    >About Us</a
+                  >
                 </li>
-                <li class="dropdown_item-2">
-                  <a href="../services/services.html">Service Option 1</a>
+                <li
+                  class="dropdown_item-2 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../services/services.html"
+                    >Service Option 1</a
+                  >
                 </li>
-                <li class="dropdown_item-3">
-                  <a href="../services_option2/index.html">Service Option 2</a>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../services_option2/index.html"
+                    >Service Option 2</a
+                  >
                 </li>
-                <li class="dropdown_item-3">
-                  <a href="../services_option4/index.html">Service Option 4</a>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../services_option4/index.html"
+                    >Service Option 4</a
+                  >
                 </li>
               </ul>
             </li>
-            <li>
-              <a href="./aboutUs/index.html">About Us</a>
+
+            <li class="pb-5">
+              <a
+                class="text-white text-xs font-normal leading-8 no-underline"
+                href="./aboutUs/index.html"
+                >Products</a
+              >
             </li>
           </ul>
-          <a href="#" class="contact_menu">Contact Us</a>
+          <a
+            href="#"
+            class="contact_menu text-white text-xs font-normal leading-8 no-underline mt-0 mb-5 mx-0 pl-[45px] border-l-white border-l border-solid"
+            >Contact Us</a
+          >
         </div>
       </nav>
     </header>
     <main>
-      <section class="hero_section">
-        <div class="herosection">
-          <div class="inner_banner_image">
-            <img src="./../images/serviceBanner.png" alt="banner_image" />
-            <div class="inner_banner">
-              <div class="inner_banner_wrapper">
-                <div class="inner_banner_title">Our Services</div>
-                <div class="inner_banner_heading">
+      <section class="hero_section h-[calc(100vh_-_117px)]">
+        <div class="herosection absolute top-0 left-0 w-full">
+          <div class="inner_banner_image relative h-screen">
+            <img
+              src="./../images/serviceBanner.png"
+              alt="banner_image"
+              class="max-w-full block w-full h-full"
+            />
+            <div class="inner_banner absolute top-[45%]">
+              <div
+                class="inner_banner_wrapper px-[20px] md:px-[60px] lg:px-[100px] py-0"
+              >
+                <div
+                  class="inner_banner_title text-3xl leading-[129%] text-white mt-0 mb-[25px] mx-0"
+                  data-aos="slide-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="10"
+                >
+                  Our Services
+                </div>
+                <div
+                  class="inner_banner_heading text-[40px] md:text-[50px] lg:text-[60px] xl:text-[60px] 2xl:text-[71px] text-white font-normal leading-[140%] md:leading-[50px] lg:leading-[77px] w-full md:w-[85%]"
+                  data-aos="slide-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="10"
+                >
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </div>
@@ -83,73 +176,260 @@
           </div>
         </div>
       </section>
-      <section class="two_btn_sec">
+      <section class="two_btn_sec mt-[-4%] relative">
         <div class="two_btn">
-          <div class="two_btn_wrap">
-            <div class="two_btn_left">
-              <a href="#"> Lorem Ipsum is <span> simply dummy </span> </a>
+          <div class="two_btn_wrap flex justify-end">
+            <div
+              class="two_btn_left w-[50%] sm:w-[36%] bg-[#4d5f75]"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="100"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
+            >
+              <a
+                href="#"
+                class="text-white no-underline text-2xl sm:text-3xl leading-[129%] flex flex-col items-center px-2.5 py-6 sm:py-12"
+              >
+                Lorem Ipsum is
+                <span class="text-xl sm:text-2xl"> simply dummy </span>
+              </a>
             </div>
-            <div class="two_btn_right">
-              <a href="#"> Lorem Ipsum is <span> simply dummy </span> </a>
+            <div
+              class="two_btn_right w-[50%] sm:w-[36%] bg-[#d9d9d9]"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="100"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
+            >
+              <a
+                href="#"
+                class="text-[#757575] no-underline text-2xl sm:text-3xl leading-[129%] flex flex-col items-center px-2.5 py-6 sm:py-12"
+              >
+                Lorem Ipsum is
+                <span class="text-xl sm:text-2xl"> simply dummy </span>
+              </a>
             </div>
           </div>
         </div>
       </section>
       <section>
         <div class="image_card_index">
-          <div class="image_card_index_wrapper">
-            <div class="image_card_index_title">Our Services</div>
-            <div class="image_card_index_heading">
+          <div
+            class="image_card_index_wrapper px-[20px] sm:px-[40px] lg:px-[70px] xl:px-[113px] py-[126px]"
+          >
+            <div
+              class="image_card_index_title text-[#989898] text-2xl sm:text-3xl leading-[129%] mt-0 mb-[26px] mx-0"
+              data-aos="slide-right"
+              data-aos-duration="800"
+              data-aos-delay="100"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
+            >
+              Our Services
+            </div>
+            <div
+              class="image_card_index_heading text-[32px] sm:text-[40px] md:text-[50px] leading-[129%] lg:text-[71px] leading-[129%] text-[#4d5f75] w-[95%] mt-0 mb-20 mx-0"
+              data-aos="slide-right"
+              data-aos-duration="800"
+              data-aos-delay="100"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </div>
-            <div class="image_card_index_image_list">
-              <div class="image_card_index_image_item">
-                <img src="../images/indexImg1.png" alt="indexImg1">
-                <div class="image_index">01</div>
+            <div
+              class="image_card_index_image_list flex flex-col sm:flex-row justify-center lg:px-[50px] 3xl:px-[100px] py-0"
+            >
+              <div
+                class="image_card_index_image_item w-full sm:w-[33.33%] relative overflow-hidden"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
+                <img
+                  src="../images/indexImg1.png"
+                  alt="indexImg1"
+                  class="w-full max-w-full block"
+                />
+                <div
+                  class="image_index absolute left-[-38px] lg:left-[-48px] xl:left-[-53px] text-[100px] lg:text-[130px] xl:text-[150px] text-white top-[-20px] md:top-[-30px]"
+                >
+                  01
+                </div>
               </div>
-              <div class="image_card_index_image_item">
-                <img src="../images/indexImg2.png" alt="indexImg2">
-                <div class="image_index">02</div>
+              <div
+                class="image_card_index_image_item w-full sm:w-[33.33%] relative overflow-hidden"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
+                <img
+                  src="../images/indexImg2.png"
+                  alt="indexImg2"
+                  class="w-full max-w-full block"
+                />
+                <div
+                  class="image_index absolute left-[-38px] lg:left-[-48px] xl:left-[-53px] text-[100px] lg:text-[130px] xl:text-[150px] text-white top-[-20px] md:top-[-30px]"
+                >
+                  02
+                </div>
               </div>
-              <div class="image_card_index_image_item">
-                <img src="../images/indexImg3.png" alt="indexImg3">
-                <div class="image_index">03</div>
+              <div
+                class="image_card_index_image_item w-full sm:w-[33.33%] relative overflow-hidden"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
+                <img
+                  src="../images/indexImg3.png"
+                  alt="indexImg3"
+                  class="w-full max-w-full block"
+                />
+                <div
+                  class="image_index absolute left-[-38px] lg:left-[-48px] xl:left-[-53px] text-[100px] lg:text-[130px] xl:text-[150px] text-white top-[-20px] md:top-[-30px]"
+                >
+                  03
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="image_index_sldier"> </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer_wrapper">
-        <div class="footer_col1 footer_col">
-          <div class="footer_col_wrapper">
-            <div class="footer_logo">
-              <a href="/index.html"
-                ><img src="../images//footerLogo.png" alt="footerLogo"
-              /></a>
+        <div class="image_index_sldier pb-[100px]">
+          <div
+            class="image_index_sldier_wrapper px-[20px] md:pl-[100px] lg:pl-[300px] 2xl:pl-[400px] 3xl:pl-[600px]"
+          >
+            <div
+              class="text-[#636363] text-[30px] leading-[129%]"
+              id="currentSlideIndex"
+            >
+              01
             </div>
-            <div class="footer_col_wrapper_item">
-              <p>
-                essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and
-                more recently
-              </p>
-              <p>
-                essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and
-                more recently
-              </p>
+            <div class="image_index_sldier_inner">
+              <div
+                class="text-[25px] md:text-[35px] xl:text-[41px] text-[#DFA621] w-full md:w-[90%] xl:w-[836px] mb-[20px]"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+              </div>
+              <div
+                class="flex flex-col md:flex-row justify-between mb-[20px] mx-[-20px] md:w-[80%] xl:w-[750px]"
+              >
+                <p
+                  class="mb-[20px] md:m-0 text-[15px] text-[#636363] w-full md:w-[300px] px-[20px]"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy
+                </p>
+                <p
+                  class="text-[15px] text-[#636363] w-full md:w-[300px] px-[20px]"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy
+                </p>
+              </div>
+            </div>
+            <div class="image_index_sldier_item">
+              <div class="relative">
+                <img
+                  src="../images/image_index_slide1.png"
+                  alt="image_index_slide1"
+                  class="max-w-full block"
+                />
+                <div
+                  class="absolute bottom-[-22px] md:bottom-[-55px] left-0 text-white text-[60px] md:text-[150px]"
+                  id="currentSlideIndex"
+                >
+                  01
+                </div>
+              </div>
+              <div class="relative">
+                <img
+                  src="../images/image_index_slide2.png"
+                  alt="image_index_slide1"
+                  class="max-w-full block"
+                />
+                <div
+                  class="absolute bottom-[-22px] md:bottom-[-55px] left-0 text-white text-[60px] md:text-[150px]"
+                  id="currentSlideIndex"
+                >
+                  02
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="footer_col2 footer_col">
-          <div class="footer_col_wrapper">
-            <p>
+      </section>
+      <!-- <section>
+        <div class="px-[20px] md:px-[60px] lg:px[90px] xl:px-[120px] 2l:px-[150px] 3xl:px-[250px] py-[100px]">
+          <div class="w-full md:w-[663px] mb-[70px]">
+            <div class="w-[90%] text-[#4D5F75] text-[30px] sm:text-[38px] md:text-[45px] lg:text-[51px] mb-[20px]">
+              Lorem Ipsum is simply dummy text of the printing.
+            </div>
+            <div class="w-full md:w-[339px] text-[15px] text-black">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-[33.33%]">
+              <img src="../images/services_op4_gridCard1.png" alt="services_op4_gridCard1" />
+              <div class="">Lorem Ipsum is simply</div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    <footer
+      class="bg-black text-white pt-20 pb-12 px-[20px] sm:px-12 flex justify-center items-end overflow-y-hidden overflow-x-hidden"
+    >
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-4"
+      >
+        <div
+          class="col-span-1 md:col-span-1 sm:border-r sm:border-gray-300 md:pr-5 sm:px-5 xl:pr-8 flex justify-end flex-col"
+        >
+          <div
+            class="flex items-center justify-center md:justify-start lg:justify-center mb-8"
+          >
+            <a href="../index.html">
+              <img
+                src="../images/footerLogo.png"
+                alt="footerLogo"
+                class="w-60"
+              />
+            </a>
+          </div>
+          <div class="pt-[20px] sm:pt-16">
+            <p class="text-sm leading-5 mb-4">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
+            <p class="text-sm leading-5">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-span-1 md:col-span-1 lg:col-span-1 lg:border-r lg:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex items-end"
+        >
+          <div>
+            <p class="text-sm leading-5">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -159,52 +439,57 @@
             </p>
           </div>
         </div>
-        <div class="footer_col3 footer_col">
-          <div class="footer_col_wrapper">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Company</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="./services/services.html">Service option 1</a></li>
-              <li>
-                <a href="./services_option2/index.html">Service option 2</a>
-              </li>
-              <li><a href="#">Blogs</a></li>
-            </ul>
-            <form action="">
-              <div class="newsletter_label">Newsletter signup</div>
-              <input type="text" placeholder="Email Address" />
-            </form>
-          </div>
+        <div
+          class="col-span-1 lg:col-span-1 sm:border-r sm:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex flex-col justify-end"
+        >
+          <ul class="mb-8">
+            <li><a href="../index.html" class="text-lg uppercase">Home</a></li>
+            <li><a href="#" class="text-lg uppercase">Company</a></li>
+            <li><a href="#" class="text-lg uppercase">Products</a></li>
+            <li>
+              <a href="../services/services.html" class="text-lg uppercase"
+                >Service option 1</a
+              >
+            </li>
+            <li>
+              <a href="../services_option2/index.html" class="text-lg uppercase"
+                >Service option 2</a
+              >
+            </li>
+            <li><a href="#" class="text-lg uppercase">Blogs</a></li>
+          </ul>
+          <form>
+            <div class="text-sm leading-5 mb-4">Newsletter signup</div>
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="bg-[#3C3C3C] text-white w-full px-4 py-2 focus:outline-none placeholder-white placeholder:text-[15px]"
+            />
+          </form>
         </div>
-        <div class="footer_col4 footer_col">
-          <div class="footer_col_wrapper">
-            <div class="terms_and_condition">
-              <ul>
-                <li>
-                  <a href="#">Terms & Conditions</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#">Investor Privacy Notice</a>
-                </li>
-                <li>
-                  <a href="#">Cookies Policy</a>
-                </li>
-              </ul>
-            </div>
-            <div class="social_links">
-              <ul>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Medium</a></li>
-              </ul>
-            </div>
+        <div
+          class="col-span-1 lg:col-span-1 sm:px-5 xl:pr-8 pt-[20px] flex flex-row sm:flex-col justify-between sm:justify-end"
+        >
+          <div class="mb-8">
+            <ul>
+              <li><a href="#" class="text-sm">Terms & Conditions</a></li>
+              <li><a href="#" class="text-sm">Privacy Policy</a></li>
+              <li><a href="#" class="text-sm">Investor Privacy Notice</a></li>
+              <li><a href="#" class="text-sm">Cookies Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#" class="text-sm">Twitter</a></li>
+              <li><a href="#" class="text-sm">LinkedIn</a></li>
+              <li><a href="#" class="text-sm">Medium</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

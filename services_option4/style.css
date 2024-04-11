@@ -1,6 +1,6 @@
 /* Two Button */
 
-.two_btn_sec {
+/* .two_btn_sec {
   margin-top: -4%;
   position: relative;
 }
@@ -46,11 +46,11 @@
 .two_btn_right a span {
   font-size: 24px;
   font-family: "nueu_montreal_regular";
-}
+} */
 
 /* Image Card Index */
 
-.image_card_index_wrapper {
+/* .image_card_index_wrapper {
   padding: 126px 113px;
 }
 .image_card_index_title {
@@ -87,8 +87,8 @@
   width: 100%;
   max-width: 100%;
   display: block;
-}
-@media (max-width: 1600px) {
+} */
+/* @media (max-width: 1600px) {
   .image_card_index_image_list {
     padding: 0 40px;
   }
@@ -139,4 +139,4 @@
     .image_card_index_image_item {
         width: 100%;
     }
-}
+} */

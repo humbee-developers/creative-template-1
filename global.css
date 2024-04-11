@@ -177,3 +177,7 @@ div {
     transform: scaleY(1);
   }
 }
+
+.image_index_sldier_item .slick-slide{
+  margin-right: 20px;
+}
