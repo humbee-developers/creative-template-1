@@ -444,11 +444,11 @@ translate-x:auto
   line-height: 44px;
   text-transform: uppercase;
 } */
-.services_form_wrapper_form .contactForm form {
+/* .services_form_wrapper_form .contactForm form {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
+} */
 /* .services_form_wrapper_form .contactForm form .contactInput {
   background-color: transparent;
   margin: 0 0 36px;
@@ -496,17 +496,8 @@ translate-x:auto
 
 
 
-@media (max-width: 991px) {
- 
-  .services_form_wrapper_form .contactForm form .selectric-selectDrp {
-    width: 96%;
-    margin: 0 0 80px;
-  }
-  .services_form {
-    padding: 50px;
-  }
-}
-@media (max-width: 767px) {
+
+/* @media (max-width: 767px) {
   .services_form_wrapper {
     flex-direction: column-reverse;
   }
@@ -516,4 +507,4 @@ translate-x:auto
   .services_form_wrapper_image {
     width: 100%;
   }
-}
+} */
