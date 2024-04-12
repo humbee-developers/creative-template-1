@@ -9,6 +9,7 @@
     <!-- <script src="jquery-3.7.1.min.js"></script> -->
     <script src="custom.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="newStyle.css" />
     <link rel="stylesheet" href="global.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,125 +28,272 @@
     ></script>
     <script src="jquery.selectric.min.js"></script>
     <link rel="stylesheet" href="selectric.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              "3xl": "1600px",
+            },
+            colors: {
+              yellowcolor: "#DFA621",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">
+    <!-- data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="10" -->
+    <header
+      class="z-[100] relative pt-[43px] pr-[37px] pb-[0] pl-[50px] w-full "
+    >
+      <nav class="flex justify-between items-center">
+        <div
+          class="logo"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="10"
+          data-aos-once="true"
+          data-aos-easing="ease-in-out"
+        >
           <a href="/index.html">
             <img src="images/logo.svg" alt="logo" />
           </a>
         </div>
-        <div class="navigation">
-          <ul class="nav">
-            <li>
-              <a href="#">Home</a>
+        <div
+          class="navigation flex w-[65%] lg:w-[700px] justify-between px-[5px] py-0 border-b-white border-b border-solid hidden md:flex"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="10"
+          data-aos-once="true"
+          data-aos-easing="ease-in-out"
+        >
+          <ul class="nav flex items-center">
+            <li class="pr-5 pb-5 mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20">
+              <a
+                class="text-white text-xs font-normal leading-8 no-underline"
+                href="#"
+                >Home</a
+              >
             </li>
-            <li class="dropdown dropdown-6">
-              <a href="#">Company</a>
-              <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
-                <li class="dropdown_item-1"><a href="./aboutUs/index.html">About Us</a></li>
-                <li class="dropdown_item-2"><a href="./services/services.html">Service Option 1</a></li>
-                <li class="dropdown_item-3"><a href="./services_option2/index.html">Service Option 2</a></li>
-                <li class="dropdown_item-3"><a href="./services_option4/index.html">Service Option 4</a></li>
+            <li
+              class="dropdown dropdown-6 pr-5 pb-5 mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]"
+            >
+              <a
+                class="text-white text-xs font-normal leading-8 no-underline"
+                href="#"
+                >Company</a
+              >
+              <ul
+                class="dropdown_menu dropdown_menu--animated dropdown_menu-6 pr-[5rem] md:pr-[5rem] lg:pr-10 mr-5 absolute top-[100%] left-[-15px] w-64 z-[-1] hidden"
+              >
+                <li
+                  class="dropdown_item-1 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="./aboutUs/index.html"
+                    >About Us</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-2 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="./services/services.html"
+                    >Service Option 1</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="./services_option2/index.html"
+                    >Service Option 2</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="./services_option4/index.html"
+                    >Service Option 4</a
+                  >
+                </li>
               </ul>
             </li>
 
-            <li>
-              <a href="./aboutUs/index.html">About Us</a>
+            <li class="pb-5">
+              <a
+                class="text-white text-xs font-normal leading-8 no-underline"
+                href="./aboutUs/index.html"
+                >Products</a
+              >
             </li>
           </ul>
-          <a href="#" class="contact_menu">Contact Us</a>
+          <a
+            href="#"
+            class="contact_menu text-white text-xs font-normal leading-8 no-underline mt-0 mb-5 mx-0 pl-[45px] border-l-white border-l border-solid"
+            >Contact Us</a
+          >
         </div>
       </nav>
     </header>
     <main>
-      <section class="hero_section">
-        <div class="herosection">
+      <section class="hero_section h-[calc(100vh_-_117px)]">
+        <div class="absolute w-full left-0 top-0">
           <div class="herosection_wrapper">
-            <div class="banner_image">
-              <img src="images/bannerImage.png" alt="banner_image" />
-              <div class="banner_content">
-                <div class="banner_content_wrapper">
-                  <div class="banner_content_heading">
+            <div class="relative h-screen">
+              <img
+                class="max-w-full block w-full h-full"
+                src="images/bannerImage.png"
+                alt="banner_image"
+              />
+              <div class="banner_content absolute bottom-[100px]">
+                <div
+                  class="banner_content_wrapper flex flex-col md:flex-row justify-between px-[20px] md:px-[60px] lg:px-[100px] xl:px-[150px] py-0"
+                >
+                  <div
+                    class="banner_content_heading text-[35px] md:text-[40px] lg:text-[50px] xl:text-[59px] text-white font-normal lg:leading-[70px] xl:leading-[77px] w-full md:w-[62%]"
+                  >
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
                   </div>
-                  <div class="banner_content_text">
-                    <p>
+                  <div
+                    class="banner_content_text text-white w-full md:w-[38%] text-base font-normal leading-[21px] mt-[20px] md:mt-0 p-0 md:pl-[50px] lg:pl-[85px] pr-0 py-0 overflow-x-hidden"
+                  >
+                    <p class="mt-0 mb-[30px] lg:mb-[50px] xl:mb-20 mx-0">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy
                     </p>
-                    <a href="#"
+                    <a
+                      href="#"
+                      class="text-white no-underline inline-flex items-center border px-[30px] py-[18px] rounded-[30px] border-solid border-white"
                       >See more
-                      <img src="images/buttonRightArrow.svg" alt="buttonArrow"
+                      <img
+                        class="w-5 ml-5"
+                        src="images/buttonRightArrow.svg"
+                        alt="buttonArrow"
                     /></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="banner_image">
-              <img src="images/bannerImage.png" alt="banner_image" />
-              <div class="banner_content">
-                <div class="banner_content_wrapper">
-                  <div class="banner_content_heading">
+            <div class="relative h-screen">
+              <img
+                class="max-w-full block w-full h-full"
+                src="images/bannerImage.png"
+                alt="banner_image"
+              />
+              <div class="banner_content absolute bottom-[100px]">
+                <div
+                  class="banner_content_wrapper flex flex-col md:flex-row justify-between px-[20px] md:px-[60px] lg:px-[100px] xl:px-[150px] py-0"
+                >
+                  <div
+                    class="banner_content_heading text-[35px] md:text-[40px] lg:text-[50px] xl:text-[59px] text-white font-normal lg:leading-[70px] xl:leading-[77px] w-full md:w-[62%]"
+                  >
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
                   </div>
-                  <div class="banner_content_text">
-                    <p>
+                  <div
+                    class="banner_content_text text-white w-full md:w-[38%] text-base font-normal leading-[21px] mt-[20px] md:mt-0 p-0 md:pl-[50px] lg:pl-[85px] pr-0 py-0 overflow-x-hidden"
+                  >
+                    <p class="mt-0 mb-[30px] lg:mb-[50px] xl:mb-20 mx-0">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy
                     </p>
-                    <a href="#"
+                    <a
+                      href="#"
+                      class="text-white no-underline inline-flex items-center border px-[30px] py-[18px] rounded-[30px] border-solid border-white"
                       >See more
-                      <img src="images/buttonRightArrow.svg" alt="buttonArrow"
+                      <img
+                        class="w-5 ml-5"
+                        src="images/buttonRightArrow.svg"
+                        alt="buttonArrow"
                     /></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="banner_image">
-              <img src="images/bannerImage.png" alt="banner_image" />
-              <div class="banner_content">
-                <div class="banner_content_wrapper">
-                  <div class="banner_content_heading">
+            <div class="relative h-screen">
+              <img
+                class="max-w-full block w-full h-full"
+                src="images/bannerImage.png"
+                alt="banner_image"
+              />
+              <div class="banner_content absolute bottom-[100px]">
+                <div
+                  class="banner_content_wrapper flex flex-col md:flex-row justify-between px-[20px] md:px-[60px] lg:px-[100px] xl:px-[150px] py-0"
+                >
+                  <div
+                    class="banner_content_heading text-[35px] md:text-[40px] lg:text-[50px] xl:text-[59px] text-white font-normal lg:leading-[70px] xl:leading-[77px] w-full md:w-[62%]"
+                  >
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
                   </div>
-                  <div class="banner_content_text">
-                    <p>
+                  <div
+                    class="banner_content_text text-white w-full md:w-[38%] text-base font-normal leading-[21px] mt-[20px] md:mt-0 p-0 md:pl-[50px] lg:pl-[85px] pr-0 py-0 overflow-x-hidden"
+                  >
+                    <p class="mt-0 mb-[30px] lg:mb-[50px] xl:mb-20 mx-0">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy
                     </p>
-                    <a href="#"
+                    <a
+                      href="#"
+                      class="text-white no-underline inline-flex items-center border px-[30px] py-[18px] rounded-[30px] border-solid border-white"
                       >See more
-                      <img src="images/buttonRightArrow.svg" alt="buttonArrow"
+                      <img
+                        class="w-5 ml-5"
+                        src="images/buttonRightArrow.svg"
+                        alt="buttonArrow"
                     /></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="banner_image">
-              <img src="images/bannerImage.png" alt="banner_image" />
-              <div class="banner_content">
-                <div class="banner_content_wrapper">
-                  <div class="banner_content_heading">
+            <div class="relative h-screen">
+              <img
+                class="max-w-full block w-full h-full"
+                src="images/bannerImage.png"
+                alt="banner_image"
+              />
+              <div class="banner_content absolute bottom-[100px]">
+                <div
+                  class="banner_content_wrapper flex flex-col md:flex-row justify-between px-[20px] md:px-[60px] lg:px-[100px] xl:px-[150px] py-0"
+                >
+                  <div
+                    class="banner_content_heading text-[35px] md:text-[40px] lg:text-[50px] xl:text-[59px] text-white font-normal lg:leading-[70px] xl:leading-[77px] w-full md:w-[62%]"
+                  >
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
                   </div>
-                  <div class="banner_content_text">
-                    <p>
+                  <div
+                    class="banner_content_text text-white w-full md:w-[38%] text-base font-normal leading-[21px] mt-[20px] md:mt-0 p-0 md:pl-[50px] lg:pl-[85px] pr-0 py-0 overflow-x-hidden"
+                  >
+                    <p class="mt-0 mb-[30px] lg:mb-[50px] xl:mb-20 mx-0">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy
                     </p>
-                    <a href="#"
+                    <a
+                      href="#"
+                      class="text-white no-underline inline-flex items-center border px-[30px] py-[18px] rounded-[30px] border-solid border-white"
                       >See more
-                      <img src="images/buttonRightArrow.svg" alt="buttonArrow"
+                      <img
+                        class="w-5 ml-5"
+                        src="images/buttonRightArrow.svg"
+                        alt="buttonArrow"
                     /></a>
                   </div>
                 </div>
@@ -155,73 +303,152 @@
         </div>
       </section>
       <section>
-        <div class="tab_section">
-          <div class="tab_section_wrapper">
-            <div class="tabs">
-              <div class="tabs_wrapper">
-                <div class="tab1 tab" data-tab="tab1">Scrambled</div>
-                <div class="tab2 tab" data-tab="tab2">Industry</div>
-                <div class="tab3 tab" data-tab="tab3">Pricing</div>
+        <div
+          class="tab_section px-[20px] sm:px-[40px] md:px-[60px] lg:px-[120px] xl:px-[200px] py-[122px] overflow-x-hidden"
+        >
+          <div
+            class="tab_section_wrapper flex flex-col md:flex-row justify-between"
+          >
+            <div
+              class="tabs w-full md:w-3/5"
+              data-aos="slide-right"
+              data-aos-duration="1000"
+              data-aos-delay="10"
+              data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+            >
+              <div class="tabs_wrapper flex">
+                <div
+                  class="tab1 tab md:text-xl lg:text-3xl font-normal text-white cursor-pointer pt-2.5 pb-2 px-[15px] rounded-t-[20px] bg-[#002d70]"
+                  data-tab="tab1"
+                >
+                  Scrambled
+                </div>
+                <div
+                  class="tab2 tab md:text-xl lg:text-3xl font-normal text-white cursor-pointer pt-2.5 pb-2 px-[15px] rounded-t-[20px] bg-[#ff7e47]"
+                  data-tab="tab2"
+                >
+                  Industry
+                </div>
+                <div
+                  class="tab3 tab md:text-xl lg:text-3xl font-normal text-white cursor-pointer pt-2.5 pb-2 px-[15px] rounded-t-[20px] bg-[#dedede] text-black"
+                  data-tab="tab3"
+                >
+                  Pricing
+                </div>
               </div>
               <div class="tabs_content">
-                <div class="tab1_content tab_content" id="tab1">
+                <div
+                  class="tab1_content tab_content bg-[#002d70] text-white px-[20px] md:px-[30px] lg:px-[46px] pt-[91px] pb-[63px] rounded-tr-[20px] rounded-br-[20px] rounded-bl-[20px]"
+                  id="tab1"
+                >
                   <div class="tab1_content_wrapper tab_content_wrapper">
-                    <div class="tab1_content_title tab_content_title">
+                    <div
+                      class="tab1_content_title tab_content_title text-4xl font-normal leading-[46px] mt-0 mb-[22px] mx-0 pr-[0] lg:pr-[60px] xl:pr-[135px]"
+                    >
                       Tab1 Ipsum is simply dummy text of the printing and
                       typesetting industry.
                     </div>
-                    <div class="tab1_content_text tab_content_text">
+                    <div
+                      class="tab1_content_text tab_content_text text-base font-normal leading-[22px] mt-0 mb-[23px] mx-0 pr-[20px] lg:pr-[60px] xl:pr-[135px]"
+                    >
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the
                     </div>
-                    <div class="tab_content_btn_and_link tab1_links">
-                      <a href="" class="readmore"
-                        ><img src="images/plus.svg" alt="pluse" />Read more</a
+                    <div
+                      class="tab_content_btn_and_link tab1_links flex flex-col md:flex-row justify-between md:items-center flex-wrap gap-[20px] sm:gap-[10px]"
+                    >
+                      <a
+                        href=""
+                        class="readmore bg-white text-black no-underline inline-flex text-xs items-center px-[15px] py-2.5 w-max"
+                        ><img
+                          class="w-[30px] mr-[15px] pr-2.5 border-r-black border-r border-solid"
+                          src="images/plus.svg"
+                          alt="pluse"
+                        />Read more</a
                       >
-                      <a href="#" class="link"
+                      <a
+                        href="#"
+                        class="link text-white text-[11px] font-normal lg:pr-[0] xl:pr-[65px]"
                         >Lorem Ipsum is simply dummy text of the printing
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="tab2_content tab_content" id="tab2">
+                <div
+                  class="tab2_content tab_content bg-[#ff7e47] text-white px-[20px] md:px-[30px] lg:px-[46px] pt-[91px] pb-[63px] rounded-tr-[20px] rounded-br-[20px] rounded-bl-[20px]"
+                  id="tab2"
+                >
                   <div class="tab2_content_wrapper tab_content_wrapper">
-                    <div class="tab2_content_title tab_content_title">
+                    <div
+                      class="tab2_content_title tab_content_title text-4xl font-normal leading-[46px] mt-0 mb-[22px] mx-0 pr-[0] lg:pr-[60px] xl:pr-[135px]"
+                    >
                       Tab2 Ipsum is simply dummy text of the printing and
                       typesetting industry.
                     </div>
-                    <div class="tab2_content_text tab_content_text">
+                    <div
+                      class="tab2_content_text tab_content_text text-base font-normal leading-[22px] mt-0 mb-[23px] mx-0 pr-[20px] lg:pr-[60px] xl:pr-[135px]"
+                    >
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the
                     </div>
-                    <div class="tab_content_btn_and_link tab2_links">
-                      <a href="" class="readmore"
-                        ><img src="images/plus.svg" alt="pluse" /> Read more</a
+                    <div
+                      class="tab_content_btn_and_link tab2_links flex flex-col md:flex-row justify-between md:items-center flex-wrap gap-[20px] sm:gap-[10px]"
+                    >
+                      <a
+                        href=""
+                        class="readmore bg-white text-black no-underline inline-flex text-xs items-center px-[15px] py-2.5 w-max"
+                        ><img
+                          class="w-[30px] mr-[15px] pr-2.5 border-r-black border-r border-solid"
+                          src="images/plus.svg"
+                          alt="pluse"
+                        />
+                        Read more</a
                       >
-                      <a href="#" class="link"
+                      <a
+                        href="#"
+                        class="link text-white text-[11px] font-normal lg:pr-[0] xl:pr-[65px]"
                         >Lorem Ipsum is simply dummy text of the printing
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="tab3_content tab_content" id="tab3">
-                  <div class="tab3_content_wrapper tab_content_wrapper">
-                    <div class="tab3_content_title tab_content_title">
+                <div
+                  class="tab3_content tab_content text-black bg-[#dedede] px-[20px] md:px-[30px] lg:px-[46px] pt-[91px] pb-[63px] rounded-tr-[20px] rounded-br-[20px] rounded-bl-[20px]"
+                  id="tab3"
+                >
+                  <div class="tab3_content_wrapper">
+                    <div
+                      class="tab3_content_title tab_content_title text-4xl font-normal leading-[46px] mt-0 mb-[22px] mx-0 pr-[0] lg:pr-[60px] xl:pr-[135px]"
+                    >
                       Tab3 Ipsum is simply dummy text of the printing and
                       typesetting industry.
                     </div>
-                    <div class="tab3_content_text tab_content_text">
+                    <div
+                      class="tab3_content_text tab_content_text text-base font-normal leading-[22px] mt-0 mb-[23px] mx-0 pr-[20px] lg:pr-[60px] xl:pr-[135px]"
+                    >
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the
                     </div>
-                    <div class="tab_content_btn_and_link tab3_links">
-                      <a href="" class="readmore"
-                        ><img src="images/plus.svg" alt="pluse" /> Read more</a
+                    <div
+                      class="tab_content_btn_and_link tab3_links flex flex-col md:flex-row justify-between md:items-center flex-wrap gap-[20px] sm:gap-[10px]"
+                    >
+                      <a
+                        href=""
+                        class="readmore bg-white text-black no-underline inline-flex text-xs items-center px-[15px] py-2.5 w-max"
+                        ><img
+                          class="w-[30px] mr-[15px] pr-2.5 border-r-black border-r border-solid"
+                          src="images/plus.svg"
+                          alt="pluse"
+                        />
+                        Read more</a
                       >
-                      <a href="#" class="link"
+                      <a
+                        href="#"
+                        class="link text-white text-[11px] font-normal lg:pr-[0] xl:pr-[65px]"
                         >Lorem Ipsum is simply dummy text of the printing
                       </a>
                     </div>
@@ -229,24 +456,47 @@
                 </div>
               </div>
             </div>
-            <div class="tab_section_right">
+            <div
+              class="tab_section_right w-full md:w-2/5 pl-0 md:pl-5 pr-0 pt-16 pb-0"
+              data-aos="slide-left"
+              data-aos-duration="1000"
+              data-aos-delay="10"
+              data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+            >
               <div class="tab_section_right_wrapper">
-                <div class="tab_section_right_wrapper_image">
-                  <img src="images/dotImage.png" alt="dot_image" />
+                <div
+                  class="tab_section_right_wrapper_image hidden md:block mt-0 mb-[29px] mx-0"
+                >
+                  <img
+                    class="max-w-full block"
+                    src="images/dotImage.png"
+                    alt="dot_image"
+                  />
                 </div>
-                <div class="tab_section_right_link">
-                  <div class="tab_section_right_wrapper_link tab_right_link_1">
-                    <a href="#"
+                <div class="tab_section_right_link w-max m-0 md:ml-auto pr-5">
+                  <div
+                    class="tab_section_right_wrapper_link pl-[20px] md:pl-[10px] lg:pl-6 border-l-black border-l border-solid tab_right_link_1"
+                  >
+                    <a
+                      href="#"
+                      class="text-[rgba(77,95,117,1)] no-underline flex items-center text-[20px] md:text-[16px] lg:text-lg mt-0 mb-[23px] mx-0 px-0 py-5"
                       >Lorem Ipsum is simply dummy text
                       <img
+                        class="ml-[20px] md:ml-[10px] ml-[18px]"
                         src="images/blackRightArrow.svg"
                         alt="blackRightArrow"
                     /></a>
                   </div>
-                  <div class="tab_section_right_wrapper_link tab_right_link_2">
-                    <a href="#"
+                  <div
+                    class="tab_section_right_wrapper_link pl-[20px] md:pl-[10px] lg:pl-6 border-l-black border-l border-solid tab_right_link_2"
+                  >
+                    <a
+                      href="#"
+                      class="text-[rgba(77,95,117,1)] no-underline flex items-center mt-0 mb-[23px] mx-0 px-0 py-5 text-[20px] md:text-[16px] lg:text-lg"
                       >Lorem Ipsum is simply
                       <img
+                        class="ml-[20px] md:ml-[10px] ml-[18px]"
                         src="images/blackRightArrow.svg"
                         alt="blackRightArrow"
                     /></a>
@@ -258,43 +508,88 @@
         </div>
       </section>
       <section>
-        <div class="home_card_section">
-          <div class="home_card_section_wrapper">
-            <div class="home_card_section_left_text">
+        <div
+          class="home_card_section bg-black text-white pt-[196px] pb-[154px] px-[20px] sm:px-[20px] md:px-[40px] lg:px-[60px] xl:px-[150px] 2xl:px-[300px] overflow-x-hidden"
+        >
+          <div
+            class="home_card_section_wrapper flex flex-col md:flex-row justify-between items-center items-end mt-0 mb-[83px] mx-0"
+          >
+            <div
+              class="home_card_section_left_text text-[34px] md:text-[38px] lg:text-[42px] font-normal leading-[54px] md:w-[49%] xl:w-[48%] mb-[20px] md:mb-[0]"
+              data-aos="slide-right"
+              data-aos-duration="1000"
+              data-aos-delay="10"
+              data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </div>
-            <div class="home_card_section_right_text">
+            <div
+              class="home_card_section_right_text text-[20px] md:text-[22px] lg:text-[25px] font-normal leading-8 md:w-[42%] lg:w-[40%] xl:w-[38%]"
+              data-aos="slide-left"
+              data-aos-duration="1000"
+              data-aos-delay="10"
+              data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.
             </div>
           </div>
-          <div class="home_cards_wrapper">
-            <div class="home_cards_item">
-              <div class="home_cards_item_inner">
-                <div class="index">01</div>
-                <div class="home_cards_item_wrapper">
-                  <div class="home_cards_item_left">
+          <div
+            class="home_cards_wrapper flex flex-wrap md:flex-row flex-col mx-1.5 my-0 rounded-[20px]"
+          >
+            <div
+              class="home_cards_item w-full md:w-6/12 p-1.5"
+              data-aos="slide-right"
+              data-aos-duration="1000"
+              data-aos-delay="10"
+              data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+            >
+              <div
+                class="home_cards_item_inner bg-[#303030] h-full p-5 rounded-[20px]"
+              >
+                <div
+                  class="index text-xs text-[#cccccc] w-fit border-b-[#cccccc] border-b border-solid"
+                >
+                  01
+                </div>
+                <div
+                  class="home_cards_item_wrapper flex items-center h-full justify-between md:pl-[10px] lg:pl-[46px] md:pr-[10px] lg:pr-[55px] pt-5 pb-10"
+                >
+                  <div class="home_cards_item_left w-2/5">
                     <img
+                      class="max-w-full block"
                       src="images/home_card_image1.png"
                       alt="home_card_image1"
                     />
                   </div>
-                  <div class="home_cards_item_right">
-                    <div class="home_cards_item_right_wrapper">
-                      <div class="home_cards_item_right_wrapper_title">
+                  <div class="home_cards_item_right w-[55%] h-full">
+                    <div
+                      class="home_cards_item_right_wrapper h-full flex flex-col"
+                    >
+                      <div
+                        class="home_cards_item_right_wrapper_title text-[#ff7e47] text-xs mt-0 mb-[37px] mx-0"
+                      >
                         Lorem Ipsum is simply dummy text of
                       </div>
-                      <div class="home_cards_item_right_wrapper_text">
+                      <div
+                        class="home_cards_item_right_wrapper_text text-xs text-white h-full"
+                      >
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum is simply dummy text
                         of the printing and typesetting industry.
                       </div>
                       <div class="home_cards_item_right_wrapper_link">
-                        <a href="#"
+                        <a
+                          href="#"
+                          class="text-[#ff7e47] no-underline flex items-center"
                           >Planning
                           <img
+                            class="ml-2.5"
                             src="images/rightArrow_with_BG.svg"
                             alt="rightArrow_with_BG"
                         /></a>
@@ -304,30 +599,55 @@
                 </div>
               </div>
             </div>
-            <div class="home_cards_item">
-              <div class="home_cards_item_inner">
-                <div class="index">02</div>
-                <div class="home_cards_item_wrapper">
-                  <div class="home_cards_item_left">
+            <div
+              class="home_cards_item w-full md:w-6/12 p-1.5"
+              data-aos="slide-left"
+              data-aos-duration="1000"
+              data-aos-delay="10"
+              data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+            >
+              <div
+                class="home_cards_item_inner bg-[#303030] h-full p-5 rounded-[20px]"
+              >
+                <div
+                  class="index text-xs text-[#cccccc] w-fit border-b-[#cccccc] border-b border-solid"
+                >
+                  02
+                </div>
+                <div
+                  class="home_cards_item_wrapper flex items-center h-full justify-between md:pl-[10px] lg:pl-[46px] md:pr-[10px] lg:pr-[55px] pt-5 pb-10"
+                >
+                  <div class="home_cards_item_left w-2/5">
                     <img
+                      class="max-w-full block"
                       src="images/home_card_image2.png"
                       alt="home_card_image1"
                     />
                   </div>
-                  <div class="home_cards_item_right">
-                    <div class="home_cards_item_right_wrapper">
-                      <div class="home_cards_item_right_wrapper_title">
+                  <div class="home_cards_item_right w-[55%] h-full">
+                    <div
+                      class="home_cards_item_right_wrapper h-full flex flex-col"
+                    >
+                      <div
+                        class="home_cards_item_right_wrapper_title text-[#ff7e47] text-xs mt-0 mb-[37px] mx-0"
+                      >
                         Lorem Ipsum is simply dummy text of
                       </div>
-                      <div class="home_cards_item_right_wrapper_text">
+                      <div
+                        class="home_cards_item_right_wrapper_text text-xs text-white h-full"
+                      >
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum is simply dummy text
                         of the printing and typesetting industry.
                       </div>
                       <div class="home_cards_item_right_wrapper_link">
-                        <a href="#"
+                        <a
+                          href="#"
+                          class="text-[#ff7e47] no-underline flex items-center"
                           >Planning
                           <img
+                            class="ml-2.5"
                             src="images/rightArrow_with_BG.svg"
                             alt="rightArrow_with_BG"
                         /></a>
@@ -337,30 +657,55 @@
                 </div>
               </div>
             </div>
-            <div class="home_cards_item">
-              <div class="home_cards_item_inner">
-                <div class="index">03</div>
-                <div class="home_cards_item_wrapper">
-                  <div class="home_cards_item_left">
+            <div
+              class="home_cards_item w-full md:w-6/12 p-1.5"
+              data-aos="slide-right"
+              data-aos-duration="1000"
+              data-aos-delay="10"
+              data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+            >
+              <div
+                class="home_cards_item_inner bg-[#303030] h-full p-5 rounded-[20px]"
+              >
+                <div
+                  class="index text-xs text-[#cccccc] w-fit border-b-[#cccccc] border-b border-solid"
+                >
+                  03
+                </div>
+                <div
+                  class="home_cards_item_wrapper flex items-center h-full justify-between md:pl-[10px] lg:pl-[46px] md:pr-[10px] lg:pr-[55px] pt-5 pb-10"
+                >
+                  <div class="home_cards_item_left w-2/5">
                     <img
+                      class="max-w-full block"
                       src="images/home_card_image3.png"
                       alt="home_card_image1"
                     />
                   </div>
-                  <div class="home_cards_item_right">
-                    <div class="home_cards_item_right_wrapper">
-                      <div class="home_cards_item_right_wrapper_title">
+                  <div class="home_cards_item_right w-[55%] h-full">
+                    <div
+                      class="home_cards_item_right_wrapper h-full flex flex-col"
+                    >
+                      <div
+                        class="home_cards_item_right_wrapper_title text-[#ff7e47] text-xs mt-0 mb-[37px] mx-0"
+                      >
                         Lorem Ipsum is simply dummy text of
                       </div>
-                      <div class="home_cards_item_right_wrapper_text">
+                      <div
+                        class="home_cards_item_right_wrapper_text text-xs text-white h-full"
+                      >
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum is simply dummy text
                         of the printing and typesetting industry.
                       </div>
                       <div class="home_cards_item_right_wrapper_link">
-                        <a href="#"
+                        <a
+                          href="#"
+                          class="text-[#ff7e47] no-underline flex items-center"
                           >Planning
                           <img
+                            class="ml-2.5"
                             src="images/rightArrow_with_BG.svg"
                             alt="rightArrow_with_BG"
                         /></a>
@@ -370,30 +715,55 @@
                 </div>
               </div>
             </div>
-            <div class="home_cards_item">
-              <div class="home_cards_item_inner">
-                <div class="index">04</div>
-                <div class="home_cards_item_wrapper">
-                  <div class="home_cards_item_left">
+            <div
+              class="home_cards_item w-full md:w-6/12 p-1.5"
+              data-aos="slide-left"
+              data-aos-duration="1000"
+              data-aos-delay="10"
+              data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+            >
+              <div
+                class="home_cards_item_inner bg-[#303030] h-full p-5 rounded-[20px]"
+              >
+                <div
+                  class="index text-xs text-[#cccccc] w-fit border-b-[#cccccc] border-b border-solid"
+                >
+                  04
+                </div>
+                <div
+                  class="home_cards_item_wrapper flex items-center h-full justify-between md:pl-[10px] lg:pl-[46px] md:pr-[10px] lg:pr-[55px] pt-5 pb-10"
+                >
+                  <div class="home_cards_item_left w-2/5">
                     <img
+                      class="max-w-full block"
                       src="images/home_card_image4.png"
                       alt="home_card_image1"
                     />
                   </div>
-                  <div class="home_cards_item_right">
-                    <div class="home_cards_item_right_wrapper">
-                      <div class="home_cards_item_right_wrapper_title">
+                  <div class="home_cards_item_right w-[55%] h-full">
+                    <div
+                      class="home_cards_item_right_wrapper h-full flex flex-col"
+                    >
+                      <div
+                        class="home_cards_item_right_wrapper_title text-[#ff7e47] text-xs mt-0 mb-[37px] mx-0"
+                      >
                         Lorem Ipsum is simply dummy text of
                       </div>
-                      <div class="home_cards_item_right_wrapper_text">
+                      <div
+                        class="home_cards_item_right_wrapper_text text-xs text-white h-full"
+                      >
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum is simply dummy text
                         of the printing and typesetting industry.
                       </div>
                       <div class="home_cards_item_right_wrapper_link">
-                        <a href="#"
+                        <a
+                          href="#"
+                          class="text-[#ff7e47] no-underline flex items-center"
                           >Planning
                           <img
+                            class="ml-2.5"
                             src="images/rightArrow_with_BG.svg"
                             alt="rightArrow_with_BG"
                         /></a>
@@ -407,49 +777,128 @@
         </div>
       </section>
       <section>
-        <div class="why_choose_us">
+        <div
+          class="why_choose_us pt-[20px] pb-[20px] px-[20px] md:px-[50px] lg:px-[80px] xl:pt-[131px] xl:pb-[125px] xl:px-[100px] overflow-x-hidden"
+        >
           <div class="why_choose_us_wrapper">
-            <div class="why_choose_us_heading">WHY CHOOSE US</div>
-            <div class="why_choose_us_text">
+            <div
+              class="why_choose_us_heading text-[33px] text-[#002d70] text-center mt-0 mb-[17px] mx-0"
+              data-aos="slide-right"
+              data-aos-duration="1200"
+              data-aos-delay="10"
+              data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+            >
+              WHY CHOOSE US
+            </div>
+            <div
+              class="why_choose_us_text text-[18px] md:text-xl text-[#888888] mx-auto my-0 w-full md:w-full xl:w-[936px]"
+              data-aos="slide-right"
+              data-aos-duration="1200"
+              data-aos-delay="10"
+              data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it
             </div>
-            <div class="circle_image_section">
-              <div class="circle_image_section_left">
-                <div class="circle_image_section_left_top">
-                  <div class="circle_image_heading">SPARKLING CLEAN</div>
-                  <div class="circle_image_text">
+            <div
+              class="circle_image_section flex justify-center mt-[40px] md:mt-[110px] mb-[20px] md:mb-[66px] mx-0 py-0"
+            >
+              <div
+                class="circle_image_section_left flex-col justify-between px-0 py-[60px] pr-[20px] hidden md:flex"
+              >
+                <div
+                  class="circle_image_section_left_top w-[190px]"
+                  data-aos="slide-right"
+                  data-aos-duration="1200"
+                  data-aos-delay="10"
+                  data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                >
+                  <div
+                    class="circle_image_heading text-[#002d70] text-xl text-center"
+                  >
+                    SPARKLING CLEAN
+                  </div>
+                  <div
+                    class="circle_image_text text-[#ff7e47] text-xs text-right"
+                  >
                     We keep your home sparkling clean and germ free. Our
                     disinfecting process kills 99% of common bacteria and
                     viruses.
                   </div>
                 </div>
-                <div class="circle_image_section_left_bottom">
-                  <div class="circle_image_heading">SPARKLING CLEAN</div>
-                  <div class="circle_image_text">
+                <div
+                  class="circle_image_section_left_bottom w-[190px]"
+                  data-aos="slide-right"
+                  data-aos-duration="1200"
+                  data-aos-delay="10"
+                  data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                >
+                  <div
+                    class="circle_image_heading text-[#002d70] text-xl text-center"
+                  >
+                    SPARKLING CLEAN
+                  </div>
+                  <div
+                    class="circle_image_text text-[#ff7e47] text-xs text-right"
+                  >
                     We keep your home sparkling clean and germ free. Our
                     disinfecting process kills 99% of common bacteria and
                     viruses.
                   </div>
                 </div>
               </div>
-              <div class="circle_image_section_image">
-                <img src="images/circleImage.png" alt="circle_image" />
+              <div
+                class="circle_image_section_image flex justify-center"
+                data-aos="zoom-in"
+                data-aos-duration="1200"
+                data-aos-delay="10"
+                data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+              >
+                <img
+                  class="border mx-[50px] my-0 p-5 rounded-[50%] border-solid border-[#ff7e47]"
+                  src="images/circleImage.png"
+                  alt="circle_image"
+                />
               </div>
-              <div class="circle_image_section_right">
-                <div class="circle_image_section_right_top">
-                  <div class="circle_image_heading">SPARKLING CLEAN</div>
-                  <div class="circle_image_text">
+              <div
+                class="circle_image_section_right flex-col justify-between px-0 py-[60px] pl-[20px] hidden md:flex"
+              >
+                <div
+                  class="circle_image_section_right_top w-[190px]"
+                  data-aos="slide-left"
+                  data-aos-duration="1200"
+                  data-aos-delay="10"
+                  data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                >
+                  <div class="circle_image_heading text-[#002d70] text-xl">
+                    SPARKLING CLEAN
+                  </div>
+                  <div class="circle_image_text text-[#ff7e47] text-xs">
                     We keep your home sparkling clean and germ free. Our
                     disinfecting process kills 99% of common bacteria and
                     viruses.
                   </div>
                 </div>
-                <div class="circle_image_section_right_bottom">
-                  <div class="circle_image_heading">SPARKLING CLEAN</div>
-                  <div class="circle_image_text">
+                <div
+                  class="circle_image_section_right_bottom w-[190px]"
+                  data-aos="slide-left"
+                  data-aos-duration="1200"
+                  data-aos-delay="10"
+                  data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                >
+                  <div class="circle_image_heading text-[#002d70] text-xl">
+                    SPARKLING CLEAN
+                  </div>
+                  <div class="circle_image_text text-[#ff7e47] text-xs">
                     We keep your home sparkling clean and germ free. Our
                     disinfecting process kills 99% of common bacteria and
                     viruses.
@@ -457,10 +906,80 @@
                 </div>
               </div>
             </div>
-            <div class="seemore">
-              <a href="#"
+            <div class="flex justify-between md:hidden">
+              <div
+                class="circle_image_section_left flex flex-col justify-between px-0 py-[20px] pr-[10px] gap-4 w-[50%]"
+              >
+                <div class="circle_image_section_left_top w-full">
+                  <div
+                    class="circle_image_heading text-[#002d70] text-xl text-left"
+                  >
+                    SPARKLING CLEAN
+                  </div>
+                  <div
+                    class="circle_image_text text-[#ff7e47] text-xs text-left"
+                  >
+                    We keep your home sparkling clean and germ free. Our
+                    disinfecting process kills 99% of common bacteria and
+                    viruses.
+                  </div>
+                </div>
+                <div class="circle_image_section_left_bottom w-full">
+                  <div
+                    class="circle_image_heading text-[#002d70] text-xl text-left"
+                  >
+                    SPARKLING CLEAN
+                  </div>
+                  <div
+                    class="circle_image_text text-[#ff7e47] text-xs text-left"
+                  >
+                    We keep your home sparkling clean and germ free. Our
+                    disinfecting process kills 99% of common bacteria and
+                    viruses.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="circle_image_section_right flex flex-col justify-between px-0 py-[20px] pl-[10px] w-[50%]"
+              >
+                <div class="circle_image_section_right_top w-full">
+                  <div class="circle_image_heading text-[#002d70] text-xl">
+                    SPARKLING CLEAN
+                  </div>
+                  <div class="circle_image_text text-[#ff7e47] text-xs">
+                    We keep your home sparkling clean and germ free. Our
+                    disinfecting process kills 99% of common bacteria and
+                    viruses.
+                  </div>
+                </div>
+                <div class="circle_image_section_right_bottom w-full">
+                  <div class="circle_image_heading text-[#002d70] text-xl">
+                    SPARKLING CLEAN
+                  </div>
+                  <div class="circle_image_text text-[#ff7e47] text-xs">
+                    We keep your home sparkling clean and germ free. Our
+                    disinfecting process kills 99% of common bacteria and
+                    viruses.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="seemore"
+              data-aos="slide-up"
+              data-aos-duration="1000"
+              data-aos-delay="10"
+              data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+            >
+              <a
+                href="#"
+                class="bg-[#ff7e47] text-black no-underline flex items-center text-base w-fit mx-auto my-0 px-5 py-[15px] rounded-[30px]"
                 >See more
-                <img src="images/blackRightArrow2.svg" alt="blackRightArrow"
+                <img
+                  class="ml-2.5"
+                  src="images/blackRightArrow2.svg"
+                  alt="blackRightArrow"
               /></a>
             </div>
           </div>
@@ -469,69 +988,105 @@
       <section>
         <div class="factoryImage">
           <div
-            class="factoryImage_wrapper"
+            class="factoryImage_wrapper min-h-[664px] relative bg-no-repeat bg-center bg-cover md:min-h-[530px] lg:min-h-[664px]"
             style="background-image: url('images//factoryFullImage.png')"
           >
-            <div class="factoryImage_content">
-              <div class="factoryImage_content_item">
-                <div class="factory_item_wrapper">
+            <div class="factoryImage_content flex justify-center">
+              <div
+                class="factoryImage_content_item pr-5 xl:pr-10 w-3/12 md:w-[22%] lg:w-auto"
+              >
+                <div class="factory_item_wrapper flex">
                   <div class="factory_item_line">
                     <img
+                      class="h-[90%]"
                       src="images/factoryFirstLine.svg"
                       alt="factoryFirstLine"
                     />
                   </div>
-                  <div class="factory_image_text">
-                    <div class="big_num">20%</div>
-                    <div class="image_text">
+                  <div class="factory_image_text pl-5 xl:pl-10 pr-0 pt-5 pb-0">
+                    <div
+                      class="big_num text-[50px] text-white md:text-[60px] lg:text-[80px] xl:text-[107px]"
+                    >
+                      20%
+                    </div>
+                    <div
+                      class="image_text text-[15px] text-white md:w-[164px] w-full"
+                    >
                       essentially unchanged. It was popularised
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="factoryImage_content_item">
-                <div class="factory_item_wrapper">
+              <div
+                class="factoryImage_content_item pr-5 xl:pr-10 w-3/12 md:w-[22%] lg:w-auto"
+              >
+                <div class="factory_item_wrapper flex">
                   <div class="factory_item_line">
                     <img
+                      class="h-[90%]"
                       src="images/factorySecondLine.svg"
                       alt="factoryFirstLine"
                     />
                   </div>
-                  <div class="factory_image_text">
-                    <div class="big_num">30%</div>
-                    <div class="image_text">
+                  <div class="factory_image_text pl-5 xl:pl-10 pr-0 pt-5 pb-0">
+                    <div
+                      class="big_num text-[107px] text-[50px] text-white md:text-[60px] lg:text-[80px] xl:text-[107px]"
+                    >
+                      30%
+                    </div>
+                    <div
+                      class="image_text text-[15px] text-white md:w-[164px] w-full"
+                    >
                       essentially unchanged. It was popularised
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="factoryImage_content_item">
-                <div class="factory_item_wrapper">
+              <div
+                class="factoryImage_content_item pr-5 xl:pr-10 w-3/12 md:w-[22%] lg:w-auto"
+              >
+                <div class="factory_item_wrapper flex">
                   <div class="factory_item_line">
                     <img
+                      class="h-[90%]"
                       src="images/factoryThirdLine.svg"
                       alt="factoryFirstLine"
                     />
                   </div>
-                  <div class="factory_image_text">
-                    <div class="big_num">50%</div>
-                    <div class="image_text">
+                  <div class="factory_image_text pl-5 xl:pl-10 pr-0 pt-5 pb-0">
+                    <div
+                      class="big_num text-[50px] text-white md:text-[60px] lg:text-[80px] xl:text-[107px]"
+                    >
+                      50%
+                    </div>
+                    <div
+                      class="image_text text-[15px] text-white md:w-[164px] w-full"
+                    >
                       essentially unchanged. It was popularised
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="factoryImage_content_item">
-                <div class="factory_item_wrapper">
+              <div
+                class="factoryImage_content_item pr-5 xl:pr-10 w-3/12 md:w-[22%] lg:w-auto"
+              >
+                <div class="factory_item_wrapper flex">
                   <div class="factory_item_line">
                     <img
+                      class="h-auto"
                       src="images/factoryForthLine.svg"
                       alt="factoryFirstLine"
                     />
                   </div>
-                  <div class="factory_image_text">
-                    <div class="big_num">5%</div>
-                    <div class="image_text">
+                  <div class="factory_image_text pl-5 xl:pl-10 pr-0 pt-5 pb-0">
+                    <div
+                      class="big_num text-[107px] text-[50px] text-white md:text-[60px] lg:text-[80px] xl:text-[107px]"
+                    >
+                      5%
+                    </div>
+                    <div
+                      class="image_text text-[15px] text-white md:w-[164px] w-full"
+                    >
                       essentially unchanged. It was popularised
                     </div>
                   </div>
@@ -542,34 +1097,75 @@
         </div>
       </section>
       <section>
-        <div class="threecards">
+        <div
+          class="threecards pt-[30px] pb-[50px] lg:pt-[50px] xl:pb-[125px] px-0"
+        >
           <div class="threecards_wrapper">
-            <div class="threecards_heading">
+            <div
+              class="threecards_heading px-[20px] text-[#ff7e47] text-[30px] md:text-[40px] lg:text-[60px] xl:text-[67px] w-[100%] md:w-[80%] xl:w-[70%] 2xl:w-[800px] mt-0 mb-[30px] mx-auto"
+              data-aos="slide-right"
+              data-aos-duration="1000"
+              data-aos-delay="10"
+              data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+            >
               Lorem Ipsum is simply dummy text of the printing
             </div>
-            <div class="threecards_text">
+            <div
+              class="threecards_text px-[20px] w-[100%] md:w-[80%] xl:w-[70%] 2xl:w-[800px] text-lg md:text-xl text-[#002d70] mt-0 mb-[60px] mx-auto"
+              data-aos="slide-right"
+              data-aos-duration="1100"
+              data-aos-delay="10"
+              data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+            >
               essentially unchanged. It was popularised in the 1960s with the
               release of Letraset sheets containing Lorem Ipsum passages, and
               more recently
             </div>
-            <div class="threecards_list">
-              <div class="threecards_item">
+            <div
+              class="threecards_list flex flex-col md:flex-row px-[20px] md:px-[50px] lg:px-[100px] xl:px-[150px] 3xl:px-[300px]"
+            >
+              <div
+                class="threecards_item flex flex-col px-[5px] py-0 mb-[20px] md:mb-[0] w-full lg:w-[33.33%]"
+                data-aos="slide-up"
+                data-aos-duration="400"
+                data-aos-delay="200"
+                data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                >
                 <div
-                  class="threecards_item_wrapper"
+                  class="threecards_item_wrapper bg-no-repeat bg-center bg-cover h-full"
                   style="background-image: url('images/cardBGImage.png')"
                 >
-                  <div class="threecards_item_wrapper_content">
-                    <div class="item_card_big_heading">
+                  <div
+                    class="threecards_item_wrapper_content pl-[30px] pr-10 pt-[30px] pb-5"
+                  >
+                    <div
+                      class="item_card_big_heading text-[32px] leading-[129%] mt-0 mb-[26px] mx-0"
+                    >
                       Lorem Ipsum is simply dummy text of the printing
                     </div>
-                    <div class="item_card_content">
+                    <div
+                      class="item_card_content text-xs leading-[129%] pt-0 pb-[40px] md:pb-[30px] lg:pb-[20px] 2xl:pb-[65px] px-0"
+                    >
                       essentially unchanged. It was popularised in the 1960s
                       with the release of Letraset sheets containing Lorem Ipsum
                       passages, and more recently
                     </div>
-                    <div class="item_card_email">Email:</div>
-                    <div class="item_card_email_id">yourname@email.com</div>
-                    <div class="item_card_content">
+                    <div
+                      class="item_card_email text-xs leading-[129%] mt-0 mb-2.5 mx-0"
+                    >
+                      Email:
+                    </div>
+                    <div
+                      class="item_card_email_id text-xl leading-[129%] text-[#ababab] mt-0 mb-6 mx-0 pt-0 pb-2.5 px-0 border-b-black border-b border-solid"
+                    >
+                      yourname@email.com
+                    </div>
+                    <div
+                      class="item_card_content text-xs leading-[129%] pt-0 pb-[65px] px-0"
+                    >
                       essentially unchanged. It was popularised in the 1960s
                       with the release of Letraset sheets containing Lorem Ipsum
                       passages, and more recently
@@ -577,22 +1173,38 @@
                   </div>
                 </div>
               </div>
-              <div class="threecards_item">
-                <div class="threecards_item_image">
-                  <img src="images/threecardImage2.png" alt="threecardImage2" />
+              <div
+                class="threecards_item flex flex-col px-[5px] py-0 mb-[20px] md:mb-[0] w-full lg:w-[33.33%]"
+                data-aos="slide-up"
+                data-aos-duration="600"
+                data-aos-delay="200"
+                data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+              >
+                <div class="threecards_item_image h-full">
+                  <img
+                    class="max-w-full block w-full h-full object-cover"
+                    src="images/threecardImage2.png"
+                    alt="threecardImage2"
+                  />
                 </div>
-                <div class="card_item_content_wrapepr">
-                  <div class="card_item_heading">
+                <div class="card_item_content_wrapepr bg-[#f0f0f0] p-5">
+                  <div
+                    class="card_item_heading text-xl leading-[129%] mt-0 mb-10 mx-0"
+                  >
                     essentially unchanged. It was popularised in the 1960s
                   </div>
-                  <div class="card_item_bottom">
-                    <div class="card_item_bottom_text">
+                  <div class="card_item_bottom flex justify-between">
+                    <div class="card_item_bottom_text text-xs text-[#002d70]">
                       essentially unchanged.
                     </div>
                     <div class="card_item_link">
-                      <a href="#"
+                      <a
+                        href="#"
+                        class="text-[#ff7e47] no-underline flex items-center"
                         >Planning
                         <img
+                          class="ml-2.5"
                           src="images/right_arrow_with_white_bg.svg"
                           alt="rightArrow_with_BG"
                       /></a>
@@ -600,22 +1212,38 @@
                   </div>
                 </div>
               </div>
-              <div class="threecards_item">
-                <div class="threecards_item_image">
-                  <img src="images/threecardImage3.png" alt="threecardImage2" />
+              <div
+                class="threecards_item flex flex-col px-[5px] py-0 mb-[20px] md:mb-[0] w-full lg:w-[33.33%]"
+                data-aos="slide-up"
+                data-aos-duration="800"
+                data-aos-delay="200"
+                data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+              >
+                <div class="threecards_item_image h-full">
+                  <img
+                    class="max-w-full block w-full h-full object-cover"
+                    src="images/threecardImage3.png"
+                    alt="threecardImage2"
+                  />
                 </div>
-                <div class="card_item_content_wrapepr">
-                  <div class="card_item_heading">
+                <div class="card_item_content_wrapepr bg-[#f0f0f0] p-5">
+                  <div
+                    class="card_item_heading text-xl leading-[129%] mt-0 mb-10 mx-0"
+                  >
                     essentially unchanged. It was popularised in the 1960s
                   </div>
-                  <div class="card_item_bottom">
-                    <div class="card_item_bottom_text">
+                  <div class="card_item_bottom flex justify-between">
+                    <div class="card_item_bottom_text text-xs text-[#002d70]">
                       essentially unchanged.
                     </div>
                     <div class="card_item_link">
-                      <a href="#"
+                      <a
+                        href="#"
+                        class="text-[#ff7e47] no-underline flex items-center"
                         >Planning
                         <img
+                          class="ml-2.5"
                           src="images/right_arrow_with_white_bg.svg"
                           alt="rightArrow_with_BG"
                       /></a>
@@ -628,110 +1256,159 @@
         </div>
       </section>
       <section>
-        <div class="cardSlider">
+        <div class="cardSlider bg-[#002d70] px-0 py-[100px]">
           <div class="cardSlider_wrapper">
-            <h2 class="cardSlider_heading">AWARDS & NEWS</h2>
+            <h2
+              class="cardSlider_heading text-[#ff7e47] text-[60px] leading-[83.5%] w-full lg:w-[870px] p-[20px] lg:pl-20 pr-5 pt-5 pb-[70px] md:text-[100px] lg:text[120px] xl:text-[156px]"
+              data-aos="slide-right"
+              data-aos-duration="800"
+              data-aos-delay="200"
+              data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+              >
+              AWARDS & NEWS
+            </h2>
             <div class="cardSlider_list">
-              <div class="cardSldier_item">
+              <div class="cardSldier_item px-5 py-0">
                 <div
-                  class="cardSlider_item_wrapper"
+                  class="cardSlider_item_wrapper bg-no-repeat bg-center bg-cover relative"
                   style="background-image: url('images/home_cardSlider1.png')"
                 >
                   <img
                     src="images/home_sldier_link_arrow.svg"
                     alt="slider_link_arrow"
-                    class="slider_link_arrow"
+                    class="slider_link_arrow absolute w-[27px] right-0 top-0"
                   />
                   <div class="card_img_text">
-                    <img src="images/cardSlider_BG.png" alt="cardSliderBG" />
+                    <img
+                      class="w-full"
+                      src="images/cardSlider_BG.png"
+                      alt="cardSliderBG"
+                    />
 
-                    <div class="card_text">
+                    <div
+                      class="card_text text-white text-xl w-[250px] leading-[129%] tracking-[1px] absolute left-[23px] bottom-[35px]"
+                    >
                       essentially unchanged It was popularised in the 1960s
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="cardSldier_item">
+              <div class="cardSldier_item px-5 py-0">
                 <div
-                  class="cardSlider_item_wrapper"
+                  class="cardSlider_item_wrapper bg-no-repeat bg-center bg-cover relative"
                   style="background-image: url('images/home_cardSlider2.png')"
                 >
                   <img
                     src="images/home_sldier_link_arrow.svg"
                     alt="slider_link_arrow"
-                    class="slider_link_arrow"
+                    class="slider_link_arrow absolute w-[27px] right-0 top-0"
                   />
-
                   <div class="card_img_text">
-                    <img src="images/cardSlider_BG.png" alt="cardSliderBG" />
-                    <div class="card_text">
+                    <img
+                      class="w-full"
+                      src="images/cardSlider_BG.png"
+                      alt="cardSliderBG"
+                    />
+
+                    <div
+                      class="card_text text-white text-xl w-[250px] leading-[129%] tracking-[1px] absolute left-[23px] bottom-[35px]"
+                    >
                       essentially unchanged It was popularised in the 1960s
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="cardSldier_item">
+              <div class="cardSldier_item px-5 py-0">
                 <div
-                  class="cardSlider_item_wrapper"
+                  class="cardSlider_item_wrapper bg-no-repeat bg-center bg-cover relative"
                   style="background-image: url('images/home_cardSlider3.png')"
                 >
                   <img
                     src="images/home_sldier_link_arrow.svg"
                     alt="slider_link_arrow"
-                    class="slider_link_arrow"
+                    class="slider_link_arrow absolute w-[27px] right-0 top-0"
                   />
                   <div class="card_img_text">
-                    <img src="images/cardSlider_BG.png" alt="cardSliderBG" />
+                    <img
+                      class="w-full"
+                      src="images/cardSlider_BG.png"
+                      alt="cardSliderBG"
+                    />
 
-                    <div class="card_text">
+                    <div
+                      class="card_text text-white text-xl w-[250px] leading-[129%] tracking-[1px] absolute left-[23px] bottom-[35px]"
+                    >
                       essentially unchanged It was popularised in the 1960s
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="cardSldier_item">
+              <div class="cardSldier_item px-5 py-0">
                 <div
-                  class="cardSlider_item_wrapper"
+                  class="cardSlider_item_wrapper bg-no-repeat bg-center bg-cover relative"
                   style="background-image: url('images/home_cardSlider4.png')"
                 >
                   <img
                     src="images/home_sldier_link_arrow.svg"
                     alt="slider_link_arrow"
-                    class="slider_link_arrow"
+                    class="slider_link_arrow absolute w-[27px] right-0 top-0"
                   />
                   <div class="card_img_text">
-                    <img src="images/cardSlider_BG.png" alt="cardSliderBG" />
-                    <div class="card_text">
+                    <img
+                      class="w-full"
+                      src="images/cardSlider_BG.png"
+                      alt="cardSliderBG"
+                    />
+
+                    <div
+                      class="card_text text-white text-xl w-[250px] leading-[129%] tracking-[1px] absolute left-[23px] bottom-[35px]"
+                    >
                       essentially unchanged It was popularised in the 1960s
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="cardSldier_item">
+              <div class="cardSldier_item px-5 py-0">
                 <div
-                  class="cardSlider_item_wrapper"
+                  class="cardSlider_item_wrapper bg-no-repeat bg-center bg-cover relative"
                   style="background-image: url('images/home_cardSlider5.png')"
                 >
                   <img
                     src="images/home_sldier_link_arrow.svg"
                     alt="slider_link_arrow"
-                    class="slider_link_arrow"
+                    class="slider_link_arrow absolute w-[27px] right-0 top-0"
                   />
                   <div class="card_img_text">
-                    <img src="images/cardSlider_BG.png" alt="cardSliderBG" />
-                    <div class="card_text">
+                    <img
+                      class="w-full"
+                      src="images/cardSlider_BG.png"
+                      alt="cardSliderBG"
+                    />
+
+                    <div
+                      class="card_text text-white text-xl w-[250px] leading-[129%] tracking-[1px] absolute left-[23px] bottom-[35px]"
+                    >
                       essentially unchanged It was popularised in the 1960s
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="cardSlider_arrows">
+            <div class="cardSlider_arrows flex justify-between p-5">
               <div class="leftArrow">
-                <img src="images//homeSliderArrow.svg" alt="homeSldierArrow" />
+                <img
+                  class="bg-white rotate-180 w-7 cursor-pointer transition-all duration-[0.4s] px-2.5 py-1.5 rounded-[50%] hover:bg-[#ff7e47]"
+                  src="images//homeSliderArrow.svg"
+                  alt="homeSldierArrow"
+                />
               </div>
               <div class="rightArrow">
-                <img src="images//homeSliderArrow.svg" alt="homeSldierArrow" />
+                <img
+                  class="bg-white w-7 cursor-pointer transition-all duration-[0.4s] px-2.5 py-1.5 rounded-[50%] hover:bg-[#ff7e47]"
+                  src="images//homeSliderArrow.svg"
+                  alt="homeSldierArrow"
+                />
               </div>
             </div>
           </div>
@@ -739,8 +1416,8 @@
       </section>
       <section>
         <div class="map">
-          <div class="map_wrapper">
-            <div class="map_item">
+          <div class="map_wrapper relative">
+            <div class="map_item h-[755px]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.7484362098!2d72.41493336470985!3d23.020474097405575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1711608060296!5m2!1sen!2sin"
                 width="600"
@@ -749,47 +1426,62 @@
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
+                class="w-full h-[755px] float-left grayscale-[1]"
               ></iframe>
             </div>
-            <div class="contactForm">
-              <div class="contactForm_heading">how to reach us</div>
+            <div
+              class="contactForm w-[90%] sm:w-[420px] bg-white absolute translate-x-[-50%] translate-y-[-50%] md:translate-x-[0] pl-[15px] pr-0 pt-[62px] pb-0 top-[50%] left-[50%] md:left-[auto] right-[auto] sm:right-[60px] md:right-[110px] md:top-2/4"
+              >
+              <div
+                class="contactForm_heading text-[#002d70] text-[34px] leading-[62.9px] tracking-[1px] uppercase font-semibold mt-0 mb-2.5 mx-0 pl-[15px]"
+              >
+                how to reach us
+              </div>
               <form action="">
-                <div class="form_input">
+                <div class="form_input pl-[15px]">
                   <input
                     type="text"
                     placeholder="Full Name:"
-                    class="contactInput"
+                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] sm:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
                   />
                 </div>
-                <div class="form_input">
+                <div class="form_input pl-[15px]">
                   <input
                     type="text"
                     placeholder="Email:"
-                    class="contactInput"
+                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] sm:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
                   />
                 </div>
-                <div class="form_input">
+                <div class="form_input pl-[15px]">
                   <input
                     type="text"
                     placeholder="Phone Number:"
-                    class="contactInput"
+                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] sm:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
                   />
                 </div>
-                <select name="inquiry" id="inquiry" class="selectDrp">
+                <select
+                  name="inquiry"
+                  id="inquiry"
+                  class="selectDrp w-[90%] sm:w-[248px]"
+                >
                   <option value="">Business Inquiry</option>
                   <option value="Business Inquiry 1">Business Inquiry 1</option>
                   <option value="Business Inquiry 2">Business Inquiry 2</option>
                   <option value="Business Inquiry 3">Business Inquiry 3</option>
                 </select>
-                <div class="form_input last">
+                <div class="form_input last pl-[15px] mb-[20px]">
                   <input
                     type="text"
                     placeholder="Message :"
-                    class="contactInput"
+                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] sm:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
                   />
                 </div>
-                <div class="submit_btn">
-                  <button>Send Message</button>
+                <div class="submit_btn text-right">
+                  <button
+                    class="w-[162px] bg-[#ff7e47] text-white text-sm tracking-[0.3px] cursor-pointer transition-all duration-[0.4s] px-2.5 py-5 border-[none] hover:bg-[#002d70]"
+                  >
+                    Send Message
+                  </button>
                 </div>
               </form>
             </div>
@@ -797,7 +1489,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <!-- <footer>
       <div class="footer_wrapper">
         <div class="footer_col1 footer_col">
           <div class="footer_col_wrapper">
@@ -881,6 +1573,110 @@
           </div>
         </div>
       </div>
+    </footer> -->
+
+    <footer
+      class="bg-black text-white pt-20 pb-12 px-[20px] sm:px-12 flex justify-center items-end overflow-y-hidden overflow-x-hidden"
+    >
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-4"
+       
+      >
+        <div
+          class="col-span-1 md:col-span-1 sm:border-r sm:border-gray-300 md:pr-5 sm:px-5 xl:pr-8 flex justify-end flex-col"
+          >
+          <div
+            class="flex items-center justify-center md:justify-start lg:justify-center mb-8"
+          >
+            <a href="./index.html">
+              <img
+                src="./images/footerLogo.png"
+                alt="footerLogo"
+                class="w-60"
+              />
+            </a>
+          </div>
+          <div class="pt-[20px] sm:pt-16">
+            <p class="text-sm leading-5 mb-4">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
+            <p class="text-sm leading-5">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-span-1 md:col-span-1 lg:col-span-1 lg:border-r lg:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex items-end"
+         
+        >
+          <div class="pb-[20px] border-b-[1px] sm:border-none">
+            <p class="text-sm leading-5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-span-1 lg:col-span-1  sm:border-r sm:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex flex-col justify-end"
+          
+        >
+          <ul class="mb-4 sm:mb-8 pb-[20px] border-b-[1px] sm:border-none">
+            <li><a href="./index.html" class="text-lg uppercase">Home</a></li>
+            <li><a href="#" class="text-lg uppercase">Company</a></li>
+            <li><a href="#" class="text-lg uppercase">Products</a></li>
+            <li>
+              <a href="./services/services.html" class="text-lg uppercase"
+                >Service option 1</a
+              >
+            </li>
+            <li>
+              <a href="./services_option2/index.html" class="text-lg uppercase"
+                >Service option 2</a
+              >
+            </li>
+            <li><a href="#" class="text-lg uppercase">Blogs</a></li>
+          </ul>
+          <form class="pb-[20px] border-b-[1px] sm:border-none">
+            <div class="text-sm leading-5 mb-4">Newsletter signup</div>
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="bg-[#3C3C3C] text-white w-full px-4 py-2 focus:outline-none placeholder-white placeholder:text-[15px]"
+            />
+          </form>
+        </div>
+        <div
+          class="col-span-1 lg:col-span-1 sm:px-5 xl:pr-8 pt-[20px] flex flex-row sm:flex-col justify-between sm:justify-end pb-[20px] border-b-[1px] sm:border-none"
+          
+        >
+          <div class="sm:mb-8 ">
+            <ul>
+              <li><a href="#" class="text-sm">Terms & Conditions</a></li>
+              <li><a href="#" class="text-sm">Privacy Policy</a></li>
+              <li><a href="#" class="text-sm">Investor Privacy Notice</a></li>
+              <li><a href="#" class="text-sm">Cookies Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#" class="text-sm">Twitter</a></li>
+              <li><a href="#" class="text-sm">LinkedIn</a></li>
+              <li><a href="#" class="text-sm">Medium</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
