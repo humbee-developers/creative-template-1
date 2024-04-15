@@ -42,6 +42,22 @@
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellowcolor:'#DFA621',
+              bluecolor:'#4D5F75',
+              
+            },
+            fontSize:{
+           text2xl:'2rem',
+            },
+          }
+        }
+      }
+    </script>
   
     <title>Aboutus</title>
   </head>
@@ -141,7 +157,7 @@
             <img src="../images/imgone.png"" alt="about_image" class="max-w-full block w-full h-full" />
             <div class="inner_banner absolute top-[45%]">
               <div class="inner_banner_wrapper px-[20px] md:px-[60px] lg:px-[100px] py-0">
-                <div class="inner_banner_heading text-[40px] md:text-[50px] lg:text-[60px] xl:text-[90px] 2xl:text-[71px] text-white font-normal leading-[140%] md:leading-[50px] lg:leading-[77px] w-full md:w-[100%] "
+                <div class="inner_banner_heading flex gap-12  text-[40px] md:text-[50px] lg:text-[60px] xl:text-[90px] 2xl:text-[71px] text-white font-normal leading-[140%] md:leading-[50px] lg:leading-[77px] w-full md:w-[100%] "
                 data-aos="slide-right"
                 data-aos-duration="1000"
                 data-aos-delay="10">
@@ -152,7 +168,7 @@
               </h1>
               
               <p
-                class="about_para absolute  text-white text-sm "
+                class="about_para flex items-center  text-white text-sm "
               >
                 Lorem Ipsum is simply dummy text of the printing <br />and typesetting
                 industry. Lorem Ipsum has been<br />
@@ -230,7 +246,7 @@
     <div class=" w-full justify-around text-black sm:flex sm:mt-40">
       <div class="left p-4">
         <h1
-          class="thirdflex_heading text-4xl font-normal leading-9 text-left mt-24"
+          class="thirdflex_heading text-3xl font-normal leading-9 text-left mt-8 lg:text-4xl xl:mt-24"
         >
           Lorem Ipsum is simply <br />dummy text of the printing and
           <br />typesetting industry.
@@ -417,10 +433,10 @@
         class="carousel slide"
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner px-14 py-48 sm:px-14 lg:px-56">
+        <div class="carousel-inner  pt-16 pb-40 pl-10 pr-10 sm:px-14 lg:px-56">
           <div class="carousel-item active">
             <div class="w-full md:w-11/12 lg:w-10/12 xl:w-8/12 mx-auto">
-              <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal">
+              <h1 class="text-text2xl md:text-5xl lg:text-6xl font-normal">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </h1>
@@ -443,8 +459,8 @@
           </div>
           <div class="carousel-item">
             <div class="w-full md:w-11/12 lg:w-10/12 xl:w-8/12 mx-auto">
-              <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal">
-                2Lorem Ipsum is simply dummy text of the printing and
+              <h1 class="text-text2xl md:text-5xl lg:text-6xl font-normal">
+                Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry.
               </h1>
               <div class="flex">
@@ -466,8 +482,8 @@
           </div>
           <div class="carousel-item">
             <div class="w-full md:w-11/12 lg:w-10/12 xl:w-8/12 mx-auto">
-              <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal">
-                3Lorem Ipsum is simply dummy text of the printing and
+              <h1 class="text-text2xl md:text-5xl lg:text-6xl font-normal">
+                Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry.
               </h1>
               <div class="flex">
