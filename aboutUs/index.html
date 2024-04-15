@@ -42,6 +42,9 @@
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -277,7 +280,12 @@
         </div>
       </div>
       <div class="right w-full sm: md:w-6/12 flex">
-        <img class="w-full sm:w-full" src="../images/imgtwo.png" alt="Image" />
+        <img data-aos="slide-left" 
+        data-aos-duration="1000"
+        data-aos-delay="100"
+        data-aos-once="true"
+        data-aos-easing="ease-in-out"
+        class="w-full sm:w-full" src="../images/imgtwo.png" alt="Image" />
       </div>
     </div>
     <!-- 4th aboutflex -->
@@ -285,7 +293,12 @@
       class="sm:flex w-full justify-around sm:py-20 sm:px-20 pb-8 md:block md:py-6 lg:flex   w-[100%] text-black"
     >
       <div class="left w-full sm:w-3/6 md:w-full">
-        <img class="mx-auto my-16 md:my-8 md:w-auto"" src="../images/img3.png" alt="Image" />
+        <img  data-aos="slide-right" 
+        data-aos-duration="1000"
+        data-aos-delay="100"
+        data-aos-once="true"
+        data-aos-easing="ease-in-out
+         class="mx-auto my-16 md:my-8 md:w-auto"" src="../images/img3.png" alt="Image" />
       </div>
       <div class=" p-8 w-full  sm:w-3/6 md:w-full">
         <div
@@ -643,6 +656,9 @@
   
 
     <!-- script -->
+    <script>
+      AOS.init();
+    </script>
     <script>
       ScrollReveal({
         reset: true,
