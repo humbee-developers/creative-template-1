@@ -50,7 +50,7 @@ ul {
 li {
   font-family: "nueu_montreal_regular";
 }
-div {
+body{
   font-family: "nueu_montreal_regular";
 }
 .selectric-selectDrp {
@@ -209,4 +209,27 @@ input:checked + label .description {
 }
 .services_sliders{
   display: flex !important;
+}
+.s_op4_tab.active{
+  color:#DFA621
+} 
+.s_op4_tab_content{
+  display: none;
+}
+.s_op4_tab_content1{
+  display: block;
+}
+.pregressCount_item{
+  font-family: "nueu_montreal_medium" !important;
+}
+.progress-value{
+  font-family: "nueu_montreal_light" !important;
+}
+@media (max-width: 991px) {
+ 
+  .services_form_wrapper_form .contactForm form .selectric-selectDrp {
+    width: 96%;
+    margin: 0 0 80px;
+  }
+  
 }
