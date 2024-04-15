@@ -42,6 +42,22 @@
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellowcolor:'#DFA621',
+              bluecolor:'#4D5F75',
+              
+            },
+            fontSize:{
+           text2xl:'2rem',
+            },
+          }
+        }
+      }
+    </script>
   
     <title>Aboutus</title>
   </head>
@@ -62,7 +78,7 @@
           data-aos-delay="10"
         >
           <ul class="nav flex items-center">
-            <li class="pr-5 pb-5 mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20">
+            <li class="pr-5 pb-8 mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20">
               <a
                 class="text-white text-xs font-normal leading-8 no-underline"
                 href="../index.html"
@@ -70,7 +86,7 @@
               >
             </li>
             <li
-              class="dropdown dropdown-6 pr-5 pb-5 mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]"
+              class="dropdown dropdown-6 pr-5 pb-8 mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]"
             >
               <a
                 class="text-white text-xs font-normal leading-8 no-underline"
@@ -119,7 +135,7 @@
               </ul>
             </li>
 
-            <li class="pb-5">
+            <li class="pb-8">
               <a
                 class="text-white text-xs font-normal leading-8 no-underline"
                 href="./aboutUs/index.html"
@@ -129,7 +145,7 @@
           </ul>
           <a
             href="#"
-            class="contact_menu text-white text-xs font-normal leading-8 no-underline mt-0 mb-5 mx-0 pl-[45px] border-l-white border-l border-solid"
+            class="contact_menu text-white text-xs font-normal leading-8 no-underline mt-0 mb-8 mx-0 pl-[45px] border-l-white border-l border-solid"
             >Contact Us</a
           >
         </div>
@@ -141,7 +157,7 @@
             <img src="../images/imgone.png"" alt="about_image" class="max-w-full block w-full h-full" />
             <div class="inner_banner absolute top-[45%]">
               <div class="inner_banner_wrapper px-[20px] md:px-[60px] lg:px-[100px] py-0">
-                <div class="inner_banner_heading text-[40px] md:text-[50px] lg:text-[60px] xl:text-[90px] 2xl:text-[71px] text-white font-normal leading-[140%] md:leading-[50px] lg:leading-[77px] w-full md:w-[100%] "
+                <div class="inner_banner_heading sm:flex gap-12  text-[40px] md:text-[50px] lg:text-[60px] xl:text-[90px] 2xl:text-[71px] text-white font-normal leading-[140%] md:leading-[50px] lg:leading-[77px] w-full md:w-[100%] "
                 data-aos="slide-right"
                 data-aos-duration="1000"
                 data-aos-delay="10">
@@ -152,7 +168,7 @@
               </h1>
               
               <p
-                class="about_para absolute  text-white text-sm "
+                class="about_para flex items-center  text-white text-sm "
               >
                 Lorem Ipsum is simply dummy text of the printing <br />and typesetting
                 industry. Lorem Ipsum has been<br />
@@ -170,7 +186,7 @@
       <div
         class="box hover:text-white cursor-pointer border border-gray-300 bg-white"
       >
-        <div class="hover:text-white p-32 md:p-16">
+        <div class="hover:text-white p-16 md:p-8  xl:p-16 ">
           <img class="box_icon" src="../images/GlobeStand.png" />
           <h1 class="text-2xl font-normal leading-8 text-left">
             Lorem Ipsum is simply.
@@ -184,7 +200,7 @@
       <div
         class="box hover:text-white cursor-pointer border border-gray-300 bg-white"
       >
-        <div class="hover:text-white p-32 md:p-16">
+        <div class="hover:text-white p-16  md:p-8  xl:p-16 ">
           <img class="box_icon" src="../images/Grains.png" />
           <h1 class="text-2xl font-normal leading-8 text-left">
             Lorem Ipsum is simply.
@@ -198,7 +214,7 @@
       <div
         class="box hover:text-white cursor-pointer border border-gray-300 bg-white"
       >
-        <div class="hover:text-white p-32 md:p-16">
+        <div class="hover:text-white p-16 md:p-8  xl:p-16">
           <!-- <img class="box_icon" src="Vector.png" /> -->
           <img class="box_icon" src="../images/GlobeStand.png" />
           <h1 class="text-2xl font-normal leading-8 text-left">
@@ -213,7 +229,7 @@
       <div
         class="box hover:text-white cursor-pointer border border-gray-300 bg-white"
       >
-        <div class="hover:text-white p-32 md:p-16">
+        <div class="hover:text-white p-16 md:p-8 xl:p-16">
           <img class="box_icon" src="../images/Medal.png" alt="image" />
           <!-- <img class="box_icon" src="GlobeStand.png" /> -->
           <h1 class="text-2xl font-normal leading-8 text-left">
@@ -230,7 +246,7 @@
     <div class=" w-full justify-around text-black sm:flex sm:mt-40">
       <div class="left p-4">
         <h1
-          class="thirdflex_heading text-4xl font-normal leading-9 text-left mt-24"
+          class="thirdflex_heading text-3xl font-normal leading-9 text-left mt-8 lg:text-4xl xl:mt-24"
         >
           Lorem Ipsum is simply <br />dummy text of the printing and
           <br />typesetting industry.
@@ -268,10 +284,10 @@
     <div
       class="sm:flex w-full justify-around sm:py-20 sm:px-40 pb-8 sm:pl-20 w-[100%] text-black"
     >
-      <div class="left w-full">
+      <div class="left w-full sm:w-3/6">
         <img src="../images/img3.png" alt="Image" />
       </div>
-      <div class="right p-8">
+      <div class=" p-8 w-full  sm:w-3/6">
         <div
           id="accordion-flush"
           data-accordion="collapse"
@@ -285,8 +301,9 @@
               data-accordion-target="#accordion-flush-body-1"
               aria-expanded="true"
               aria-controls="accordion-flush-body-1"
-            >
-              <span class="text-black text-2xl"> Lorem Ipsum is simply</span>
+            > 
+
+              <div class="text-black text-2xl flex gap-4 items-center"><span class="text-gray-400 text-3xl">01</span> Lorem Ipsum is simply</div>
               <svg
                 data-accordion-icon
                 class="w-3 h-3 rotate-180 shrink-0"
@@ -327,7 +344,7 @@
               aria-expanded="false"
               aria-controls="accordion-flush-body-2"
             >
-              <span class="text-black text-2xl"> Lorem Ipsum is simply</span>
+            <div class="text-black text-2xl flex gap-4 items-center"><span class="text-gray-400 text-3xl">02</span> Lorem Ipsum is simply</div>
               <svg
                 data-accordion-icon
                 class="w-3 h-3 rotate-180 shrink-0"
@@ -368,7 +385,7 @@
               aria-expanded="false"
               aria-controls="accordion-flush-body-3"
             >
-              <span class="text-black text-2xl"> Lorem Ipsum is simply</span>
+            <div class="text-black text-2xl flex gap-4 items-center"><span class="text-gray-400 text-3xl">03</span> Lorem Ipsum is simply</div>
               <svg
                 data-accordion-icon
                 class="w-3 h-3 rotate-180 shrink-0"
@@ -417,10 +434,10 @@
         class="carousel slide"
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner px-14 py-48 sm:px-14 lg:px-56">
+        <div class="carousel-inner  pt-16 pb-40 pl-10 pr-10 sm:px-14 lg:px-56">
           <div class="carousel-item active">
             <div class="w-full md:w-11/12 lg:w-10/12 xl:w-8/12 mx-auto">
-              <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal">
+              <h1 class="text-text2xl md:text-5xl lg:text-6xl font-normal">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </h1>
@@ -443,8 +460,8 @@
           </div>
           <div class="carousel-item">
             <div class="w-full md:w-11/12 lg:w-10/12 xl:w-8/12 mx-auto">
-              <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal">
-                2Lorem Ipsum is simply dummy text of the printing and
+              <h1 class="text-text2xl md:text-5xl lg:text-6xl font-normal">
+                Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry.
               </h1>
               <div class="flex">
@@ -466,8 +483,8 @@
           </div>
           <div class="carousel-item">
             <div class="w-full md:w-11/12 lg:w-10/12 xl:w-8/12 mx-auto">
-              <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal">
-                3Lorem Ipsum is simply dummy text of the printing and
+              <h1 class="text-text2xl md:text-5xl lg:text-6xl font-normal">
+                Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry.
               </h1>
               <div class="flex">
