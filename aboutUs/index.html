@@ -78,7 +78,7 @@
           data-aos-delay="10"
         >
           <ul class="nav flex items-center">
-            <li class="pr-5 pb-8 mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20">
+            <li class="pr-5 pb-[1.25rem] mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20">
               <a
                 class="text-white text-xs font-normal leading-8 no-underline"
                 href="../index.html"
@@ -86,7 +86,7 @@
               >
             </li>
             <li
-              class="dropdown dropdown-6 pr-5 pb-8 mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]"
+              class="dropdown dropdown-6 pr-5 pb-[1.25rem] mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]"
             >
               <a
                 class="text-white text-xs font-normal leading-8 no-underline"
@@ -135,7 +135,7 @@
               </ul>
             </li>
 
-            <li class="pb-8">
+            <li class="pb-[1.25rem] ">
               <a
                 class="text-white text-xs font-normal leading-8 no-underline"
                 href="./aboutUs/index.html"
@@ -145,7 +145,7 @@
           </ul>
           <a
             href="#"
-            class="contact_menu text-white text-xs font-normal leading-8 no-underline mt-0 mb-8 mx-0 pl-[45px] border-l-white border-l border-solid"
+            class="contact_menu text-white text-xs font-normal leading-8 no-underline mt-0 mb-4 mx-0 pl-[45px] border-l-white border-l border-solid"
             >Contact Us</a
           >
         </div>
@@ -243,13 +243,13 @@
       </div>
     </div>
     <!-- 3rd aboutflex -->
-    <div class=" w-full justify-around text-black sm:flex sm:mt-40">
-      <div class="left p-4">
+    <div class=" w-full block justify-around text-black px-8 py-8 md:px-12 py-4 md:flex   lg:flex ">
+      <div class="left mb-4 w-full sm:w-full md:w-6/12">
         <h1
-          class="thirdflex_heading text-3xl font-normal leading-9 text-left mt-8 lg:text-4xl xl:mt-24"
+          class="thirdflex_heading text-3xl w-full font-normal leading-9 text-left  md:mt-0   lg:text-3xl lg:w-9/12 xl:mt-20 xl:w-6/12"
         >
-          Lorem Ipsum is simply <br />dummy text of the printing and
-          <br />typesetting industry.
+          Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry.
         </h1>
         <p
           class="thirdflex_para text-base mt-4 font-normal leading-4 text-left text-black"
@@ -276,18 +276,18 @@
           </div>
         </div>
       </div>
-      <div class="right">
-        <img src="../images/imgtwo.png" alt="Image" />
+      <div class="right w-full sm: md:w-6/12 flex">
+        <img class="w-full sm:w-full" src="../images/imgtwo.png" alt="Image" />
       </div>
     </div>
     <!-- 4th aboutflex -->
     <div
-      class="sm:flex w-full justify-around sm:py-20 sm:px-40 pb-8 sm:pl-20 w-[100%] text-black"
+      class="sm:flex w-full justify-around sm:py-20 sm:px-20 pb-8 md:block md:py-6 lg:flex   w-[100%] text-black"
     >
-      <div class="left w-full sm:w-3/6">
-        <img src="../images/img3.png" alt="Image" />
+      <div class="left w-full sm:w-3/6 md:w-full">
+        <img class="mx-auto my-16 md:my-8 md:w-auto"" src="../images/img3.png" alt="Image" />
       </div>
-      <div class=" p-8 w-full  sm:w-3/6">
+      <div class=" p-8 w-full  sm:w-3/6 md:w-full">
         <div
           id="accordion-flush"
           data-accordion="collapse"
@@ -428,13 +428,13 @@
 
     <!-- 6th flex slider -->
 
-    <div class="bg-gray-300">
+    <div class="bg-gray-300 overflow-hidden">
       <div
         id="carouselExampleAutoplaying"
         class="carousel slide"
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner  pt-16 pb-40 pl-10 pr-10 sm:px-14 lg:px-56">
+        <div class="carousel-inner  pt-16 pb-40 pl-10 pr-10 sm:px-14 md:px-32 lg:px-56 ">
           <div class="carousel-item active">
             <div class="w-full md:w-11/12 lg:w-10/12 xl:w-8/12 mx-auto">
               <h1 class="text-text2xl md:text-5xl lg:text-6xl font-normal">
@@ -505,31 +505,33 @@
             </div>
           </div>
         </div>
+      <div class="">
         <button
-          class="carousel-control-prev absolute left-[15rem] top-[10rem] md:left-[37rem] lg:left-[43rem] xl:left-[72rem] md:top-[10rem] h-auto w-auto text-black"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <i class="fa-solid fa-arrow-left-long fa-2x"></i>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next absolute right-[7rem] md:right-[13rem] lg:right-[23rem] top-[10rem] h-auto w-auto"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <i class="fa-solid fa-arrow-right-long fa-2x text-black"></i>
-          <span class="visually-hidden">Next</span>
-        </button>
+        class="carousel-control-prev absolute top-[4rem]  right-[-40rem] 2xl:right-[-39rem] sm:right-[-15rem] xl:right-[-32rem]   h-auto w-auto text-black"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <i class="fa-solid fa-arrow-left-long fa-2x"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next absolute top-[4rem]  right-[27rem] 2xl:right-[23rem] xl:right-[20rem] sm:right-[12rem]  h-auto w-auto"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <i class="fa-solid fa-arrow-right-long fa-2x text-black"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+      </div>
       </div>
     </div>
 
     <!-- 7th section -->
     <div>
       <div class="relative">
-        <img src="../images/transparent.png" alt="Background Image" />
+        <img class="w-full" src="../images/transparent.png" alt="Background Image" />
         <img
           class="absolute right-0 top-[-8rem] md:top-[-6rem] lg:top-[-8rem] xl:top-[-8rem]"
           src="../images/men.png"
