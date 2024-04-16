@@ -233,3 +233,9 @@ input:checked + label .description {
   }
   
 }
+
+@media(max-width:767px){
+  .services_sliders{
+    display: block !important;
+  }
+}
