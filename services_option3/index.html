@@ -7,47 +7,167 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../aboutUs/style.css" />
+    <link rel="stylesheet" href="../services/services.css" />
     <link rel="stylesheet" href="../global.css" />
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../custom.js"></script>
+    <script src="../jquery.selectric.min.js"></script>
+    <link rel="stylesheet" href="../selectric.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:wght@200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300;400;500;600;700;800&family=Praise&family=Rubik:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellowcolor: "#DFA621",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <a href="/">
+    <header class="z-[100] relative pt-[43px] pr-[37px] pb-[0] pl-[50px]">
+      <nav class="flex justify-between items-center">
+        <div
+          class="logo"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="10"
+        >
+          <a href="../index.html">
             <img src="../images/logo.svg" alt="logo" />
           </a>
         </div>
-        <div class="navigation">
-          <ul>
-            <li>
-              <a href="#">Home</a>
+        <div
+          class="navigation flex w-[65%] lg:w-[700px] justify-between px-[5px] py-0 border-b-white border-b border-solid hidden md:flex"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="10"
+        >
+          <ul class="nav flex items-center">
+            <li class="pr-5 pb-5 mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20">
+              <a
+                class="text-white text-xs font-normal leading-8 no-underline"
+                href="../index.html"
+                >Home</a
+              >
             </li>
-            <li>
-              <a href="#">Company</a>
+            <li
+              class="dropdown dropdown-6 pr-5 pb-5 mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]"
+            >
+              <a
+                class="text-white text-xs font-normal leading-8 no-underline"
+                href="#"
+                >Company</a
+              >
+              <ul
+                class="dropdown_menu dropdown_menu--animated dropdown_menu-6 pr-[5rem] md:pr-[5rem] lg:pr-10 mr-5 absolute top-[100%] left-[-15px] w-64 z-[-1] hidden"
+              >
+                <li
+                  class="dropdown_item-1 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../aboutUs/index.html"
+                    >About Us</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-2 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../services/services.html"
+                    >Service Option 1</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../services_option2/index.html"
+                    >Service Option 2</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../services_option4/index.html"
+                    >Service Option 4</a
+                  >
+                </li>
+              </ul>
             </li>
-            <li>
-              <a href="#">Product</a>
+
+            <li class="pb-5">
+              <a
+                class="text-white text-xs font-normal leading-8 no-underline"
+                href="./aboutUs/index.html"
+                >Products</a
+              >
             </li>
           </ul>
-          <a href="#" class="contact_menu">Contact Us</a>
+          <a
+            href="#"
+            class="contact_menu text-white text-xs font-normal leading-8 no-underline mt-0 mb-5 mx-0 pl-[45px] border-l-white border-l border-solid"
+            >Contact Us</a
+          >
         </div>
       </nav>
     </header>
     <main>
-      <section class="hero_section">
-        <div class="herosection">
-          <div class="inner_banner_image">
-            <img src="./../images/serviceBanner.png" alt="banner_image" />
-            <div class="inner_banner">
-              <div class="inner_banner_wrapper">
-                <div class="inner_banner_title">Our Services</div>
-                <div class="inner_banner_heading">
+      <section class="hero_section h-[calc(100vh_-_117px)]">
+        <div class="herosection absolute top-0 left-0 w-full">
+          <div class="inner_banner_image relative h-screen">
+            <img
+              src="./../images/serviceBanner.png"
+              alt="banner_image"
+              class="max-w-full block w-full h-full"
+            />
+            <div class="inner_banner absolute top-[45%]">
+              <div
+                class="inner_banner_wrapper px-[20px] md:px-[60px] lg:px-[100px] py-0"
+              >
+                <div
+                  class="inner_banner_title text-3xl leading-[129%] text-white mt-0 mb-[25px] mx-0"
+                  data-aos="slide-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="10"
+                >
+                  Our Services
+                </div>
+                <div
+                  class="inner_banner_heading text-[40px] md:text-[50px] lg:text-[60px] xl:text-[60px] 2xl:text-[71px] text-white font-normal leading-[140%] md:leading-[50px] lg:leading-[77px] w-full md:w-[85%]"
+                  data-aos="slide-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="10"
+                >
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </div>
@@ -56,109 +176,843 @@
           </div>
         </div>
       </section>
-      <section class="Service_Cards_Section">
-        <div class="card-container">
-          <div class="card">
-            <img src="../images/service_cards1_opt3.png" alt="Image 1" />
-            <div class="card_main">
-              <p class="service_card_text">Lorem Ipsum is simply</p>
-              <p class="card_innertext">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-              </p>
+      <!-- <section>
+        <div class="services_card">
+          <div class="services_card_wrapper flex flex-col-reverse md:flex-row">
+            <div class="service_card_list w-full md:w-[50%]">
+              <div class="about_secondflex h-full">
+                <div class="about_secondflex grid grid-cols-2 h-full">
+                  <div
+                    class="box hover:text-white cursor-pointer border border-gray-300 bg-white "
+                  >
+                    <div class="hover:text-white py-10 px-5 md:py-10 lg:px-12 2xl:p-20 flex flex-col h-full justify-end">
+                      <img class="box_icon w-fit mb-4" src="../images/GlobeStand.png" />
+                      <h1 class="text-2xl font-normal leading-8 text-left">
+                        Lorem Ipsum is simply.
+                      </h1>
+                      <p class="just text-xs font-normal mt-4 leading-4 text-left">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="box hover:text-white cursor-pointer border border-gray-300 bg-white"
+                  >
+                    <div class="hover:text-white p-10 md:py-10 px-5 lg:px-12 2xl:p-20 flex flex-col h-full justify-end">
+                      <img class="box_icon w-fit mb-4" src="../images/GlobeStand.png" />
+                      <h1 class="text-2xl font-normal leading-8 text-left">
+                        Lorem Ipsum is simply.
+                      </h1>
+                      <p class="just text-xs font-normal mt-4 leading-4 text-left">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="box hover:text-white cursor-pointer border border-gray-300 bg-white"
+                  >
+                    <div class="hover:text-white p-10 md:py-10 px-5 lg:px-12 2xl:p-20 flex flex-col h-full justify-end">
+                 
+                      <img class="box_icon w-fit mb-4" src="../images/GlobeStand.png" />
+                      <h1 class="text-2xl font-normal leading-8 text-left">
+                        Lorem Ipsum is simply.
+                      </h1>
+                      <p class="just text-xs font-normal mt-4 leading-4 text-left">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="box hover:text-white cursor-pointer border border-gray-300 bg-white"
+                  >
+                    <div class="hover:text-white p-10 md:py-10 px-5 lg:px-12 2xl:p-20 flex flex-col h-full justify-end">
+                      <img class="box_icon w-fit mb-4" src="../images/GlobeStand.png" alt="image" />
+                 
+                      <h1 class="text-2xl font-normal leading-8 text-left">
+                        Lorem Ipsum is simply.
+                      </h1>
+                      <p class="text-xs font-normal mt-4 leading-4 text-left">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="box hover:text-white cursor-pointer border border-gray-300 bg-white"
+                  >
+                    <div class="hover:text-white p-10 md:py-10 px-5 lg:px-12 2xl:p-20 flex flex-col h-full justify-end">
+                      <img class="box_icon w-fit mb-4" src="../images/GlobeStand.png" />
+                      <h1 class="text-2xl font-normal leading-8 text-left">
+                        Lorem Ipsum is simply.
+                      </h1>
+                      <p class="just text-xs font-normal mt-4 leading-4 text-left">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="box hover:text-white cursor-pointer border border-gray-300 bg-white"
+                  >
+                    <div class="hover:text-white p-10 md:py-10 px-5 lg:px-12 2xl:p-20 flex flex-col h-full justify-end">
+                      <img class="box_icon w-fit mb-4" src="../images/GlobeStand.png" />
+                      <h1 class="text-2xl font-normal leading-8 text-left">
+                        Lorem Ipsum is simply.
+                      </h1>
+                      <p class="just text-xs font-normal mt-4 leading-4 text-left">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="box hover:text-white cursor-pointer border border-gray-300 bg-white"
+                  >
+                    <div class="hover:text-white p-10 md:py-10 px-5 lg:px-12 2xl:p-20 flex flex-col h-full justify-end">
+                     
+                      <img class="box_icon w-fit mb-4" src="../images/GlobeStand.png" />
+                      <h1 class="text-2xl font-normal leading-8 text-left">
+                        Lorem Ipsum is simply.
+                      </h1>
+                      <p class="just text-xs font-normal mt-4 leading-4 text-left">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="box hover:text-white cursor-pointer border border-gray-300 bg-white"
+                  >
+                    <div class="hover:text-white p-10 md:py-10 px-5 lg:px-12 2xl:p-20 flex flex-col h-full justify-end">
+                      <img class="box_icon w-fit mb-4" src="../images/GlobeStand.png" alt="image" />
+                   
+                      <h1 class="text-2xl font-normal leading-8 text-left">
+                        Lorem Ipsum is simply.
+                      </h1>
+                      <p class="text-xs font-normal mt-4 leading-4 text-left">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            
+                </div>
+              </div>
+              <div class="services_card_big_image w-full md:w-[50%]">
+                <img
+                  src="../images/services_card_big_image.png"
+                  alt="service_card_big_image"
+                  class="max-w-full h-full object-cover	block w-full p-[40px]"
+                />
+              </div>
             </div>
+            
           </div>
-          <div class="card">
-            <img src="../images/service_cards1_opt3.png" alt="Image 1" />
-            <div class="card_main">
-              <p class="service_card_text">Lorem Ipsum is simply</p>
-              <p class="card_innertext">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-              </p>
+        </div>
+      </section> -->
+      <!-- <section>
+        <div class="image_bg_sec">
+          <div class="image_bg_sec_wrap relative">
+            <div class="image_bg_sec_top">
+              <div class="image_bg_sec_top_wrap relative before:content-[''] before:bg-[#4d5f7587] before:absolute before:top-0 before:left-0 before:w-full before:h-full ">
+                <img
+                  src="../images/services_option_2_full_image.png"
+                  alt="services_option_2_full_image"
+                  class="max-w-full block w-full"
+                  
+                />
+                <div class="image_bg_sec_top_text text-[30px] sm:text-[40px] md:text-[51px]  leading-[129%] text-[#dfa621] absolute bottom-[20%] md:right-[10%] left-[50%] translate-x-[-50%] md:left-auto md:translate-x-[auto] md:right-[2%] xl:right-[10%] w-full px-[20px] md:p-0 md:w-[600px]"
+                
+                >
+                <p data-aos="slide-left" 
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out">
+                  Lorem Ipsum is simply dummy text of the printing.
+                </p>
+                </div>
+              </div>
+            </div>
+            <div class="image_bg_sec_bottom overflow-x-hidden " >
+              <div class="image_bg_sec_bottom_wrap h-[280px] md:h-[491px] bg-[#4d5f75] text-white relative">
+                <div class="image_bg_sec_bottom_text_link absolute top-[10%] md:top-[20%] left-[50%] translate-x-[-50%] md:left-auto md:translate-x-[auto] md:right-[12%] xl:right-[17%] w-full px-[20px] md:p-0 md:w-[482px] text-[24px] leading-[129%]">
+                  <div class="image_bg_sec_bottom_text mb-[20px]"  data-aos="slide-left" data-aos-duration="1000"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy
+                  </div>
+                  <div class="image_bg_sec_bottom_link" data-aos="slide-left" data-aos-duration="1000"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out">
+                    <a href="#" class="text-white flex p-[10px] border-[1px] border-white w-fit text-[18px]"
+                      >See more
+                      <img
+                        src="../images/grey_link_arrow.svg"
+                        alt="grey_link_arrow"
+                        class="ml-[10px]"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="image_bg_sec_img absolute top-[20%] left-[10%] translate-y-[-50%] hidden md:block lg:w-[25%] md:w-[20%] md:left-[3%] lg:left-[10%]" 
+            data-aos="slide-left"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+            >
+              <img
+                src="../images/services_option_index_image.png"
+                alt="services_option_index_image"
+                class="w-full"
+              />
             </div>
           </div>
         </div>
-        <div class="card-container">
-          <div class="card">
-            <img src="../images/service_cards1_opt3.png" alt="Image 1" />
-            <div class="card_main">
-              <p class="service_card_text">Lorem Ipsum is simply</p>
-              <p class="card_innertext">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-              </p>
+      </section> -->
+      <!-- <section>
+        <div class="heading_with_big_num bg-[#d9d9d9] overflow-x-hidden">
+          <div class="heading_with_big_num_wrap py-[90px] px-[20px] md:px-[75px]">
+            <div class="heading_with_big_num_heading text-[40px] md:text-[51px] leading-[129%] text-[#757575] p-0 md:px-[40px] lg:px-[80px] mb-[56px] w-[90%] md:w-full lg:w-[780px]"
+            data-aos="slide-right"
+            data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out">
+            
+              Lorem Ipsum is simply dummy text of the printing.
+            </div>
+            <div class="heading_with_big_num_list border-b-[#969696] border-b border-solid overflow-x-hidden overflow-y-hidden">
+             
+              <div class="heading_with_big_num_item flex justify-center items-center border-t border-solid border-t-[#969696] overflow-x-scroll  md:overflow-x-hidden whitespace-nowrap md:whitespace-normal" 
+              data-aos="fade-up"
+              data-aos-duration="800"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+              >
+                <div class="big_index text-[40px] md:text-[133px] text-[#757575] w-[20%] md:w-[200px] text-center px-[8px]" >01</div>
+                <div class="middle_text_wrap w-[35%] flex justify-center px-[8px]">
+                  <div class="middle_text flex justify-center text-[22px] md:text-[35px] text-[#757575] w-full whitespace-normal ">Lorem Ipsum is simply</div>
+                </div>
+                <div class="last_text_wrap w-[40%] flex justify-center px-[8px] whitespace-normal ">
+                  <div class="last_text text-[16px] md:text-[18px] text-[#4d5f75] w-full lg:w-[550px] ">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy
+                  </div>
+                </div>
+              </div>
+              <div class="heading_with_big_num_item flex justify-center items-center border-t border-solid border-t-[#969696] overflow-x-scroll md:overflow-x-hidden whitespace-nowrap md:whitespace-normal"
+              data-aos="fade-up"
+              data-aos-duration="900"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+              >
+                <div class="big_index text-[40px] md:text-[133px] text-[#757575] w-[20%] md:w-[200px] text-center px-[8px]" >02</div>
+                <div class="middle_text_wrap w-[35%] flex justify-center px-[8px]">
+                  <div class="middle_text flex justify-center text-[22px] md:text-[35px] text-[#757575] w-full whitespace-normal ">Lorem Ipsum is simply</div>
+                </div>
+                <div class="last_text_wrap w-[40%] flex justify-center px-[8px] whitespace-normal ">
+                  <div class="last_text text-[16px] md:text-[18px] text-[#4d5f75] w-full lg:w-[550px] ">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy
+                  </div>
+                </div>
+              </div>
+              <div class="heading_with_big_num_item flex justify-center items-center border-t border-solid border-t-[#969696] overflow-x-scroll md:overflow-x-hidden whitespace-nowrap md:whitespace-normal"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+              >
+                <div class="big_index text-[40px] md:text-[133px] text-[#757575] w-[20%] md:w-[200px] text-center px-[8px]" >03</div>
+                <div class="middle_text_wrap w-[35%] flex justify-center px-[8px]">
+                  <div class="middle_text flex justify-center text-[22px] md:text-[35px] text-[#757575] w-full whitespace-normal ">Lorem Ipsum is simply</div>
+                </div>
+                <div class="last_text_wrap w-[40%] flex justify-center px-[8px] whitespace-normal ">
+                  <div class="last_text text-[16px] md:text-[18px] text-[#4d5f75] w-full lg:w-[550px] ">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy
+                  </div>
+                </div>
+              </div>
+              <div class="heading_with_big_num_item flex justify-center items-center border-t border-solid border-t-[#969696] overflow-x-scroll md:overflow-x-hidden whitespace-nowrap md:whitespace-normal"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+              >
+                <div class="big_index text-[40px] md:text-[133px] text-[#757575] w-[20%] md:w-[200px] text-center px-[8px]" >04</div>
+                <div class="middle_text_wrap w-[35%] flex justify-center px-[8px]">
+                  <div class="middle_text flex justify-center text-[22px] md:text-[35px] text-[#757575] w-full whitespace-normal ">Lorem Ipsum is simply</div>
+                </div>
+                <div class="last_text_wrap w-[40%] flex justify-center px-[8px] whitespace-normal ">
+                  <div class="last_text text-[16px] md:text-[18px] text-[#4d5f75] w-full lg:w-[550px] ">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy
+                  </div>
+                </div>
+              </div>
+              <div class="heading_with_big_num_item flex justify-center items-center border-t border-solid border-t-[#969696] overflow-x-scroll md:overflow-x-hidden whitespace-nowrap md:whitespace-normal"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+              >
+                <div class="big_index text-[40px] md:text-[133px] text-[#757575] w-[20%] md:w-[200px] text-center px-[8px]" >05</div>
+                <div class="middle_text_wrap w-[35%] flex justify-center px-[8px]">
+                  <div class="middle_text flex justify-center text-[22px] md:text-[35px] text-[#757575] w-full whitespace-normal ">Lorem Ipsum is simply</div>
+                </div>
+                <div class="last_text_wrap w-[40%] flex justify-center px-[8px] whitespace-normal ">
+                  <div class="last_text text-[16px] md:text-[18px] text-[#4d5f75] w-full lg:w-[550px] ">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy
+                  </div>
+                </div>
+              </div>
+             
+              
+             
+            
             </div>
           </div>
-          <div class="card">
-            <img src="../images/service_cards1_opt3.png" alt="Image 1" />
-            <div class="card_main">
-              <p class="service_card_text">Lorem Ipsum is simply</p>
-              <p class="card_innertext">
+        </div>
+      </section> -->
+      <!-- <section>
+        <div class="left_right_image_text overflow-x-hidden">
+          <div class="left_right_image_text_wrapper max-w-[991px] my-0 mx-auto py-[100px] px-[20px]" >
+            <div class="left_right_image_text_heading text-[35px] md:text-[51px] leading-[129%] text-[#4d5f75] text-center mb-[33px]"
+            data-aos="slide-right"
+              data-aos-duration="800"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+            >
+              Lorem Ipsum is simply dummy text of the printing.
+            </div>
+            <div class="left_right_image_text_text text-[18px] leading-[129%] text-[#4d5f75] text-center mb-[148px]"
+            data-aos="slide-right"
+            data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </div>
+            <div class="left_right_image_text_list md:[&>*:nth-child(even)]:flex-row-reverse">
+              <div class="left_right_image_text_item flex flex-col items-center md:flex-row mb-[40px] md:mb-[10px]">
+                <div class="left_right_image_text_item_image w-full md:w-[40%]"
+                data-aos="slide-right"
+                data-aos-duration="800"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                >
+                  <img
+                    src="../images/left_right_img1.png"
+                    alt="left_right_image"
+                    class="max-w-full w-full block"
+                  />
+                </div>
+                <div class="left_right_image_text_item_content w-full md:w-[60%] pt-[20px] md:pt-0 md:pl-[40px]"
+                data-aos="slide-left"
+                data-aos-duration="800"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                >
+                  <div class="left_right_image_text_item_content_wrap">
+                    <div class="left_right_image_text_item_heading text-[38px] md:text-[42px] lg:text-[51px] leading-[129%] text-[#dfa621] mb-[15px]">
+                      Lorem Ipsum is simply.
+                    </div>
+                    <div class="left_right_image_text_item_text text-[18px] leading-[129%] text-[18px] leading-[129%] text-[#4d5f75] w-full md:w-[90%] lg:w-[482px] mb-[15px]">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy
+                    </div>
+                    <div class="left_right_image_text_item_link">
+                      <a href="#" class="text-black flex items-center p-[8px] border-[1px] border-black text-center w-fit text-[18px] leading-[129%]"
+                        >See more
+                        <img
+                          src="../images/black_link_arrow.svg"
+                          alt="black_link_arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="left_right_image_text_item flex items-center flex-col md:flex-row mb-[40px] md:mb-[10px]">
+                <div class="left_right_image_text_item_image w-full md:w-[40%]"
+                data-aos="slide-left"
+                data-aos-duration="800"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                >
+                  <img
+                    src="../images/left_right_img2.png"
+                    alt="left_right_image"
+                    class="max-w-full w-full block"
+                  />
+                </div>
+                <div class="left_right_image_text_item_content w-full md:w-[60%] pt-[20px] md:pt-0 md:pl-[40px]"
+                data-aos="slide-right"
+                data-aos-duration="800"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                >
+                  <div class="left_right_image_text_item_content_wrap">
+                    <div class="left_right_image_text_item_heading text-[38px] md:text-[42px] lg:text-[51px] leading-[129%] text-[#dfa621] mb-[15px]">
+                      Lorem Ipsum is simply.
+                    </div>
+                    <div class="left_right_image_text_item_text text-[18px] leading-[129%] text-[18px] leading-[129%] text-[#4d5f75] md:w-[90%] lg:w-[482px] mb-[15px]">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy
+                    </div>
+                    <div class="left_right_image_text_item_link">
+                      <a href="#" class="text-black flex items-center p-[8px] border-[1px] border-black text-center w-fit text-[18px] leading-[129%]"
+                        >See more
+                        <img
+                          src="../images/black_link_arrow.svg"
+                          alt="black_link_arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="left_right_image_text_item flex items-center flex-col md:flex-row mb-[40px] md:mb-[10px]">
+                <div class="left_right_image_text_item_image w-full md:w-[40%]"
+                data-aos="slide-right"
+                data-aos-duration="800"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                >
+                  <img
+                    src="../images/left_right_img3.png"
+                    alt="left_right_image"
+                    class="max-w-full w-full block"
+                  />
+                </div>
+                <div class="left_right_image_text_item_content w-full md:w-[60%] pt-[20px] md:pt-0 md:pl-[40px]"
+                data-aos="slide-left"
+                data-aos-duration="800"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                >
+                  <div class="left_right_image_text_item_content_wrap">
+                    <div class="left_right_image_text_item_heading text-[38px] md:text-[42px] lg:text-[51px] leading-[129%] text-[#dfa621] mb-[15px]">
+                      Lorem Ipsum is simply.
+                    </div>
+                    <div class="left_right_image_text_item_text text-[18px] leading-[129%] text-[18px] leading-[129%] text-[#4d5f75] md:w-[90%] lg:w-[482px] mb-[15px]">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy
+                    </div>
+                    <div class="left_right_image_text_item_link">
+                      <a href="#" class="text-black flex items-center p-[8px] border-[1px] border-black text-center w-fit text-[18px] leading-[129%]"
+                        >See more
+                        <img
+                          src="../images/black_link_arrow.svg"
+                          alt="black_link_arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section>
+        <div class="pricing_sec">
+          <div
+            class="pricing_sec_wrapper bg-[#4D5F75] pt-[55px] pb-[168px] px-0"
+          >
+            <div
+              class="pricing_sec_content_wrap w-[80%] md:w-[620px] mx-auto my-0 p-[20px]"
+            >
+              <div
+                class="pricing_sec_heading text-center text-[35px] md:text-[51px] text-[#dfa621] leading-[129%] mb-[15px]"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
+                Lorem Ipsum is simply.
+              </div>
+              <div
+                class="pricing_sec_content text-[18px] text-center leading-[129%] text-[#FFFFFF]"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy 
-              </p>
+                industry. Lorem Ipsum has been the industry's standard dummy
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-5 mt-10 max-w-full md:max-w-[991px] lg:max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-[20px]"
+            >
+              <div
+                class="border border-[#BEBEBE] text-center w-full md:w-[33.33%]"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
+                <h2 class="text-white bg-gray-500 w-full py-6 text-xl">
+                  Basic
+                </h2>
+                <div class="text-3xl bg-white py-8 md:px-5 lg:px-8">
+                  <p class="text-4xl text-black mb-4">$0/month</p>
+                  <div
+                    class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2"
+                  >
+                    Lorem Ipsum is simply dummy text of the.
+                  </div>
+                  <div
+                    class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2"
+                  >
+                    Lorem Ipsum is simply dummy text of the.
+                  </div>
+                  <div
+                    class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2"
+                  >
+                    Lorem Ipsum is simply dummy text of the.
+                  </div>
+                  <div
+                    class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2"
+                  >
+                    Lorem Ipsum is simply dummy text of the.
+                  </div>
+                  <div
+                    class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2"
+                  >
+                    Lorem Ipsum is simply dummy text of the.
+                  </div>
+                  <button
+                    class="text-xl bg-gray-300 text-black border-none py-4 px-20 mt-5 transition duration-300 ease-in-out hover:bg-gray-400"
+                  >
+                    SIGN UP
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="border border-gray-300 text-center w-full md:w-[33.33%]"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
+                <h2 class="text-white bg-yellowcolor w-full py-6 text-xl">
+                  Business
+                </h2>
+                <div class="text-3xl bg-white py-8 md:px-5 lg:px-8">
+                  <p class="text-4xl mb-4 text-yellowcolor">$99/month</p>
+                  <div
+                    class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2"
+                  >
+                    Lorem Ipsum is simply dummy text of the.
+                  </div>
+                  <div
+                    class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2"
+                  >
+                    Lorem Ipsum is simply dummy text of the.
+                  </div>
+                  <div
+                    class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2"
+                  >
+                    Lorem Ipsum is simply dummy text of the.
+                  </div>
+                  <div
+                    class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2"
+                  >
+                    Lorem Ipsum is simply dummy text of the.
+                  </div>
+                  <div
+                    class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2"
+                  >
+                    Lorem Ipsum is simply dummy text of the.
+                  </div>
+                  <button
+                    class="text-xl bg-gray-300 text-black border-none py-4 px-20 mt-5 transition duration-300 ease-in-out hover:bg-gray-400"
+                  >
+                    SIGN UP
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="border border-gray-300 text-center w-full md:w-[33.33%]"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
+                <h2 class="text-white bg-gray-500 w-full py-6 text-xl">
+                  Unlimited
+                </h2>
+                <div class="text-3xl bg-white py-8 md:px-5 lg:px-8">
+                  <p class="text-4xl text-black mb-4">$199/month</p>
+                  <div
+                    class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2"
+                  >
+                    Lorem Ipsum is simply dummy text of the.
+                  </div>
+                  <div
+                    class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2"
+                  >
+                    Lorem Ipsum is simply dummy text of the.
+                  </div>
+                  <div
+                    class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2"
+                  >
+                    Lorem Ipsum is simply dummy text of the.
+                  </div>
+                  <div
+                    class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2"
+                  >
+                    Lorem Ipsum is simply dummy text of the.
+                  </div>
+                  <div
+                    class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2"
+                  >
+                    Lorem Ipsum is simply dummy text of the.
+                  </div>
+                  <button
+                    class="text-xl bg-gray-300 text-black border-none py-4 px-20 mt-5 transition duration-300 ease-in-out hover:bg-gray-400"
+                  >
+                    SIGN UP
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="Service_img_Section">
-          <img src="../images/service_opt3_9k.png" alt="image" class="service_img3">
-          <p class="service_img3_text">900K+</p>
-        </div>
-        </div>
-      </section>
-      <section class="Service_opt3_cards">
-        <div class="Service_opt3_cards_inner">
-          <p class="Service_opt3_cards_text">Lorem Ipsum is simply dummy text of 
-            the printing and typesetting industry. </p>
-        </div>
-        <div class="Service_opt3_cardstext">
-          <div class="Service_opt3_cardstext_one">
-            <p class="Service_opt3_cardstext_one_header">01 | Lorem Ipsum is simply</p>
-            <p class="Service_opt3_cardstext_one_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
-          </div>
-          <div class="Service_opt3_cardstext_one">
-            <p class="Service_opt3_cardstext_one_header">02 | Lorem Ipsum is simply</p>
-            <p class="Service_opt3_cardstext_one_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
-          </div>
-          <div class="Service_opt3_cardstext_one">
-            <p class="Service_opt3_cardstext_one_header">03 | Lorem Ipsum is simply</p>
-            <p class="Service_opt3_cardstext_one_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
+        <div class="px-11 pt-[300px] bg-[#D9D9D9]" style="background-image: url('../images/rankingmentransparentbg.png'); background-size: cover; background-position: bottom; align-items: flex-end;">
+          <div class=" bg-white  h-[574px] pt-[60px] pr-[15px] pb-[30px] pl-[30px]  md:w-[400px] lg:w-[500px] xl:w-[588px]">
+            <h2 class=" text-bluecolor text-6xl">The next big thing</h2>
+            <p class="text-sm py-3 sm:text-base w-9/12 ">
+              Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+              suscipit lobortis commodo consequat.
+            </p>
+            <h5 class="text-bluecolor text-[2.0rem] pt-6 pb-2">Get high google rankings</h5>
+            <p class="text-sm py-3 sm:text-base w-9/12">Holisticly implement frictionless processes before long-term
+              high-impact internal or “organic” sources. Seamlessly supply
+               revolutionary results and state of the art infrastructures. 
+               Compellingly initiate an expanded array of action.</p>
+               <div class="image_bg_sec_bottom_link" 
+                 >
+                    <a href="#" class="text-black flex p-[10px] border-[1px] border-black w-fit text-[18px]"
+                      >See more
+                      <img
+                      src="../images/black_link_arrow.svg"
+                      alt="black_link_arrow"
+                        class="ml-[10px]"
+                    /></a>
+                  </div>
           </div>
         </div>
       </section>
       <section>
-        
+        <div class="bgImage_with_text">
+          <div
+            class="bgImage_with_text_wrapper bg-no-repeat bg-center bg-cover min-h-[60vh] md:min-h-[629px] lg:min-h-[729px] relative"
+            style="
+              background-image: url(../images/services_op2_full_BG_image.png);
+            "
+          >
+            <div
+              class="bgImage_with_text_content absolute translate-y-[-50%] left-0 md:left-[90px] top-[50%] px-[20px] md:px-0"
+            >
+              <div class="bgImage_with_text_content_wrap">
+                <div
+                  class="bgImage_with_text_content_heading text-[40px] md:text-[59px] leading-[129%] text-white w-full md:w-[528px] mt-0 mb-5 mx-0"
+                  data-aos="slide-right"
+                  data-aos-duration="800"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+                >
+                  Lorem Ipsum is simply dummy text.
+                </div>
+                <div
+                  class="bgImage_with_text_content_text text-[15px] leading-[143%] text-white w-full md:w-[400px]"
+                  data-aos="slide-right"
+                  data-aos-duration="800"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#4D5F75]">
+        <div class="services_form py-[120px] max-w-[991px] mx-auto px-[20px]">
+          <div
+            class="services_form_wrapper flex flex-col-reverse md:flex-row"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="100"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <div class="services_form_wrapper_form w-full md:w-[44%]">
+              <div
+                class="contactForm static bg-[#ececec] w-full h-full flex flex-col h-full pt-[40px] pl-[20px]"
+              >
+                <div
+                  class="contactForm_heading text-[#4d5f75] lg:text-[35px] text-[28px] font-semibold leading-[44px] text uppercase mb-[20px] sm:pl-[20px]"
+                >
+                  how to reach us
+                </div>
+                <form action="">
+                  <div class="form_input pl-[15px]">
+                    <input
+                      type="text"
+                      placeholder="Full Name:"
+                      class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
+                    />
+                  </div>
+                  <div class="form_input pl-[15px]">
+                    <input
+                      type="text"
+                      placeholder="Email:"
+                      class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
+                    />
+                  </div>
+                  <div class="form_input pl-[15px]">
+                    <input
+                      type="text"
+                      placeholder="Phone Number:"
+                      class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
+                    />
+                  </div>
+                  <select
+                    name="inquiry"
+                    id="inquiry"
+                    class="selectDrp w-[90%] sm:w-[248px]"
+                  >
+                    <option value="">Business Inquiry</option>
+                    <option value="Business Inquiry 1">
+                      Business Inquiry 1
+                    </option>
+                    <option value="Business Inquiry 2">
+                      Business Inquiry 2
+                    </option>
+                    <option value="Business Inquiry 3">
+                      Business Inquiry 3
+                    </option>
+                  </select>
+                  <div class="form_input last pl-[15px] mb-[20px]">
+                    <input
+                      type="text"
+                      placeholder="Message :"
+                      class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
+                    />
+                  </div>
+                  <div
+                    class="submit_btn text-right h-full flex items-end justify-end"
+                  >
+                    <button
+                      class="w-[162px] bg-[#dfa621] text-white text-sm tracking-[0.3px] cursor-pointer transition-all duration-[0.4s] px-2.5 py-5 border-[none] hover:bg-[#4d5f75]"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="services_form_wrapper_image w-full md:w-[55%]">
+              <img
+                src="../images/service_form_image.png"
+                alt="service_form_image"
+                class="h-full object-cover w-full"
+              />
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      <div class="footer_wrapper">
-        <div class="footer_col1 footer_col">
-          <div class="footer_col_wrapper">
-            <div class="footer_logo">
-              <a href="/"
-                ><img src="../images//footerLogo.png" alt="footerLogo"
-              /></a>
-            </div>
-            <div class="footer_col_wrapper_item">
-              <p>
-                essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and
-                more recently
-              </p>
-              <p>
-                essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and
-                more recently
-              </p>
-            </div>
+    <footer
+      class="bg-[#4D5F75] text-white pt-20 pb-12 px-[20px] sm:px-12 flex justify-center items-end overflow-y-hidden overflow-x-hidden"
+    >
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-4"
+      >
+        <div
+          class="col-span-1 md:col-span-1 sm:border-r sm:border-gray-300 md:pr-5 sm:px-5 xl:pr-8 flex justify-end flex-col"
+        >
+          <div
+            class="flex items-center justify-center md:justify-start lg:justify-center mb-8"
+          >
+            <a href="../index.html">
+              <img
+                src="../images/footerLogo.png"
+                alt="footerLogo"
+                class="w-60"
+              />
+            </a>
+          </div>
+          <div class="pt-[20px] sm:pt-16">
+            <p class="text-sm leading-5 mb-4">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
+            <p class="text-sm leading-5">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
           </div>
         </div>
-        <div class="footer_col2 footer_col">
-          <div class="footer_col_wrapper">
-            <p>
+        <div
+          class="col-span-1 md:col-span-1 lg:col-span-1 lg:border-r lg:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex items-end"
+        >
+          <div class="pb-[20px] border-b-[1px] sm:border-none">
+            <p class="text-sm leading-5">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -168,53 +1022,62 @@
             </p>
           </div>
         </div>
-        <div class="footer_col3 footer_col">
-          <div class="footer_col_wrapper">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Company</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="./services/services.html">Service option 1</a></li>
-              <li>
-                <a href="./services_option2/index.html">Service option 2</a>
-              </li>
-              <li><a href="#">Blogs</a></li>
-            </ul>
-            <form action="">
-              <div class="newsletter_label">Newsletter signup</div>
-              <input type="text" placeholder="Email Address" />
-            </form>
-          </div>
+        <div
+          class="col-span-1 lg:col-span-1 sm:border-r sm:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex flex-col justify-end"
+        >
+          <ul class="mb-4 sm:mb-8 pb-[20px] border-b-[1px] sm:border-none">
+            <li><a href="../index.html" class="text-lg uppercase">Home</a></li>
+            <li>
+              <a href="../services/services.html" class="text-lg uppercase"
+                >Company</a
+              >
+            </li>
+            <li><a href="#" class="text-lg uppercase">Products</a></li>
+            <li>
+              <a href="./services/services.html" class="text-lg uppercase"
+                >Service option 1</a
+              >
+            </li>
+            <li>
+              <a href="../services_option2/index.html" class="text-lg uppercase"
+                >Service option 2</a
+              >
+            </li>
+            <li><a href="#" class="text-lg uppercase">Blogs</a></li>
+          </ul>
+          <form class="pb-[20px] border-b-[1px] sm:border-none">
+            <div class="text-sm leading-5 mb-4">Newsletter signup</div>
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="bg-[#455467] text-white w-full px-4 py-2 focus:outline-none placeholder-white placeholder:text-[15px]"
+            />
+          </form>
         </div>
-        <div class="footer_col4 footer_col">
-          <div class="footer_col_wrapper">
-            <div class="terms_and_condition">
-              <ul>
-                <li>
-                  <a href="#">Terms & Conditions</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#">Investor Privacy Notice</a>
-                </li>
-                <li>
-                  <a href="#">Cookies Policy</a>
-                </li>
-              </ul>
-            </div>
-            <div class="social_links">
-              <ul>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Medium</a></li>
-              </ul>
-            </div>
+        <div
+          class="col-span-1 lg:col-span-1 sm:px-5 xl:pr-8 pt-[20px] flex flex-row sm:flex-col justify-between sm:justify-end pb-[20px] border-b-[1px] sm:border-none"
+        >
+          <div class="sm:mb-8">
+            <ul>
+              <li><a href="#" class="text-sm">Terms & Conditions</a></li>
+              <li><a href="#" class="text-sm">Privacy Policy</a></li>
+              <li><a href="#" class="text-sm">Investor Privacy Notice</a></li>
+              <li><a href="#" class="text-sm">Cookies Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#" class="text-sm">Twitter</a></li>
+              <li><a href="#" class="text-sm">LinkedIn</a></li>
+              <li><a href="#" class="text-sm">Medium</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </footer>
+    <script>
+      AOS.init();
+    </script>
     <script>
       ScrollReveal({
         reset: true,
