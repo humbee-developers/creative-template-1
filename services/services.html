@@ -1,43 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>services</title>
-    <link rel="stylesheet" href="services.css" />
-    <!-- Slick CSS -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-
-    <!-- Slick theme CSS -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Slick JS -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <link rel="stylesheet" href="../global.css" />
-    <script src="../custom.js"></script>
-    <!-- cdn scrollreveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- cdn tailwindcss -->
-    <script src="https://cdn.tailwindcss.com"></script> 
-    <!-- aos animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>services</title>
+        <link rel="stylesheet" href="services.css">
+        <!-- Slick CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <!-- Slick theme CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Slick JS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <link rel="stylesheet" href="../global.css">
+        <script src="../custom.js"></script>
+        <!-- cdn scrollreveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- cdn tailwindcss -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- aos animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
       tailwind.config = {
         theme: {
           extend: {
@@ -69,741 +54,680 @@
             },
             display:{
               flexd: "flex !important"
+            },
+            border:{
+              border_r_1:"1px"
+            },
+            height:{
+              available:"-webkit-fill-available"
             }
           }
         }
       }
-    </script>
-
-  </head>
-  <body>
-    <header class="z-[100] relative pt-[43px] pr-[37px] pb-[0] pl-[50px]">
-      <nav class="flex justify-between items-center">
-        <div class="logo" data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-delay="10">
-          <a href="../index.html">
-            <img src="../images/logo.svg" alt="logo" />
-          </a>
-        </div>
-        <div
-          class="navigation flex w-[65%] lg:w-[700px] justify-between px-[5px] py-0 border-b-white border-b border-solid hidden md:flex"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="10"
-        >
-          <ul class="nav flex items-center">
-            <li class="pr-5 pb-5 mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20">
-              <a
-                class="text-white text-xs font-normal leading-8 no-underline"
-                href="../index.html"
-                >Home</a
-              >
-            </li>
-            <li
-              class="dropdown dropdown-6 pr-5 pb-5 mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]"
-            >
-              <a
-                class="text-white text-xs font-normal leading-8 no-underline"
-                href="#"
-                >Company</a
-              >
-              <ul
-                class="dropdown_menu dropdown_menu--animated dropdown_menu-6 pr-[5rem] md:pr-[5rem] lg:pr-10 mr-5 absolute top-[100%] left-[-15px] w-64 z-[-1] hidden"
-              >
-                <li
-                  class="dropdown_item-1 block opacity-100 hover:block hover:bg-gray-600  pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+        </script>
+    </head>
+    <body>
+        <header class="z-[100] relative pt-[43px] pr-[37px] pb-[0] pl-[50px]">
+            <nav class="flex justify-between items-center">
+                <div
+                    class="logo"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="10"
                 >
-                  <a
-                    class="text-white text-xs font-normal leading-8 no-underline"
-                    href="../aboutUs/index.html"
-                    >About Us</a
-                  >
-                </li>
-                <li
-                  class="dropdown_item-2 block opacity-100 hover:block hover:bg-gray-600  pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
-                >
-                  <a
-                    class="text-white text-xs font-normal leading-8 no-underline"
-                    href="../services/services.html"
-                    >Service Option 1</a
-                  >
-                </li>
-                <li
-                  class="dropdown_item-3 block opacity-100 hover:block hover:bg-gray-600  pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
-                >
-                  <a
-                    class="text-white text-xs font-normal leading-8 no-underline"
-                    href="../services_option2/index.html"
-                    >Service Option 2</a
-                  >
-                </li>
-                <li
-                  class="dropdown_item-3 block opacity-100 hover:block hover:bg-gray-600  pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
-                >
-                  <a
-                    class="text-white text-xs font-normal leading-8 no-underline"
-                    href="../services_option4/index.html"
-                    >Service Option 4</a
-                  >
-                </li>
-              </ul>
-            </li>
-
-            <li class="pb-5">
-              <a
-                class="text-white text-xs font-normal leading-8 no-underline"
-                href="./aboutUs/index.html"
-                >Products</a
-              >
-            </li>
-          </ul>
-          <a
-            href="#"
-            class="contact_menu text-white text-xs font-normal leading-8 no-underline mt-0 mb-5 mx-0 pl-[45px] border-l-white border-l border-solid"
-            >Contact Us</a
-          >
-        </div>
-      </nav>
-    </header>
-      <section class="hero_section h-[calc(100vh_-_117px)]">
-        <div class="herosection absolute top-0 left-0 w-full ">
-          <div class="inner_banner_image relative h-screen">
-            <img src="./../images/serviceBanner.png" alt="banner_image" class="max-w-full block w-full h-full" />
-            <div class="inner_banner absolute top-[45%]">
-              <div class="inner_banner_wrapper px-[20px] md:px-[60px] lg:px-[100px] py-0">
-              <div class="inner_banner_heading text-[39px] md:text-[50px] lg:text-[60px] xl:text-[60px] 2xl:text-[71px] text-white font-normal leading-[140%] md:leading-[50px] lg:leading-[77px] w-full md:w-[100%] "
-                data-aos="slide-right"
-                data-aos-duration="1000"
-                data-aos-delay="10" >
-                    LOREM IPSUM <span class="flex gap-4 items-center justify-center sm:gap-6 md:gap-8"
-                      ><img class="w-auto h-auto" src="../images/dot.svg" /> SIMPLY</span>DUMMY - (DUMMY)
-
+                    <a href="../index.html">
+                        <img src="../images/logo.svg" alt="logo">
+                    </a>
                 </div>
-
-              </div>
+                <div
+                    class="navigation flex w-[65%] lg:w-[700px] justify-between px-[5px] py-0 border-b-white border-b border-solid hidden md:flex"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="10"
+                >
+                    <ul class="nav flex items-center">
+                        <li class="pr-5 pb-5 mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20">
+                            <a class="text-white text-xs font-normal leading-8 no-underline" href="../index.html">Home
+                            </a
+              >
+                        </li>
+                        <li class="dropdown dropdown-6 pr-5 pb-5 mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]">
+                            <a class="text-white text-xs font-normal leading-8 no-underline" href="#">Company
+                            </a
+              >
+                            <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6 pr-[5rem] md:pr-[5rem] lg:pr-10 mr-5 absolute top-[100%] left-[-15px] w-64 z-[-1] hidden">
+                                <li class="dropdown_item-1 block opacity-100 hover:block hover:bg-gray-600  pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]">
+                                    <a class="text-white text-xs font-normal leading-8 no-underline" href="../aboutUs/index.html">About Us
+                                    </a
+                  >
+                                </li>
+                                <li class="dropdown_item-2 block opacity-100 hover:block hover:bg-gray-600  pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]">
+                                    <a class="text-white text-xs font-normal leading-8 no-underline" href="../services/services.html">Service Option 1
+                                    </a
+                  >
+                                </li>
+                                <li class="dropdown_item-3 block opacity-100 hover:block hover:bg-gray-600  pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]">
+                                    <a class="text-white text-xs font-normal leading-8 no-underline" href="../services_option2/index.html">Service Option 2
+                                    </a
+                  >
+                                </li>
+                                <li class="dropdown_item-3 block opacity-100 hover:block hover:bg-gray-600  pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]">
+                                    <a class="text-white text-xs font-normal leading-8 no-underline" href="../services_option4/index.html">Service Option 4
+                                    </a
+                  >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pb-5">
+                            <a class="text-white text-xs font-normal leading-8 no-underline" href="./aboutUs/index.html">Products
+                            </a
+              >
+                        </li>
+                    </ul>
+                    <a href="#" class="contact_menu text-white text-xs font-normal leading-8 no-underline mt-0 mb-5 mx-0 pl-[45px] border-l-white border-l border-solid">Contact Us
+                    </a
+          >
+                </div>
+            </nav>
+        </header>
+        <section class="hero_section h-[calc(100vh_-_117px)]">
+            <div class="herosection absolute top-0 left-0 w-full ">
+                <div class="inner_banner_image relative h-screen">
+                    <img src="./../images/serviceBanner.png" alt="banner_image" class="max-w-full block w-full h-full">
+                    <div class="inner_banner absolute top-[45%]">
+                        <div class="inner_banner_wrapper px-[20px] md:px-[60px] lg:px-[100px] py-0">
+                            <div
+                                class="inner_banner_heading text-[39px] md:text-[50px] lg:text-[60px] xl:text-[60px] 2xl:text-[71px] text-white font-normal leading-[140%] md:leading-[50px] lg:leading-[77px] w-full md:w-[100%] "
+                                data-aos="slide-right"
+                                data-aos-duration="1000"
+                                data-aos-delay="10"
+                            >
+                                LOREM IPSUM
+                                <span class="flex gap-4 items-center justify-center sm:gap-6 md:gap-8">
+                                    <img class="w-auto h-auto" src="../images/dot.svg"> SIMPLY
+                                </span>
+                                DUMMY - (DUMMY)
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
+        <!-- centertext -->
+        <div>
+            <h2 class="services_centertext  flex justify-center pt-12 text-[22px] text-black sm:text-2xl  sm:pt-16 md:text-[2rem] md:pt-20 lg:text-5xl lg:pt-24 ">
+                Lorem Ipsum is simply dummy text of
+                <br>
+                the printing and typesetting industry.
+            </h2>
         </div>
-      </section>
-    <!-- centertext -->
-    <div>
-      <h2 class="services_centertext  flex justify-center pt-12 text-[22px] text-black sm:text-2xl  sm:pt-16 md:text-[2rem] md:pt-20 lg:text-5xl lg:pt-24 ">
-        Lorem Ipsum is simply dummy text of<br />
-        the printing and typesetting industry.
-      </h2>
-    </div>
-
-   <!-- second section -->
-    <div class="px-8 py-8 flex flex-col sm:flex sm:flex-row gap-4  xl:py-20 xl:px-44  lg:px-12 lg:pt-12 lg:pb-16">
-      <div>
-        <h2 class="text-yellowcolor text-xl md:py-4  px-0 font-semibold  md:text-custrem sm:text-text1rem xl:text-2xl">01 | Lorem Ipsum is simply</h2>
-        <p class="text-cust sm:text-sm sm:pt-4 xl:text-cust">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+        <!-- second section -->
+        <div class="px-8 py-8 flex flex-col sm:flex sm:flex-row gap-4  xl:py-20 xl:px-44  lg:px-12 lg:pt-12 lg:pb-16">
+            <div>
+                <h2 class="text-yellowcolor text-xl md:py-4  px-0 font-semibold  md:text-custrem sm:text-text1rem xl:text-2xl">01 | Lorem Ipsum is simply</h2>
+                <p class="text-cust sm:text-sm sm:pt-4 xl:text-cust">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy
-        </p>
-      </div>
-      <div>
-        <h2 class="text-yellowcolor text-xl md:py-4  px-0 font-semibold  md:text-custrem sm:text-text1rem xl:text-2xl ">02 | Lorem Ipsum is simply</h2>
-        <p class="text-cust sm:text-sm sm:pt-4 xl:text-cust ">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+                </p>
+            </div>
+            <div>
+                <h2 class="text-yellowcolor text-xl md:py-4  px-0 font-semibold  md:text-custrem sm:text-text1rem xl:text-2xl ">02 | Lorem Ipsum is simply</h2>
+                <p class="text-cust sm:text-sm sm:pt-4 xl:text-cust ">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy
-        </p>
-      </div>
-      <div>
-        <h2 class="text-yellowcolor text-xl  md:py-4  px-0 font-semibold  md:text-custrem sm:text-text1rem xl:text-2xl ">03 | Lorem Ipsum is simply</h2>
-        <p class="text-cust sm:text-sm sm:pt-4 xl:text-cust">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+                </p>
+            </div>
+            <div>
+                <h2 class="text-yellowcolor text-xl  md:py-4  px-0 font-semibold  md:text-custrem sm:text-text1rem xl:text-2xl ">03 | Lorem Ipsum is simply</h2>
+                <p class="text-cust sm:text-sm sm:pt-4 xl:text-cust">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy
-        </p>
-      </div>
-    </div>
-
-<!-- third section -->
-    <div>
-       <div class="relative">
-        <img class="w-full h-auto object-cover" src="../images/ServicesthirdLine.png" />
-
-        <!-- <img class="services_thirdimgtwo" src="../images/ServicesthirdLinetwo.png"> -->
-        <div class="bg-white absolute h-auto p-4  flex right-0 bottom-0 flex-col gap-[5px] sm:h-auto  w-[82%] h-[53%]  sm:h-2/5 sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-width45 sm:gap-8 sm:p-8">
-          <h2 class="text-yellowcolor  w-[100%] text-2xl sm:text-4xl md:text-text25rem">
-            Lorem Ipsum is simply dummy text of the printing.
-          </h2>
-          <p class=" text-text13px w-full sm:text-xl ">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
+                </p>
+            </div>
+        </div>
+        <!-- third section -->
+        <div>
+            <div class="relative">
+                <img class="w-full h-auto object-cover" src="../images/ServicesthirdLine.png">
+                <!-- <img class="services_thirdimgtwo" src="../images/ServicesthirdLinetwo.png"> -->
+                <div class="bg-white absolute h-auto p-4  flex right-0 bottom-0 flex-col gap-[5px] sm:h-auto  w-[82%] h-[53%]  sm:h-2/5 sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-width45 sm:gap-8 sm:p-8">
+                    <h2 class="text-yellowcolor  w-[100%] text-2xl sm:text-4xl md:text-text25rem">
+                        Lorem Ipsum is simply dummy text of the printing.
+                    </h2>
+                    <p class=" text-text13px w-full sm:text-xl ">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy
-          </p>
-          <p class="text-text13px  w-full sm:text-xl ">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
+                    </p>
+                    <p class="text-text13px  w-full sm:text-xl ">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.Lorem Ipsum has been the industry's standard dummy
-          </p>
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <!-- card expending -->
-    
-    <div class="h-screen flex flex-nowrap justify-start">
-      <input type="radio" name="slide" id="c1" checked />
-      <label for="c1" class="card w-500 border border-gray-300 cursor-pointer overflow-hidden transition duration-300 ease-in-out  bg-[#D9D9D9]" onclick="toggleVisibility()">
-        <div class="flex flex-col items-end text-white">
-          <div class="p-4">
-            <img src="../images/arrowcard.svg" alt="img" />
-          </div>
-          <div class="text-[#757575] text-[175.5px]">01</div>
-          <div class="description flex justify-center text-6xl h-full w-[456px] items-end ">Lorem Ipsum</div>
+
+        <!-- card expending -->
+        <div class="h-screen flex flex-nowrap justify-start">
+            <input
+                class="hidden"
+                type="radio"
+                name="slide"
+                id="c1"
+                checked
+            >
+            <label for="c1" class="card w-500 border-r border-black cursor-pointer overflow-hidden transition duration-300 ease-in-out bg-[#D9D9D9]" onclick="rotateImage('img1')">
+                <div class="flex flex-col h-available items-end text-white">
+                    <div class="p-4" >
+                        <img id="img2" class=" rotate rotate--180" src="../images/arrowcard.svg" alt="img">
+                    </div>
+                    <div class="text  text-[#757575] text-[175.5px]">02</div>
+                    <div class="description text-[#757575] transform md:mt-8 rotate-90 h-[40%] flex items-start  text-6xl w-[456px] ">Lorem Ipsum</div>
+                </div>
+            </label>
+            <input
+                class="hidden"
+                type="radio"
+                name="slide"
+                id="c2"
+            >
+            <label for="c2" class="card w-500 border-r border-black cursor-pointer overflow-hidden transition duration-300 ease-in-out bg-[#D9D9D9]" onclick="rotateImage('img2')">
+              <div class="flex flex-col h-available items-end text-white">
+                <div class="p-4" >
+                    <img id="img3" class=" rotate rotate--180" src="../images/arrowcard.svg" alt="img">
+                </div>
+                <div class="text  text-[#757575] text-[175.5px]">02</div>
+                <div class="description text-[#757575] transform rotate-90 h-[40%] flex items-start  text-6xl w-[456px] ">Lorem Ipsum</div>
+            </div>
+            </label>
+            <input
+                class="hidden"
+                type="radio"
+                name="slide"
+                id="c3"
+            >
+            <label for="c3" class="card w-500 border-r border-black cursor-pointer overflow-hidden transition duration-300 ease-in-out bg-[#D9D9D9]" onclick="rotateImage('img3')">
+              <div class="flex flex-col h-available items-end text-white">
+                <div class="p-4" >
+                    <img id="img4" class=" rotate rotate--180" src="../images/arrowcard.svg" alt="img">
+                </div>
+                <div class="text  text-[#757575] text-[175.5px]">02</div>
+                <div class="description text-[#757575] transform rotate-90 h-[40%] flex items-start  text-6xl w-[456px] ">Lorem Ipsum</div>
+            </div>
+            </label>
+            <input
+                class="hidden"
+                type="radio"
+                name="slide"
+                id="c4"
+            >
+            <label for="c4" class="card w-500 border-r border-black cursor-pointer overflow-hidden transition duration-300 ease-in-out bg-[#D9D9D9]" onclick="rotateImage('img4')">
+              <div class="flex flex-col h-available items-end text-white">
+                <div class="p-4" >
+                    <img id="img4" class=" rotate rotate--180" src="../images/arrowcard.svg" alt="img">
+                </div>
+                <div class="text  text-[#757575] text-[175.5px]">02</div>
+                <div class="description text-[#757575] transform rotate-90 h-[40%] flex items-start  text-6xl w-[456px] ">Lorem Ipsum</div>
+            </div>
+          </label>
+           
+
+            
         </div>
-      </label>
-      <input type="radio" name="slide" id="c2" />
-      <label for="c2" class="card w-500 border border-gray-300 cursor-pointer overflow-hidden transition duration-300 ease-in-out  bg-[#D9D9D9]" onclick="toggleVisibility()">
-        <!-- <div class="card_slider">
-            <div>
-              <img src="../images/Cardslider1.png" alt="cardimg" />
+        <!-- slider -->
+        <div class="service_op1_slider">
+            <div class="service_op1_slider_wrapper relative">
+                <div class="servicesslides">
+                    <div class="services_sliders">
+                        <div class=" bg-bluecolor sm:py-36 px-8  py-8 w-full md:w-6/12 md:py-10 px-2 lg:py-20 xl:py-32 2xl:py-36">
+                            <h2 class="services_sliders_heading text-white text-3xl md:text-4xl md:py-4 md:px-8 sm:w-11/12 md:w-full xl:text-5xl 2xl:w-width70">
+                                Lorem Ipsum is simply dummy text.1
+                            </h2>
+                            <p class="services_sliders_para text-white text-base py-8 px-0 md:px-8">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                <br>
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                <br>
+                                standard dummy
+                            </p>
+                        </div>
+                        <div class=" w-full md:w-6/12">
+                            <img class="max-w-full h-full block w-full h-full md:object-cover md:h-auto" src="../images/serviceslider01.png" alt="sliderimg">
+                        </div>
+                    </div>
+                    <div class="services_sliders">
+                        <div class=" bg-bluecolor sm:py-36 px-8  py-8 w-full md:w-6/12 md:py-10 px-2 lg:py-20 xl:py-32 2xl:py-36">
+                            <h2 class="services_sliders_heading text-white text-3xl md:text-4xl md:py-4 md:px-8 sm:w-11/12 md:w-full xl:text-5xl 2xl:w-width70">
+                                Lorem Ipsum is simply dummy text.1
+                            </h2>
+                            <p class="services_sliders_para text-white text-base py-8 px-0 md:px-8">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                <br>
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                <br>
+                                standard dummy
+                            </p>
+                        </div>
+                        <div class=" w-full md:w-6/12">
+                            <img class="max-w-full h-full block w-full h-full md:object-cover md:h-auto" src="../images/serviceslider01.png" alt="sliderimg">
+                        </div>
+                    </div>
+                    <div class="services_sliders">
+                        <div class=" bg-bluecolor sm:py-36 px-8  py-8 w-full md:w-6/12 md:py-10 px-2 lg:py-20 xl:py-32 2xl:py-36">
+                            <h2 class="services_sliders_heading text-white text-3xl md:text-4xl md:py-4 md:px-8 sm:w-11/12 md:w-full xl:text-5xl 2xl:w-width70">
+                                Lorem Ipsum is simply dummy text.1
+                            </h2>
+                            <p class="services_sliders_para text-white text-base py-8 px-0 md:px-8">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                <br>
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                <br>
+                                standard dummy
+                            </p>
+                        </div>
+                        <div class=" w-full md:w-6/12">
+                            <img class="max-w-full h-full block w-full h-full md:object-cover md:h-auto" src="../images/serviceslider01.png" alt="sliderimg">
+                        </div>
+                    </div>
+                </div>
+                <div class="service_op_1_slider_arrow flex items-center absolute bottom-[28rem] md:bottom-16 left-1/2 transform -translate-x-1/2">
+                    <div class="service_op_1_slider_arrow_left bg-gray-300 py-7 px-5 cursor-pointer">
+                        <img src="../images/service_op1_slider_blackArrow.svg" alt="service_op1_slider_blackArrow">
+                    </div>
+                    <div class="service_op_1_slider_arrow_right bg-black py-7 px-5 cursor-pointer">
+                        <img src="../images/service_op1_slider_whileArrow.svg" alt="service_op1_slider_whileArrow">
+                    </div>
+                </div>
             </div>
-            <div>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </div>
-            <div>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-            </div>
-          </div> -->
-        <div class="flex flex-col items-end text-white">
-          <div class="p-4">
-            <img src="../images/arrowcard.svg" alt="img" />
-          </div>
-          <div class="text-[#757575] text-[175.5px]">02</div>
-          <div class="description flex justify-center text-6xl  h-full w-[456px] items-end">Lorem Ipsum</div>
         </div>
-      </label>
-      <input type="radio" name="slide" id="c3" />
-      <label for="c3" class="card w-500 border border-gray-300 cursor-pointer overflow-hidden transition duration-300 ease-in-out  bg-[#D9D9D9]" onclick="toggleVisibility()">
-        <!-- <div class="card_slider">
-            <div>
-              <img src="../images/Cardslider1.png" alt="cardimg" />
-            </div>
-            <div>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </div>
-            <div>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-            </div>
-          </div> -->
-        <div class="flex flex-col items-end text-white">
-          <div class="p-4">
-            <img src="../images/arrowcard.svg" alt="img" />
-          </div>
-          <div class="text-[#757575] text-[175.5px]">03</div>
-
-          <div class="description flex justify-center text-6xl  h-full w-[456px] items-end">Lorem Ipsum</div>
-        </div>
-      </label>
-      <input type="radio" name="slide" id="c4" />
-      <label for="c4" class="card w-500 border border-gray-300 cursor-pointer overflow-hidden transition duration-300 ease-in-out  bg-[#D9D9D9]">
-        <!-- <div>
-            <div>
-              <img src="../images/Cardslider1.png" alt="cardimg" />
-            </div>
-            <div>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </div>
-            <div>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-            </div>
-          </div> -->
-        <div class="flex flex-col items-end text-white">
-          <div class="p-4">
-            <img src="../images/arrowcard.svg" alt="img" />
-          </div>
-          <div class="text-[#757575] text-[175.5px]">04</div>
-          <div class="description flex justify-center text-6xl  h-full w-[456px] items-end ">Lorem Ipsum</div>
-        </div>
-      </label>
-    </div>
-
-    <!-- slider -->
-    <div class="service_op1_slider">
-      <div class="service_op1_slider_wrapper relative">
-        <div class="servicesslides">
-
-          <div class="services_sliders">
-            <div class=" bg-bluecolor sm:py-36 px-8  py-8 w-full md:w-6/12 md:py-10 px-2 lg:py-20 xl:py-32 2xl:py-36">
-              <h2 class="services_sliders_heading text-white text-3xl md:text-4xl md:py-4 md:px-8 sm:w-11/12 md:w-full xl:text-5xl 2xl:w-width70">
-                Lorem Ipsum is simply dummy text.1
-              </h2>
-              <p class="services_sliders_para text-white text-base py-8 px-0 md:px-8">
-                Lorem Ipsum is simply dummy text of the printing and <br />
-                typesetting industry. Lorem Ipsum has been the industry's<br />
-                standard dummy
-              </p>
-            </div>
-
-            <div class=" w-full md:w-6/12">
-              <img class="max-w-full h-full block w-full h-full md:object-cover md:h-auto" src="../images/serviceslider01.png" alt="sliderimg" />
-            </div>
-          </div>
-
-          <div class="services_sliders">
-            <div class=" bg-bluecolor sm:py-36 px-8  py-8 w-full md:w-6/12 md:py-10 px-2 lg:py-20 xl:py-32 2xl:py-36">
-              <h2 class="services_sliders_heading text-white text-3xl md:text-4xl md:py-4 md:px-8 sm:w-11/12 md:w-full xl:text-5xl 2xl:w-width70">
-                Lorem Ipsum is simply dummy text.1
-              </h2>
-              <p class="services_sliders_para text-white text-base py-8 px-0 md:px-8">
-                Lorem Ipsum is simply dummy text of the printing and <br />
-                typesetting industry. Lorem Ipsum has been the industry's<br />
-                standard dummy
-              </p>
-            </div>
-
-            <div class=" w-full md:w-6/12">
-              <img class="max-w-full h-full block w-full h-full md:object-cover md:h-auto" src="../images/serviceslider01.png" alt="sliderimg" />
-            </div>
-          </div>
-
-          <div class="services_sliders">
-            <div class=" bg-bluecolor sm:py-36 px-8  py-8 w-full md:w-6/12 md:py-10 px-2 lg:py-20 xl:py-32 2xl:py-36">
-              <h2 class="services_sliders_heading text-white text-3xl md:text-4xl md:py-4 md:px-8 sm:w-11/12 md:w-full xl:text-5xl 2xl:w-width70">
-                Lorem Ipsum is simply dummy text.1
-              </h2>
-              <p class="services_sliders_para text-white text-base py-8 px-0 md:px-8">
-                Lorem Ipsum is simply dummy text of the printing and <br />
-                typesetting industry. Lorem Ipsum has been the industry's<br />
-                standard dummy
-              </p>
-            </div>
-
-            <div class=" w-full md:w-6/12">
-              <img class="max-w-full h-full block w-full h-full md:object-cover md:h-auto" src="../images/serviceslider01.png" alt="sliderimg" />
-            </div>
-          </div>
-
-        </div>
-        <div class="service_op_1_slider_arrow flex items-center absolute bottom-[28rem] md:bottom-16 left-1/2 transform -translate-x-1/2">
-          <div class="service_op_1_slider_arrow_left bg-gray-300 py-7 px-5 cursor-pointer">
-            <img 
-              src="../images/service_op1_slider_blackArrow.svg"
-              alt="service_op1_slider_blackArrow"
-            />
-          </div>
-          <div class="service_op_1_slider_arrow_right bg-black py-7 px-5 cursor-pointer">
-            <img 
-              src="../images/service_op1_slider_whileArrow.svg"
-              alt="service_op1_slider_whileArrow"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 5thsectioncardsection -->
-    <div class="px-8 lg:px-24 py-12">
-      <h2 class="text-yellowcolor text-[2rem] p-[10px] leading-8 lg:text-5xl">
-        Lorem Ipsum is simply<br />
-        dummy text of the printing.
-      </h2>
-      <p class="text-[15px]  w-[80%] p-[10px] lg:w-5/12 lg:text-base md:p-4 ">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
+        <!-- 5thsectioncardsection -->
+        <div class="px-8 lg:px-24 py-12">
+            <h2 class="text-yellowcolor text-[2rem] p-[10px] leading-8 lg:text-5xl">
+                Lorem Ipsum is simply
+                <br>
+                dummy text of the printing.
+            </h2>
+            <p class="text-[15px]  w-[80%] p-[10px] lg:w-5/12 lg:text-base md:p-4 ">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy
-      </p>
-    </div>
-
-    <div>
-      <div class="flex flex-wrap justify-center items-center gap-4 xl:gap-20 py-8 px-4 lg:p-p30">
-        <div class="bg-gray-200 w-80 h-96 text-center flex justify-center items-end pb-8">
-          <div class="">
-           <h2 class="text-2xl">Lorem Ipsum is simply</h2>
-           <p class="text-5xl">$100.52</p>
-          </div>
+            </p>
         </div>
-
-        <div class="bg-gray-200 w-80 h-96 text-center flex justify-center items-end pb-8">
-          <div class="">
-            <h2 class="text-2xl">Lorem Ipsum is simply</h2>
-            <p class="text-5xl">$100.52</p>
-          </div>
+        <div>
+            <div class="flex flex-wrap justify-center items-center gap-4 xl:gap-20 py-8 px-4 lg:p-p30">
+                <div class="bg-gray-200 w-80 h-96 text-center flex justify-center items-end pb-8">
+                    <div class="">
+                        <h2 class="text-2xl">Lorem Ipsum is simply</h2>
+                        <p class="text-5xl">$100.52</p>
+                    </div>
+                </div>
+                <div class="bg-gray-200 w-80 h-96 text-center flex justify-center items-end pb-8">
+                    <div class="">
+                        <h2 class="text-2xl">Lorem Ipsum is simply</h2>
+                        <p class="text-5xl">$100.52</p>
+                    </div>
+                </div>
+                <div class="bg-gray-200 w-80 h-96 text-center flex justify-center items-end pb-8">
+                    <div class="">
+                        <h2 class="text-2xl">Lorem Ipsum is simply</h2>
+                        <p class="text-5xl">$100.52</p>
+                    </div>
+                </div>
+                <div class="bg-gray-200 w-80 h-96 text-center flex justify-center items-end pb-8">
+                    <div class="">
+                        <h2 class="text-2xl">Lorem Ipsum is simply</h2>
+                        <p class="text-5xl">$100.52</p>
+                    </div>
+                </div>
+                <div class="bg-gray-200 w-80 h-96 text-center flex justify-center items-end pb-8">
+                    <div class="">
+                        <h2 class="text-2xl">Lorem Ipsum is simply</h2>
+                        <p class="text-5xl">$100.52</p>
+                    </div>
+                </div>
+                <div class="bg-gray-200 w-80 h-96 text-center flex justify-center items-end pb-8">
+                    <div class="">
+                        <h2 class="text-2xl">Lorem Ipsum is simply</h2>
+                        <p class="text-5xl">$100.52</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="bg-gray-200 w-80 h-96 text-center flex justify-center items-end pb-8">
-          <div class="">
-            <h2 class="text-2xl">Lorem Ipsum is simply</h2>
-            <p class="text-5xl">$100.52</p>
-          </div>
-        </div>
-        
-        <div class="bg-gray-200 w-80 h-96 text-center flex justify-center items-end pb-8">
-          <div class="">
-            <h2 class="text-2xl">Lorem Ipsum is simply</h2>
-            <p class="text-5xl">$100.52</p>
-          </div>
-        </div>
-
-        <div class="bg-gray-200 w-80 h-96 text-center flex justify-center items-end pb-8">
-          <div class="">
-            <h2 class="text-2xl">Lorem Ipsum is simply</h2>
-            <p class="text-5xl">$100.52</p>
-          </div>
-        </div>
-
-        <div class="bg-gray-200 w-80 h-96 text-center flex justify-center items-end pb-8">
-          <div class="">
-            <h2 class="text-2xl">Lorem Ipsum is simply</h2>
-            <p class="text-5xl">$100.52</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- 6thsection bigthink ranking -->
-    <div class="px-11 pt-11" style="background-image: url('../images/rankingmentransparentbg.png'); background-size: cover; background-position: bottom; align-items: flex-end;">
-      <div class=" bg-white  h-[574px] pt-[60px] pr-[15px] pb-[30px] pl-[30px]  md:w-[400px] lg:w-[500px] xl:w-[588px]">
-        <h2 class=" text-bluecolor text-6xl">The next big thing</h2>
-        <p class="text-sm py-3 sm:text-base w-9/12 ">
-          Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        <!-- 6thsection bigthink ranking -->
+        <div class="px-11 pt-11" style="background-image: url('../images/rankingmentransparentbg.png'); background-size: cover; background-position: bottom; align-items: flex-end;">
+            <div class=" bg-white  h-[574px] pt-[60px] pr-[15px] pb-[30px] pl-[30px]  md:w-[400px] lg:w-[500px] xl:w-[588px]">
+                <h2 class=" text-bluecolor text-6xl">The next big thing</h2>
+                <p class="text-sm py-3 sm:text-base w-9/12 ">
+                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
           suscipit lobortis commodo consequat.
-        </p>
-        <h5 class="text-bluecolor text-[2.0rem] pt-6 pb-2">Get high google rankings</h5>
-        <p class="text-sm py-3 sm:text-base w-9/12">Holisticly implement frictionless processes before long-term
+                </p>
+                <h5 class="text-bluecolor text-[2.0rem] pt-6 pb-2">Get high google rankings</h5>
+                <p class="text-sm py-3 sm:text-base w-9/12">
+                    Holisticly implement frictionless processes before long-term
           high-impact internal or “organic” sources. Seamlessly supply
            revolutionary results and state of the art infrastructures. 
-           Compellingly initiate an expanded array of action.</p>
-           <button class="border-2 border-black-900">see more</button>
-      </div>
-    </div>
-    
-    
-
-    <!--7th factoryimgservices -->
-    <div class="relative">
-      <img
-        class="w-full h-auto"
-        src="../images/factroyservicesimg.png"
-        alt="factoryimgservices"
-      />
-      <div class="absolute top-16  text-white  items-center justify-center px-6 sm:top-24 md:top-48 md:w-width78 lg:w-width55  xl:top-72">
-        <h2 class="text-2xl sm:text-4xl lg:text-[3.5rem] lg:text-6xl">
-          Lorem Ipsum is <br />simply dummy text.
-        </h2>
-        <p class="text-xs sm:text-base w-11/12">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+           Compellingly initiate an expanded array of action.
+                </p>
+                <button class="border-2 border-black-900">see more</button>
+            </div>
+        </div>
+        <!--7th factoryimgservices -->
+        <div class="relative">
+            <img class="w-full h-auto" src="../images/factroyservicesimg.png" alt="factoryimgservices">
+            <div class="absolute top-16  text-white  items-center justify-center px-6 sm:top-24 md:top-48 md:w-width78 lg:w-width55  xl:top-72">
+                <h2 class="text-2xl sm:text-4xl lg:text-[3.5rem] lg:text-6xl">
+                    Lorem Ipsum is
+                    <br>
+                    simply dummy text.
+                </h2>
+                <p class="text-xs sm:text-base w-11/12">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy
-        </p>
-      </div>
-    </div>
-
-    <!-- 8th sectionprogress bar -->
-  <div class="circless mt-16 p-4 items-center  flex justify-center  sm:grid sm:grid-cols-2 sm:gap-8 lg:gap-2 xl:gap-20 md:flex flex-wrap flex-row ">
-    <div class="circular-progress h-60 w-60 rounded-full relative flex items-center justify-center mb-8 sm:mb-0">
-      <div class="absolute h-52 w-52 rounded-full bg-white"></div>
-      <span class="progress-value relative text-[40px] font-semibold text-gray-600">25%</span>
-    </div>
-  
-    <div class="circular-progress h-60 w-60 rounded-full relative flex items-center justify-center mb-8 sm:mb-0">
-      <div class="absolute h-52 w-52 rounded-full bg-white"></div>
-      <span class="progress-value relative text-[40px] font-semibold text-gray-600">55%</span>
-    </div>
-  
-    <div class="circular-progress h-60 w-60 rounded-full relative flex items-center justify-center mb-8 sm:mb-0">
-      <div class="absolute h-52 w-52 rounded-full bg-white"></div>
-      <span class="progress-value relative text-[40px] font-semibold text-gray-600">60%</span>
-    </div>
-  
-    <div class="circular-progress h-60 w-60 rounded-full relative flex items-center justify-center mb-8 sm:mb-0">
-      <div class="absolute h-52 w-52 rounded-full bg-white"></div>
-      <span class="progress-value relative text-[40px] font-semibold text-gray-600">85%</span>
-    </div>
-  </div>
-  
-  
-    <div class=" gap-8 px-8 py-20 sm:flex sm:px-4 md:px-8 lg:px-8 xl:px-44">
-      <div>
-        <h2 class="text-yellowcolor text-xl py-4 sm:py-5 px-0 font-semibold sm:text-[1.24rem] lg:text-[1.4rem] xl:text-2xl">Lorem Ipsum is simply</h2>
-        <p class="text-sm">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+                </p>
+            </div>
+        </div>
+        <!-- 8th sectionprogress bar -->
+        <div class="circless mt-16 p-4 items-center  flex justify-center  sm:grid sm:grid-cols-2 sm:gap-8 lg:gap-2 xl:gap-20 md:flex flex-wrap flex-row ">
+            <div class="circular-progress h-60 w-60 rounded-full relative flex items-center justify-center mb-8 sm:mb-0">
+                <div class="absolute h-52 w-52 rounded-full bg-white"></div>
+                <span class="progress-value relative text-[40px] font-semibold text-gray-600">25%</span>
+            </div>
+            <div class="circular-progress h-60 w-60 rounded-full relative flex items-center justify-center mb-8 sm:mb-0">
+                <div class="absolute h-52 w-52 rounded-full bg-white"></div>
+                <span class="progress-value relative text-[40px] font-semibold text-gray-600">55%</span>
+            </div>
+            <div class="circular-progress h-60 w-60 rounded-full relative flex items-center justify-center mb-8 sm:mb-0">
+                <div class="absolute h-52 w-52 rounded-full bg-white"></div>
+                <span class="progress-value relative text-[40px] font-semibold text-gray-600">60%</span>
+            </div>
+            <div class="circular-progress h-60 w-60 rounded-full relative flex items-center justify-center mb-8 sm:mb-0">
+                <div class="absolute h-52 w-52 rounded-full bg-white"></div>
+                <span class="progress-value relative text-[40px] font-semibold text-gray-600">85%</span>
+            </div>
+        </div>
+        <div class=" gap-8 px-8 py-20 sm:flex sm:px-4 md:px-8 lg:px-8 xl:px-44">
+            <div>
+                <h2 class="text-yellowcolor text-xl py-4 sm:py-5 px-0 font-semibold sm:text-[1.24rem] lg:text-[1.4rem] xl:text-2xl">Lorem Ipsum is simply</h2>
+                <p class="text-sm">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy
-        </p>
-      </div>
-      <div>
-        <h2 class="text-yellowcolor text-xl py-4 sm:py-5 px-0 font-semibold sm:text-[1.24rem] lg:text-[1.4rem] xl:text-2xl">Lorem Ipsum is simply</h2>
-        <p class="text-sm ">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+                </p>
+            </div>
+            <div>
+                <h2 class="text-yellowcolor text-xl py-4 sm:py-5 px-0 font-semibold sm:text-[1.24rem] lg:text-[1.4rem] xl:text-2xl">Lorem Ipsum is simply</h2>
+                <p class="text-sm ">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy
-        </p>
-      </div>
-      <div>
-        <h2 class="text-yellowcolor text-xl py-4 sm:py-5 px-0 font-semibold sm:text-[1.24rem] lg:text-[1.4rem] xl:text-2xl">Lorem Ipsum is simply</h2>
-        <p class="text-sm">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+                </p>
+            </div>
+            <div>
+                <h2 class="text-yellowcolor text-xl py-4 sm:py-5 px-0 font-semibold sm:text-[1.24rem] lg:text-[1.4rem] xl:text-2xl">Lorem Ipsum is simply</h2>
+                <p class="text-sm">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy
-        </p>
-      </div>
-      <div>
-        <h2 class="text-yellowcolor text-xl py-4 sm:py-5 px-0 font-semibold sm:text-[1.24rem] lg:text-[1.4rem] xl:text-2xl">Lorem Ipsum is simply</h2>
-        <p class="text-sm">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+                </p>
+            </div>
+            <div>
+                <h2 class="text-yellowcolor text-xl py-4 sm:py-5 px-0 font-semibold sm:text-[1.24rem] lg:text-[1.4rem] xl:text-2xl">Lorem Ipsum is simply</h2>
+                <p class="text-sm">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy
-        </p>
-      </div>
-    </div>
-
-    <!-- 9thgridsection -->
-    <div class="block h-auto w-full p-8 md:p-8 bg-gray-200 justify-around text-gray-800 lg:flex">
-      <div class="w-full p-[5px] sm:w-full sm:p-8  sm:p-20">
-        <h1 class="text-yellowcolor text-[20px]  sm:text-5xl">
-          Lorem Ipsum is simply <br />dummy text of the printing.
-        </h1>
-        <p class="text-[15px] mt-[10px] py-1 font-normal leading-snug text-left sm:py-4 px-0 text-black sm: mt-5  sm:text-base">
-          Lorem Ipsum is simply dummy text of the printing<br />
-          and typesetting industry. Lorem Ipsum has been <br />the industry's
+                </p>
+            </div>
+        </div>
+        <!-- 9thgridsection -->
+        <div class="block h-auto w-full p-8 md:p-8 bg-gray-200 justify-around text-gray-800 lg:flex">
+            <div class="w-full p-[5px] sm:w-full sm:p-8  sm:p-20">
+                <h1 class="text-yellowcolor text-[20px]  sm:text-5xl">
+                    Lorem Ipsum is simply
+                    <br>
+                    dummy text of the printing.
+                </h1>
+                <p class="text-[15px] mt-[10px] py-1 font-normal leading-snug text-left sm:py-4 px-0 text-black sm: mt-5  sm:text-base">
+                    Lorem Ipsum is simply dummy text of the printing
+                    <br>
+                    and typesetting industry. Lorem Ipsum has been
+                    <br>
+                    the industry's
           standard dummy
-        </p>
-
-        <div>
-          <div class="">
-            <div class="flex gap-4">
-              <span><img src="../images/check.svg" /></span>Lorem Ipsum is
+                </p>
+                <div>
+                    <div class="">
+                        <div class="flex gap-4">
+                            <span>
+                                <img src="../images/check.svg">
+                            </span>
+                            Lorem Ipsum is
               simply
-            </div>
-            <div class="flex gap-4">
-              <span><img src="../images/check.svg" /></span>Lorem Ipsum is
+                        </div>
+                        <div class="flex gap-4">
+                            <span>
+                                <img src="../images/check.svg">
+                            </span>
+                            Lorem Ipsum is
               simply
-            </div>
-            <div class="flex gap-4">
-              <span><img src="../images/check.svg" /></span>Lorem Ipsum is
+                        </div>
+                        <div class="flex gap-4">
+                            <span>
+                                <img src="../images/check.svg">
+                            </span>
+                            Lorem Ipsum is
               simply
+                        </div>
+                    </div>
+                    <button class="px-2 py-1 ml-8 mt-4 border border-black">see more</button>
+                </div>
             </div>
-          </div>
-          <button class="px-2 py-1 ml-8 mt-4 border border-black">see more</button>
+            <div class=" w-full h-auto mt-10">
+                <div class="grid grid-cols-2 h-full md:p-3 lg:p-4 gap-x-10">
+                    <div class="grid-item">
+                        <img class="mb-4" src="../images/gridbox.png" alt="gridbox">
+                        <h1 class="text-xl font-semibold text-black">Lorem Ipsum is simply</h1>
+                        <p class="mb-8 text-gray-600 text-[10px] sm:text-cust  lg:text-sm px-0 py-0  md:w-11/12">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+                        </p>
+                    </div>
+                    <div class="grid-item">
+                        <img class="mb-4" src="../images/gridbox.png" alt="gridbox">
+                        <h1 class="text-xl font-semibold text-black ">Lorem Ipsum is simply</h1>
+                        <p class="mb-8 text-gray-600 text-[10px] sm:text-cust  lg:text-sm px-0 py-0  md:w-11/12">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+                        </p>
+                    </div>
+                    <div class="grid-item">
+                        <img class="mb-4" src="../images/gridbox.png" alt="gridbox">
+                        <h1 class="text-xl font-semibold text-black ">Lorem Ipsum is simply</h1>
+                        <p class="mb-8 text-gray-600 text-[10px] sm:text-cust  lg:text-sm px-0 py-0  md:w-11/12">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+                        </p>
+                    </div>
+                    <div class="grid-item">
+                        <img class="mb-4" src="../images/gridbox.png" alt="gridbox">
+                        <h1 class="text-xl font-semibold text-black ">Lorem Ipsum is simply</h1>
+                        <p class="mb-8 text-gray-600 text-[10px] sm:text-cust  lg:text-sm px-0 py-0  md:w-11/12">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+                        </p>
+                    </div>
+                    <div class="grid-item">
+                        <img class="mb-4" src="../images/gridbox.png" alt="gridbox">
+                        <h1 class="text-xl font-semibold text-black ">Lorem Ipsum is simply</h1>
+                        <p class="mb-8 text-gray-600 text-[10px] sm:text-cust  lg:text-sm px-0 py-0  md:w-11/12">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+                        </p>
+                    </div>
+                    <div class="grid-item">
+                        <img class="mb-4" src="../images/gridbox.png" alt="gridbox">
+                        <h1 class="text-xl font-semibold text-black ">Lorem Ipsum is simply</h1>
+                        <p class="mb-8 text-gray-600 text-[10px] sm:text-cust  lg:text-sm px-0 py-0  md:w-11/12">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class=" w-full h-auto mt-10">
-        <div class="grid grid-cols-2 h-full md:p-3 lg:p-4 gap-x-10">
-          <div class="grid-item">
-            <img class="mb-4" src="../images/gridbox.png" alt="gridbox" />
-            <h1 class="text-xl font-semibold text-black">Lorem Ipsum is simply</h1>
-            <p class="mb-8 text-gray-600 text-[10px] sm:text-cust  lg:text-sm px-0 py-0  md:w-11/12">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-            </p>
-          </div>
-          <div class="grid-item">
-            <img class="mb-4" src="../images/gridbox.png" alt="gridbox" />
-            <h1 class="text-xl font-semibold text-black ">Lorem Ipsum is simply</h1>
-            <p class="mb-8 text-gray-600 text-[10px] sm:text-cust  lg:text-sm px-0 py-0  md:w-11/12">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-            </p>
-          </div>
-          <div class="grid-item">
-            <img class="mb-4" src="../images/gridbox.png" alt="gridbox" />
-            <h1 class="text-xl font-semibold text-black ">Lorem Ipsum is simply</h1>
-            <p class="mb-8 text-gray-600 text-[10px] sm:text-cust  lg:text-sm px-0 py-0  md:w-11/12">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-            </p>
-          </div>
-          <div class="grid-item">
-            <img class="mb-4" src="../images/gridbox.png" alt="gridbox" />
-            <h1 class="text-xl font-semibold text-black ">Lorem Ipsum is simply</h1>
-            <p class="mb-8 text-gray-600 text-[10px] sm:text-cust  lg:text-sm px-0 py-0  md:w-11/12">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-            </p>
-          </div>
-          <div class="grid-item">
-            <img class="mb-4" src="../images/gridbox.png" alt="gridbox" />
-            <h1 class="text-xl font-semibold text-black ">Lorem Ipsum is simply</h1>
-            <p class="mb-8 text-gray-600 text-[10px] sm:text-cust  lg:text-sm px-0 py-0  md:w-11/12">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-            </p>
-          </div>
-          <div class="grid-item">
-            <img class="mb-4" src="../images/gridbox.png" alt="gridbox" />
-            <h1 class="text-xl font-semibold text-black ">Lorem Ipsum is simply</h1>
-            <p class="mb-8 text-gray-600 text-[10px] sm:text-cust  lg:text-sm px-0 py-0  md:w-11/12">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- pricing section -->
-    <div class="p-12">
-      <h1 class="text-yellowcolor text-[2rem] p-[10px] leading-8 lg:text-5xl">Pricing Plans</h1>
-      <p class="text-[15px]  w-[90%] p-[10px]  lg:w-1/4 lg:text-base md:p-4">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
+        <!-- pricing section -->
+        <div class="p-12">
+            <h1 class="text-yellowcolor text-[2rem] p-[10px] leading-8 lg:text-5xl">Pricing Plans</h1>
+            <p class="text-[15px]  w-[90%] p-[10px]  lg:w-1/4 lg:text-base md:p-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy
-      </p>
-    </div>
-
-    <div class=" p-8  justify-center items-center gap-10 sm:p-p0101 lg:flex">
-      <div class="border border-gray-300 text-center p-4 mt-4">
-        <h2 class="text-white bg-gray-500 w-full py-6 text-xl">Basic</h2>
-        <div class="text-3xl py-8 px-8">
-          <p class="text-4xl text-black mb-4">$0/month</p>
-          <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
-          <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
-          <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
-          <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
-          <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
-          <button class="text-xl bg-gray-300 text-black border-none py-4 px-20 lg:px-8 xl:px-20 mt-5 transition duration-300 ease-in-out hover:bg-gray-400">SIGN UP</button>
+            </p>
         </div>
-      </div>
-
-      <div class=" border border-gray-300 text-center p-4 mt-4">
-        <h2 class="text-white bg-yellowcolor w-full py-6 text-xl">Business</h2>
-        <div class="text-3xl py-8 px-8">
-          <p class="text-4xl  mb-4 text-yellowcolor">$99/month</p>
-          <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
-          <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
-          <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
-          <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
-          <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
-          <button class="text-xl bg-gray-300 text-black border-none py-4 px-20 lg:px-8 xl:px-20 mt-5 transition duration-300 ease-in-out hover:bg-gray-400">SIGN UP</button>
+        <div class=" p-8  justify-center items-center gap-10 sm:p-p0101 lg:flex">
+            <div class="border border-gray-300 text-center p-4 mt-4">
+                <h2 class="text-white bg-gray-500 w-full py-6 text-xl">Basic</h2>
+                <div class="text-3xl py-8 px-8">
+                    <p class="text-4xl text-black mb-4">$0/month</p>
+                    <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
+                    <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
+                    <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
+                    <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
+                    <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
+                    <button class="text-xl bg-gray-300 text-black border-none py-4 px-20 lg:px-8 xl:px-20 mt-5 transition duration-300 ease-in-out hover:bg-gray-400">SIGN UP</button>
+                </div>
+            </div>
+            <div class=" border border-gray-300 text-center p-4 mt-4">
+                <h2 class="text-white bg-yellowcolor w-full py-6 text-xl">Business</h2>
+                <div class="text-3xl py-8 px-8">
+                    <p class="text-4xl  mb-4 text-yellowcolor">$99/month</p>
+                    <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
+                    <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
+                    <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
+                    <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
+                    <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
+                    <button class="text-xl bg-gray-300 text-black border-none py-4 px-20 lg:px-8 xl:px-20 mt-5 transition duration-300 ease-in-out hover:bg-gray-400">SIGN UP</button>
+                </div>
+            </div>
+            <div class="border border-gray-300 text-center p-4 mt-4">
+                <h2 class="text-white bg-gray-500 w-full py-6 text-xl">Unlimited</h2>
+                <div class="text-3xl py-8 px-8">
+                    <p class="text-4xl text-black mb-4">$199/month</p>
+                    <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
+                    <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
+                    <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
+                    <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
+                    <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
+                    <button class="text-xl bg-gray-300 text-black border-none py-4 px-20 lg:px-8 xl:px-20 mt-5 transition duration-300 ease-in-out hover:bg-gray-400">SIGN UP</button>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="border border-gray-300 text-center p-4 mt-4">
-        <h2 class="text-white bg-gray-500 w-full py-6 text-xl">Unlimited</h2>
-        <div class="text-3xl py-8 px-8">
-          <p class="text-4xl text-black mb-4">$199/month</p>
-          <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
-          <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
-          <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
-          <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
-          <div class="text-sm text-gray-500 border-t border-gray-500 py-4 px-2">Lorem Ipsum is simply dummy text of the.</div>
-          <button class="text-xl bg-gray-300 text-black border-none py-4 px-20 lg:px-8 xl:px-20 mt-5 transition duration-300 ease-in-out hover:bg-gray-400">SIGN UP</button>
+        <!-- last contact section -->
+        <div class="md:flex justify-center items-center mx-auto py-8 px-4 md:px-6 w-9/12 lg:w-9/12 mb-[7rem] mt-[5rem]  shadow-md" style="--tw-shadow: 0 -3px 11px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0);">
+            <div class=" w-full  md:w-8/12 lg:w-9/12">
+                <h2 class="text-yellowcolor text-4xl">Build Your Own Business</h2>
+                <p class="py-4  w-full md:w-[80%] lg:w-[80%] xl:w-[60%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+            </div>
+            <div class="mb-2 md:w-4/12 lg:w-1/5">
+                <button class="bg-bluecolor text-white text-xl py-4 px-6">Contact Us</button>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <!-- last contact section -->
-    <div class="md:flex justify-center items-center mx-auto py-8 px-4 md:px-6 w-9/12 lg:w-9/12 mb-[7rem] mt-[5rem]  shadow-md" style="--tw-shadow: 0 -3px 11px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0);">
-      <div class=" w-full  md:w-8/12 lg:w-9/12">
-        <h2 class="text-yellowcolor text-4xl">Build Your Own Business</h2>
-        <p class="py-4  w-full md:w-[80%] lg:w-[80%] xl:w-[60%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
-      </div>
-      <div class="mb-2 md:w-4/12 lg:w-1/5">
-        <button class="bg-bluecolor text-white text-xl py-4 px-6">Contact Us</button>
-      </div>
-    </div>
-
-
-    <!-- footer -->
-    <footer
-    class="bg-black text-white pt-20 pb-12 px-[20px] sm:px-12 flex justify-center items-end overflow-y-hidden overflow-x-hidden"
-  >
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-4"
-     
-    >
-      <div
-        class="col-span-1 md:col-span-1 sm:border-r sm:border-gray-300 md:pr-5 sm:px-5 xl:pr-8 flex justify-end flex-col"
-        >
-        <div
-          class="flex items-center justify-center md:justify-start lg:justify-center mb-8"
-        >
-          <a href="../index.html">
-            <img
-              src="../images/footerLogo.png"
-              alt="footerLogo"
-              class="w-60"
-            />
-          </a>
-        </div>
-        <div class="pt-[20px] sm:pt-16">
-          <p class="text-sm leading-5 mb-4">
-            essentially unchanged. It was popularised in the 1960s with the
+        <!-- footer -->
+        <footer class="bg-black text-white pt-20 pb-12 px-[20px] sm:px-12 flex justify-center items-end overflow-y-hidden overflow-x-hidden">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-4">
+                <div class="col-span-1 md:col-span-1 sm:border-r sm:border-gray-300 md:pr-5 sm:px-5 xl:pr-8 flex justify-end flex-col">
+                    <div class="flex items-center justify-center md:justify-start lg:justify-center mb-8">
+                        <a href="../index.html">
+                            <img src="../images/footerLogo.png" alt="footerLogo" class="w-60">
+                        </a>
+                    </div>
+                    <div class="pt-[20px] sm:pt-16">
+                        <p class="text-sm leading-5 mb-4">
+                            essentially unchanged. It was popularised in the 1960s with the
             release of Letraset sheets containing Lorem Ipsum passages, and
             more recently
-          </p>
-          <p class="text-sm leading-5">
-            essentially unchanged. It was popularised in the 1960s with the
+                        </p>
+                        <p class="text-sm leading-5">
+                            essentially unchanged. It was popularised in the 1960s with the
             release of Letraset sheets containing Lorem Ipsum passages, and
             more recently
-          </p>
-        </div>
-      </div>
-      <div
-        class="col-span-1 md:col-span-1 lg:col-span-1 lg:border-r lg:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex items-end"
-       
-      >
-        <div class="pb-[20px] border-b-[1px] sm:border-none">
-          <p class="text-sm leading-5">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
+                        </p>
+                    </div>
+                </div>
+                <div class="col-span-1 md:col-span-1 lg:col-span-1 lg:border-r lg:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex items-end">
+                    <div class="pb-[20px] border-b-[1px] sm:border-none">
+                        <p class="text-sm leading-5">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of
             type and scrambled it to make a type specimen book. It has
             survived not only five centuries, but also the leap into
             electronic typesetting, remaining
-          </p>
-        </div>
-      </div>
-      <div
-        class="col-span-1 lg:col-span-1  sm:border-r sm:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex flex-col justify-end"
-        
-      >
-        <ul class="mb-4 sm:mb-8 pb-[20px] border-b-[1px] sm:border-none">
-          <li><a href="../index.html" class="text-lg uppercase">Home</a></li>
-          <li><a href="../services/services.html" class="text-lg uppercase">Company</a></li>
-          <li><a href="#" class="text-lg uppercase">Products</a></li>
-          <li>
-            <a href="./services/services.html" class="text-lg uppercase"
-              >Service option 1</a
+                        </p>
+                    </div>
+                </div>
+                <div class="col-span-1 lg:col-span-1  sm:border-r sm:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex flex-col justify-end">
+                    <ul class="mb-4 sm:mb-8 pb-[20px] border-b-[1px] sm:border-none">
+                        <li>
+                            <a href="../index.html" class="text-lg uppercase">Home</a>
+                        </li>
+                        <li>
+                            <a href="../services/services.html" class="text-lg uppercase">Company</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-lg uppercase">Products</a>
+                        </li>
+                        <li>
+                            <a href="./services/services.html" class="text-lg uppercase">Service option 1
+                            </a
             >
-          </li>
-          <li>
-            <a href="../services_option2/index.html" class="text-lg uppercase"
-              >Service option 2</a
+                        </li>
+                        <li>
+                            <a href="../services_option2/index.html" class="text-lg uppercase">Service option 2
+                            </a
             >
-          </li>
-          <li><a href="#" class="text-lg uppercase">Blogs</a></li>
-        </ul>
-        <form class="pb-[20px] border-b-[1px] sm:border-none">
-          <div class="text-sm leading-5 mb-4">Newsletter signup</div>
-          <input
-            type="text"
-            placeholder="Email Address"
-            class="bg-[#3C3C3C] text-white w-full px-4 py-2 focus:outline-none placeholder-white placeholder:text-[15px]"
-          />
-        </form>
-      </div>
-      <div
-        class="col-span-1 lg:col-span-1 sm:px-5 xl:pr-8 pt-[20px] flex flex-row sm:flex-col justify-between sm:justify-end pb-[20px] border-b-[1px] sm:border-none"
-        
-      >
-        <div class="sm:mb-8 ">
-          <ul>
-            <li><a href="#" class="text-sm">Terms & Conditions</a></li>
-            <li><a href="#" class="text-sm">Privacy Policy</a></li>
-            <li><a href="#" class="text-sm">Investor Privacy Notice</a></li>
-            <li><a href="#" class="text-sm">Cookies Policy</a></li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><a href="#" class="text-sm">Twitter</a></li>
-            <li><a href="#" class="text-sm">LinkedIn</a></li>
-            <li><a href="#" class="text-sm">Medium</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  </body>
-  <script>
+                        </li>
+                        <li>
+                            <a href="#" class="text-lg uppercase">Blogs</a>
+                        </li>
+                    </ul>
+                    <form class="pb-[20px] border-b-[1px] sm:border-none">
+                        <div class="text-sm leading-5 mb-4">Newsletter signup</div>
+                        <input type="text" placeholder="Email Address" class="bg-[#3C3C3C] text-white w-full px-4 py-2 focus:outline-none placeholder-white placeholder:text-[15px]">
+                    </form>
+                </div>
+                <div class="col-span-1 lg:col-span-1 sm:px-5 xl:pr-8 pt-[20px] flex flex-row sm:flex-col justify-between sm:justify-end pb-[20px] border-b-[1px] sm:border-none">
+                    <div class="sm:mb-8 ">
+                        <ul>
+                            <li>
+                                <a href="#" class="text-sm">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">Investor Privacy Notice</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">Cookies Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#" class="text-sm">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">Medium</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script>
     AOS.init();
-  </script>
-  <script>
+    </script>
+    <script>
     // circularprogress bar
 
 let circularProgresses = document.querySelectorAll(".circular-progress");
@@ -862,5 +786,38 @@ function startProgressAnimation(element) {
     var cardSlider = card.querySelector('.card_slider');
     cardSlider.classList.toggle('hidden');
   }
-</script>
+
+
+// Object to keep track of rotations
+const rotations = {
+    img1: 0,
+    img2: 0,
+    img3: 0,
+    img4: 0
+};
+
+
+
+const imageStates = {
+    img1: { rotated: false, degrees: 0 },
+    img2: { rotated: false, degrees: 0 },
+    img3: { rotated: false, degrees: 0 },
+    img4: { rotated: false, degrees: 0 }
+};
+
+function rotateImage(imgId) {
+    if (!imageStates[imgId].rotated) {
+        imageStates[imgId].rotated = true;
+        imageStates[imgId].degrees += 180;
+        document.getElementById(imgId).style.transform = `rotate(${imageStates[imgId].degrees}deg)`;
+        Object.keys(imageStates).forEach(key => {
+            if (key !== imgId && imageStates[key].rotated) {
+                document.getElementById(key).style.transform = 'rotate(0deg)';
+                imageStates[key].degrees = 0;
+                imageStates[key].rotated = false; 
+            }
+        });
+    }
+}
+    </script>
 </html>
