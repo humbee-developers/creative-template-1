@@ -42,17 +42,19 @@
           extend: {
             colors: {
               yellowcolor: "#DFA621",
+              greycolor: "#6C6C6C",
+              lightgreycolor: "#8A8A8A",
+              bluecolors: "#4D5F75",
             },
-            fontSize:{
-              cust:"15px",
-              text13px:"13px",
-              custrem:"1.2rem",
-              text1rem:"1rem",
-              text25rem:"2.5rem",
+            fontSize: {
+              cust: "15px",
+              text13px: "13px",
+              custrem: "1.2rem",
+              text1rem: "1rem",
+              text25rem: "2.5rem",
             },
-            width:{
-             width21:"21%",
-
+            width: {
+              width21: "21%",
             },
           },
         },
@@ -62,9 +64,12 @@
   <body>
     <header class="z-[100] relative pt-[43px] pr-[37px] pb-[0] pl-[50px]">
       <nav class="flex justify-between items-center">
-        <div class="logo" data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-delay="10">
+        <div
+          class="logo"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="10"
+        >
           <a href="../index.html">
             <img src="../images/logo.svg" alt="logo" />
           </a>
@@ -159,21 +164,33 @@
       </nav>
     </header>
     <main>
-        <!-- hero section -->
+      <!-- hero section -->
       <section class="hero_section h-[calc(100vh_-_117px)]">
-        <div class="herosection absolute top-0 left-0 w-full ">
+        <div class="herosection absolute top-0 left-0 w-full">
           <div class="inner_banner_image relative h-screen">
-            <img src="./../images/serviceBanner.png" alt="banner_image" class="max-w-full block w-full h-full" />
+            <img
+              src="./../images/serviceBanner.png"
+              alt="banner_image"
+              class="max-w-full block w-full h-full"
+            />
             <div class="inner_banner absolute top-[45%]">
-              <div class="inner_banner_wrapper px-[20px] md:px-[60px] lg:px-[100px] py-0">
-                <div class="inner_banner_title text-3xl leading-[129%] text-white mt-0 mb-[25px] mx-0" 
-                 data-aos="slide-right"
-                data-aos-duration="1000"
-                data-aos-delay="10">Our Services</div>
-                <div class="inner_banner_heading text-[40px] md:text-[50px] lg:text-[60px] xl:text-[60px] 2xl:text-[71px] text-white font-normal leading-[140%] md:leading-[50px] lg:leading-[77px] w-full md:w-[85%] "
-                data-aos="slide-right"
-                data-aos-duration="1000"
-                data-aos-delay="10">
+              <div
+                class="inner_banner_wrapper px-[20px] md:px-[60px] lg:px-[100px] py-0"
+              >
+                <div
+                  class="inner_banner_title text-3xl leading-[129%] text-white mt-0 mb-[25px] mx-0"
+                  data-aos="slide-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="10"
+                >
+                  Our Services
+                </div>
+                <div
+                  class="inner_banner_heading text-[40px] md:text-[50px] lg:text-[60px] xl:text-[60px] 2xl:text-[71px] text-white font-normal leading-[140%] md:leading-[50px] lg:leading-[77px] w-full md:w-[85%]"
+                  data-aos="slide-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="10"
+                >
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </div>
@@ -183,535 +200,731 @@
         </div>
       </section>
       <!-- ourservicse -->
-    <div class="p-8 sm:p-20">
+      <div class="p-8 sm:p-20">
         <section>
-            <div class="image_card_index">
+          <div class="image_card_index">
+            <div class="image_card_index_wrapper">
               <div
-                class="image_card_index_wrapper "
+                class="image_card_index_title text-[#989898] text-2xl leading-[129%] mt-0 mb-[26px] mx-0"
+                data-aos="slide-right"
+                data-aos-duration="800"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
               >
-                <div
-                  class="image_card_index_title text-[#989898] text-2xl  leading-[129%] mt-0 mb-[26px] mx-0"
-                  data-aos="slide-right"
-                  data-aos-duration="800"
-                  data-aos-delay="100"
-                  data-aos-once="true"
-                  data-aos-easing="ease-in-out"
-                >
-                  Our Services
-                </div>
-                <div
-                  class="image_card_index_heading w-full  text-[32px] lg:w-1/2 lg:text-[40px]  leading-[129%]  leading-[129%] text-[#4d5f75]  mt-0 mb-20 mx-0"
-                  data-aos="slide-right"
-                  data-aos-duration="800"
-                  data-aos-delay="100"
-                  data-aos-once="true"
-                  data-aos-easing="ease-in-out"
-                >
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry.
-                </div>
+                Our Services
               </div>
-            </div>
-          </section>
-          <!-- ourserviceswithgrid -->
-          <section class="mt-40">
-            <div class="image_card_index  md:flex">
-                <div
-                  class="image_card_index_wrapper w-full md:w-3/5"
-                >
-                  <div
-                    class="image_card_index_title text-[#989898] text-2xl  leading-[129%] mt-0 mb-[26px] mx-0"
-                    data-aos="slide-right"
-                    data-aos-duration="800"
-                    data-aos-delay="100"
-                    data-aos-once="true"
-                    data-aos-easing="ease-in-out"
-                  >
-                    Our Services
-                  </div>
-                  <div
-                    class="image_card_index_heading w-full text-[32px]  sm:text-[40px]  leading-[129%]  leading-[129%] text-[#181818]  mt-0 mb-20 mx-0"
-                    data-aos="slide-right"
-                    data-aos-duration="800"
-                    data-aos-delay="100"
-                    data-aos-once="true"
-                    data-aos-easing="ease-in-out"
-                  >
-                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry.
-                  </div>
-                  
-                </div>
-                <div class=" ">
-                    <div class="grid grid-cols-2 h-full md:p-3 lg:p-4 gap-x-10">
-                      <div class="grid-item">
-                        <img class="p-4" src="../images/secfiveicon-grid.svg" alt="gridbox" />
-                        <h1 class="text-xl font-semibold text-black">Lorem Ipsum </h1>
-                      </div>
-                      <div class="grid-item">
-                        <img class="p-4" src="../images/secfiveicon-grid.svg" alt="gridbox" />
-                        <h1 class="text-xl font-semibold text-black ">Lorem Ipsum</h1>
-                      </div>
-                      <div class="grid-item">
-                        <img class="p-4" src="../images/secfiveicon-grid.svg" alt="gridbox" />
-                        <h1 class="text-xl font-semibold text-black ">Lorem Ipsum</h1>
-                      </div>
-                      <div class="grid-item">
-                        <img class="p-4" src="../images/secfiveicon-grid.svg" alt="gridbox" />
-                        <h1 class="text-xl font-semibold text-black ">Lorem Ipsum</h1>
-                      </div>
-                    </div>
-                  </div>
+              <div
+                class="image_card_index_heading w-full text-[32px] lg:w-1/2 lg:text-[40px] leading-[129%] leading-[129%] text-[#4d5f75] mt-0 mb-20 mx-0"
+                data-aos="slide-right"
+                data-aos-duration="800"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
               </div>
-          </section>
-    </div>
-      <!-- imgfull -->
-      <section>
-        <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
-            <div class="absolute inset-0">
-              <img src="../images/secfive_fullimg.png" alt="Background Image" class="object-cover object-center w-full h-full" />
-              <div class="absolute inset-0 bg-black opacity-50"></div>
-            </div>
-            
-            <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
-              <h1 class="text-[17px] w-5/6 sm:text-[28px] lg:text-[41px] sm:w-[62%] lg:w-[53%] text-left font-bold leading-tight mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </h1>
-            <div class=" w-5/6 sm:w-[60%] md:w-[52%]">
-                <a href="#" class="bg-yellow-400 float-left text-gray-900 hover:bg-yellow-300 py-2 px-6 text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Get Started</a>
-            </div>
-            <div class="text-cust w-[80%] right-12 bottom-40 text-left absolute sm:w-[21%] md:w-[39%] lg:w-[30%] xl:w-[21%] sm:bottom-32 sm:right-80 lg:bottom-12 lg:right-24 ">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-            </div>
             </div>
           </div>
+        </section>
+        <!-- ourserviceswithgrid -->
+        <section class="mt-40">
+          <div class="image_card_index md:flex">
+            <div class="image_card_index_wrapper w-full md:w-3/5">
+              <div
+                class="image_card_index_title text-[#989898] text-2xl leading-[129%] mt-0 mb-[26px] mx-0"
+                data-aos="slide-right"
+                data-aos-duration="800"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
+                Our Services
+              </div>
+              <div
+                class="image_card_index_heading w-full text-[32px] sm:text-[40px] leading-[129%] leading-[129%] text-[#181818] mt-0 mb-20 mx-0"
+                data-aos="slide-right"
+                data-aos-duration="800"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </div>
+            </div>
+            <div class=" ">
+              <div class="grid grid-cols-2 h-full md:p-3 lg:p-4 gap-x-10">
+                <div class="grid-item">
+                  <img
+                    class="p-4"
+                    src="../images/secfiveicon-grid.svg"
+                    alt="gridbox"
+                  />
+                  <h1 class="text-xl font-semibold text-black">Lorem Ipsum</h1>
+                </div>
+                <div class="grid-item">
+                  <img
+                    class="p-4"
+                    src="../images/secfiveicon-grid.svg"
+                    alt="gridbox"
+                  />
+                  <h1 class="text-xl font-semibold text-black">Lorem Ipsum</h1>
+                </div>
+                <div class="grid-item">
+                  <img
+                    class="p-4"
+                    src="../images/secfiveicon-grid.svg"
+                    alt="gridbox"
+                  />
+                  <h1 class="text-xl font-semibold text-black">Lorem Ipsum</h1>
+                </div>
+                <div class="grid-item">
+                  <img
+                    class="p-4"
+                    src="../images/secfiveicon-grid.svg"
+                    alt="gridbox"
+                  />
+                  <h1 class="text-xl font-semibold text-black">Lorem Ipsum</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- imgfull -->
+      <section>
+        <div
+          class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden"
+        >
+          <div class="absolute inset-0">
+            <img
+              src="../images/secfive_fullimg.png"
+              alt="Background Image"
+              class="object-cover object-center w-full h-full"
+            />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+          </div>
+
+          <div
+          data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+            class="relative z-10 flex flex-col justify-center items-center h-full text-center "
+          >
+            <h1 
+              class="text-[17px] w-5/6 sm:text-[28px] lg:text-[41px] sm:w-[62%] lg:w-[53%] text-left font-bold leading-tight mb-4"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </h1>
+            <div class="w-5/6 sm:w-[60%] md:w-[52%]">
+              <a
+                href="#"
+                class="bg-yellow-400 float-left text-gray-900 hover:bg-yellow-300 py-2 px-6 text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+                >See More</a
+              >
+            </div>
+            <div
+              class="text-cust w-[80%] right-12 bottom-40 text-left absolute sm:w-[21%] md:w-[39%] lg:w-[30%] xl:w-[21%] sm:bottom-32 sm:right-80 lg:bottom-12 lg:right-24"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </div>
+          </div>
+        </div>
       </section>
+
       <!-- loremimg with flex4text -->
       <section>
-    <div>
-        <h2 class="services_centertext  flex justify-center pt-12 text-[22px] text-black sm:text-2xl  sm:pt-16 md:text-[2rem] md:pt-20 lg:text-5xl lg:pt-24 ">
-          Lorem Ipsum is simply dummy text of<br />
-          the printing and typesetting industry.
-        </h2>
-      </div>
-  
-      <div class="px-8 py-8 flex flex-col sm:flex sm:flex-row gap-4  xl:py-20 xl:px-44  lg:px-12 lg:pt-12 lg:pb-16">
         <div>
-          <h2 class="text-yellowcolor text-xl md:py-4  px-0 font-semibold  md:text-custrem sm:text-text1rem xl:text-2xl">01 | Lorem Ipsum is simply</h2>
-          <p class="text-cust sm:text-sm sm:pt-4 xl:text-cust">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-          </p>
+          <h2
+            class="services_centertext flex justify-center pt-12 text-[20px] text-black sm:text-2xl sm:pt-16 md:text-[2rem] md:pt-20 lg:text-5xl lg:pt-24"
+          >
+            Lorem Ipsum is simply dummy text of<br />
+            the printing and typesetting industry.
+          </h2>
         </div>
-        <div>
-          <h2 class="text-yellowcolor text-xl md:py-4  px-0 font-semibold  md:text-custrem sm:text-text1rem xl:text-2xl ">02 | Lorem Ipsum is simply</h2>
-          <p class="text-cust sm:text-sm sm:pt-4 xl:text-cust ">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-          </p>
+
+        <div
+          class="px-8 py-8 flex flex-col sm:flex sm:flex-row gap-4 xl:py-20 xl:px-44 lg:px-12 lg:pt-12 lg:pb-16"
+        >
+          <div>
+            <h2
+              class="text-yellowcolor text-xl md:py-4 px-0 font-semibold md:text-custrem sm:text-text1rem xl:text-2xl"
+            >
+              01 | Lorem Ipsum is simply
+            </h2>
+            <p class="text-cust sm:text-sm sm:pt-4 xl:text-cust">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-yellowcolor text-xl md:py-4 px-0 font-semibold md:text-custrem sm:text-text1rem xl:text-2xl"
+            >
+              02 | Lorem Ipsum is simply
+            </h2>
+            <p class="text-cust sm:text-sm sm:pt-4 xl:text-cust">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-yellowcolor text-xl md:py-4 px-0 font-semibold md:text-custrem sm:text-text1rem xl:text-2xl"
+            >
+              03 | Lorem Ipsum is simply
+            </h2>
+            <p class="text-cust sm:text-sm sm:pt-4 xl:text-cust">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </p>
+          </div>
         </div>
-        <div>
-          <h2 class="text-yellowcolor text-xl  md:py-4  px-0 font-semibold  md:text-custrem sm:text-text1rem xl:text-2xl ">03 | Lorem Ipsum is simply</h2>
-          <p class="text-cust sm:text-sm sm:pt-4 xl:text-cust">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
-          </p>
-        </div>
-      </div>
       </section>
       <!-- rightleftimg -->
       <section>
         <!-- flex1 -->
-        <div class="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 ">
-            <div class="flex items-center md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
-                <div class="text-left">
-                    <h2
-                        class="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
-                        Lorem Ipsum is simply 
-                    </h2>
-                    <p class="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                    </p>
-                </div>
+        <div
+          class="relative flex flex-col items-center max-w-screen-xl px-8 mx-auto md:flex-row sm:px-6  overflow-hidde"
+        >
+          <div class="flex items-center md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
+            <div class="text-left">
+              <h2
+                class="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl"
+              >
+                Lorem Ipsum is simply
+              </h2>
+              <p
+                class="max-w-md mb-4 mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+              </p>
             </div>
-            <div class="flex items-center  md:w-1/2 ">
-                <div class="relative w-full  rounded">
-                    <div class="rounded-lg bg-white text-black w-full">
-                        <img src="../images/secfive_fleximg1.png" />
-                    </div>
-                </div>
+          </div>
+          <div class="flex items-center md:w-1/2  overflow-hidden">
+            <div class="relative w-full rounded  overflow-hidden">
+              <div
+              data-aos="slide-left" 
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out" 
+               class="rounded-lg bg-white text-black w-full  overflow-hidden">
+                <img src="../images/secfive_fleximg1.png" />
+              </div>
             </div>
+          </div>
         </div>
         <!-- flex2 -->
-        <div class="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6">
-            <div class="flex items-center md:w-1/2">
-                <div class="relative w-full rounded ">
-                    <div class="rounded-lg bg-white text-black w-full">
-                        <img src="../images/secfive_fleximg2.png" />
-                    </div>
-                </div>
-            </div>
-            <div class="flex items-center  md:w-1/2 md:pb-20 md:pt-10 md:pl-10">
-                <div class="text-left">
-                    <h2
-                        class="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
-                        Lorem Ipsum is simply 
-                    </h2>
-                    <p class="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                    </p>
-                </div>
-            </div>
-        </div>
-
-      </section>
-    <!-- 3imgflex -->
-    <section>
-      <div class="flex flex-col md:flex-row mb-[80px]">
         <div
-          class="relative w-full md:w-[33.33%]"
-          data-aos="fade-up"
+          class="relative mt-8 flex flex-col-reverse items-center max-w-screen-xl px-8 mx-auto md:flex-row sm:px-6  overflow-hidde"
+        >
+          <div class="flex items-center md:w-1/2">
+            <div class="relative w-full rounded">
+              <div
+              data-aos="slide-right" 
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+               class="rounded-lg bg-white text-black w-full">
+                <img src="../images/secfive_fleximg2.png" />
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center md:w-1/2 md:pb-20 md:pt-10 md:pl-10">
+            <div class="text-left">
+              <h2
+                class="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl"
+              >
+                Lorem Ipsum is simply
+              </h2>
+              <p
+                class="max-w-md mb-4 mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- flextextonimg -->
+      <section class="p-8 sm:py-20 xl:px-40">
+        <div
+          class="text-black text-[30px] sm:text-[41px] mb-[20px]"
+          data-aos="slide-right"
           data-aos-duration="1000"
           data-aos-delay="100"
           data-aos-once="true"
           data-aos-easing="ease-in-out"
         >
-          <img
-            src="../images//s4_3_image1.png"
-            alt="s4_3_image1"
-            class="max-w-full block w-full"
-          />
-          <div class="absolute bottom-[20px] left-[20px]">
-            <p class="text-white text-[27px] leading-[129%]">Lorem Ipsum</p>
-            <p class="text-white text-[14px] leading-[129%]">Lorem Ipsum</p>
-          </div>
+          Lorem Ipsum is simply dummy text of the
         </div>
         <div
-          class="relative w-full md:w-[33.33%]"
-          data-aos="fade-up"
+          data-aos="slide-right"
           data-aos-duration="1000"
-          data-aos-delay="300"
+          data-aos-delay="100"
           data-aos-once="true"
           data-aos-easing="ease-in-out"
         >
+          <p class="text-2xl w-full sm:text-3xl text-lightgreycolor sm:w-9/12">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
+            arcu nec est pharetra aliquet sit amet et ipsum. Vestibulum eget dui
+            vitae nunc blandit rutrum non vitae tellus. Donec nisi magna,
+            interdum vel turpis in, ullamcorper ultrices justo.
+          </p>
+        </div>
+        <div class="mt-4 mb-12">
+          <button class="bg-greycolor py-4 px-8">See More</button>
+        </div>
+        <div class="relative">
           <img
-            src="../images//s4_3_image2.png"
-            alt="s4_3_image1"
-            class="max-w-full block w-full"
+            class="w-full"
+            src="../images/secfive_flextextimgs.png"
+            alt="flextextbg"
           />
-          <div class="absolute bottom-[20px] left-[20px]">
-            <p class="text-white text-[27px] leading-[129%]">Lorem Ipsum</p>
-            <p class="text-white text-[14px] leading-[129%]">Lorem Ipsum</p>
-          </div>
-        </div>
-        <div
-          class="relative w-full md:w-[33.33%]"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="600"
-          data-aos-once="true"
-          data-aos-easing="ease-in-out"
-        >
-          <img
-            src="../images//s4_3_image3.png"
-            alt="s4_3_image1"
-            class="max-w-full block w-full"
-          />
-          <div class="absolute bottom-[20px] left-[20px]">
-            <p class="text-white text-[27px] leading-[129%]">Lorem Ipsum</p>
-            <p class="text-white text-[14px] leading-[129%]">Lorem Ipsum</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- skill check -->
-    <section>
-      <div
-        class="px-[20px] lg:px-[50px] xl:px-[100px] 2xl:px-[150px] 3xl:px-[200px] mb-[50px] flex flex-col md:flex-row"
-      >
-        <div class="w-full md:w-[40%] md:px-[20px] xl:px-[50px]">
-          <div class="">
-            <div
-              class="text-[#8A8A8A] text-[20px] mb-[20px]"
-              data-aos="slide-right"
-              data-aos-duration="1000"
-              data-aos-delay="100"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              Lorem Ipsum
-            </div>
-            <div
-              class="pregressCount_item text-[#4D5F75] text-[51px] md:text-[60px] lg:text-[83px] leading-[102.5%] mb-[20px] w-full xl:w-[388px]"
-              data-aos="slide-right"
-              data-aos-duration="1400"
-              data-aos-delay="100"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              Check our Skills
-            </div>
-            <div
-              class="text-[#4D5F75] text-[18px] leading-[129%] mb-[20px] w-full md:w-[90%] xl:w-[400px]"
-              data-aos="slide-right"
-              data-aos-duration="1600"
-              data-aos-delay="100"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-            </div>
-            <div
-              class="my-[40px]"
-              data-aos="slide-right"
-              data-aos-duration="1800"
-              data-aos-delay="100"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <a
-                href="#"
-                class="bg-[#DFA621] px-[25px] py-[15px] text-[18px] leading-[129%] transition-all duration-500 hover:bg-[#4D5F75] hover:text-white"
-                >Read more</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="w-full md:w-[60%] md:px-[20px] xl:px-[50px]">
-          <div class="flex flex-wrap justify-between md:justify-end">
-            <div class="counter-section pr-[10px]">
-              <div
-                class="pregressCount_item flex text-black text-[38px] sm:text-[52px] w-[30%] lg:w-[120px] lg:mr-[15px] xl:mr-[30px]"
-              >
-                <div class="pregressCount w-fit pr-[2px]">75</div>
-                <span>%</span>
-              </div>
-            </div>
-            <div class="w-[70%]">
-              <div class="text-[#4D5F75] text-[25px] sm:text-[30px]">
-                Lorem Ipsum
-              </div>
-              <div class="progress-section">
-                <div
-                  class="progress-wrap progress w-full h-[7px] bg-yellowcolor relative overflow-hidden"
-                  data-progress-percent="75"
-                >
-                  <div
-                    class="progress-bar progress w-full h-[7px] absolute top-0 left-0 bg-[#E4E4E4]"
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-wrap justify-between md:justify-end">
-            <div class="counter-section pr-[10px]">
-              <div
-                class="pregressCount_item flex text-black text-[38px] sm:text-[52px] w-[30%] lg:w-[120px] lg:mr-[15px] xl:mr-[30px]"
-              >
-                <div class="pregressCount w-fit pr-[2px]">45</div>
-                <span>%</span>
-              </div>
-            </div>
-            <div class="w-[70%]">
-              <div class="text-[#4D5F75] text-[25px] sm:text-[30px]">
-                Lorem Ipsum
-              </div>
-              <div class="progress-section">
-                <div
-                  class="progress-wrap progress w-full h-[7px] bg-yellowcolor relative overflow-hidden"
-                  data-progress-percent="45"
-                >
-                  <div
-                    class="progress-bar progress w-full h-[7px] absolute top-0 left-0 bg-[#E4E4E4]"
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-wrap justify-between md:justify-end">
-            <div class="counter-section pr-[10px]">
-              <div
-                class="pregressCount_item flex text-black text-[38px] sm:text-[52px] w-[30%] lg:w-[120px] lg:mr-[15px] xl:mr-[30px]"
-              >
-                <div class="pregressCount w-fit pr-[2px]">90</div>
-                <span>%</span>
-              </div>
-            </div>
-            <div class="w-[70%]">
-              <div class="text-[#4D5F75] text-[25px] sm:text-[30px]">
-                Lorem Ipsum
-              </div>
-              <div class="progress-section">
-                <div
-                  class="progress-wrap progress w-full h-[7px] bg-yellowcolor relative overflow-hidden"
-                  data-progress-percent="90"
-                >
-                  <div
-                    class="progress-bar progress w-full h-[7px] absolute top-0 left-0 bg-[#E4E4E4]"
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-wrap justify-between md:justify-end">
-            <div class="counter-section pr-[10px]">
-              <div
-                class="pregressCount_item flex text-black text-[38px] sm:text-[52px] w-[30%] lg:w-[120px] lg:mr-[15px] xl:mr-[30px]"
-              >
-                <div class="pregressCount w-fit pr-[2px]">65</div>
-                <span>%</span>
-              </div>
-            </div>
-            <div class="w-[70%]">
-              <div class="text-[#4D5F75] text-[25px] sm:text-[30px]">
-                Lorem Ipsum
-              </div>
-              <div class="progress-section">
-                <div
-                  class="progress-wrap progress w-full h-[7px] bg-yellowcolor relative overflow-hidden"
-                  data-progress-percent="65"
-                >
-                  <div
-                    class="progress-bar progress w-full h-[7px] absolute top-0 left-0 bg-[#E4E4E4]"
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-wrap justify-between md:justify-end">
-            <div class="counter-section pr-[10px]">
-              <div
-                class="pregressCount_item flex text-black text-[38px] sm:text-[52px] w-[30%] lg:w-[120px] lg:mr-[15px] xl:mr-[30px]"
-              >
-                <div class="pregressCount w-fit pr-[2px]">85</div>
-                <span>%</span>
-              </div>
-            </div>
-            <div class="w-[70%]">
-              <div class="text-[#4D5F75] text-[25px] sm:text-[30px]">
-                Lorem Ipsum
-              </div>
-              <div class="progress-section">
-                <div
-                  class="progress-wrap progress w-full h-[7px] bg-yellowcolor relative overflow-hidden"
-                  data-progress-percent="85"
-                >
-                  <div
-                    class="progress-bar progress w-full h-[7px] absolute top-0 left-0 bg-[#E4E4E4]"
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- lorem factory imagetext -->
-    <section>
-      <div class="bgImage_with_text">
-        <div
-          class="bgImage_with_text_wrapper bg-no-repeat bg-center bg-cover min-h-[60vh] md:min-h-[629px] lg:min-h-[729px] relative"
-          style="
-            background-image: url(../images/services_op2_full_BG_image.png);
-          "
-        >
           <div
-            class="bgImage_with_text_content absolute translate-y-[-50%] left-0 md:left-[90px] top-[50%] px-[20px] md:px-0"
+            class="w-full justify-between bottom-12 absolute flex px-20"
           >
-            <div class="bgImage_with_text_content_wrap">
+            <div>
+              <h1 class="text-xl lg:text-3xl text-black-50">Lorem Ipsum</h1>
+              <p class="text-cust">Lorem ipsum is simply</p>
+            </div>
+            <div>
+              <h1 class="text-xl lg:text-3xl text-black-50">Lorem Ipsum</h1>
+              <p class="text-cust">Lorem ipsum is simply</p>
+            </div>
+            <div>
+              <h1 class="text-xl lg:text-3xl text-black-50">Lorem Ipsum</h1>
+              <p class="text-cust">Lorem ipsum is simply</p>
+            </div>
+            <div>
+              <h1 class="text-xl lg:text-3xl text-black-50">Lorem Ipsum</h1>
+              <p class="text-cust">Lorem ipsum is simply</p>
+            </div>
+          </div>
+        </div>
+        <!-- 100+ section -->
+        <div class="w-full flex  flex-wrap mt-32 text-center">
+          <div
+            class="border-2 border-gray-300 p-4 w-1/2 sm:w-1/4 hover:bg-yellow-500 hover:text-white"
+          >
+            <h1 class="text-xl lg:text-8xl text-bluecolors">100+</h1>
+            <p class="text-cust">Lorem ipsum is simply</p>
+          </div>
+          <div
+            class="border-2 border-gray-300 p-4 w-1/2 sm:w-1/4 hover:bg-yellow-500 hover:text-white"
+          >
+            <h1 class="text-xl lg:text-8xl text-bluecolors">100+</h1>
+            <p class="text-cust">Lorem ipsum is simply</p>
+          </div>
+          <div
+            class="border-2 border-gray-300 p-4 w-1/2 sm:w-1/4 hover:bg-yellow-500 hover:text-white"
+          >
+            <h1 class="text-xl lg:text-8xl text-bluecolors">100+</h1>
+            <p class="text-cust">Lorem ipsum is simply</p>
+          </div>
+          <div
+            class="border-2 border-gray-300 p-4 w-1/2 sm:w-1/4 hover:bg-yellow-500 hover:text-white"
+          >
+            <h1 class="text-xl lg:text-8xl text-bluecolors">100+</h1>
+            <p class="text-cust">Lorem ipsum is simply</p>
+          </div>
+        </div>
+        <!-- 100sectionrepeat -->
+        <div class="w-full flex flex-wrap text-center">
+          <div
+            class="border-2 border-gray-300 p-4 w-1/2 sm:w-1/4 hover:bg-yellow-500 hover:text-white"
+          >
+            <h1 class="text-xl lg:text-8xl text-bluecolors">100+</h1>
+            <p class="text-cust">Lorem ipsum is simply</p>
+          </div>
+          <div
+            class="border-2 border-gray-300 p-4 w-1/2 sm:w-1/4 hover:bg-yellow-500 hover:text-white"
+          >
+            <h1 class="text-xl lg:text-8xl text-bluecolors">100+</h1>
+            <p class="text-cust">Lorem ipsum is simply</p>
+          </div>
+          <div
+            class="border-2 border-gray-300 p-4 w-1/2 sm:w-1/4 hover:bg-yellow-500 hover:text-white"
+          >
+            <h1 class="text-xl lg:text-8xl text-bluecolors">100+</h1>
+            <p class="text-cust">Lorem ipsum is simply</p>
+          </div>
+          <div
+            class="border-2 border-gray-300 p-4 w-1/2 sm:w-1/4 hover:bg-yellow-500 hover:text-white"
+          >
+            <h1 class="text-xl lg:text-8xl text-bluecolors">100+</h1>
+            <p class="text-cust">Lorem ipsum is simply</p>
+          </div>
+        </div>
+      </section>
+      <!-- 3imgflex -->
+      <section>
+        <div class="flex flex-col md:flex-row mb-[80px]">
+          <div
+            class="relative w-full md:w-[33.33%]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <img
+              src="../images//s4_3_image1.png"
+              alt="s4_3_image1"
+              class="max-w-full block w-full"
+            />
+            <div class="absolute bottom-[20px] left-[20px]">
+              <p class="text-white text-[27px] leading-[129%]">Lorem Ipsum</p>
+              <p class="text-white text-[14px] leading-[129%]">Lorem Ipsum</p>
+            </div>
+          </div>
+          <div
+            class="relative w-full md:w-[33.33%]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <img
+              src="../images//s4_3_image2.png"
+              alt="s4_3_image1"
+              class="max-w-full block w-full"
+            />
+            <div class="absolute bottom-[20px] left-[20px]">
+              <p class="text-white text-[27px] leading-[129%]">Lorem Ipsum</p>
+              <p class="text-white text-[14px] leading-[129%]">Lorem Ipsum</p>
+            </div>
+          </div>
+          <div
+            class="relative w-full md:w-[33.33%]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <img
+              src="../images//s4_3_image3.png"
+              alt="s4_3_image1"
+              class="max-w-full block w-full"
+            />
+            <div class="absolute bottom-[20px] left-[20px]">
+              <p class="text-white text-[27px] leading-[129%]">Lorem Ipsum</p>
+              <p class="text-white text-[14px] leading-[129%]">Lorem Ipsum</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- skill check -->
+      <section>
+        <div
+          class="px-[20px] lg:px-[50px] xl:px-[100px] 2xl:px-[150px] 3xl:px-[200px] mb-[50px] flex flex-col md:flex-row"
+        >
+          <div class="w-full md:w-[40%] md:px-[20px] xl:px-[50px]">
+            <div class="">
               <div
-                class="bgImage_with_text_content_heading text-[40px] md:text-[59px] leading-[129%] text-white w-full md:w-[528px] mt-0 mb-5 mx-0"
+                class="text-[#8A8A8A] text-[20px] mb-[20px]"
                 data-aos="slide-right"
-                data-aos-duration="800"
+                data-aos-duration="1000"
                 data-aos-delay="100"
                 data-aos-once="true"
                 data-aos-easing="ease-in-out"
               >
-                Lorem Ipsum is simply dummy text.
+                Lorem Ipsum
               </div>
               <div
-                class="bgImage_with_text_content_text text-[15px] leading-[143%] text-white w-full md:w-[400px]"
+                class="pregressCount_item text-[#4D5F75] text-[51px] md:text-[60px] lg:text-[83px] leading-[102.5%] mb-[20px] w-full xl:w-[388px]"
                 data-aos="slide-right"
-                data-aos-duration="800"
+                data-aos-duration="1400"
                 data-aos-delay="100"
                 data-aos-once="true"
                 data-aos-easing="ease-in-out"
               >
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy
+                Check our Skills
+              </div>
+              <div
+                class="text-[#4D5F75] text-[18px] leading-[129%] mb-[20px] w-full md:w-[90%] xl:w-[400px]"
+                data-aos="slide-right"
+                data-aos-duration="1600"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+              </div>
+              <div
+                class="my-[40px]"
+                data-aos="slide-right"
+                data-aos-duration="1800"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
+                <a
+                  href="#"
+                  class="bg-[#DFA621] px-[25px] py-[15px] text-[18px] leading-[129%] transition-all duration-500 hover:bg-[#4D5F75] hover:text-white"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-[60%] md:px-[20px] xl:px-[50px]">
+            <div class="flex flex-wrap justify-between md:justify-end">
+              <div class="counter-section pr-[10px]">
+                <div
+                  class="pregressCount_item flex text-black text-[38px] sm:text-[52px] w-[30%] lg:w-[120px] lg:mr-[15px] xl:mr-[30px]"
+                >
+                  <div class="pregressCount w-fit pr-[2px]">75</div>
+                  <span>%</span>
+                </div>
+              </div>
+              <div class="w-[70%]">
+                <div class="text-[#4D5F75] text-[25px] sm:text-[30px]">
+                  Lorem Ipsum
+                </div>
+                <div class="progress-section">
+                  <div
+                    class="progress-wrap progress w-full h-[7px] bg-yellowcolor relative overflow-hidden"
+                    data-progress-percent="75"
+                  >
+                    <div
+                      class="progress-bar progress w-full h-[7px] absolute top-0 left-0 bg-[#E4E4E4]"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap justify-between md:justify-end">
+              <div class="counter-section pr-[10px]">
+                <div
+                  class="pregressCount_item flex text-black text-[38px] sm:text-[52px] w-[30%] lg:w-[120px] lg:mr-[15px] xl:mr-[30px]"
+                >
+                  <div class="pregressCount w-fit pr-[2px]">45</div>
+                  <span>%</span>
+                </div>
+              </div>
+              <div class="w-[70%]">
+                <div class="text-[#4D5F75] text-[25px] sm:text-[30px]">
+                  Lorem Ipsum
+                </div>
+                <div class="progress-section">
+                  <div
+                    class="progress-wrap progress w-full h-[7px] bg-yellowcolor relative overflow-hidden"
+                    data-progress-percent="45"
+                  >
+                    <div
+                      class="progress-bar progress w-full h-[7px] absolute top-0 left-0 bg-[#E4E4E4]"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap justify-between md:justify-end">
+              <div class="counter-section pr-[10px]">
+                <div
+                  class="pregressCount_item flex text-black text-[38px] sm:text-[52px] w-[30%] lg:w-[120px] lg:mr-[15px] xl:mr-[30px]"
+                >
+                  <div class="pregressCount w-fit pr-[2px]">90</div>
+                  <span>%</span>
+                </div>
+              </div>
+              <div class="w-[70%]">
+                <div class="text-[#4D5F75] text-[25px] sm:text-[30px]">
+                  Lorem Ipsum
+                </div>
+                <div class="progress-section">
+                  <div
+                    class="progress-wrap progress w-full h-[7px] bg-yellowcolor relative overflow-hidden"
+                    data-progress-percent="90"
+                  >
+                    <div
+                      class="progress-bar progress w-full h-[7px] absolute top-0 left-0 bg-[#E4E4E4]"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap justify-between md:justify-end">
+              <div class="counter-section pr-[10px]">
+                <div
+                  class="pregressCount_item flex text-black text-[38px] sm:text-[52px] w-[30%] lg:w-[120px] lg:mr-[15px] xl:mr-[30px]"
+                >
+                  <div class="pregressCount w-fit pr-[2px]">65</div>
+                  <span>%</span>
+                </div>
+              </div>
+              <div class="w-[70%]">
+                <div class="text-[#4D5F75] text-[25px] sm:text-[30px]">
+                  Lorem Ipsum
+                </div>
+                <div class="progress-section">
+                  <div
+                    class="progress-wrap progress w-full h-[7px] bg-yellowcolor relative overflow-hidden"
+                    data-progress-percent="65"
+                  >
+                    <div
+                      class="progress-bar progress w-full h-[7px] absolute top-0 left-0 bg-[#E4E4E4]"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap justify-between md:justify-end">
+              <div class="counter-section pr-[10px]">
+                <div
+                  class="pregressCount_item flex text-black text-[38px] sm:text-[52px] w-[30%] lg:w-[120px] lg:mr-[15px] xl:mr-[30px]"
+                >
+                  <div class="pregressCount w-fit pr-[2px]">85</div>
+                  <span>%</span>
+                </div>
+              </div>
+              <div class="w-[70%]">
+                <div class="text-[#4D5F75] text-[25px] sm:text-[30px]">
+                  Lorem Ipsum
+                </div>
+                <div class="progress-section">
+                  <div
+                    class="progress-wrap progress w-full h-[7px] bg-yellowcolor relative overflow-hidden"
+                    data-progress-percent="85"
+                  >
+                    <div
+                      class="progress-bar progress w-full h-[7px] absolute top-0 left-0 bg-[#E4E4E4]"
+                    ></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- services form how to reach out us -->
+      </section>
+      <!-- lorem factory imagetext -->
       <section>
-        <div class="services_form py-[120px]  max-w-[991px] mx-auto px-[20px]">
-          <div class="services_form_wrapper flex flex-col-reverse md:flex-row" 
-          data-aos="zoom-in"
-              data-aos-duration="800"
+        <div class="bgImage_with_text">
+          <div
+            class="bgImage_with_text_wrapper bg-no-repeat bg-center bg-cover min-h-[60vh] md:min-h-[629px] lg:min-h-[729px] relative"
+            style="
+              background-image: url(../images/services_op2_full_BG_image.png);
+            "
+          >
+            <div
+              class="bgImage_with_text_content absolute translate-y-[-50%] left-0 md:left-[90px] top-[50%] px-[20px] md:px-0"
+            >
+              <div class="bgImage_with_text_content_wrap">
+                <div
+                  class="bgImage_with_text_content_heading text-[40px] md:text-[59px] leading-[129%] text-white w-full md:w-[528px] mt-0 mb-5 mx-0"
+                  data-aos="slide-right"
+                  data-aos-duration="800"
                   data-aos-delay="100"
                   data-aos-once="true"
                   data-aos-easing="ease-in-out"
+                >
+                  Lorem Ipsum is simply dummy text.
+                </div>
+                <div
+                  class="bgImage_with_text_content_text text-[15px] leading-[143%] text-white w-full md:w-[400px]"
+                  data-aos="slide-right"
+                  data-aos-duration="800"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services form how to reach out us -->
+      <section>
+        <div class="services_form py-[120px] max-w-[991px] mx-auto px-[20px]">
+          <div
+            class="services_form_wrapper flex flex-col-reverse md:flex-row"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-delay="100"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
           >
             <div class="services_form_wrapper_form w-full md:w-[44%]">
               <div
-              class="contactForm static bg-[#ececec] w-full h-full flex flex-col h-full pt-[40px] pl-[20px]"
-            >
-              <div
-                class="contactForm_heading text-[#4d5f75] lg:text-[35px] text-[28px] font-semibold leading-[44px] text uppercase mb-[20px] sm:pl-[20px]"
+                class="contactForm static bg-[#ececec] w-full h-full flex flex-col h-full pt-[40px] pl-[20px]"
               >
-                how to reach us
-              </div>
-              <form action="" class="flex flex-col h-full">
-                <div class="form_input pl-[15px]">
-                  <input
-                    type="text"
-                    placeholder="Full Name:"
-                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
-                  />
-                </div>
-                <div class="form_input pl-[15px]">
-                  <input
-                    type="text"
-                    placeholder="Email:"
-                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
-                  />
-                </div>
-                <div class="form_input pl-[15px]">
-                  <input
-                    type="text"
-                    placeholder="Phone Number:"
-                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
-                  />
-                </div>
-                <select
-                  name="inquiry"
-                  id="inquiry"
-                  class="selectDrp w-[90%] sm:w-[248px]"
+                <div
+                  class="contactForm_heading text-[#4d5f75] lg:text-[35px] text-[28px] font-semibold leading-[44px] text uppercase mb-[20px] sm:pl-[20px]"
                 >
-                  <option value="">Business Inquiry</option>
-                  <option value="Business Inquiry 1">Business Inquiry 1</option>
-                  <option value="Business Inquiry 2">Business Inquiry 2</option>
-                  <option value="Business Inquiry 3">Business Inquiry 3</option>
-                </select>
-                <div class="form_input last pl-[15px] mb-[20px]">
-                  <input
-                    type="text"
-                    placeholder="Message :"
-                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
-                  />
+                  how to reach us
                 </div>
-                <div class="submit_btn text-right h-full flex items-end justify-end">
-                  <button
-                    class="w-[162px] bg-[#dfa621] text-white text-sm tracking-[0.3px] cursor-pointer transition-all duration-[0.4s] px-2.5 py-5 border-[none] hover:bg-[#4d5f75]"
+                <form action="" class="flex flex-col h-full">
+                  <div class="form_input pl-[15px]">
+                    <input
+                      type="text"
+                      placeholder="Full Name:"
+                      class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
+                    />
+                  </div>
+                  <div class="form_input pl-[15px]">
+                    <input
+                      type="text"
+                      placeholder="Email:"
+                      class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
+                    />
+                  </div>
+                  <div class="form_input pl-[15px]">
+                    <input
+                      type="text"
+                      placeholder="Phone Number:"
+                      class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
+                    />
+                  </div>
+                  <select
+                    name="inquiry"
+                    id="inquiry"
+                    class="selectDrp w-[90%] sm:w-[248px]"
                   >
-                    Send Message
-                  </button>
-                </div>
-              </form>
-            </div>
+                    <option value="">Business Inquiry</option>
+                    <option value="Business Inquiry 1"
+                      >Business Inquiry 1</option
+                    >
+                    <option value="Business Inquiry 2"
+                      >Business Inquiry 2</option
+                    >
+                    <option value="Business Inquiry 3"
+                      >Business Inquiry 3</option
+                    >
+                  </select>
+                  <div class="form_input last pl-[15px] mb-[20px]">
+                    <input
+                      type="text"
+                      placeholder="Message :"
+                      class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
+                    />
+                  </div>
+                  <div
+                    class="submit_btn text-right h-full flex items-end justify-end"
+                  >
+                    <button
+                      class="w-[162px] bg-[#dfa621] text-white text-sm tracking-[0.3px] cursor-pointer transition-all duration-[0.4s] px-2.5 py-5 border-[none] hover:bg-[#4d5f75]"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
             <div class="services_form_wrapper_image w-full md:w-[55%]">
               <img
@@ -725,108 +938,108 @@
       </section>
     </main>
     <footer
-    class="bg-black text-white pt-20 pb-12 px-[20px] sm:px-12 flex justify-center items-end overflow-y-hidden overflow-x-hidden"
-  >
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-4"
-     
+      class="bg-black text-white pt-20 pb-12 px-[20px] sm:px-12 flex justify-center items-end overflow-y-hidden overflow-x-hidden"
     >
       <div
-        class="col-span-1 md:col-span-1 sm:border-r sm:border-gray-300 md:pr-5 sm:px-5 xl:pr-8 flex justify-end flex-col"
-        >
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-4"
+      >
         <div
-          class="flex items-center justify-center md:justify-start lg:justify-center mb-8"
+          class="col-span-1 md:col-span-1 sm:border-r sm:border-gray-300 md:pr-5 sm:px-5 xl:pr-8 flex justify-end flex-col"
         >
-          <a href="../index.html">
-            <img
-              src="../images/footerLogo.png"
-              alt="footerLogo"
-              class="w-60"
+          <div
+            class="flex items-center justify-center md:justify-start lg:justify-center mb-8"
+          >
+            <a href="../index.html">
+              <img
+                src="../images/footerLogo.png"
+                alt="footerLogo"
+                class="w-60"
+              />
+            </a>
+          </div>
+          <div class="pt-[20px] sm:pt-16">
+            <p class="text-sm leading-5 mb-4">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
+            <p class="text-sm leading-5">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-span-1 md:col-span-1 lg:col-span-1 lg:border-r lg:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex items-end"
+        >
+          <div class="pb-[20px] border-b-[1px] sm:border-none">
+            <p class="text-sm leading-5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-span-1 lg:col-span-1 sm:border-r sm:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex flex-col justify-end"
+        >
+          <ul class="mb-4 sm:mb-8 pb-[20px] border-b-[1px] sm:border-none">
+            <li><a href="../index.html" class="text-lg uppercase">Home</a></li>
+            <li>
+              <a href="../services/services.html" class="text-lg uppercase"
+                >Company</a
+              >
+            </li>
+            <li><a href="#" class="text-lg uppercase">Products</a></li>
+            <li>
+              <a href="./services/services.html" class="text-lg uppercase"
+                >Service option 1</a
+              >
+            </li>
+            <li>
+              <a href="../services_option2/index.html" class="text-lg uppercase"
+                >Service option 2</a
+              >
+            </li>
+            <li><a href="#" class="text-lg uppercase">Blogs</a></li>
+          </ul>
+          <form class="pb-[20px] border-b-[1px] sm:border-none">
+            <div class="text-sm leading-5 mb-4">Newsletter signup</div>
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="bg-[#3C3C3C] text-white w-full px-4 py-2 focus:outline-none placeholder-white placeholder:text-[15px]"
             />
-          </a>
+          </form>
         </div>
-        <div class="pt-[20px] sm:pt-16">
-          <p class="text-sm leading-5 mb-4">
-            essentially unchanged. It was popularised in the 1960s with the
-            release of Letraset sheets containing Lorem Ipsum passages, and
-            more recently
-          </p>
-          <p class="text-sm leading-5">
-            essentially unchanged. It was popularised in the 1960s with the
-            release of Letraset sheets containing Lorem Ipsum passages, and
-            more recently
-          </p>
-        </div>
-      </div>
-      <div
-        class="col-span-1 md:col-span-1 lg:col-span-1 lg:border-r lg:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex items-end"
-       
-      >
-        <div class="pb-[20px] border-b-[1px] sm:border-none">
-          <p class="text-sm leading-5">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book. It has
-            survived not only five centuries, but also the leap into
-            electronic typesetting, remaining
-          </p>
+        <div
+          class="col-span-1 lg:col-span-1 sm:px-5 xl:pr-8 pt-[20px] flex flex-row sm:flex-col justify-between sm:justify-end pb-[20px] border-b-[1px] sm:border-none"
+        >
+          <div class="sm:mb-8">
+            <ul>
+              <li><a href="#" class="text-sm">Terms & Conditions</a></li>
+              <li><a href="#" class="text-sm">Privacy Policy</a></li>
+              <li><a href="#" class="text-sm">Investor Privacy Notice</a></li>
+              <li><a href="#" class="text-sm">Cookies Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#" class="text-sm">Twitter</a></li>
+              <li><a href="#" class="text-sm">LinkedIn</a></li>
+              <li><a href="#" class="text-sm">Medium</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div
-        class="col-span-1 lg:col-span-1  sm:border-r sm:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex flex-col justify-end"
-        
-      >
-        <ul class="mb-4 sm:mb-8 pb-[20px] border-b-[1px] sm:border-none">
-          <li><a href="../index.html" class="text-lg uppercase">Home</a></li>
-          <li><a href="../services/services.html" class="text-lg uppercase">Company</a></li>
-          <li><a href="#" class="text-lg uppercase">Products</a></li>
-          <li>
-            <a href="./services/services.html" class="text-lg uppercase"
-              >Service option 1</a
-            >
-          </li>
-          <li>
-            <a href="../services_option2/index.html" class="text-lg uppercase"
-              >Service option 2</a
-            >
-          </li>
-          <li><a href="#" class="text-lg uppercase">Blogs</a></li>
-        </ul>
-        <form class="pb-[20px] border-b-[1px] sm:border-none">
-          <div class="text-sm leading-5 mb-4">Newsletter signup</div>
-          <input
-            type="text"
-            placeholder="Email Address"
-            class="bg-[#3C3C3C] text-white w-full px-4 py-2 focus:outline-none placeholder-white placeholder:text-[15px]"
-          />
-        </form>
-      </div>
-      <div
-        class="col-span-1 lg:col-span-1 sm:px-5 xl:pr-8 pt-[20px] flex flex-row sm:flex-col justify-between sm:justify-end pb-[20px] border-b-[1px] sm:border-none"
-        
-      >
-        <div class="sm:mb-8 ">
-          <ul>
-            <li><a href="#" class="text-sm">Terms & Conditions</a></li>
-            <li><a href="#" class="text-sm">Privacy Policy</a></li>
-            <li><a href="#" class="text-sm">Investor Privacy Notice</a></li>
-            <li><a href="#" class="text-sm">Cookies Policy</a></li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><a href="#" class="text-sm">Twitter</a></li>
-            <li><a href="#" class="text-sm">LinkedIn</a></li>
-            <li><a href="#" class="text-sm">Medium</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script>
-    AOS.init();
-  </script>
+    </footer>
+    <script>
+      AOS.init();
+    </script>
     <script>
       ScrollReveal({
         reset: true,
