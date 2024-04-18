@@ -53,6 +53,22 @@ li {
 body{
   font-family: "nueu_montreal_regular";
 }
+
+
+
+.card .text, .card .description {
+  color: #757575; /* Grey color */
+}
+
+/* When the radio button is checked, change the color of elements within the same label */
+input[type="radio"]:checked + label .text,
+input[type="radio"]:checked + label .description {
+  color: white; /* Change to white */
+}
+
+
+
+
 .selectric-selectDrp {
   width: 287px;
   background-color: #fff;
@@ -205,7 +221,7 @@ input:checked + label {
 
 input:checked + label .description {
   opacity: 1 !important;
-  transform: translateY(0) !important;
+
 }
 .services_sliders{
   display: flex !important;
@@ -232,4 +248,10 @@ input:checked + label .description {
     margin: 0 0 80px;
   }
   
+}
+
+@media(max-width:767px){
+  .services_sliders{
+    display: block !important;
+  }
 }

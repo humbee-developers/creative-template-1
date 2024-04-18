@@ -42,6 +42,25 @@
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellowcolor:'#DFA621',
+              bluecolor:'#4D5F75',
+              
+            },
+            fontSize:{
+           text2xl:'2rem',
+            },
+          }
+        }
+      }
+    </script>
   
     <title>Aboutus</title>
   </head>
@@ -62,7 +81,7 @@
           data-aos-delay="10"
         >
           <ul class="nav flex items-center">
-            <li class="pr-5 pb-5 mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20">
+            <li class="pr-5 pb-[1.25rem] mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20">
               <a
                 class="text-white text-xs font-normal leading-8 no-underline"
                 href="../index.html"
@@ -70,7 +89,7 @@
               >
             </li>
             <li
-              class="dropdown dropdown-6 pr-5 pb-5 mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]"
+              class="dropdown dropdown-6 pr-5 pb-[1.25rem] mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]"
             >
               <a
                 class="text-white text-xs font-normal leading-8 no-underline"
@@ -78,10 +97,10 @@
                 >Company</a
               >
               <ul
-                class="dropdown_menu dropdown_menu--animated dropdown_menu-6 pr-[5rem] md:pr-[5rem] lg:pr-10 mr-5 absolute top-[100%] left-[-15px] w-64 z-[-1] hidden"
+                class="dropdown_menu dropdown_menu--animated dropdown_menu-6 pr-[5rem] md:pr-[5rem] lg:pr-10 mr-5 absolute top-[103%] left-[-15px] w-64 z-[-1] hidden"
               >
                 <li
-                  class="dropdown_item-1 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                  class="dropdown_item-1 block opacity-100 hover:bg-gray-600 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
                 >
                   <a
                     class="text-white text-xs font-normal leading-8 no-underline"
@@ -90,7 +109,7 @@
                   >
                 </li>
                 <li
-                  class="dropdown_item-2 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                  class="dropdown_item-2 block opacity-100 hover:block hover:bg-gray-600  pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
                 >
                   <a
                     class="text-white text-xs font-normal leading-8 no-underline"
@@ -99,7 +118,7 @@
                   >
                 </li>
                 <li
-                  class="dropdown_item-3 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                  class="dropdown_item-3 block opacity-100 hover:block hover:bg-gray-600  pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
                 >
                   <a
                     class="text-white text-xs font-normal leading-8 no-underline"
@@ -108,7 +127,7 @@
                   >
                 </li>
                 <li
-                  class="dropdown_item-3 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                  class="dropdown_item-3 block opacity-100 hover:block hover:bg-gray-600  pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
                 >
                   <a
                     class="text-white text-xs font-normal leading-8 no-underline"
@@ -119,7 +138,7 @@
               </ul>
             </li>
 
-            <li class="pb-5">
+            <li class="pb-[1.25rem] ">
               <a
                 class="text-white text-xs font-normal leading-8 no-underline"
                 href="./aboutUs/index.html"
@@ -129,7 +148,7 @@
           </ul>
           <a
             href="#"
-            class="contact_menu text-white text-xs font-normal leading-8 no-underline mt-0 mb-5 mx-0 pl-[45px] border-l-white border-l border-solid"
+            class="contact_menu text-white text-xs font-normal leading-8 no-underline mt-0 mb-4 mx-0 pl-[45px] border-l-white border-l border-solid"
             >Contact Us</a
           >
         </div>
@@ -141,7 +160,7 @@
             <img src="../images/imgone.png"" alt="about_image" class="max-w-full block w-full h-full" />
             <div class="inner_banner absolute top-[45%]">
               <div class="inner_banner_wrapper px-[20px] md:px-[60px] lg:px-[100px] py-0">
-                <div class="inner_banner_heading text-[40px] md:text-[50px] lg:text-[60px] xl:text-[90px] 2xl:text-[71px] text-white font-normal leading-[140%] md:leading-[50px] lg:leading-[77px] w-full md:w-[100%] "
+                <div class="inner_banner_heading sm:flex gap-12  text-[40px] md:text-[50px] lg:text-[60px] xl:text-[90px] 2xl:text-[71px] text-white font-normal leading-[140%] md:leading-[50px] lg:leading-[77px] w-full md:w-[100%] "
                 data-aos="slide-right"
                 data-aos-duration="1000"
                 data-aos-delay="10">
@@ -152,7 +171,7 @@
               </h1>
               
               <p
-                class="about_para absolute  text-white text-sm "
+                class="about_para flex items-center  text-white text-sm "
               >
                 Lorem Ipsum is simply dummy text of the printing <br />and typesetting
                 industry. Lorem Ipsum has been<br />
@@ -170,7 +189,7 @@
       <div
         class="box hover:text-white cursor-pointer border border-gray-300 bg-white"
       >
-        <div class="hover:text-white p-32 md:p-16">
+        <div class="hover:text-white p-16 md:p-8  xl:p-16 ">
           <img class="box_icon" src="../images/GlobeStand.png" />
           <h1 class="text-2xl font-normal leading-8 text-left">
             Lorem Ipsum is simply.
@@ -184,7 +203,7 @@
       <div
         class="box hover:text-white cursor-pointer border border-gray-300 bg-white"
       >
-        <div class="hover:text-white p-32 md:p-16">
+        <div class="hover:text-white p-16  md:p-8  xl:p-16 ">
           <img class="box_icon" src="../images/Grains.png" />
           <h1 class="text-2xl font-normal leading-8 text-left">
             Lorem Ipsum is simply.
@@ -198,7 +217,7 @@
       <div
         class="box hover:text-white cursor-pointer border border-gray-300 bg-white"
       >
-        <div class="hover:text-white p-32 md:p-16">
+        <div class="hover:text-white p-16 md:p-8  xl:p-16">
           <!-- <img class="box_icon" src="Vector.png" /> -->
           <img class="box_icon" src="../images/GlobeStand.png" />
           <h1 class="text-2xl font-normal leading-8 text-left">
@@ -213,7 +232,7 @@
       <div
         class="box hover:text-white cursor-pointer border border-gray-300 bg-white"
       >
-        <div class="hover:text-white p-32 md:p-16">
+        <div class="hover:text-white p-16 md:p-8 xl:p-16">
           <img class="box_icon" src="../images/Medal.png" alt="image" />
           <!-- <img class="box_icon" src="GlobeStand.png" /> -->
           <h1 class="text-2xl font-normal leading-8 text-left">
@@ -227,13 +246,13 @@
       </div>
     </div>
     <!-- 3rd aboutflex -->
-    <div class=" w-full justify-around text-black sm:flex sm:mt-40">
-      <div class="left p-4">
+    <div class=" w-full overflow-hidden block justify-around text-black px-8 py-8 md:px-12 py-4 md:flex   lg:flex ">
+      <div class="left mb-4 w-full sm:w-full md:w-6/12">
         <h1
-          class="thirdflex_heading text-4xl font-normal leading-9 text-left mt-24"
+          class="thirdflex_heading text-3xl w-full font-normal leading-9 text-left  md:mt-0   lg:text-3xl lg:w-9/12 xl:mt-20 xl:w-6/12"
         >
-          Lorem Ipsum is simply <br />dummy text of the printing and
-          <br />typesetting industry.
+          Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry.
         </h1>
         <p
           class="thirdflex_para text-base mt-4 font-normal leading-4 text-left text-black"
@@ -260,19 +279,34 @@
           </div>
         </div>
       </div>
-      <div class="right">
-        <img src="../images/imgtwo.png" alt="Image" />
+      <div class="right w-full sm: md:w-6/12 flex">
+        <img data-aos="slide-left" 
+        data-aos-duration="1000"
+        data-aos-delay="100"
+        data-aos-once="true"
+        data-aos-easing="ease-in-out"
+        class="w-full sm:w-full" src="../images/imgtwo.png" alt="Image" />
       </div>
     </div>
+
+
+
     <!-- 4th aboutflex -->
     <div
-      class="sm:flex w-full justify-around sm:py-20 sm:px-40 pb-8 sm:pl-20 w-[100%] text-black"
+      class=" p-8 md:flex md:gap-8 w-full justify-around sm:py-16 sm:px-8 pb-8 md:block md:py-6 lg:flex   w-[100%] text-black"
     >
-      <div class="left w-full">
-        <img src="../images/img3.png" alt="Image" />
+      <div class="left w-full md:w-3/6 md:w-full">
+        <img  data-aos="slide-right" 
+        data-aos-duration="1000"
+        data-aos-delay="100"
+        data-aos-once="true"
+        data-aos-easing="ease-in-out"
+         class="mx-auto w-full my-4 md:my-8 md:w-auto" src="../images/img3.png" alt="Image" />
       </div>
-      <div class="right p-8">
+
+      <div class=" w-full  md:w-3/6 md:w-full">
         <div
+        class="w-full lg:w-[85%]"
           id="accordion-flush"
           data-accordion="collapse"
           data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-black"
@@ -281,12 +315,13 @@
           <h2 id="accordion-flush-heading-1">
             <button
               type="button"
-              class="flex items-center justify-between w-full pt-8 pb-8 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+              class="flex items-center justify-between w-full pt-4 pb-4 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
               data-accordion-target="#accordion-flush-body-1"
               aria-expanded="true"
               aria-controls="accordion-flush-body-1"
-            >
-              <span class="text-black text-2xl"> Lorem Ipsum is simply</span>
+            > 
+
+              <div class="text-black  text-2xl flex gap-4 items-center"><span class="text-gray-400 text-3xl">01</span> Lorem Ipsum is simply</div>
               <svg
                 data-accordion-icon
                 class="w-3 h-3 rotate-180 shrink-0"
@@ -311,9 +346,9 @@
             aria-labelledby="accordion-flush-heading-1"
           >
             <div
-              class="pt-8 pb-8 border-b border-gray-200 dark:border-gray-700"
+              class=" pt-4 pb-4 border-b border-gray-200 dark:border-gray-700"
             >
-              <p class="mb-2 text-gray-500 dark:text-gray-400">
+              <p class="mb-2 text-gray-500 xl:pl-14 ">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
               </p>
@@ -322,12 +357,12 @@
           <h2 id="accordion-flush-heading-2">
             <button
               type="button"
-              class="flex items-center justify-between w-full pt-8 pb-8 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+              class="flex items-center justify-between w-full  pt-4 pb-4 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
               data-accordion-target="#accordion-flush-body-2"
               aria-expanded="false"
               aria-controls="accordion-flush-body-2"
             >
-              <span class="text-black text-2xl"> Lorem Ipsum is simply</span>
+            <div class="text-black text-2xl flex gap-4 items-center"><span class="text-gray-400 text-3xl">02</span> Lorem Ipsum is simply</div>
               <svg
                 data-accordion-icon
                 class="w-3 h-3 rotate-180 shrink-0"
@@ -352,9 +387,9 @@
             aria-labelledby="accordion-flush-heading-2"
           >
             <div
-              class="pt-8 pb-8 border-b border-gray-200 dark:border-gray-700"
+              class=" pt-4 pb-4 border-b border-gray-200 dark:border-gray-700"
             >
-              <p class="mb-2 text-gray-500 dark:text-gray-400">
+              <p class="mb-2 text-gray-500 xl:pl-14">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
               </p>
@@ -363,12 +398,12 @@
           <h2 id="accordion-flush-heading-3">
             <button
               type="button"
-              class="flex items-center justify-between w-full pt-8 pb-8 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+              class="flex items-center justify-between w-full  pt-4 pb-4 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
               data-accordion-target="#accordion-flush-body-3"
               aria-expanded="false"
               aria-controls="accordion-flush-body-3"
             >
-              <span class="text-black text-2xl"> Lorem Ipsum is simply</span>
+            <div class="text-black text-2xl flex gap-4 items-center"><span class="text-gray-400 text-3xl">03</span> Lorem Ipsum is simply</div>
               <svg
                 data-accordion-icon
                 class="w-3 h-3 rotate-180 shrink-0"
@@ -395,7 +430,7 @@
             <div
               class="pt-8 pb-8 border-b border-gray-200 dark:border-gray-700"
             >
-              <p class="mb-2 text-gray-500 dark:text-gray-400">
+              <p class="mb-2 text-gray-500 xl:pl-14 ">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
               </p>
@@ -404,23 +439,33 @@
         </div>
       </div>
     </div>
+
+
+
+
+
+    
     <!-- 5th slide image -->
     <div class="mt-20">
       <img class="w-full" src="../images/img4.png" alt="img4" />
     </div>
 
+
+
+
+
     <!-- 6th flex slider -->
 
-    <div class="bg-gray-300">
+    <div class="bg-gray-300 overflow-hidden">
       <div
         id="carouselExampleAutoplaying"
         class="carousel slide"
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner px-14 py-48 sm:px-14 lg:px-56">
+        <div class="carousel-inner  pt-12 pb-24 pl-10 pr-10 sm:px-14 md:px-32 lg:px-26 ">
           <div class="carousel-item active">
             <div class="w-full md:w-11/12 lg:w-10/12 xl:w-8/12 mx-auto">
-              <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal">
+              <h1 class="text-text2xl md:text-5xl lg:text-6xl font-normal">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </h1>
@@ -443,7 +488,7 @@
           </div>
           <div class="carousel-item">
             <div class="w-full md:w-11/12 lg:w-10/12 xl:w-8/12 mx-auto">
-              <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal">
+              <h1 class="text-text2xl md:text-5xl lg:text-6xl font-normal">
                 2Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry.
               </h1>
@@ -466,7 +511,7 @@
           </div>
           <div class="carousel-item">
             <div class="w-full md:w-11/12 lg:w-10/12 xl:w-8/12 mx-auto">
-              <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal">
+              <h1 class="text-text2xl md:text-5xl lg:text-6xl font-normal">
                 3Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry.
               </h1>
@@ -488,33 +533,38 @@
             </div>
           </div>
         </div>
+      <div class="">
         <button
-          class="carousel-control-prev absolute left-[15rem] top-[10rem] md:left-[37rem] lg:left-[43rem] xl:left-[72rem] md:top-[10rem] h-auto w-auto text-black"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <i class="fa-solid fa-arrow-left-long fa-2x"></i>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next absolute right-[7rem] md:right-[13rem] lg:right-[23rem] top-[10rem] h-auto w-auto"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <i class="fa-solid fa-arrow-right-long fa-2x text-black"></i>
-          <span class="visually-hidden">Next</span>
-        </button>
+        class="carousel-control-prev absolute top-[6rem]  right-[-7rem] 2xl:right-[-39rem] sm:right-[-25rem] xl:right-[-32rem]   h-auto w-auto text-black"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <i class="fa-solid fa-arrow-left-long fa-2x"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next absolute top-[6rem]  right-[2rem] 2xl:right-[23rem] xl:right-[20rem] sm:right-[4rem]  h-auto w-auto"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <i class="fa-solid fa-arrow-right-long fa-2x text-black"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+      </div>
       </div>
     </div>
+
+
+
 
     <!-- 7th section -->
     <div>
       <div class="relative">
-        <img src="../images/transparent.png" alt="Background Image" />
+        <img class="w-full" src="../images/transparent.png" alt="Background Image" />
         <img
-          class="absolute right-0 top-[-8rem] md:top-[-6rem] lg:top-[-8rem] xl:top-[-8rem]"
+          class="absolute w-3/5 right-0 top-[-3rem] md:top-[-6rem] md:w-3/6 lg:top-[-8rem] xl:top-[-4rem]"
           src="../images/men.png"
           alt="Foreground Image"
         />
@@ -600,7 +650,7 @@
         </form>
       </div>
       <div
-        class="col-span-1 lg:col-span-1 sm:px-5 xl:pr-8 pt-[20px] flex flex-row sm:flex-col justify-between sm:justify-end pb-[20px] border-b-[1px] sm:border-none"
+        class="col-span-1 gap-8 lg:col-span-1 sm:px-5 xl:pr-8 pt-[20px] flex flex-row sm:flex-col justify-between sm:justify-end pb-[20px] border-b-[1px] sm:border-none"
         
       >
         <div class="sm:mb-8 ">
@@ -624,6 +674,9 @@
   
 
     <!-- script -->
+    <script>
+      AOS.init();
+    </script>
     <script>
       ScrollReveal({
         reset: true,
