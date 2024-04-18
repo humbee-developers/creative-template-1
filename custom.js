@@ -45,6 +45,16 @@ jQuery(document).ready(function ($) {
     slidesToScroll: 1,
     arrows: false,
   });
+  $(".services_op5_slider").slick({
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    nextArrow: $(".services_op5_arrow"),
+    prevArrow: $(".services_op5_arrow_prev"),
+  });
   $(".servicesslides").slick({
     dots: false,
     infinite: true,
