@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Paga 2</title>
+    <link rel="stylesheet" href="../global.css" />
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../custom.js"></script>
+    <script src="../jquery.selectric.min.js"></script>
+    <link rel="stylesheet" href="../selectric.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:wght@200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300;400;500;600;700;800&family=Praise&family=Rubik:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellowcolor: "#DFA621",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header
+      class="z-[100] relative pt-[43px] pr-[37px] pb-[35px] pl-[50px] bg-[#F2F2F2]"
+    >
+      <nav class="flex justify-between items-center">
+        <div
+          class="logo"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="10"
+        >
+          <a href="../index.html">
+            <img src="../images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div
+          class="navigation flex w-[65%] lg:w-[700px] justify-between px-[5px] py-0 border-b-black border-b border-solid hidden md:flex"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="10"
+        >
+          <ul class="nav flex items-center">
+            <li class="pr-5 pb-5 mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20">
+              <a
+                class="text-black text-xs font-normal leading-8 no-underline"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li
+              class="dropdown dropdown-6 pr-5 pb-5 mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]"
+            >
+              <a
+                class="text-black text-xs font-normal leading-8 no-underline"
+                href="#"
+                >Company</a
+              >
+              <ul
+                class="dropdown_menu dropdown_menu--animated dropdown_menu-6 pr-[5rem] md:pr-[5rem] lg:pr-10 mr-5 absolute top-[100%] left-[-15px] w-64 z-[-1] hidden"
+              >
+                <li
+                  class="dropdown_item-1 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../aboutUs/index.html"
+                    >About Us</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-2 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../services/services.html"
+                    >Service Option 1</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../services_option2/index.html"
+                    >Service Option 2</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../services_option4/index.html"
+                    >Service Option 4</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../services_option6/index.html"
+                    >Service Option 6</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="pb-5">
+              <a
+                class="text-black text-xs font-normal leading-8 no-underline"
+                href="./aboutUs/index.html"
+                >Products</a
+              >
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="contact_menu text-black text-xs font-normal leading-8 no-underline mt-0 mb-5 mx-0 pl-[45px] border-l-black border-l border-solid"
+            >Contact Us</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="bg-[#F2F2F2]">
+      <section>
+        <div class="pt-[50px]">
+          <div class="">
+            <div class="h-[calc(100vh-145px)] overflow-hidden">
+              <div class="relative h-full">
+                <img
+                  src="../images/contactWhiteBannerImg.png"
+                  alt="contactWhiteBannerImg"
+                  class="max-w-full w-[90%] h-full md:w-[75%] lg:w-[60%] block absolute top-[40px] md:top-[77px] left-0 md:left-auto md:right-[159px] lg:right-[225px] blend-overlay"
+                  data-aos="slide-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+                />
+                <div
+                  class="absolute top-0 right-0 md:right-[40px] lg:right-[124px] blend-overlay w-[90%] h-full md:w-[75%] lg:w-[60%]"
+                >
+                  <img
+                    src="../images/contactBanner2Img.png"
+                    alt="contactWhiteBannerImg"
+                    class="max-w-full w-full h-full block blend-overlay object-cover"
+                    data-aos="slide-left"
+                    data-aos-duration="1500"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                  />
+                  <div
+                    class="absolute w-[80%] md:w-[85%] lg:w-[95%] xl:w-[85%] 2xl:w-[75%] top-[50%] translate-y-[-50%] text-[30px] md:text-[58px] lg:text-[75px] xl:text-[93px] text-[#8A8A8A] left-[-25px] md:left-[-15%] lg:left-[-27%] blend-overlay"
+                    data-aos="slide-left"
+                    data-aos-duration="1500"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                  >
+                    Lorem Ipsum is simply dummy text
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="mt-[100px] md:mt-[200px] pb-[100px] overflow-hidden">
+          <div class="max-w-[1024px] mx-auto px-[20px]">
+            <div class="flex flex-col-reverse md:flex-row">
+              <div
+                class="services_form_wrapper_form w-full md:w-[45%]"
+                data-aos="slide-right"
+                data-aos-duration="1500"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
+                <div
+                  class="contactForm static bg-white w-full h-full flex flex-col h-full pt-[40px] pl-[20px]"
+                >
+                  <div
+                    class="contactForm_heading text-[#4d5f75] lg:text-[35px] text-[28px] font-semibold leading-[44px] text uppercase mb-[20px] sm:pl-[20px]"
+                  >
+                    how to reach us
+                  </div>
+                  <form action="" class="flex flex-col h-full">
+                    <div class="form_input pl-[15px]">
+                      <input
+                        type="text"
+                        placeholder="Full Name:"
+                        class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
+                      />
+                    </div>
+                    <div class="form_input pl-[15px]">
+                      <input
+                        type="text"
+                        placeholder="Email:"
+                        class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
+                      />
+                    </div>
+                    <div class="form_input pl-[15px]">
+                      <input
+                        type="text"
+                        placeholder="Phone Number:"
+                        class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
+                      />
+                    </div>
+                    <select
+                      name="inquiry"
+                      id="inquiry"
+                      class="selectDrp w-[90%] sm:w-[248px]"
+                    >
+                      <option value="">Business Inquiry</option>
+                      <option value="Business Inquiry 1">
+                        Business Inquiry 1
+                      </option>
+                      <option value="Business Inquiry 2">
+                        Business Inquiry 2
+                      </option>
+                      <option value="Business Inquiry 3">
+                        Business Inquiry 3
+                      </option>
+                    </select>
+                    <div class="form_input last pl-[15px] mb-[20px]">
+                      <input
+                        type="text"
+                        placeholder="Message :"
+                        class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline:none h-[45px] w-[90%] md:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 md:pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid bg-transparent"
+                      />
+                    </div>
+                    <div
+                      class="submit_btn text-right h-full flex items-end justify-end"
+                    >
+                      <button
+                        class="w-[162px] bg-[#dfa621] text-white text-sm tracking-[0.3px] cursor-pointer transition-all duration-[0.4s] px-2.5 py-5 border-[none] hover:bg-[#4d5f75]"
+                      >
+                        Send Message
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div
+                class="md:pl-[40px] lg:pl-[60px] xl:pl-[82px] pr-0 pb-[40px] pt-[20px] md:w-[55%]"
+              >
+                <div
+                  class="text-black text-[51px] md:text-[70px] text-center md:text-left mb-[20px]"
+                  data-aos="slide-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+                >
+                  Contact
+                </div>
+                <div class="mb-[20px]">
+                  <div
+                    class="pregressCount_item text-black text-[28px] md:text-[31px] leading-[129%] mb-[10px]"
+                    data-aos="slide-left"
+                    data-aos-duration="1100"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                  >
+                    Address
+                  </div>
+                  <div
+                    class="text-[#8A8A8A] text-[22px] md:text-[25px] leading-[129%]"
+                    data-aos="slide-left"
+                    data-aos-duration="1200"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                  >
+                    Address Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy
+                  </div>
+                </div>
+                <div
+                  class="mb-[20px]"
+                  data-aos="slide-left"
+                  data-aos-duration="1300"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+                >
+                  <div
+                    class="pregressCount_item text-black text-[28px] md:text-[31px] leading-[129%]"
+                  >
+                    Tel
+                  </div>
+                  <a
+                    href="tel:1234567890"
+                    class="text-[#8A8A8A] text-[22px] md:text-[25px] leading-[129%] transition-all duration-500 hover:text-black"
+                    >+91 1234567890</a
+                  >
+                </div>
+                <div
+                  class="mb-[20px]"
+                  data-aos="slide-left"
+                  data-aos-duration="1600"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+                >
+                  <div
+                    class="pregressCount_item text-black text-[28px] md:text-[31px] leading-[129%]"
+                  >
+                    Email
+                  </div>
+                  <a
+                    href="mailto:yourmail@gmail.com"
+                    class="text-[#8A8A8A] text-[22px] md:text-[25px] leading-[129%] transition-all duration-500 hover:text-black"
+                    >yourmil@gmail.com</a
+                  >
+                </div>
+                <div class="flex justify-between">
+                  <div
+                    class="w-[35px] h-[35px] md:w-[50px] md:h-[50px] mx-[10px] rounded-full bg-[#D9D9D9]"
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                  ></div>
+                  <div
+                    class="w-[35px] h-[35px] md:w-[50px] md:h-[50px] mx-[10px] rounded-full bg-[#D9D9D9]"
+                    data-aos="zoom-in"
+                    data-aos-duration="1200"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                  ></div>
+                  <div
+                    class="w-[35px] h-[35px] md:w-[50px] md:h-[50px] mx-[10px] rounded-full bg-[#D9D9D9]"
+                    data-aos="zoom-in"
+                    data-aos-duration="1400"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                  ></div>
+                  <div
+                    class="w-[35px] h-[35px] md:w-[50px] md:h-[50px] mx-[10px] rounded-full bg-[#D9D9D9]"
+                    data-aos="zoom-in"
+                    data-aos-duration="1600"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                  ></div>
+                  <div
+                    class="w-[35px] h-[35px] md:w-[50px] md:h-[50px] mx-[10px] rounded-full bg-[#D9D9D9]"
+                    data-aos="zoom-in"
+                    data-aos-duration="1800"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-black text-white pt-20 pb-12 px-[20px] sm:px-12 flex justify-center items-end overflow-y-hidden overflow-x-hidden"
+    >
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-4"
+      >
+        <div
+          class="col-span-1 md:col-span-1 sm:border-r sm:border-gray-300 md:pr-5 sm:px-5 xl:pr-8 flex justify-end flex-col"
+        >
+          <div
+            class="flex items-center justify-center md:justify-start lg:justify-center mb-8"
+          >
+            <a href="../index.html">
+              <img
+                src="../images/footerLogo.png"
+                alt="footerLogo"
+                class="w-60"
+              />
+            </a>
+          </div>
+          <div class="pt-[20px] sm:pt-16">
+            <p class="text-sm leading-5 mb-4">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
+            <p class="text-sm leading-5">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-span-1 md:col-span-1 lg:col-span-1 lg:border-r lg:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex items-end"
+        >
+          <div class="pb-[20px] border-b-[1px] sm:border-none">
+            <p class="text-sm leading-5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-span-1 lg:col-span-1 sm:border-r sm:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex flex-col justify-end"
+        >
+          <ul class="mb-4 sm:mb-8 pb-[20px] border-b-[1px] sm:border-none">
+            <li><a href="../index.html" class="text-lg uppercase">Home</a></li>
+            <li>
+              <a href="../services/services.html" class="text-lg uppercase"
+                >Company</a
+              >
+            </li>
+            <li><a href="#" class="text-lg uppercase">Products</a></li>
+            <li>
+              <a href="./services/services.html" class="text-lg uppercase"
+                >Service option 1</a
+              >
+            </li>
+            <li>
+              <a href="../services_option2/index.html" class="text-lg uppercase"
+                >Service option 2</a
+              >
+            </li>
+            <li><a href="#" class="text-lg uppercase">Blogs</a></li>
+          </ul>
+          <form class="pb-[20px] border-b-[1px] sm:border-none">
+            <div class="text-sm leading-5 mb-4">Newsletter signup</div>
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="bg-[#3C3C3C] text-white w-full px-4 py-2 focus:outline-none placeholder-white placeholder:text-[15px]"
+            />
+          </form>
+        </div>
+        <div
+          class="col-span-1 lg:col-span-1 sm:px-5 xl:pr-8 pt-[20px] flex flex-row sm:flex-col justify-between sm:justify-end pb-[20px] border-b-[1px] sm:border-none"
+        >
+          <div class="sm:mb-8">
+            <ul>
+              <li><a href="#" class="text-sm">Terms & Conditions</a></li>
+              <li><a href="#" class="text-sm">Privacy Policy</a></li>
+              <li><a href="#" class="text-sm">Investor Privacy Notice</a></li>
+              <li><a href="#" class="text-sm">Cookies Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#" class="text-sm">Twitter</a></li>
+              <li><a href="#" class="text-sm">LinkedIn</a></li>
+              <li><a href="#" class="text-sm">Medium</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
