@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesomm cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- alpinejs cdn  -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <!-- cdn scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- flowbit cdn -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellowcolor: "#DFA621",
+              lightyellow: "#FFE55A",
+              bluecolor: "#4D5F75",
+              darkbluecolor: "#455467",
+              skybluecolor: "#A5B0BD",
+              navyblue: "#2D3846",
+              buttonbgcolor: "#3C4F66",
+              greymedium: "#616163",
+              blackbuttonclr: "#010409",
+            },
+            fontSize: {
+              text2xl: "2rem",
+              text17px: "17px",
+              text14px: "14px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Ourpricing_secondpage</title>
+  </head>
+  <body>
+    <header class="z-[100] relative pt-[43px] pr-[37px] pb-[0] pl-[50px]">
+      <nav class="flex justify-between items-center">
+        <div
+          class="logo"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="10"
+        >
+          <a href="../index.html">
+            <img src="../images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div
+          class="navigation flex w-[65%] lg:w-[700px] justify-between px-[5px] py-0 border-b-white border-b border-solid hidden md:flex"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="10"
+        >
+          <ul class="nav flex items-center">
+            <li
+              class="pr-5 pb-[1.25rem] mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20"
+            >
+              <a
+                class="text-white text-xs font-normal leading-8 no-underline"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li
+              class="dropdown dropdown-6 pr-5 pb-[1.25rem] mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]"
+            >
+              <a
+                class="text-white text-xs font-normal leading-8 no-underline"
+                href="#"
+                >Company</a
+              >
+              <ul
+                class="dropdown_menu dropdown_menu--animated dropdown_menu-6 pr-[5rem] md:pr-[5rem] lg:pr-10 mr-5 absolute top-[103%] left-[-15px] w-64 z-[-1] hidden"
+              >
+                <li
+                  class="dropdown_item-1 block opacity-100 hover:bg-gray-600 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../aboutUs/index.html"
+                    >About Us</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-2 block opacity-100 hover:block hover:bg-gray-600 pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../services/services.html"
+                    >Service Option 1</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block hover:bg-gray-600 pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../services_option2/index.html"
+                    >Service Option 2</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block hover:bg-gray-600 pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../services_option4/index.html"
+                    >Service Option 4</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block hover:bg-gray-600 pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-20 hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-xs font-normal leading-8 no-underline"
+                    href="../services_option5/index.html"
+                    >Service Option 5</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="pb-[1.25rem]">
+              <a
+                class="text-white text-xs font-normal leading-8 no-underline"
+                href="./aboutUs/index.html"
+                >Products</a
+              >
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="contact_menu text-white text-xs font-normal leading-8 no-underline mt-0 mb-4 mx-0 pl-[45px] border-l-white border-l border-solid"
+            >Contact Us</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero_section h-[calc(100vh_-_117px)]">
+      <div class="herosection absolute top-0 left-0 w-full">
+        <div class="inner_banner_image relative h-screen">
+          <img src="../images/ourpriceing_homeimg.png"" alt="about_image"
+          class="max-w-full block w-full h-full object-cover" />
+        </div>
+      </div>
+    </section>
+     <!-- pricing second section -->
+    <section class="p-8 md:p-20 ">
+      <div class="">
+        <div class=" pb-12 md:pb-10">
+          <h2 class="text-3xl font-semibold sm:text-4xl mb-2">Ready to Choose Plan for Your Business?</h2>
+          <p class="text-lg text-gray-500">
+            Choose the package that best suit you.
+          </p>
+        </div>
+        <div class="flex">
+            <div>
+                <!-- toggle button -->
+        <div class="flex flex-row justify-left mb-20 text-sm tracking-tight font-medium text-gray-700">
+            <p class="mx-3">Monthly</p>
+        
+            <!-- Toggle Button -->
+            <label class="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div class="group peer ring-0 bg-emerald-500   rounded-full outline-none duration-300 after:duration-300 w-20 h-8  shadow-md peer-checked:bg-emerald-500  peer-focus:outline-none  after:content-['✖️']  after:rounded-full after:absolute after:bg-gray-50 after:outline-none after:h-6 after:w-6 after:top-1 after:left-1 after:flex after:justify-center after:items-center peer-checked:after:translate-x-12 peer-checked:after:content-['✔️'] peer-hover:after:scale-95">
+                </div>
+              </label>
+        
+            <p class="mx-3">Yearly</p>
+          </div>
+            </div>
+            <!-- discount button -->
+            <div>
+                <button class="text-black bg-lightyellow rounded-full px-6 font-semibold tracking-wide">30% discount</button>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div x-data="{ isAnnual: true }">
+           
+                <!-- Pricing toggle -->
+                <div class="flex justify-center max-w-[14rem] m-auto mb-8 lg:mb-16">
+                    <div class="relative flex w-full p-1 bg-white rounded-full">
+                        <span class="absolute inset-0 m-1 pointer-events-none" aria-hidden="true">
+                            <span class="absolute inset-0 w-1/2 bg-indigo-500 rounded-full shadow-sm shadow-indigo-950/10 transform transition-transform duration-150 ease-in-out" :class="isAnnual ? 'translate-x-0' : 'translate-x-full'"></span>
+                        </span>
+                        <button class="relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300  transition-colors duration-150 ease-in-out" :class="isAnnual ? 'text-white' : 'text-slate-500 '" @click="isAnnual = true" :aria-pressed="isAnnual">Yearly</button>
+                        <button class="relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300  transition-colors duration-150 ease-in-out" :class="isAnnual ? 'text-slate-500 ' : 'text-white'" @click="isAnnual = false" :aria-pressed="isAnnual">Monthly</button>
+                    </div>
+                </div>
+       
+
+      <!--plans   -->
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Free Plan -->
+        <div class=" border-1 border-black p-6 transform hover:scale-105 transition duration-300">
+          <div class="mb-8">
+            <h3 class="text-2xl font-semibold text-black">Free</h3>
+          </div>
+          <div class="mb-6">
+            <span class="text-5xl font-extrabold text-black"  x-text="isAnnual ? '$0' : '$29'"></span>
+            <span class="text-xl font-medium text-gray-400">/mo</span>
+            <p class="mb-6 text-sm text-gray-500">USD Billed Annually</p>
+            <hr>
+          </div>
+          
+          <div class="mb-8">
+            <p class="mt-2 text-greymedium text-text14px">Up to 10 Sites with CMS & HostingUp to 10 Sites with CMS & Hosting</p>
+          </div>
+          <div class="mb-4 ">
+            <a href="#" class="px-4 py-2 text-center rounded-[1.5rem] text-white font-medium bg-blackbuttonclr hover:bg-yellowcolor">
+                Button
+              </a> 
+          </div>
+          <hr class="mb-4">
+          <ul role="list" class=" space-y-4 text-left">
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">15 Admin account</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px"
+                >30-day chat history</span
+              >
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">Email reminders</span>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Lite Plan -->
+        <div class="border-1 border-black p-6 transform hover:scale-105 transition duration-300">
+          <div class="mb-8">
+            <h3 class="text-2xl font-semibold text-black">Lite</h3>
+          </div>
+          <div class="mb-6">
+            <span class="text-5xl font-extrabold text-black"  x-text="isAnnual ? '$65' : '$85'"></span>
+            <span class="text-xl font-medium text-gray-400">/mo</span>
+            <p class="mb-6 text-sm text-gray-500">USD Billed Annually</p>
+            <hr>
+          </div>
+          <div class="mb-4">
+            <p class="mt-4 text-greymedium text-text14px">Up to 10 Sites with CMS & HostingUp to 10 Sites with CMS & Hosting</p>
+          </div>
+          <div class="mb-8">
+            <a href="#" class="px-4 py-2 text-center rounded-[1.5rem] text-white font-medium bg-blackbuttonclr hover:bg-yellowcolor">
+                Button
+              </a> 
+          </div>
+          <hr class="mb-4">
+          <ul role="list" class=" space-y-4 text-left">
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">30 Admin account</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px"
+                >Unlimited chat history</span
+              >
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">Email & SMS reminders</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">Email & chat support</span>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- team Plan -->
+        <div class="bg-bluecolor  p-6 transform hover:scale-105 transition duration-300">
+          <div class="mb-8">
+            <h3 class="text-2xl font-semibold text-white">Team</h3>
+          </div>
+          <div class="mb-6">
+            <span class="text-5xl font-extrabold text-white" x-text="isAnnual ? '$120' : '$150'"></span>
+            <span class="text-xl font-medium text-gray-400">/mo</span>
+            <p class="mb-6 text-white text-sm">USD Billed Annually</p>
+          </div>
+          <hr>
+          <div class="mb-8">
+            <p class="mt-4 text-white text-text14px">Up to 10 Sites with CMS & HostingUp to 10 Sites with CMS & Hosting</p>
+          </div>
+          <div class="mb-4">
+            <a href="#" class="px-4 py-2 text-center rounded-[1.5rem] text-white font-medium bg-yellowcolor hover:bg-blackbuttonclr ">
+                Button
+              </a> 
+          </div>
+          <hr class="text-white mb-4">
+          <ul role="list" class="space-y-4 text-left">
+            <li class="flex items-center space-x-3">
+              <img src="../images/yellowcheckcircle.png" alt="checkcircle" />
+              <span class="text-white text-text14px">Unlimited Admin account</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/yellowcheckcircle.png" alt="checkcircle" />
+              <span class=" text-white text-text14px"
+                >Unlimited chat history</span
+              >
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/yellowcheckcircle.png" alt="checkcircle" />
+              <span class=" text-white text-text14px">Email & SMS reminders</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/yellowcheckcircle.png" alt="checkcircle" />
+              <span class=" text-white text-text14px">Email & chat support</span>
+            </li>
+            <li class="flex items-center space-x-3">
+                <img src="../images/yellowcheckcircle.png" alt="checkcircle" />
+                <span class=" text-white text-text14px">Template Library</span>
+              </li>
+          </ul>
+        </div>
+  
+        <!-- pro Plan -->
+        <div class=" border-1 border-black  p-6 transform hover:scale-105 transition duration-300">
+          <div class="mb-8">
+            <h3 class="text-2xl font-semibold text-black">Pro</h3>
+          </div>
+          <div class="mb-6">
+            <span class="text-5xl font-extrabold text-black" x-text="isAnnual ? '$350' : '$399'"></span>
+            <span class="text-xl font-medium text-gray-400">/mo</span>
+            <p class="mb-6 text-sm text-gray-500">USD Billed Annually</p>
+            <hr>
+          </div>
+          <div class="mb-8">
+            <p class="mt-4 text-greymedium text-text14px">Up to 10 Sites with CMS & HostingUp to 10 Sites with CMS & Hosting</p>
+          </div>
+          <div class="mb-4">
+            <a href="#" class="px-4 py-2 text-center rounded-[1.5rem] text-white font-medium bg-blackbuttonclr hover:bg-yellowcolor">
+                Button
+              </a> 
+          </div>
+          <hr class="mb-4">
+          <ul role="list" class=" space-y-4 text-left">
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">Unlimited Admin account</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px"
+                >Unlimited chat history</span
+              >
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">Email & SMS reminders</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">Email & chat support</span>
+            </li>
+            <li class="flex items-center space-x-3">
+                <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+                <span class="text-text14px">Template Library</span>
+              </li>
+            <li class="flex items-center space-x-3">
+                <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+                <span class="text-text14px">Professional Reporting</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+      
+      
+    <!-- text divider -->
+      <div class="px-4 pt-12 pb-8 sm:flex pb-12 sm:px-20 sm:pt-28 ">
+        <div class="sm:w-[45%] mb-4">
+            <h1 class="text-3xl mb-4">Pricing Plans</h1>
+            <p class="mb-4 sm:mb-5"> Sed ut Perspiciatis unde Omnis Iste Sed ut<br>
+                Pers piciatis unde Omnis Iste</p>
+                <p class="mb-2">Web & Mobile Outstanding Supper Customer</p>
+                    <p class="mb-3"> Web & Mobile Responsive</p>
+            <p> Best Hosting Ever Outstanding Support</p>
+        </div>
+        <div class="sm:w-[55%]">
+            <h1 class="text-3xl mb-4">Our Offers</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat liberorum.</p>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit volupt.</p>
+             <p>Free Custom Domain</p>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer
+      class="bg-black text-white pt-20 pb-12 px-[20px] sm:px-12 flex justify-center items-end overflow-y-hidden overflow-x-hidden"
+    >
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-4"
+      >
+        <div
+          class="col-span-1 md:col-span-1 sm:border-r sm:border-gray-300 md:pr-5 sm:px-5 xl:pr-8 flex justify-end flex-col"
+        >
+          <div
+            class="flex items-center justify-center md:justify-start lg:justify-center mb-8"
+          >
+            <a href="../index.html">
+              <img
+                src="../images/footerLogo.png"
+                alt="footerLogo"
+                class="w-60"
+              />
+            </a>
+          </div>
+          <div class="pt-[20px] sm:pt-16">
+            <p class="text-sm leading-5 mb-4">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
+            <p class="text-sm leading-5">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-span-1 md:col-span-1 lg:col-span-1 lg:border-r lg:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex items-end"
+        >
+          <div class="pb-[20px] border-b-[1px] sm:border-none">
+            <p class="text-sm leading-5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-span-1 lg:col-span-1 sm:border-r sm:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex flex-col justify-end"
+        >
+          <ul class="mb-4 sm:mb-8 pb-[20px] border-b-[1px] sm:border-none">
+            <li><a href="../index.html" class="text-lg uppercase">Home</a></li>
+            <li>
+              <a href="../services/services.html" class="text-lg uppercase"
+                >Company</a
+              >
+            </li>
+            <li><a href="#" class="text-lg uppercase">Products</a></li>
+            <li>
+              <a href="./services/services.html" class="text-lg uppercase"
+                >Service option 1</a
+              >
+            </li>
+            <li>
+              <a href="../services_option2/index.html" class="text-lg uppercase"
+                >Service option 2</a
+              >
+            </li>
+            <li><a href="#" class="text-lg uppercase">Blogs</a></li>
+          </ul>
+          <form class="pb-[20px] border-b-[1px] sm:border-none">
+            <div class="text-sm leading-5 mb-4">Newsletter signup</div>
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="bg-[#3C3C3C] text-white w-full px-4 py-2 focus:outline-none placeholder-white placeholder:text-[15px]"
+            />
+          </form>
+        </div>
+        <div
+          class="col-span-1 gap-8 lg:col-span-1 sm:px-5 xl:pr-8 pt-[20px] flex flex-row sm:flex-col justify-between sm:justify-end pb-[20px] border-b-[1px] sm:border-none"
+        >
+          <div class="sm:mb-8">
+            <ul>
+              <li><a href="#" class="text-sm">Terms & Conditions</a></li>
+              <li><a href="#" class="text-sm">Privacy Policy</a></li>
+              <li><a href="#" class="text-sm">Investor Privacy Notice</a></li>
+              <li><a href="#" class="text-sm">Cookies Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#" class="text-sm">Twitter</a></li>
+              <li><a href="#" class="text-sm">LinkedIn</a></li>
+              <li><a href="#" class="text-sm">Medium</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
