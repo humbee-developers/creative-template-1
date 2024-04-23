@@ -24,7 +24,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!-- alpinejs cdn  -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -51,22 +52,26 @@
           extend: {
             colors: {
               yellowcolor: "#DFA621",
+              lightyellow: "#FFE55A",
               bluecolor: "#4D5F75",
               darkbluecolor: "#455467",
               skybluecolor: "#A5B0BD",
               navyblue: "#2D3846",
               buttonbgcolor: "#3C4F66",
+              greymedium: "#616163",
+              blackbuttonclr: "#010409",
             },
             fontSize: {
               text2xl: "2rem",
               text17px: "17px",
+              text14px: "14px",
             },
           },
         },
       };
     </script>
 
-    <title>Ourpricing</title>
+    <title>Ourpricing_secondpage</title>
   </head>
   <body>
     <header class="z-[100] relative pt-[43px] pr-[37px] pb-[0] pl-[50px]">
@@ -172,6 +177,7 @@
         </div>
       </nav>
     </header>
+
     <section class="hero_section h-[calc(100vh_-_117px)]">
       <div class="herosection absolute top-0 left-0 w-full">
         <div class="inner_banner_image relative h-screen">
@@ -180,215 +186,234 @@
         </div>
       </div>
     </section>
-    <!-- ourpricing section -->
+     <!-- pricing second section -->
     <section class="p-8 md:p-20 ">
       <div class="">
-        <div class="mx-auto max-w-3xl text-center pb-12 md:pb-10">
-          <h2 class="text-base text-gray-600 sm:text-lg font-medium mb-3">PRICING</h2>
-          <h2 class="text-3xl font-semibold sm:text-5xl mb-4">Our pricing plans</h2>
+        <div class=" pb-12 md:pb-10">
+          <h2 class="text-3xl font-semibold sm:text-4xl mb-2">Ready to Choose Plan for Your Business?</h2>
           <p class="text-lg text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit <br />
-            dolor posuere vel venenatis eu sit massa volutpat.
+            Choose the package that best suit you.
           </p>
         </div>
-        <!-- choose currency -->
-        <div class="flex justify-center p-6">
-            <div class="relative inline-block text-left">
-                <button id="dropdownButton" class="text-black font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center" type="button">
-                    Choose your currency
-                    <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                    </svg>
-                </button>
+        <div class="flex">
+            <div>
+                <!-- toggle button -->
+        <div class="flex flex-row justify-left mb-20 text-sm tracking-tight font-medium text-gray-700">
+            <p class="mx-3">Monthly</p>
         
-                <!-- Dropdown menu -->
-                <div id="dropdownMenu" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
-                    <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownButton">
-                        <li class="flex">
-                            <img src="../images/usdicon.png">
-                            <a href="#" class="block px-4 py-2" data-currency="USD">USD</a>
-                        </li>
-                        <li class="flex">
-                            <img src="../images/usdicon.png">
-                            <a href="#" class="block px-4 py-2" data-currency="EUR">EUR</a>
-                        </li>
-                        <li class="flex">
-                            <img src="../images/usdicon.png">
-                            <a href="#" class="block px-4 py-2" data-currency="GBP">GBP</a>
-                        </li>
-                        <li class="flex">
-                            <img src="../images/usdicon.png">
-                            <a href="#" class="block px-4 py-2" data-currency="USA">USA</a>
-                        </li>
-                    </ul>
+            <!-- Toggle Button -->
+            <label class="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div class="group peer ring-0 bg-emerald-500   rounded-full outline-none duration-300 after:duration-300 w-20 h-8  shadow-md peer-checked:bg-emerald-500  peer-focus:outline-none  after:content-['✖️']  after:rounded-full after:absolute after:bg-gray-50 after:outline-none after:h-6 after:w-6 after:top-1 after:left-1 after:flex after:justify-center after:items-center peer-checked:after:translate-x-12 peer-checked:after:content-['✔️'] peer-hover:after:scale-95">
                 </div>
+              </label>
+        
+            <p class="mx-3">Yearly</p>
+          </div>
+            </div>
+            <!-- discount button -->
+            <div>
+                <button class="text-black bg-lightyellow rounded-full px-6 font-semibold tracking-wide">30% discount</button>
             </div>
         </div>
-    
-        <div
-          class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-6 lg:space-y-0"
-        >
-          <!-- basic -->
-          <div
-            class="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:px-8 xl:py-12 border border-base-300 shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20"
-          >
-            <div class="flex gap-2 mb-3 ">
-              <div><img class="" src="../images/bacicicon.png" /></div>
-              <div>
-                <p class="text-gray-500">For individuals</p>
-                <h3 class=" text-2xl font-semibold">Basic</h3>
-              </div>
-            </div>
-            <div class="flex items-baseline my-1 ">
-              <p class="w-11/12 md:w-4/5 text-left text-gray-500 font-light sm:text-lg">
-                Lorem ipsum dolor sit amet doloroli sitiol conse ctetur
-                adipiscing elit.
-              </p>
-            </div>
-            
-            <div class="flex items-baseline my-4">
-              <span class="mr-2 text-5xl font-extrabold">$99</span>
-              <span class="text-xl text-gray-500">/monthly</span>
-            </div>
-            <div class="flex my-4">
-                <span class="mr-2 text-xl font-bold">What’s included</span>
-            </div>
-            <ul role="list" class="mb-8 space-y-4 text-left">
-              <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80">All analytics features</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80"
-                  >Up to 1,000,000 tracked visits</span
-                >
-              </li>
-              <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80">Premium support</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80">Up to 10 team members</span>
-              </li>
-            </ul>
-            <button
-              class="w-full font-bold gap-2 shadow uppercase p-3 bg-bluecolor text-white"
-            >
-              Get started
-            </button>
-          </div>
-
-          <!-- for startup -->
-          <div
-            class="flex flex-col bg-bluecolor p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:px-8 xl:py-12 border border-base-300 shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20"
-          >
-            <div class="flex gap-2 mb-3 ">
-              <div><img class="" src="../images/proicon.png" /></div>
-              <div>
-                <p class="text-white">For startups</p>
-                <h3 class="text-2xl text-white font-semibold">Pro</h3>
-              </div>
-            </div>
-
-            <div class="flex items-baseline my-1">
-              <p class="w-11/12 md:w-4/5 text-left text-white sm:text-lg">
-                Lorem ipsum dolor sit amet doloroli sitiol conse ctetur
-                adipiscing elit.
-              </p>
-            </div>
-            
-            <div class="flex items-baseline my-4">
-              <span class="text-white mr-2 text-5xl font-extrabold">$199</span>
-              <span class="text-xl text-white">/monthly</span>
-            </div>
-            <div class="flex my-4">
-                <span class="mr-2 text-xl font-bold text-white">What’s included</span>
-            </div>
-            <ul role="list" class="mb-8 space-y-4 text-left">
-              <li class="flex items-center space-x-3">
-                <img src="../images/whiteCheck Circle.png" alt="checkcircle" />
-                <span class="text-white text-base-content/80"
-                  >All analytics features</span
-                >
-              </li>
-              <li class="flex items-center space-x-3">
-                <img src="../images/whiteCheck Circle.png" alt="checkcircle" />
-                <span class="text-white text-base-content/80"
-                  >Up to 1,000,000 tracked visits</span
-                >
-              </li>
-              <li class="flex items-center space-x-3">
-                <img src="../images/whiteCheck Circle.png" alt="checkcircle" />
-                <span class="text-white text-base-content/80"
-                  >Premium support</span
-                >
-              </li>
-              <li class="flex items-center space-x-3">
-                <img src="../images/whiteCheck Circle.png" alt="checkcircle" />
-                <span class="text-white text-base-content/80"
-                  >Up to 10 team members</span
-                >
-              </li>
-            </ul>
-            <button
-              class="w-full p-3 bg-white text-bluecolor font-bold gap-2 shadow uppercase"
-            >
-              Get started
-            </button>
-          </div>
-          <!-- enterprise -->
-          <div
-            class="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:px-8 xl:py-12 border border-base-300 shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20"
-          >
-            <div class="flex gap-2 mb-3 ">
-              <div><img class="" src="../images/enterpriceicon.png" /></div>
-              <div>
-                <p class="text-gray-500">For big companies</p>
-                <h3 class="text-2xl font-semibold">Enterprise</h3>
-              </div>
-            </div>
-            <div class="flex items-baseline my-1">
-              <p class="w-11/12 md:w-4/5 text-left text-gray-500 font-light sm:text-lg">
-                Lorem ipsum dolor sit amet doloroli sitiol conse ctetur
-                adipiscing elit.
-              </p>
-            </div>
-            
-            <div class="flex items-baseline my-4">
-              <span class="mr-2 text-5xl font-extrabold">$399</span>
-              <span class="text-xl text-gray-500">/monthly</span>
-            </div>
-            <div class="flex my-4">
-                <span class="mr-2 text-xl font-bold">What’s included</span>
-            </div>
-            <ul role="list" class="mb-8 space-y-4 text-left">
-              <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80">All analytics features</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80">Up to 1,000,000 tracked visits</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80">Premium support</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80">Up to 10 team members</span>
-              </li>
-            </ul>
-            <button
-              class="w-full p-3 bg-bluecolor text-white font-bold gap-2 shadow uppercase"
-            >
-              Get started
-            </button>
-          </div>
         </div>
+        <div>
+            <div x-data="{ isAnnual: true }">
+           
+                <!-- Pricing toggle -->
+                <div class="flex justify-center max-w-[14rem] m-auto mb-8 lg:mb-16">
+                    <div class="relative flex w-full p-1 bg-white rounded-full">
+                        <span class="absolute inset-0 m-1 pointer-events-none" aria-hidden="true">
+                            <span class="absolute inset-0 w-1/2 bg-indigo-500 rounded-full shadow-sm shadow-indigo-950/10 transform transition-transform duration-150 ease-in-out" :class="isAnnual ? 'translate-x-0' : 'translate-x-full'"></span>
+                        </span>
+                        <button class="relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300  transition-colors duration-150 ease-in-out" :class="isAnnual ? 'text-white' : 'text-slate-500 '" @click="isAnnual = true" :aria-pressed="isAnnual">Yearly</button>
+                        <button class="relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300  transition-colors duration-150 ease-in-out" :class="isAnnual ? 'text-slate-500 ' : 'text-white'" @click="isAnnual = false" :aria-pressed="isAnnual">Monthly</button>
+                    </div>
+                </div>
+       
+
+      <!--plans   -->
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Free Plan -->
+        <div class=" border-1 border-black p-6 transform hover:scale-105 transition duration-300">
+          <div class="mb-8">
+            <h3 class="text-2xl font-semibold text-black">Free</h3>
+          </div>
+          <div class="mb-6">
+            <span class="text-5xl font-extrabold text-black"  x-text="isAnnual ? '$0' : '$29'"></span>
+            <span class="text-xl font-medium text-gray-400">/mo</span>
+            <p class="mb-6 text-sm text-gray-500">USD Billed Annually</p>
+            <hr>
+          </div>
+          
+          <div class="mb-8">
+            <p class="mt-2 text-greymedium text-text14px">Up to 10 Sites with CMS & HostingUp to 10 Sites with CMS & Hosting</p>
+          </div>
+          <div class="mb-4 ">
+            <a href="#" class="px-4 py-2 text-center rounded-[1.5rem] text-white font-medium bg-blackbuttonclr hover:bg-yellowcolor">
+                Button
+              </a> 
+          </div>
+          <hr class="mb-4">
+          <ul role="list" class=" space-y-4 text-left">
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">15 Admin account</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px"
+                >30-day chat history</span
+              >
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">Email reminders</span>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Lite Plan -->
+        <div class="border-1 border-black p-6 transform hover:scale-105 transition duration-300">
+          <div class="mb-8">
+            <h3 class="text-2xl font-semibold text-black">Lite</h3>
+          </div>
+          <div class="mb-6">
+            <span class="text-5xl font-extrabold text-black"  x-text="isAnnual ? '$65' : '$85'"></span>
+            <span class="text-xl font-medium text-gray-400">/mo</span>
+            <p class="mb-6 text-sm text-gray-500">USD Billed Annually</p>
+            <hr>
+          </div>
+          <div class="mb-4">
+            <p class="mt-4 text-greymedium text-text14px">Up to 10 Sites with CMS & HostingUp to 10 Sites with CMS & Hosting</p>
+          </div>
+          <div class="mb-8">
+            <a href="#" class="px-4 py-2 text-center rounded-[1.5rem] text-white font-medium bg-blackbuttonclr hover:bg-yellowcolor">
+                Button
+              </a> 
+          </div>
+          <hr class="mb-4">
+          <ul role="list" class=" space-y-4 text-left">
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">30 Admin account</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px"
+                >Unlimited chat history</span
+              >
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">Email & SMS reminders</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">Email & chat support</span>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- team Plan -->
+        <div class="bg-bluecolor  p-6 transform hover:scale-105 transition duration-300">
+          <div class="mb-8">
+            <h3 class="text-2xl font-semibold text-white">Team</h3>
+          </div>
+          <div class="mb-6">
+            <span class="text-5xl font-extrabold text-white" x-text="isAnnual ? '$120' : '$150'"></span>
+            <span class="text-xl font-medium text-gray-400">/mo</span>
+            <p class="mb-6 text-white text-sm">USD Billed Annually</p>
+          </div>
+          <hr>
+          <div class="mb-8">
+            <p class="mt-4 text-white text-text14px">Up to 10 Sites with CMS & HostingUp to 10 Sites with CMS & Hosting</p>
+          </div>
+          <div class="mb-4">
+            <a href="#" class="px-4 py-2 text-center rounded-[1.5rem] text-white font-medium bg-yellowcolor hover:bg-blackbuttonclr ">
+                Button
+              </a> 
+          </div>
+          <hr class="text-white mb-4">
+          <ul role="list" class="space-y-4 text-left">
+            <li class="flex items-center space-x-3">
+              <img src="../images/yellowcheckcircle.png" alt="checkcircle" />
+              <span class="text-white text-text14px">Unlimited Admin account</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/yellowcheckcircle.png" alt="checkcircle" />
+              <span class=" text-white text-text14px"
+                >Unlimited chat history</span
+              >
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/yellowcheckcircle.png" alt="checkcircle" />
+              <span class=" text-white text-text14px">Email & SMS reminders</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/yellowcheckcircle.png" alt="checkcircle" />
+              <span class=" text-white text-text14px">Email & chat support</span>
+            </li>
+            <li class="flex items-center space-x-3">
+                <img src="../images/yellowcheckcircle.png" alt="checkcircle" />
+                <span class=" text-white text-text14px">Template Library</span>
+              </li>
+          </ul>
+        </div>
+  
+        <!-- pro Plan -->
+        <div class=" border-1 border-black  p-6 transform hover:scale-105 transition duration-300">
+          <div class="mb-8">
+            <h3 class="text-2xl font-semibold text-black">Pro</h3>
+          </div>
+          <div class="mb-6">
+            <span class="text-5xl font-extrabold text-black" x-text="isAnnual ? '$350' : '$399'"></span>
+            <span class="text-xl font-medium text-gray-400">/mo</span>
+            <p class="mb-6 text-sm text-gray-500">USD Billed Annually</p>
+            <hr>
+          </div>
+          <div class="mb-8">
+            <p class="mt-4 text-greymedium text-text14px">Up to 10 Sites with CMS & HostingUp to 10 Sites with CMS & Hosting</p>
+          </div>
+          <div class="mb-4">
+            <a href="#" class="px-4 py-2 text-center rounded-[1.5rem] text-white font-medium bg-blackbuttonclr hover:bg-yellowcolor">
+                Button
+              </a> 
+          </div>
+          <hr class="mb-4">
+          <ul role="list" class=" space-y-4 text-left">
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">Unlimited Admin account</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px"
+                >Unlimited chat history</span
+              >
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">Email & SMS reminders</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+              <span class="text-text14px">Email & chat support</span>
+            </li>
+            <li class="flex items-center space-x-3">
+                <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+                <span class="text-text14px">Template Library</span>
+              </li>
+            <li class="flex items-center space-x-3">
+                <img src="../images/blackcheckcircle.png" alt="checkcircle" />
+                <span class="text-text14px">Professional Reporting</span>
+            </li>
+          </ul>
+        </div>
+
       </div>
+    </div>
+      
       
     <!-- text divider -->
       <div class="px-4 pt-12 pb-8 sm:flex pb-12 sm:px-20 sm:pt-28 ">
@@ -408,6 +433,7 @@
         </div>
     </div>
     </section>
+
 
     <!-- footer -->
     <footer
@@ -512,36 +538,6 @@
     </footer>
 
     <!-- script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const dropdownButton = document.getElementById('dropdownButton');
-            const dropdownMenu = document.getElementById('dropdownMenu');
-        
-            dropdownButton.addEventListener('click', function () {
-                dropdownMenu.classList.toggle('hidden');
-            });
-        
-            // Close dropdown when clicking outside
-            document.addEventListener('click', function (event) {
-                if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
-                    dropdownMenu.classList.add('hidden');
-                }
-            });
-        
-            // Update button text on option selection
-            dropdownMenu.querySelectorAll('a').forEach(function (option) {
-                option.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    const selectedCurrency = this.getAttribute('data-currency');
-                    dropdownButton.textContent = `Selected Currency: ${selectedCurrency}`;
-                    dropdownButton.innerHTML += '<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/></svg>';
-                    dropdownMenu.classList.add('hidden');
-                });
-            });
-        });
-        </script>
-    
-    
     <script>
       AOS.init();
     </script>
