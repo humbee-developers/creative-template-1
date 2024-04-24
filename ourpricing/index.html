@@ -45,6 +45,8 @@
     <!-- aos animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- alpinejs -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -181,9 +183,9 @@
       </div>
     </section>
     <!-- ourpricing section -->
-    <section class="p-8 md:p-20 ">
+    <section class="p-8 md:p-16 lg:p-20 xl:p-28 ">
       <div class="">
-        <div class="mx-auto max-w-3xl text-center pb-12 md:pb-10">
+        <div class="mx-auto max-w-3xl text-center pb-10 md:pb-6">
           <h2 class="text-base text-gray-600 sm:text-lg font-medium mb-3">PRICING</h2>
           <h2 class="text-3xl font-semibold sm:text-5xl mb-4">Our pricing plans</h2>
           <p class="text-lg text-gray-500">
@@ -193,88 +195,79 @@
         </div>
         <!-- choose currency -->
         <div class="flex justify-center p-6">
-            <div class="relative inline-block text-left">
-                <button id="dropdownButton" class="text-black font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center" type="button">
-                    Choose your currency
-                    <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                    </svg>
-                </button>
-        
-                <!-- Dropdown menu -->
-                <div id="dropdownMenu" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute mt-2">
-                    <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownButton">
-                        <li class="flex">
-                            <img src="../images/usdicon.png">
-                            <a href="#" class="block px-4 py-2" data-currency="USD">USD</a>
-                        </li>
-                        <li class="flex">
-                            <img src="../images/usdicon.png">
-                            <a href="#" class="block px-4 py-2" data-currency="EUR">EUR</a>
-                        </li>
-                        <li class="flex">
-                            <img src="../images/usdicon.png">
-                            <a href="#" class="block px-4 py-2" data-currency="GBP">GBP</a>
-                        </li>
-                        <li class="flex">
-                            <img src="../images/usdicon.png">
-                            <a href="#" class="block px-4 py-2" data-currency="USA">USA</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="relative inline-block text-left sm:flex">
+              <div>
+                  <label for="currancy" class="mr-2">choose your currency:</label>
+              </div>
+              <div>
+                <select name="currancy" id="currancy" class="py-2 px-10 rounded-lg ">
+                  <option value="usd"> USD</option>
+                  <option value="usd">USD</option>
+                  <option value="usd">EUR</option>
+                  <option value="usd">GBP</option>
+                </select>
+              </div>
+                
+                
             </div>
         </div>
+      
+      
     
         <div
-          class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-6 lg:space-y-0"
+          class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-4 lg:space-y-0"
         >
           <!-- basic -->
           <div
-            class="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:px-8 xl:py-12 border border-base-300 shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20  hover:scale-105 transition duration-300"
+            class="abcd flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:px-8 xl:py-12 border border-base-300 shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20  hover:scale-105 transition duration-300 hover:bg-bluecolor"
           >
             <div class="flex gap-2 mb-3 ">
               <div><img class="" src="../images/bacicicon.png" /></div>
               <div>
-                <p class="text-gray-500">For individuals</p>
-                <h3 class=" text-2xl font-semibold">Basic</h3>
+                <p class="hovercustomcolor  text-gray-500">For individuals</p>
+                <h3 class="hovercustomcolor  text-2xl font-semibold">Basic</h3>
               </div>
             </div>
             <div class="flex items-baseline my-1 ">
-              <p class="w-11/12 md:w-4/5 text-left text-gray-500 font-light sm:text-lg">
+              <p class="hovercustomcolor w-11/12 md:w-full text-left text-gray-500 font-light sm:text-lg">
                 Lorem ipsum dolor sit amet doloroli sitiol conse ctetur
                 adipiscing elit.
               </p>
             </div>
             
-            <div class="flex items-baseline my-4">
-              <span class="mr-2 text-5xl font-extrabold">$99</span>
-              <span class="text-xl text-gray-500">/monthly</span>
+            <div class="flex items-baseline my-2">
+              <span class="hovercustomcolor mr-2 text-5xl font-extrabold">$99</span>
+              <span class="hovercustomcolor text-xl text-gray-500">/monthly</span>
             </div>
-            <div class="flex my-4">
-                <span class="mr-2 text-xl font-bold">What’s included</span>
+            <div class="flex my-2">
+                <span class="hovercustomcolor mr-2 text-xl font-bold">What’s included</span>
             </div>
             <ul role="list" class="mb-8 space-y-4 text-left">
               <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80">All analytics features</span>
+                <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+                <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+                <span class="hovercustomcolor text-base-content/80">All analytics features</span>
               </li>
               <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80"
+                <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+                <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+                <span class="hovercustomcolor text-base-content/80"
                   >Up to 1,000,000 tracked visits</span
                 >
               </li>
               <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80">Premium support</span>
+                <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+                <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+                <span class="hovercustomcolor text-base-content/80">Premium support</span>
               </li>
               <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80">Up to 10 team members</span>
+                <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+                <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+                <span class="hovercustomcolor text-base-content/80">Up to 10 team members</span>
               </li>
             </ul>
             <button
-              class="w-full font-bold gap-2 shadow uppercase p-3 bg-bluecolor text-white"
+              class="hovergetbuttonclr w-full font-bold gap-2 shadow uppercase p-3 bg-bluecolor text-white hover:bg-white hover:text-bluecolor"
             >
               Get started
             </button>
@@ -282,107 +275,115 @@
 
           <!-- for startup -->
           <div
-            class="flex flex-col bg-bluecolor p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:px-8 xl:py-12 border border-base-300 shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20  hover:scale-105 transition duration-300"
+            class="abcd flex flex-col  p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:px-8 xl:py-12 border border-base-300 shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20  hover:scale-105 transition duration-300 hover:bg-bluecolor"
           >
             <div class="flex gap-2 mb-3 ">
               <div><img class="" src="../images/proicon.png" /></div>
               <div>
-                <p class="text-white">For startups</p>
-                <h3 class="text-2xl text-white font-semibold">Pro</h3>
+                <p class="hovercustomcolor text-black">For startups</p>
+                <h3 class="hovercustomcolor text-2xl text-black font-semibold">Pro</h3>
               </div>
             </div>
 
             <div class="flex items-baseline my-1">
-              <p class="w-11/12 md:w-4/5 text-left text-white sm:text-lg">
+              <p class="hovercustomcolor w-11/12 md:w-full text-left text-gray-500 sm:text-lg">
                 Lorem ipsum dolor sit amet doloroli sitiol conse ctetur
                 adipiscing elit.
               </p>
             </div>
             
-            <div class="flex items-baseline my-4">
-              <span class="text-white mr-2 text-5xl font-extrabold">$199</span>
-              <span class="text-xl text-white">/monthly</span>
+            <div class="flex items-baseline my-2">
+              <span class="hovercustomcolor text-black mr-2 text-5xl font-extrabold">$199</span>
+              <span class="hovercustomcolor text-xl text-black">/monthly</span>
             </div>
-            <div class="flex my-4">
-                <span class="mr-2 text-xl font-bold text-white">What’s included</span>
+            <div class="flex my-2">
+                <span class="hovercustomcolor mr-2 text-xl font-bold text-black">What’s included</span>
             </div>
             <ul role="list" class="mb-8 space-y-4 text-left">
               <li class="flex items-center space-x-3">
-                <img src="../images/whiteCheck Circle.png" alt="checkcircle" />
-                <span class="text-white text-base-content/80"
+                <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+                <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+                <span class="hovercustomcolor text-black text-base-content/80"
                   >All analytics features</span
                 >
               </li>
               <li class="flex items-center space-x-3">
-                <img src="../images/whiteCheck Circle.png" alt="checkcircle" />
-                <span class="text-white text-base-content/80"
+                <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+                <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+                <span class="hovercustomcolor text-black text-base-content/80"
                   >Up to 1,000,000 tracked visits</span
                 >
               </li>
               <li class="flex items-center space-x-3">
-                <img src="../images/whiteCheck Circle.png" alt="checkcircle" />
-                <span class="text-white text-base-content/80"
+                <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+                <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+                <span class="hovercustomcolor text-black text-base-content/80"
                   >Premium support</span
                 >
               </li>
               <li class="flex items-center space-x-3">
-                <img src="../images/whiteCheck Circle.png" alt="checkcircle" />
-                <span class="text-white text-base-content/80"
+                <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+                <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+                <span class="hovercustomcolor text-black text-base-content/80"
                   >Up to 10 team members</span
                 >
               </li>
             </ul>
             <button
-              class="w-full p-3 bg-white text-bluecolor font-bold gap-2 shadow uppercase"
+              class="hovergetbuttonclr w-full p-3 bg-bluecolor text-white font-bold gap-2 shadow uppercase"
             >
               Get started
             </button>
           </div>
           <!-- enterprise -->
           <div
-            class="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:px-8 xl:py-12 border border-base-300 shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20  hover:scale-105 transition duration-300"
+            class="abcd flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:px-8 xl:py-12 border border-base-300 shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20  hover:scale-105 transition duration-300 hover:bg-bluecolor"
           >
             <div class="flex gap-2 mb-3 ">
               <div><img class="" src="../images/enterpriceicon.png" /></div>
               <div>
-                <p class="text-gray-500">For big companies</p>
-                <h3 class="text-2xl font-semibold">Enterprise</h3>
+                <p class="hovercustomcolor text-gray-500">For big companies</p>
+                <h3 class="hovercustomcolor text-2xl font-semibold">Enterprise</h3>
               </div>
             </div>
             <div class="flex items-baseline my-1">
-              <p class="w-11/12 md:w-4/5 text-left text-gray-500 font-light sm:text-lg">
+              <p class="hovercustomcolor w-11/12 md:w-full text-left text-gray-500 font-light sm:text-lg">
                 Lorem ipsum dolor sit amet doloroli sitiol conse ctetur
                 adipiscing elit.
               </p>
             </div>
             
-            <div class="flex items-baseline my-4">
-              <span class="mr-2 text-5xl font-extrabold">$399</span>
-              <span class="text-xl text-gray-500">/monthly</span>
+            <div class="flex items-baseline my-2">
+              <span class="hovercustomcolor mr-2 text-5xl font-extrabold">$399</span>
+              <span class="hovercustomcolor text-xl text-gray-500">/monthly</span>
             </div>
-            <div class="flex my-4">
-                <span class="mr-2 text-xl font-bold">What’s included</span>
+            <div class="flex my-2">
+                <span class="hovercustomcolor mr-2 text-xl font-bold">What’s included</span>
             </div>
             <ul role="list" class="mb-8 space-y-4 text-left">
               <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80">All analytics features</span>
+                <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+                <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+                <span class="hovercustomcolor text-base-content/80">All analytics features</span>
               </li>
               <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80">Up to 1,000,000 tracked visits</span>
+                <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+                <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+                <span class="hovercustomcolor text-base-content/80">Up to 1,000,000 tracked visits</span>
               </li>
               <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80">Premium support</span>
+                <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+                <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+                <span class="hovercustomcolor text-base-content/80">Premium support</span>
               </li>
               <li class="flex items-center space-x-3">
-                <img src="../images/blueCheck Circle.png" alt="checkcircle" />
-                <span class="text-base-content/80">Up to 10 team members</span>
+                <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+                <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+                <span class="hovercustomcolor text-base-content/80">Up to 10 team members</span>
               </li>
             </ul>
             <button
-              class="w-full p-3 bg-bluecolor text-white font-bold gap-2 shadow uppercase"
+              class="hovergetbuttonclr w-full p-3 bg-bluecolor text-white font-bold gap-2 shadow uppercase"
             >
               Get started
             </button>
@@ -408,6 +409,7 @@
         </div>
     </div>
     </section>
+    
 
     <!-- footer -->
     <footer
@@ -540,8 +542,7 @@
             });
         });
         </script>
-    
-    
+  
     <script>
       AOS.init();
     </script>
