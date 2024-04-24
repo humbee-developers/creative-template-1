@@ -60,6 +60,7 @@
               buttonbgcolor: "#3C4F66",
               greymedium: "#616163",
               blackbuttonclr: "#010409",
+              togglebgclr: "#56E6A5",
             },
             fontSize: {
               text2xl: "2rem",
@@ -195,45 +196,35 @@
             Choose the package that best suit you.
           </p>
         </div>
-        <div class="flex">
-            <div>
-                <!-- toggle button -->
-        <div class="flex flex-row justify-left mb-20 text-sm tracking-tight font-medium text-gray-700">
-            <p class="mx-3">Monthly</p>
-        
-            <!-- Toggle Button -->
-            <label class="relative inline-flex items-center cursor-pointer">
-                <input type="checkbox" value="" class="sr-only peer">
-                <div class="group peer ring-0 bg-emerald-500   rounded-full outline-none duration-300 after:duration-300 w-20 h-8  shadow-md peer-checked:bg-emerald-500  peer-focus:outline-none  after:content-['✖️']  after:rounded-full after:absolute after:bg-gray-50 after:outline-none after:h-6 after:w-6 after:top-1 after:left-1 after:flex after:justify-center after:items-center peer-checked:after:translate-x-12 peer-checked:after:content-['✔️'] peer-hover:after:scale-95">
-                </div>
-              </label>
-        
-            <p class="mx-3">Yearly</p>
-          </div>
-            </div>
-            <!-- discount button -->
-            <div>
-                <button class="text-black bg-lightyellow rounded-full px-6 font-semibold tracking-wide">30% discount</button>
-            </div>
-        </div>
+
         </div>
         <div>
+            <!-- toggle functionality -->
             <div x-data="{ isAnnual: true }">
            
-                <!-- Pricing toggle -->
-                <div class="flex justify-center max-w-[14rem] m-auto mb-8 lg:mb-16">
-                    <div class="relative flex w-full p-1 bg-white rounded-full">
-                        <span class="absolute inset-0 m-1 pointer-events-none" aria-hidden="true">
-                            <span class="absolute inset-0 w-1/2 bg-indigo-500 rounded-full shadow-sm shadow-indigo-950/10 transform transition-transform duration-150 ease-in-out" :class="isAnnual ? 'translate-x-0' : 'translate-x-full'"></span>
-                        </span>
-                        <button class="relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300  transition-colors duration-150 ease-in-out" :class="isAnnual ? 'text-white' : 'text-slate-500 '" @click="isAnnual = true" :aria-pressed="isAnnual">Yearly</button>
-                        <button class="relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300  transition-colors duration-150 ease-in-out" :class="isAnnual ? 'text-slate-500 ' : 'text-white'" @click="isAnnual = false" :aria-pressed="isAnnual">Monthly</button>
+            
+                <div class="sm:flex gap-4">
+                    <div class="flex  max-w-[14rem]  mb-8 lg:mb-16">
+                        <span class="mr-2 text-sm font-medium">Monthly</span>
+                        <label for="toggle" class="flex items-center cursor-pointer">
+                            <div class="relative">
+                                <input type="checkbox" id="toggle" class="sr-only" @change="isAnnual = !isAnnual">
+                                <div class="w-12 h-6 bg-togglebgclr  rounded-full shadow-inner"></div>
+                                <div class="absolute inset-0 w-5 h-5 mt-0.5 ml-0.5 bg-white  rounded-full shadow-md transform transition-transform duration-150 ease-in-out" :class="{'translate-x-full': isAnnual}"></div>
+                            </div>
+                        </label>
+                        <span class="ml-2 text-sm font-medium">Yearly</span>
+                    </div>
+                    <div>
+                        <button class="text-black bg-lightyellow mb-4 rounded-full px-6  font-semibold tracking-wide">30% discount</button>
                     </div>
                 </div>
+                
+                
        
 
       <!--plans   -->
-      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="grid grid-cols-1 gap-[1rem] sm:grid-cols-2 lg:grid-cols-4">
         <!-- Free Plan -->
         <div class=" border-1 border-black p-6 transform hover:scale-105 transition duration-300">
           <div class="mb-8">
