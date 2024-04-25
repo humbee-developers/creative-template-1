@@ -508,6 +508,7 @@ flex-wrap: nowrap ; */
   display: block;
 }
 
+
 /* ---------- */
 body {
   min-height: 100vh;
@@ -615,3 +616,28 @@ body {
     }
   }
 }
+
+/* ourpricing */
+.abcd:hover .hovercustomcolor {
+  color: #ffffff !important
+}
+.abcd:hover .hoverbuttonclr {
+  background-color: #DFA621 !important
+}
+.abcd:hover .hovergetbuttonclr {
+  background-color: #ffffff !important;
+  color:#4D5F75!important
+}
+.checkboxicon{
+  display:block;
+}
+.checkbox2icon{
+  display: none;
+}
+.abcd:hover .checkboxicon{
+  display: none;
+}
+.abcd:hover .checkbox2icon{
+  display: block;
+}
+
