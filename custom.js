@@ -37,6 +37,17 @@ jQuery(document).ready(function ($) {
       }
     }
   });
+  $(".nav_search").addClass("hideSearch");
+  $(".nav_search_btn").on("click", function () {
+    if ($(".nav_search").hasClass("showSearch")) {
+      $(".nav_search").removeClass("showSearch");
+      $(".nav_search").addClass("hideSearch");
+    } else {
+      $(".nav_search").addClass("showSearch");
+      $(".nav_search").removeClass("hideSearch");
+    }
+  });
+
   $(".herosection_wrapper").slick({
     dots: true,
     infinite: true,
@@ -244,79 +255,99 @@ jQuery(document).ready(function ($) {
 
   gsap.registerPlugin(ScrollTrigger);
 
-  function initTimeline(){
+  function initTimeline() {
     let parent_container = document.getElementById("section-timeline");
-    let timeline_container = parent_container.querySelector(".timeline-container");
+    let timeline_container = parent_container.querySelector(
+      ".timeline-container"
+    );
     var sections = timeline_container.querySelectorAll(".year");
-  
-    const vh = (coef) => window.innerHeight * (coef/100);
-  
+
+    const vh = (coef) => window.innerHeight * (coef / 100);
+
     let parentST = ScrollTrigger.create({
       id: "parent-timeline",
       trigger: parent_container,
-      start:'top top',
-      toggleClass: 'started',
-      pin:true,
+      start: "top top",
+      toggleClass: "started",
+      pin: true,
       markers: true,
-      end: () => "+=" + ((sections.length - 1) * vh(50)),
+      end: () => "+=" + (sections.length - 1) * vh(50),
     });
-  
+
     let currentSection;
-  
+
     function goto(section, i) {
       if (currentSection !== section) {
         gsap.to(timeline_container, {
           y: -50 * i,
           duration: 0.6,
-          overwrite: true
+          overwrite: true,
         });
-        let tl = gsap.timeline({defaults:{overwrite: true}});
+        let tl = gsap.timeline({ defaults: { overwrite: true } });
         if (currentSection) {
           tl.to(currentSection.querySelector(".text-content h2"), {
             fontSize: "2rem",
           });
-          tl.to(currentSection, {
-            maxHeight: "3rem"
-          }, 0);
-          tl.to(currentSection.querySelectorAll(".text-content p"), {
-            opacity: 0,
-            duration: 0.25,
-            maxHeight: "0%"
-          }, 0);
+          tl.to(
+            currentSection,
+            {
+              maxHeight: "3rem",
+            },
+            0
+          );
+          tl.to(
+            currentSection.querySelectorAll(".text-content p"),
+            {
+              opacity: 0,
+              duration: 0.25,
+              maxHeight: "0%",
+            },
+            0
+          );
         }
         currentSection = section;
         if (section) {
-          tl.to(section.querySelector(".text-content h2"), {
-            fontSize: "5rem",
-          }, 0);
-          tl.to(section, {
-            maxHeight: "80vh"
-          }, 0);
-          tl.fromTo(section.querySelectorAll(".text-content p"), {maxHeight:"0%"}, {
-            opacity: 1,
-            maxHeight: "100%"
-          });
+          tl.to(
+            section.querySelector(".text-content h2"),
+            {
+              fontSize: "5rem",
+            },
+            0
+          );
+          tl.to(
+            section,
+            {
+              maxHeight: "80vh",
+            },
+            0
+          );
+          tl.fromTo(
+            section.querySelectorAll(".text-content p"),
+            { maxHeight: "0%" },
+            {
+              opacity: 1,
+              maxHeight: "100%",
+            }
+          );
         }
       }
     }
-  
-  
+
     sections.forEach((sct, i) => {
-      let sct_index = sct.getAttribute('data-count');
-  
+      let sct_index = sct.getAttribute("data-count");
+
       ScrollTrigger.create({
         start: () => parentST.start + i * window.innerHeight * 0.4,
         end: () => "+=" + window.innerHeight * 0.4,
         markers: true,
         onLeaveBack: () => i || goto(null, 0),
-        onToggle: self => self.isActive && goto(sct, sct_index)
+        onToggle: (self) => self.isActive && goto(sct, sct_index),
       });
     });
-  
   }
-  
+
   initTimeline();
-  
+
   var listItems = $(".timelineLIst .timeline_item");
 
   // Create a GSAP timeline
@@ -326,18 +357,18 @@ jQuery(document).ready(function ($) {
       start: "top center",
       end: "bottom center",
       scrub: true, // Smooth scrubbing effect
-      pin:true
-    }
+      pin: true,
+    },
   });
 
   // Add animations to the timeline
-  listItems.each(function(index, listItem) {
+  listItems.each(function (index, listItem) {
     tl.to(listItem, {
       color: "#002D70",
       duration: 1,
       ease: "none",
       fontSize: "50",
-      onStart: function() {
+      onStart: function () {
         // Remove highlight class from all list items except the current one
         listItems.removeClass("highlight");
         // Add highlight class to the current list item
@@ -346,19 +377,16 @@ jQuery(document).ready(function ($) {
         $(listItem).next(".listData").addClass("highlightData");
         listItems.css({
           "font-size": "35px",
-          "color": "#A8A8A8",
+          color: "#A8A8A8",
         });
       },
-      onComplete: function() {
+      onComplete: function () {
         // Remove highlight class from the previous list item
         if (index > 0) {
           $(listItems[index - 1]).removeClass("highlight");
           $(".listData").removeClass("highlightData");
-         
         }
-      }
+      },
     });
-
-    });
-
+  });
 });
