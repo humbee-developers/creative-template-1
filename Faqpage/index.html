@@ -267,11 +267,110 @@
                     </div>
                 </div>
             </div>
+            <span class="hidden" id="more-text">
+              <div class="grid grid-cols-1 gap-8 mt-8 lg:mt-16 md:grid-cols-2 xl:grid-cols-3">
+                <div>
+                    <div class="inline-block p-3 text-white  rounded-lg">
+                        <img src="../images/faqicon1.svg" alt="faqicons">
+                    </div>
+    
+                    <div>
+                        <h1 class="text-xl font-semibold text-faqtextcolor ">How do I change my account email?</h1>
+    
+                        <p class="mt-2 text-sm text-faqtextcolor">
+                            You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email.
+                        </p>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="inline-block p-3 text-white  rounded-lg">
+                        <img src="../images/faqicon2.svg" alt="faqicons">
+                    </div>
+    
+                    <div>
+                        <h1 class="text-xl font-semibold text-faqtextcolor ">What should I do if my payment fails?</h1>
+    
+                        <p class="mt-2 text-sm text-faqtextcolor">
+                            If your payment fails, you can use the (COD) payment option, if available on that order. If your payment is debited from your account after a payment failure, it will be credited back within 7-10 days.
+                        </p>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="inline-block p-3 text-white  rounded-lg">
+                        <img src="../images/faqicon3.svg" alt="faqicons">
+                    </div>
+    
+                    <div>
+                        <h1 class="text-xl font-semibold text-faqtextcolor ">What is your cancellation policy?</h1>
+    
+                        <p class="mt-2 text-sm text-faqtextcolor">
+                            You can now cancel an order when it is in packed/shipped status. Any amount paid will be credited into the same payment mode using which the payment was made
+                        </p>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="inline-block p-3 text-white  rounded-lg">
+                        <img src="../images/faqicon4.svg" alt="faqicons">
+                    </div>
+    
+                    <div>
+                        <h1 class="text-xl font-semibold text-faqtextcolor ">How do I check order delivery status ?</h1>
+    
+                        <p class="mt-2 text-sm text-faqtextcolor">
+                            Please tap on “My Orders” section under main menu of App/Website/M-site to check your order status.
+                        </p>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="inline-block p-3 text-white  rounded-lg">
+                        <img src="../images/faqicon5.svg" alt="faqicons">
+                    </div>
+    
+                    <div>
+                        <h1 class="text-xl font-semibold text-faqtextcolor ">What is Instant Refunds?</h1>
+    
+                        <p class="mt-2 text-sm text-faqtextcolor">
+                            Upon successful pickup of the return product at your doorstep, Myntra will instantly initiate the refund to your source account or chosen method of refund. Instant Refunds is not available in a few select pin codes and for all self ship returns.
+                        </p>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="inline-block p-3 text-white  rounded-lg">
+                        <img src="../images/faqicon6.svg" alt="faqicons">
+                    </div>
+    
+                    <div>
+                        <h1 class="text-xl font-semibold text-faqtextcolor">How do I apply a coupon on my order?</h1>
+    
+                        <p class="mt-2 text-sm text-faqtextcolor">
+                            You can apply a coupon on cart page before order placement. The complete list of your unused and valid coupons will be available under “My Coupons” tab of App/Website/M-site.
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </span>
+      
+      <div class="flex justify-center items-center">
+        <button id="toggle-btn" class="mt-4 flex text-black font-bold bg-[#ff7e47] px-5 py-[15px] rounded-full ">Read More 
+          <img
+          class="ml-2.5"
+          src="../images/blackRightArrow2.svg"
+          alt="blackRightArrow" />
+        </button>
+        <button id="hide-btn" class="hidden mt-4 flex  text-black font-bold bg-[#ff7e47] px-5 py-[15px] rounded-full">Read less 
+          <img
+          class="ml-2.5"
+          src="../images/blackRightArrow2.svg"
+          alt="blackRightArrow"/>
+        </button>
+      </div>
         </div>
     </section>
-       
-      
-  
 
     <!-- footer -->
     <footer
@@ -379,5 +478,23 @@
     <script>
       AOS.init();
     </script>
+
+<script>
+  const moreTextEl = document.getElementById('more-text');
+  const toggleBtnEl = document.getElementById('toggle-btn');
+  const hideBtnEl = document.getElementById('hide-btn');
+
+  toggleBtnEl.addEventListener('click', () => {
+      moreTextEl.classList.toggle('hidden');
+      toggleBtnEl.classList.toggle('hidden');
+      hideBtnEl.classList.toggle('hidden');
+  });
+
+  hideBtnEl.addEventListener('click', () => {
+      moreTextEl.classList.toggle('hidden');
+      toggleBtnEl.classList.toggle('hidden');
+      hideBtnEl.classList.toggle('hidden');
+  });
+</script>
   </body>
 </html>
