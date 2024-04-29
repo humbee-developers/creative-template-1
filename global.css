@@ -557,8 +557,8 @@ body {
 }
 
 .slide {
-  width: 250px;
-  height: 60px;
+  /* width: 250px;
+  height: 60px; */
 
   display: grid;
   place-items: center;
@@ -595,7 +595,7 @@ body {
   }
 
   .slide {
-    width: 150px;
+    /* width: 150px; */
   }
 
   @keyframes scroll {
