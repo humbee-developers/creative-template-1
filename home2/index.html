@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home2</title>
+    <!-- <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="jquery-3.7.1.min.js"></script> -->
+    <script src="../gsap.min.js"></script>
+    <script src="../ScrollTrigger.min.js"></script>
+    <script src="../smooth-scrollbar.js"></script>
+    <script src="../custom.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <!-- <link rel="stylesheet" href="newStyle.css" /> -->
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:wght@200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300;400;500;600;700;800&family=Praise&family=Rubik:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="../jquery.selectric.min.js"></script>
+    <link rel="stylesheet" href="../selectric.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              "3xl": "1600px",
+            },
+            colors: {
+              yellowcolor: "#DFA621",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="10" -->
+    <header
+      class="z-[100] relative pb-[0] pl-[20px] md:pl-[35px] lg:pl-[50px] w-full"
+    >
+      <div class="relative">
+        <nav class="flex justify-between items-end">
+          <div
+            class="logo"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="10"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <a href="../index.html">
+              <img
+                src="../images/logo.svg"
+                alt="logo"
+                class="max-w-full w-[130px] lg:w-[150] xl:w-full"
+              />
+            </a>
+          </div>
+          <div
+            class="navigation flex w-[auto] justify-end py-0 border-b-[#4D5F75] border-b border-solid hidden md:flex"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="10"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <ul class="nav flex items-end">
+              <li
+                class="dropdown pr-5 pt-[10px] pb-[15px] md:pr-10 lg:pr-10 md:mr-5 lg:pr-15 xl:pr-20"
+              >
+                <a
+                  class="text-[#4D5F75] text-[15px] lg:text-[18px] tra uppercase font-normal leading-8 no-underline"
+                  href="../index.html"
+                  >Home</a
+                >
+                <ul
+                  class="dropdown_menu dropdown_menu--animated dropdown_menu-6 absolute top-[100%] left-[-15px] md:w-[10rem] lg:w-[12rem] z-[-1] hidden py-[20px] bg-white"
+                >
+                  <li
+                    class="dropdown_item-1 block opacity-100 hover:block hover:bg-yellowcolor md:px-[10px] hidden text-black hover:text-white bg-white text-base px-[10px]"
+                  >
+                    <a
+                      class="text-[15px] font-normal leading-8 no-underline w-full block border-b-[#B9B9B9] border-b py-[10px]"
+                      href="../home2/index.html"
+                      >Home2</a
+                    >
+                  </li>
+                  <li
+                    class="dropdown_item-1 block opacity-100 hover:block hover:bg-yellowcolor md:px-[10px] hidden text-black hover:text-white bg-white text-base px-[10px]"
+                  >
+                    <a
+                      class="text-[15px] font-normal leading-8 no-underline w-full block border-b-[#B9B9B9] border-b py-[10px]"
+                      href="../home3/index.html"
+                      >Home3</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="dropdown dropdown-6 pr-10 pt-[10px] pb-[15px] mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]"
+              >
+                <a
+                  class="text-[#4D5F75] text-[15px] lg:text-[18px] tra uppercase font-normal leading-8 no-underline"
+                  href="#"
+                  >Company</a
+                >
+                <ul
+                  class="dropdown_menu dropdown_menu--animated dropdown_menu-6 absolute top-[100%] left-[-15px] md:w-[10rem] lg:w-[12rem] z-[-1] hidden py-[20px] bg-white"
+                >
+                  <li
+                    class="dropdown_item-1 block opacity-100 hover:block hover:bg-yellowcolor md:px-[10px] hidden text-black hover:text-white bg-white text-base px-[10px]"
+                  >
+                    <a
+                      class="text-[15px] font-normal leading-8 no-underline w-full block border-b-[#B9B9B9] border-b py-[10px]"
+                      href="../aboutUs/index.html"
+                      >About Us</a
+                    >
+                  </li>
+                  <li
+                    class="dropdown_item-2 block opacity-100 hover:block hover:bg-yellowcolor pr-5 md:px-[10px] hidden text-black hover:text-white bg-white text-base px-[10px]"
+                  >
+                    <a
+                      class="text-[15px] font-normal leading-8 no-underline w-full block border-b-[#B9B9B9] border-b py-[10px]"
+                      href="../services/services.html"
+                      >Service Option 1</a
+                    >
+                  </li>
+                  <li
+                    class="dropdown_item-3 block opacity-100 hover:block hover:bg-yellowcolor pr-5 md:px-[10px] hidden text-black hover:text-white bg-white text-base px-[10px]"
+                  >
+                    <a
+                      class="text-[15px] font-normal leading-8 no-underline w-full block border-b-[#B9B9B9] border-b py-[10px]"
+                      href="../services_option2/index.html"
+                      >Service Option 2</a
+                    >
+                  </li>
+                  <li
+                    class="dropdown_item-3 block opacity-100 hover:block hover:bg-yellowcolor pr-5 md:px-[10px] hidden text-black hover:text-white bg-white text-base px-[10px]"
+                  >
+                    <a
+                      class="text-[15px] font-normal leading-8 no-underline w-full block border-b-[#B9B9B9] border-b py-[10px]"
+                      href="../services_option4/index.html"
+                      >Service Option 4</a
+                    >
+                  </li>
+                  <li
+                    class="dropdown_item-3 block opacity-100 hover:block hover:bg-yellowcolor pr-5 md:px-[10px] hidden text-black hover:text-white bg-white text-base px-[10px]"
+                  >
+                    <a
+                      class="text-[15px] font-normal leading-8 no-underline w-full block border-b-[#B9B9B9] border-b py-[10px]"
+                      href="../services_option5/index.html"
+                      >Service Option 5</a
+                    >
+                  </li>
+                  <li
+                    class="dropdown_item-3 block opacity-100 hover:block hover:bg-yellowcolor pr-5 md:px-[10px] hidden text-black hover:text-white bg-white text-base px-[10px]"
+                  >
+                    <a
+                      class="text-[15px] font-normal leading-8 no-underline w-full block border-b-[#B9B9B9] border-b py-[10px]"
+                      href="../services_option6/index.html"
+                      >Service Option 6</a
+                    >
+                  </li>
+                  <li
+                    class="dropdown_item-3 block opacity-100 hover:block hover:bg-yellowcolor pr-5 md:px-[10px] hidden text-black hover:text-white bg-white text-base px-[10px]"
+                  >
+                    <a
+                      class="text-[15px] font-normal leading-8 no-underline w-full block border-b-[#B9B9B9] border-b py-[10px]"
+                      href="../contactPage2/index.html"
+                      >Contact page 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li
+                class="pr-5 pt-[10px] pb-[15px] mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20"
+              >
+                <a
+                  class="text-[#4D5F75] text-[15px] lg:text-[18px] uppercase font-normal leading-8 no-underline"
+                  href="#"
+                  >Products</a
+                >
+              </li>
+              <li
+                class="nav_search_btn py-[20px] lg:py-[33px] px-[20px] lg:px-[40px] xl:px-[56px] border-l-black border-l cursor-pointer"
+              >
+                <img
+                  src="../images/header search icon.svg"
+                  alt="header search icon"
+                  class="w-[20px] lg:w-full"
+                />
+              </li>
+            </ul>
+            <a
+              href="../contactPage1/index.html"
+              class="contact_menu text-white bg-[#4D5F75] text-[18px] font-normal leading-8 no-underline mt-0 mx-0 px-[20px] lg:px-[60px] py-[10px] lg:py-[25px] pt-[10px] lg:pt-[30px] border-l-white border-l border-solid"
+              >Contact Us</a
+            >
+          </div>
+        </nav>
+
+        <input
+          type="text"
+          placeholder="search"
+          class="nav_search rounded-[15px] absolute right-0 transition-all duration-500 z-0 m-[20px]"
+        />
+      </div>
+    </header>
+    <main>
+      <section class="hero_section h-[calc(100vh_-_117px)]">
+        <div class="absolute w-full left-0 top-0">
+          <div class="herosection_wrapper home2">
+            <div class="relative h-screen">
+              <img
+                class="max-w-full block w-full h-full"
+                src="../images/homeBanner2.png"
+                alt="banner_image"
+              />
+              <div class="banner_content absolute bottom-[100px]">
+                <div
+                  class="banner_content_wrapper flex flex-col md:flex-row justify-between px-[20px] md:px-[60px] lg:px-[100px] xl:px-[150px] py-0"
+                >
+                  <div
+                    class="banner_content_heading text-[35px] md:text-[40px] lg:text-[50px] xl:text-[59px] text-[#4D5F75] font-normal lg:leading-[70px] xl:leading-[77px] w-full md:w-[62%]"
+                  >
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </div>
+                  <div
+                    class="banner_content_text text-black w-full md:w-[38%] text-base font-normal leading-[21px] mt-[20px] md:mt-0 p-0 md:pl-[50px] lg:pl-[85px] pr-0 py-0 overflow-x-hidden"
+                  >
+                    <p class="mt-0 mb-[30px] lg:mb-[50px] xl:mb-20 mx-0">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy
+                    </p>
+                    <a
+                      href="#"
+                      class="text-black bg-white no-underline inline-flex items-center border px-[30px] py-[18px] rounded-[30px] border-solid border-[#C6C6C6]"
+                      >See more
+                      <img
+                        class="w-5 ml-5"
+                        src="../images/home2btn_icon.svg"
+                        alt="buttonArrow"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative h-screen">
+              <img
+                class="max-w-full block w-full h-full"
+                src="../images/homeBanner2.png"
+                alt="banner_image"
+              />
+              <div class="banner_content absolute bottom-[100px]">
+                <div
+                  class="banner_content_wrapper flex flex-col md:flex-row justify-between px-[20px] md:px-[60px] lg:px-[100px] xl:px-[150px] py-0"
+                >
+                  <div
+                    class="banner_content_heading text-[35px] md:text-[40px] lg:text-[50px] xl:text-[59px] text-[#4D5F75] font-normal lg:leading-[70px] xl:leading-[77px] w-full md:w-[62%]"
+                  >
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </div>
+                  <div
+                    class="banner_content_text text-black w-full md:w-[38%] text-base font-normal leading-[21px] mt-[20px] md:mt-0 p-0 md:pl-[50px] lg:pl-[85px] pr-0 py-0 overflow-x-hidden"
+                  >
+                    <p class="mt-0 mb-[30px] lg:mb-[50px] xl:mb-20 mx-0">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy
+                    </p>
+                    <a
+                      href="#"
+                      class="text-black bg-white no-underline inline-flex items-center border px-[30px] py-[18px] rounded-[30px] border-solid border-[#C6C6C6]"
+                      >See more
+                      <img
+                        class="w-5 ml-5"
+                        src="../images/home2btn_icon.svg"
+                        alt="buttonArrow"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative h-screen">
+              <img
+                class="max-w-full block w-full h-full"
+                src="../images/homeBanner2.png"
+                alt="banner_image"
+              />
+              <div class="banner_content absolute bottom-[100px]">
+                <div
+                  class="banner_content_wrapper flex flex-col md:flex-row justify-between px-[20px] md:px-[60px] lg:px-[100px] xl:px-[150px] py-0"
+                >
+                  <div
+                    class="banner_content_heading text-[35px] md:text-[40px] lg:text-[50px] xl:text-[59px] text-[#4D5F75] font-normal lg:leading-[70px] xl:leading-[77px] w-full md:w-[62%]"
+                  >
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </div>
+                  <div
+                    class="banner_content_text text-black w-full md:w-[38%] text-base font-normal leading-[21px] mt-[20px] md:mt-0 p-0 md:pl-[50px] lg:pl-[85px] pr-0 py-0 overflow-x-hidden"
+                  >
+                    <p class="mt-0 mb-[30px] lg:mb-[50px] xl:mb-20 mx-0">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy
+                    </p>
+                    <a
+                      href="#"
+                      class="text-black bg-white no-underline inline-flex items-center border px-[30px] py-[18px] rounded-[30px] border-solid border-[#C6C6C6]"
+                      >See more
+                      <img
+                        class="w-5 ml-5"
+                        src="../images/home2btn_icon.svg"
+                        alt="buttonArrow"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative h-screen">
+              <img
+                class="max-w-full block w-full h-full"
+                src="../images/homeBanner2.png"
+                alt="banner_image"
+              />
+              <div class="banner_content absolute bottom-[100px]">
+                <div
+                  class="banner_content_wrapper flex flex-col md:flex-row justify-between px-[20px] md:px-[60px] lg:px-[100px] xl:px-[150px] py-0"
+                >
+                  <div
+                    class="banner_content_heading text-[35px] md:text-[40px] lg:text-[50px] xl:text-[59px] text-[#4D5F75] font-normal lg:leading-[70px] xl:leading-[77px] w-full md:w-[62%]"
+                  >
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </div>
+                  <div
+                    class="banner_content_text text-black w-full md:w-[38%] text-base font-normal leading-[21px] mt-[20px] md:mt-0 p-0 md:pl-[50px] lg:pl-[85px] pr-0 py-0 overflow-x-hidden"
+                  >
+                    <p class="mt-0 mb-[30px] lg:mb-[50px] xl:mb-20 mx-0">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy
+                    </p>
+                    <a
+                      href="#"
+                      class="text-black bg-white no-underline inline-flex items-center border px-[30px] py-[18px] rounded-[30px] border-solid border-[#C6C6C6]"
+                      >See more
+                      <img
+                        class="w-5 ml-5"
+                        src="../images/home2btn_icon.svg"
+                        alt="buttonArrow"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="w-full md:w-[75%] lg:w-[70%] xl:w-[60%] ml-auto px-[20px] md:px-[60px] lg:px-[100px] my-[100px] overflow-hidden"
+        >
+          <div
+            class="text-yellowcolor text-[22px] md:text-[27px] leading-[129%] mb-[34px]"
+            data-aos="slide-left"
+            data-aos-duration="1000"
+            data-aos-delay="10"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+          </div>
+          <div class="text-[#4D5F75] flex flex-col md:flex-row">
+            <a
+              href="#"
+              class="flex pl-[24px] border-l-black border-l border-solid py-[20px] mb-[20px] md:mb-0 md:mr-[30px]"
+              data-aos="slide-left"
+              data-aos-duration="1200"
+              data-aos-delay="10"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
+              >Lorem Ipsum is simply dummy text
+              <img
+                src="../images/blackRightArrow.svg"
+                class="pl-[30px]"
+                alt="blackRightArrow"
+            /></a>
+            <a
+              href="#"
+              class="flex pl-[24px] border-l-black border-l border-solid py-[20px]"
+              data-aos="slide-left"
+              data-aos-duration="1500"
+              data-aos-delay="10"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
+              >Lorem Ipsum is simply
+              <img
+                src="../images/blackRightArrow.svg"
+                class="pl-[30px]"
+                alt="blackRightArrow"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="relative">
+          <img
+            src="../images/home2_big_image.png"
+            class="max-w-full w-full block"
+            alt="home2_big_image"
+          />
+          <div
+            class="absolute left-[20px] md:left-[50px] lg:left-[70px] bottom-[20px] sm:bottom-[40px] md:bottom-[60px] text-white text-[25px] w-[90%] md:w-[90%] lg:w-[80%] xl:w-[1100px] sm:text-[35px] md:text-[60px] lg:text-[75] xl:text-[91px] pr-[20px]"
+          >
+            Lorem Ipsum is simply dummy text of the printing
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <!--  Carousel 1    -->
+
+        <div class="slider my-[40px]">
+          <div class="slide-track">
+            <div class="slide mx-[20px]">
+              <img src="../images/Google svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Reddit svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Spotify svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Pinterest svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Group.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Google svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Reddit svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Spotify svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Pinterest svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Group.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Google svg.png" alt="Google" />
+            </div>
+            <div class="slide text-white mx-[20px]">
+              <img src="../images/Google svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Google svg.png" alt="Google" />
+            </div>
+            <!-- same 9 slides doubled (duplicate) -->
+            <div class="slide mx-[20px]">
+              <img src="../images/Reddit svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Spotify svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Pinterest svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Group.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Google svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Reddit svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Spotify svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Pinterest svg.png" alt="Google" />
+            </div>
+            <div class="slide text-white mx-[20px]">
+              <img src="../images/Google svg.png" alt="Google" />
+            </div>
+            <div class="slide mx-[20px]">
+              <img src="../images/Reddit svg.png" alt="Google" />
+            </div>
+          </div>
+        </div>
+
+        <!--  Carousel 2 -->
+      </section>
+      <section>
+        <div
+          class="px-[20px] md:px-[60px] lg:px-[110px] 2xl:px-[150px] mb-[50px]"
+        >
+          <div
+            class="text-black text-[30px] md:text-[45px] lg:text-[60px] xl:text-[87px] w-full md:w-[80%] xl:w-[970px]"
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="">
+          <div class="px-[20px] sm:px-[40px] md:px-[60px] lg:px-[94px] flex flex-col sm:flex-row justify-between sm:items-center py-[50px] border-t-[#656565] border-b-[#656565] border-t border-b">
+            <div class="mb-[20px] flex items-center sm:items-start sm:flex-col sm:text-center sm:w-[35%]">
+              <div class="text-yellowcolor text-[60px] sm:text-[80px] lg:text-[107px] text-center sm:text-left"><span class="count">10</span>%</div>
+              <div class="text-black text-[15px] w-full sm:w-[164px] pl-[30px] sm:pl-0 sm:text-left md:ml-[20px]">essentially unchanged. It was popularised</div>
+            </div>
+            <div class="w-full sm:w-[50%] md:w-[420px] lg:w-[470px] sm:pr-[50px] md:pr-[20px] lg:pr-[100px] md:pl-[10px]">
+              <div class="text-[18px] md:text-[20px] text-[#4D5F75] mb-[10px] ">
+                essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently
+              </div>
+              <div class="text-[18px] md:text-[20px]">
+                <a href="#" class="text-[#BFC4CA]" ><span>+</span>Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="px-[20px] sm:px-[40px] md:px-[60px] lg:px-[94px] flex flex-col sm:flex-row justify-between sm:items-center py-[50px] border-b-[#656565] border-b">
+            <div class="mb-[20px] flex items-center sm:items-start sm:flex-col sm:text-center sm:w-[35%]">
+              <div class="text-yellowcolor text-[60px] sm:text-[80px] lg:text-[107px] text-center sm:text-left">$<span class="count">125</span>K</div>
+              <div class="text-black text-[15px] w-full sm:w-[164px] pl-[30px] sm:pl-0 sm:text-left md:ml-[20px]">essentially unchanged. It was popularised</div>
+            </div>
+            <div class="w-full sm:w-[50%] md:w-[420px] lg:w-[470px] sm:pr-[50px] md:pr-[20px] lg:pr-[100px] md:pl-[10px]">
+              <div class="text-[18px] md:text-[20px] text-[#4D5F75] mb-[10px] ">
+                essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently
+              </div>
+              <div class="text-[18px] md:text-[20px]">
+                <a href="#" class="text-[#BFC4CA]" ><span>+</span>Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="px-[20px] sm:px-[40px] md:px-[60px] lg:px-[94px] flex flex-col sm:flex-row justify-between sm:items-center py-[50px] border-b-[#656565] border-b">
+            <div class="mb-[20px] flex items-center sm:items-start sm:flex-col sm:text-center sm:w-[35%]">
+              <div class="text-yellowcolor text-[60px] sm:text-[80px] lg:text-[107px] text-center sm:text-left"><span class="count">40</span>+</div>
+              <div class="text-black text-[15px] w-full sm:w-[164px] pl-[30px] sm:pl-0 sm:text-left md:ml-[20px]">essentially unchanged. It was popularised</div>
+            </div>
+            <div class="w-full sm:w-[50%] md:w-[420px] lg:w-[470px] sm:pr-[50px] md:pr-[20px] lg:pr-[100px] md:pl-[10px]">
+              <div class="text-[18px] md:text-[20px] text-[#4D5F75] mb-[10px] ">
+                essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently
+              </div>
+              <div class="text-[18px] md:text-[20px]">
+                <a href="#" class="text-[#BFC4CA]" ><span>+</span>Learn More</a>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </section>
+      <section>
+        <div class="cardSlider bg-yellowcolor px-0 py-[100px]">
+          <div class="cardSlider_wrapper">
+            <h2
+              class="cardSlider_heading text-white text-[60px] leading-[83.5%] w-full lg:w-[870px] p-[20px] lg:pl-20 pr-5 pt-5 pb-[70px] md:text-[100px] lg:text[120px] xl:text-[156px]"
+              data-aos="slide-right"
+              data-aos-duration="800"
+              data-aos-delay="200"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
+            >
+              AWARDS & NEWS
+            </h2>
+            <div class="cardSlider_list">
+              <div class="cardSldier_item px-5 py-0">
+                <div
+                  class="cardSlider_item_wrapper bg-no-repeat bg-center bg-cover relative"
+                  style="
+                    background-image: url('../images/home_cardSlider1.png');
+                  "
+                >
+                  <img
+                    src="../images/home_sldier_link_arrow.svg"
+                    alt="slider_link_arrow"
+                    class="slider_link_arrow absolute w-[27px] right-0 top-0"
+                  />
+                  <div class="card_img_text">
+                    <img
+                      class="w-full"
+                      src="../images/cardSlider_BG.png"
+                      alt="cardSliderBG"
+                    />
+
+                    <div
+                      class="card_text text-white text-xl w-[250px] leading-[129%] tracking-[1px] absolute left-[23px] bottom-[35px]"
+                    >
+                      essentially unchanged It was popularised in the 1960s
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardSldier_item px-5 py-0">
+                <div
+                  class="cardSlider_item_wrapper bg-no-repeat bg-center bg-cover relative"
+                  style="
+                    background-image: url('../images/home_cardSlider2.png');
+                  "
+                >
+                  <img
+                    src="../images/home_sldier_link_arrow.svg"
+                    alt="slider_link_arrow"
+                    class="slider_link_arrow absolute w-[27px] right-0 top-0"
+                  />
+                  <div class="card_img_text">
+                    <img
+                      class="w-full"
+                      src="../images/cardSlider_BG.png"
+                      alt="cardSliderBG"
+                    />
+
+                    <div
+                      class="card_text text-white text-xl w-[250px] leading-[129%] tracking-[1px] absolute left-[23px] bottom-[35px]"
+                    >
+                      essentially unchanged It was popularised in the 1960s
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardSldier_item px-5 py-0">
+                <div
+                  class="cardSlider_item_wrapper bg-no-repeat bg-center bg-cover relative"
+                  style="
+                    background-image: url('../images/home_cardSlider3.png');
+                  "
+                >
+                  <img
+                    src="../images/home_sldier_link_arrow.svg"
+                    alt="slider_link_arrow"
+                    class="slider_link_arrow absolute w-[27px] right-0 top-0"
+                  />
+                  <div class="card_img_text">
+                    <img
+                      class="w-full"
+                      src="../images/cardSlider_BG.png"
+                      alt="cardSliderBG"
+                    />
+
+                    <div
+                      class="card_text text-white text-xl w-[250px] leading-[129%] tracking-[1px] absolute left-[23px] bottom-[35px]"
+                    >
+                      essentially unchanged It was popularised in the 1960s
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardSldier_item px-5 py-0">
+                <div
+                  class="cardSlider_item_wrapper bg-no-repeat bg-center bg-cover relative"
+                  style="
+                    background-image: url('../images/home_cardSlider4.png');
+                  "
+                >
+                  <img
+                    src="../images/home_sldier_link_arrow.svg"
+                    alt="slider_link_arrow"
+                    class="slider_link_arrow absolute w-[27px] right-0 top-0"
+                  />
+                  <div class="card_img_text">
+                    <img
+                      class="w-full"
+                      src="../images/cardSlider_BG.png"
+                      alt="cardSliderBG"
+                    />
+
+                    <div
+                      class="card_text text-white text-xl w-[250px] leading-[129%] tracking-[1px] absolute left-[23px] bottom-[35px]"
+                    >
+                      essentially unchanged It was popularised in the 1960s
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardSldier_item px-5 py-0">
+                <div
+                  class="cardSlider_item_wrapper bg-no-repeat bg-center bg-cover relative"
+                  style="
+                    background-image: url('../images/home_cardSlider5.png');
+                  "
+                >
+                  <img
+                    src="../images/home_sldier_link_arrow.svg"
+                    alt="slider_link_arrow"
+                    class="slider_link_arrow absolute w-[27px] right-0 top-0"
+                  />
+                  <div class="card_img_text">
+                    <img
+                      class="w-full"
+                      src="../images/cardSlider_BG.png"
+                      alt="cardSliderBG"
+                    />
+
+                    <div
+                      class="card_text text-white text-xl w-[250px] leading-[129%] tracking-[1px] absolute left-[23px] bottom-[35px]"
+                    >
+                      essentially unchanged It was popularised in the 1960s
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cardSlider_arrows flex justify-between p-5">
+              <div class="leftArrow">
+                <img
+                  class="bg-white rotate-180 w-7 cursor-pointer transition-all duration-[0.4s] px-2.5 py-1.5 rounded-[50%] hover:bg-[#ff7e47]"
+                  src="../images/homeSliderArrow.svg"
+                  alt="homeSldierArrow"
+                />
+              </div>
+              <div class="rightArrow">
+                <img
+                  class="bg-white w-7 cursor-pointer transition-all duration-[0.4s] px-2.5 py-1.5 rounded-[50%] hover:bg-[#ff7e47]"
+                  src="../images/homeSliderArrow.svg"
+                  alt="homeSldierArrow"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="map">
+          <div class="map_wrapper relative">
+            <div class="map_item h-[755px]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.7484362098!2d72.41493336470985!3d23.020474097405575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1711608060296!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="w-full h-[755px] float-left grayscale-[1]"
+              ></iframe>
+            </div>
+            <div
+              class="contactForm w-[90%] sm:w-[420px] bg-white absolute translate-x-[-50%] translate-y-[-50%] md:translate-x-[0] pl-[15px] pr-0 pt-[62px] pb-0 top-[50%] left-[50%] md:left-[auto] right-[auto] sm:right-[60px] md:right-[110px] md:top-2/4"
+            >
+              <div
+                class="contactForm_heading text-black text-[34px] leading-[62.9px] tracking-[1px] uppercase font-semibold mt-0 mb-2.5 mx-0 pl-[15px]"
+              >
+                how to reach us
+              </div>
+              <form action="">
+                <div class="form_input pl-[15px]">
+                  <input
+                    type="text"
+                    placeholder="Full Name:"
+                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline-none h-[45px] w-[90%] sm:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
+                  />
+                </div>
+                <div class="form_input pl-[15px]">
+                  <input
+                    type="text"
+                    placeholder="Email:"
+                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline-none h-[45px] w-[90%] sm:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
+                  />
+                </div>
+                <div class="form_input pl-[15px]">
+                  <input
+                    type="text"
+                    placeholder="Phone Number:"
+                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline-none h-[45px] w-[90%] sm:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
+                  />
+                </div>
+                <select
+                  name="inquiry"
+                  id="inquiry"
+                  class="selectDrp w-[90%] sm:w-[248px]"
+                >
+                  <option value="">Business Inquiry</option>
+                  <option value="Business Inquiry 1">Business Inquiry 1</option>
+                  <option value="Business Inquiry 2">Business Inquiry 2</option>
+                  <option value="Business Inquiry 3">Business Inquiry 3</option>
+                </select>
+                <div class="form_input last pl-[15px] mb-[20px]">
+                  <input
+                    type="text"
+                    placeholder="Message :"
+                    class="contactInput placeholder:text-sm placeholder:font-semibold placeholder:text-[#b8b8b8] focus:outline-none h-[45px] w-[90%] sm:w-[248px] text-base text-black mt-0 mb-[25px] mx-0 pl-[5px] pr-2.5 py-2.5 border-b-[#b8b8b8] border-[none] border-b border-solid"
+                  />
+                </div>
+                <div class="submit_btn text-right">
+                  <button
+                    class="w-[162px] bg-[#4D5F75] text-white text-sm tracking-[0.3px] cursor-pointer transition-all duration-[0.4s] px-2.5 py-5 border-[none] hover:bg-black"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-[#4D5F75] text-white pt-20 pb-12 px-[20px] sm:px-12 flex justify-center items-end overflow-y-hidden overflow-x-hidden"
+    >
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-4"
+      >
+        <div
+          class="col-span-1 md:col-span-1 sm:border-r sm:border-gray-300 md:pr-5 sm:px-5 xl:pr-8 flex justify-end flex-col"
+        >
+          <div
+            class="flex items-center justify-center md:justify-start lg:justify-center mb-8"
+          >
+            <a href="./index.html">
+              <img
+                src="./../images/footerLogo.png"
+                alt="footerLogo"
+                class="w-60"
+              />
+            </a>
+          </div>
+          <div class="pt-[20px] sm:pt-16">
+            <p class="text-sm leading-5 mb-4">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
+            <p class="text-sm leading-5">
+              essentially unchanged. It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-span-1 md:col-span-1 lg:col-span-1 lg:border-r lg:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex items-end"
+        >
+          <div class="pb-[20px] border-b-[1px] sm:border-none">
+            <p class="text-sm leading-5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-span-1 lg:col-span-1 sm:border-r sm:border-gray-300 sm:px-5 xl:pr-8 pt-[20px] flex flex-col justify-end"
+        >
+          <ul class="mb-4 sm:mb-8 pb-[20px] border-b-[1px] sm:border-none">
+            <li><a href="./index.html" class="text-lg uppercase">Home</a></li>
+            <li><a href="#" class="text-lg uppercase">Company</a></li>
+            <li><a href="#" class="text-lg uppercase">Products</a></li>
+            <li>
+              <a href="./services/services.html" class="text-lg uppercase"
+                >Service option 1</a
+              >
+            </li>
+            <li>
+              <a href="./services_option2/index.html" class="text-lg uppercase"
+                >Service option 2</a
+              >
+            </li>
+            <li><a href="#" class="text-lg uppercase">Blogs</a></li>
+          </ul>
+          <form class="pb-[20px] border-b-[1px] sm:border-none">
+            <div class="text-sm leading-5 mb-4">Newsletter signup</div>
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="bg-[#455467] text-white w-full px-4 py-2 focus:outline-none placeholder-white placeholder:text-[15px]"
+            />
+          </form>
+        </div>
+        <div
+          class="col-span-1 lg:col-span-1 sm:px-5 xl:pr-8 pt-[20px] flex flex-row sm:flex-col justify-between sm:justify-end pb-[20px] border-b-[1px] sm:border-none"
+        >
+          <div class="sm:mb-8">
+            <ul>
+              <li><a href="#" class="text-sm">Terms & Conditions</a></li>
+              <li><a href="#" class="text-sm">Privacy Policy</a></li>
+              <li><a href="#" class="text-sm">Investor Privacy Notice</a></li>
+              <li><a href="#" class="text-sm">Cookies Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#" class="text-sm">Twitter</a></li>
+              <li><a href="#" class="text-sm">LinkedIn</a></li>
+              <li><a href="#" class="text-sm">Medium</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
