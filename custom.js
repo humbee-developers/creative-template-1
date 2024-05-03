@@ -55,6 +55,9 @@ jQuery(document).ready(function ($) {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    autoplay:true,
+    autoplaySpeed: 5000,
+    pauseOnHover:false
   });
   $(".services_op5_slider").slick({
     dots: true,

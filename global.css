@@ -508,7 +508,6 @@ flex-wrap: nowrap ; */
   display: block;
 }
 
-
 /* ---------- */
 body {
   min-height: 100vh;
@@ -523,21 +522,27 @@ body {
   overflow: hidden;
 }
 .slider::before,
-.slider::after{
-  position:absolute;
-  background-image:linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-  content:'';
-  height:100%;width:25%;
-  z-index:2;pointer-events:none;
+.slider::after {
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100%;
+  width: 25%;
+  z-index: 2;
+  pointer-events: none;
 }
-.slider::before{
-  left:0;
-  top:0;
+.slider::before {
+  left: 0;
+  top: 0;
 }
-.slider::after{
-  right:0;
-  top:0;
-  transform:rotateZ(180deg);
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
 
 /*  IMPORTANT CODE BELOW */
@@ -562,10 +567,9 @@ body {
 
   display: grid;
   place-items: center;
-  transition:0.5s;
-  cursor:pointer;
+  transition: 0.5s;
+  cursor: pointer;
 }
-
 
 @keyframes scroll {
   0% {
@@ -619,25 +623,38 @@ body {
 
 /* ourpricing */
 .abcd:hover .hovercustomcolor {
-  color: #ffffff !important
+  color: #ffffff !important;
 }
 .abcd:hover .hoverbuttonclr {
-  background-color: #DFA621 !important
+  background-color: #dfa621 !important;
 }
 .abcd:hover .hovergetbuttonclr {
   background-color: #ffffff !important;
-  color:#4D5F75!important
+  color: #4d5f75 !important;
 }
-.checkboxicon{
-  display:block;
+.checkboxicon {
+  display: block;
 }
-.checkbox2icon{
+.checkbox2icon {
   display: none;
 }
-.abcd:hover .checkboxicon{
+.abcd:hover .checkboxicon {
   display: none;
 }
-.abcd:hover .checkbox2icon{
+.abcd:hover .checkbox2icon {
   display: block;
 }
 
+.home2 .non_active_image.slick-active {
+  filter: blur(0);
+}
+.home2 .non_active_image {
+  filter: blur(10px);
+}
+
+.home2CounterHover:hover .leftHeading {
+  color: #fff;
+}
+.home2CounterHover:hover .rightHeading {
+  color: #fff;
+}
