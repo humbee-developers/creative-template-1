@@ -562,8 +562,8 @@ body {
 }
 
 .slide {
-  width: 250px;
-  height: 60px;
+  /* width: 250px;
+  height: 60px; */
 
   display: grid;
   place-items: center;
@@ -599,7 +599,7 @@ body {
   }
 
   .slide {
-    width: 150px;
+    /* width: 150px; */
   }
 
   @keyframes scroll {
@@ -645,6 +645,7 @@ body {
   display: block;
 }
 
+
 .home2 .non_active_image.slick-active {
   filter: blur(0);
 }
@@ -657,4 +658,37 @@ body {
 }
 .home2CounterHover:hover .rightHeading {
   color: #fff;
+}
+.rotating_button_main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-4%, -111%);
+}
+
+.go-down-btn {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+  .rotate_svg {
+    position: relative;
+    z-index: -1;
+    display: block;
+  }
+
+  .rotate_text {
+    font-size: 11px;
+    transform-origin: center;
+  }
+
+
+
+@keyframes rotate-btn{
+  to{ transform: rotate(360deg); }
+}
+.go-down-btn .rotate_text{
+  animation: rotate-btn 10s linear infinite;
 }
