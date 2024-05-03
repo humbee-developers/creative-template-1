@@ -210,3 +210,41 @@ input:checked + label .description {
 .services_sliders{
   display: flex !important;
 }
+
+
+
+
+
+.rotating_button_main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* transform: translateY(-100px); */
+}
+
+.go-down-btn {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+  .rotate_svg {
+    position: relative;
+    z-index: -1;
+    display: block;
+  }
+
+  .rotate_text {
+    font-size: 11px;
+    transform-origin: center;
+  }
+
+
+
+@keyframes rotate-btn{
+  to{ transform: rotate(360deg); }
+}
+.go-down-btn .rotate_text{
+  animation: rotate-btn 10s linear infinite;
+}
