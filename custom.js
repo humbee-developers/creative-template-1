@@ -149,6 +149,18 @@ jQuery(document).ready(function ($) {
     progressObserver.observe($(this)[0]);
   });
 
+  $('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+
   function moveProgressBar($progressWrap) {
     var getPercent = $progressWrap.data("progress-percent") / 100;
     var getProgressWrapWidth = $progressWrap.width();
