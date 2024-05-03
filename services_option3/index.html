@@ -366,7 +366,7 @@
             >
               03 | Lorem Ipsum is simply
             </h2>
-            <p class="text-cust sm:text-sm sm:pt-4 xl:text-cust">
+            <p class="sm:text-sm sm:pt-4">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy
             </p>
@@ -375,15 +375,20 @@
       </section>
       <section class="bg-[#4D5F75] pb-[5rem]">
         <div>
-          <div class="w-[840px] mx-auto text-center pt-14 pb-14">
-            <p class="text-white lg:text-[53px] md:text-[30px]">
+          <div class="w-full mx-auto text-center pt-14 pb-14 lg:w-[840px]">
+            <p class="text-white text-[30px] lg:text-[53px] md:text-[40px]">
               Lorem Ipsum is simply dummy text of the printing and typesetting.
             </p>
           </div>
           <div>
-            <div class="flex pt-[4rem] pb-[2rem] pl-[4rem] pr-[4rem]">
-              <div class="w-[35%] relative">
-                <div class="absolute left-[2rem] top-[2rem]">
+            <div
+              class="flex flex-col gap-[3rem] items-center justify-center  pt-[4rem] pb-[2rem] pl-[4rem] pr-[4rem] xs:flex-col lg:flex-row"
+            >
+              <div class="md:w-[35%] w-full">
+                <div>
+                  <img src="/images/ddd.png" alt="none" class="block" />
+                </div>
+                <!-- <div class="absolute left-[2rem] top-[2rem]">
                   <img src="/images/opt_3_1.png" alt="none" class="block" />
                 </div>
                 <div class="absolute top-28 left-[13rem]">
@@ -394,10 +399,12 @@
                 </div>
                 <div class="absolute top-[27rem] left-[18rem]">
                   <img src="/images/opt_3_4.png" alt="none" class="block" />
-                </div>
+                </div> -->
               </div>
-              <div class="w-[65%]">
-                <div class="flex gap-12 align-center pb-[1rem] mb-[5rem] border-b border-[#87929F]">
+              <div class="lg:w-[65%] w-full">
+                <div
+                  class="flex gap-12 align-center pb-[1rem] mb-[5rem] border-b border-[#87929F]"
+                >
                   <div>
                     <p class="text-[#DFA621] text-[50px]">98%</p>
                     <p class="text-white text-[25px]">Lorem ipsum is simply</p>
@@ -410,7 +417,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="flex gap-12 align-center  pb-[1rem] mb-[5rem] border-b border-[#87929F]">
+                <div
+                  class="flex gap-12 align-center pb-[1rem] mb-[5rem] border-b border-[#87929F]"
+                >
                   <div>
                     <p class="text-[#DFA621] text-[50px]">98%</p>
                     <p class="text-white text-[25px]">Lorem ipsum is simply</p>
@@ -423,7 +432,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="flex gap-12 align-center  mb-[5rem]">
+                <div class="flex gap-12 align-center mb-[5rem]">
                   <div>
                     <p class="text-[#DFA621] text-[50px]">98%</p>
                     <p class="text-white text-[25px]">Lorem ipsum is simply</p>
@@ -441,8 +450,8 @@
           </div>
           <!--  -->
           <div>
-            <div class="flex pt-[4rem] pl-[6rem] pr-[6rem] gap-[5rem]">
-              <div class="w-[50%]">
+            <div class="flex flex-col  pt-[4rem] pl-[6rem] pr-[6rem] gap-[5rem] md:flex-row">
+              <div class="w-full md:w-[50%]">
                 <div>
                   <p class="text-[#DFA621] text-[50px]">
                     Lorem Ipsum is simply
@@ -454,7 +463,7 @@
                   </p>
                 </div>
                 <div>
-                  <p class="text-[180px] text-[#5A708A] font-bold">service</p>
+                  <p class="text-[50px] text-[#5A708A] font-bold lg:text-[180px]">service</p>
                   <!-- rotating button -->
                   <div class="rotating_button_main">
                     <a href="#" class="go-down-btn">
@@ -472,7 +481,7 @@
                           fill="url(#paint0_linear_1_10)"
                         />
                         <path
-                        style="transform: translate(16px, 19px);"
+                          style="transform: translate(16px, 19px)"
                           d="M44 21C44 20.1716 43.3284 19.5 42.5 19.5H29C28.1716 19.5 27.5 20.1716 27.5 21C27.5 21.8284 28.1716 22.5 29 22.5H41V34.5C41 35.3284 41.6716 36 42.5 36C43.3284 36 44 35.3284 44 34.5V21ZM22.0607 43.5607L43.5607 22.0607L41.4393 19.9393L19.9393 41.4393L22.0607 43.5607Z"
                           fill="white"
                         />
@@ -500,10 +509,10 @@
                         />
                         <text class="rotate_text">
                           <textPath xlink:href="#textPath">
-                            <tspan x="15">lorem ipsum</tspan>
-                            <tspan x="47" dx="30">is simply</tspan>
-                            <tspan x="77" dx="50">lorem ipsum</tspan>
-                            <tspan x="107" dx="100">is simply</tspan>
+                            <tspan x="19">lorem ipsum</tspan>
+                            <tspan x="48" dx="30">lorem is simply</tspan>
+                            <tspan x="79" dx="70">lorem ipsum</tspan>
+                            <tspan x="108" dx="100">is simply</tspan>
                           </textPath>
                         </text>
                       </svg>
@@ -512,7 +521,7 @@
                 </div>
               </div>
               <!-- accordian section -->
-              <div class="w-[50%]">
+              <div class="w-full md:w-[50%]">
                 <div>
                   <div
                     id="accordion-flush"
