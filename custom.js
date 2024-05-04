@@ -48,6 +48,18 @@ jQuery(document).ready(function ($) {
     }
   });
 
+
+  $('.hamburger-menu').on('click', function() {
+		$('.bar').toggleClass('animate');
+    $('.mobile-menu').toggleClass('active');
+    return false;
+	})
+  $('.has-children').on ('click', function() {
+		   $(this).children('ul').slideToggle('slow', 'swing');
+       $('.icon-arrow').toggleClass('open');
+	});
+
+
   $(".herosection_wrapper").slick({
     dots: true,
     infinite: true,
@@ -55,6 +67,9 @@ jQuery(document).ready(function ($) {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    autoplay:true,
+    autoplaySpeed: 5000,
+    pauseOnHover:false
   });
   $(".services_op5_slider").slick({
     dots: true,
