@@ -69,8 +69,6 @@
     font-size: 24px;
 } */
 
-
-
 /* for expend card */
 /* 
 .container {
@@ -90,7 +88,6 @@
     align-items: flex-end;
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
 } */
-
 
 /* 
 .card > .row > .icon {
@@ -147,7 +144,6 @@ input:checked + label .description {
     text-transform: uppercase;
 } */
 
-
 /* .card[for="c1"] {
     background-color: rgb(192, 186, 186);
 }
@@ -172,7 +168,7 @@ input:checked + label .description {
     padding: 7rem 2rem;
     width: 50%;
 } */
- /* .services_sliders_right{
+/* .services_sliders_right{
   width: 50%;
 } 
 .services_sliders_right img{
@@ -181,8 +177,7 @@ input:checked + label .description {
   width: 100%;
 }  */
 
-
- /* .service_op1_slider_wrapper{
+/* .service_op1_slider_wrapper{
   position: relative;
 } 
  .service_op_1_slider_arrow{
@@ -255,10 +250,10 @@ input:checked + label .description {
   .cards_content_services{
     padding: 18rem 0rem;
   } */
-  
+
 /* 6th ranking section */
 
-  /* .rankingsection{
+/* .rankingsection{
     display: flex;
   }
   .rankingsection_heading{
@@ -271,9 +266,7 @@ input:checked + label .description {
   }
    */
 
-
- /* 7thfactoryimgservice */
-
+/* 7thfactoryimgservice */
 
 /* 
   .factoryservicesimg{
@@ -293,7 +286,7 @@ input:checked + label .description {
     position: relative;
   }  */
 
-  /* .xx1{
+/* .xx1{
     width: 35%;
     top: 22rem;
     color: white;
@@ -304,10 +297,9 @@ input:checked + label .description {
     gap: 1rem;
   } */
 
+/* section eight */
 
-  /* section eight */
-
-  /* .circless{
+/* .circless{
     display: flex;
     gap: 3rem;
     margin-top: 10rem;
@@ -358,11 +350,9 @@ input:checked + label .description {
 }
  */
 
-
 /* section nine  */
 
-
- /* .servicesninesection {
+/* .servicesninesection {
     display: flex;
     width: 100%;
     height: 100vh;
@@ -424,13 +414,9 @@ input:checked + label .description {
   } 
   */
 
+/* pricing section */
 
-
-  /* pricing section */
-
-
-
- /* .price_plan{
+/* .price_plan{
     padding: 5rem;
 }
 .ptag{
@@ -492,14 +478,9 @@ input:checked + label .description {
     padding: 2rem 2rem 3rem 2rem;
   } */
 
-  
- 
+/* servies contact last section */
 
-  /* servies contact last section */
-
-
-
-  /* .servicescontact{
+/* .servicescontact{
     display: flex;
     padding: 5rem 16rem 5rem 16rem;
   }
@@ -520,3 +501,26 @@ input:checked + label .description {
     border: none;
     padding: 1rem 2rem 1rem 2rem;
   } */
+
+.s_op1_card {
+  width: 20%;
+  transition: all 0.5s;
+}
+
+.s_op1_card.expand {
+  width: 40%;
+}
+.s_op1_left_content{
+  padding-top: 100px;
+  padding-left: 40px;
+}
+.s_op1_card.expand .s_op1_left_content {
+  /* display: block; */
+  transform: translateX(0);
+  transition: all 1s;
+}
+.s_op1_card .s_op1_left_content {
+  /* display: none; */
+  transform: translateX(500px);
+  transition: all 1s;
+}
