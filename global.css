@@ -544,3 +544,10 @@ body {
 .go-down-btn .rotate_text{
   animation: rotate-btn 10s linear infinite;
 }
+.about_slider {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.about_slider.active {
+  opacity: 1;
+}
