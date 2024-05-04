@@ -71,6 +71,42 @@ jQuery(document).ready(function ($) {
     autoplaySpeed: 5000,
     pauseOnHover:false
   });
+
+// verticalswiper
+  $(document).ready(function(){
+    var slider = $(".vertical-slider").slick({
+        vertical: false,
+        verticalSwiping: true,
+        infinite: true,
+        autoplay:true,
+        fade: true,
+        cssEase: 'ease-in-out',
+        touchThreshold: 100,
+        arrows: false,
+        speed: 500,
+        slidesToShow: 1
+    });
+
+  
+    $(".text-center p").click(function(){
+      $(".text-center p").removeClass("text-yellow-500 scale-110");
+      $(this).addClass("text-yellow-500 scale-110");
+     var index = $(this).index();
+     slider.slick('slickGoTo', index);
+    });
+
+  
+    slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+   $(".text-center p").removeClass("text-yellow-500 scale-110");
+   $(".text-center p").eq(nextSlide).addClass("text-yellow-500 scale-110");
+    });
+});
+
+
+
+
+
+
   $(".services_op5_slider").slick({
     dots: true,
     infinite: true,
