@@ -1208,7 +1208,6 @@
     <script>
       // Select the header element
 const header = document.getElementById('main-header');
-
 // Function to toggle background color based on scroll position
 function toggleHeaderBackground() {
   if (window.scrollY >  0) {
@@ -1219,8 +1218,6 @@ function toggleHeaderBackground() {
     header.classList.remove('scrolled');
   }
 }
-
-// Listen for the scroll event and call toggleHeaderBackground function
 window.addEventListener('scroll', toggleHeaderBackground);
 
       ScrollReveal({
