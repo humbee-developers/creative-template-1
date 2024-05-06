@@ -48,17 +48,34 @@ jQuery(document).ready(function ($) {
     }
   });
 
-
-  $('.hamburger-menu').on('click', function() {
-		$('.bar').toggleClass('animate');
-    $('.mobile-menu').toggleClass('active');
+  $(".hamburger-menu").on("click", function () {
+    $(".bar").toggleClass("animate");
+    $(".mobile-menu").toggleClass("active");
     return false;
-	})
-  $('.has-children').on ('click', function() {
-		   $(this).children('ul').slideToggle('slow', 'swing');
-       $('.icon-arrow').toggleClass('open');
-	});
+  });
+  $(".s_op1_card1").addClass("expand");
+  $(".s_op1_card").on("click", function () {
+    $(this).addClass("expand");
+    $(this).siblings().removeClass("expand");
+   
+  });
 
+  $(".has-children").on("click", function () {
+    $(this).children("ul").slideToggle("slow", "swing");
+    // $(this).toggleClass("open");
+    if ($(this).hasClass("open")) {
+      $(this).removeClass("open");
+      $(this).addClass("close");
+    } else {
+      $(this).addClass("open");
+      $(this).removeClass("close");
+    }
+    if ($(this).hasClass("open")) {
+      $(".has-children.open .icon-arrow").addClass("open");
+    } else {
+      $(".has-children.close .icon-arrow").removeClass("open");
+    }
+  });
 
   $(".herosection_wrapper").slick({
     dots: true,
@@ -67,9 +84,9 @@ jQuery(document).ready(function ($) {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoplay:true,
+    autoplay: true,
     autoplaySpeed: 5000,
-    pauseOnHover:false
+    pauseOnHover: false,
   });
 
 // verticalswiper
@@ -200,17 +217,22 @@ jQuery(document).ready(function ($) {
     progressObserver.observe($(this)[0]);
   });
 
-  $('.count').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 4000,
-        easing: 'swing',
-        step: function (now) {
+  $(".count").each(function () {
+    $(this)
+      .prop("Counter", 0)
+      .animate(
+        {
+          Counter: $(this).text(),
+        },
+        {
+          duration: 4000,
+          easing: "swing",
+          step: function (now) {
             $(this).text(Math.ceil(now));
+          },
         }
-    });
-});
+      );
+  });
 
   function moveProgressBar($progressWrap) {
     var getPercent = $progressWrap.data("progress-percent") / 100;
