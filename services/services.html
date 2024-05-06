@@ -209,6 +209,9 @@
     <div>
       <h2
         class="services_centertext flex justify-center pt-12 text-[22px] text-black sm:text-2xl sm:pt-16 md:text-[2rem] md:pt-20 lg:text-5xl lg:pt-24"
+        data-aos="slide-right"
+        data-aos-duration="1000"
+        data-aos-delay="10"
       >
         Lorem Ipsum is simply dummy text of
         <br />
@@ -219,7 +222,11 @@
     <div
       class="px-8 py-8 flex flex-col sm:flex sm:flex-row gap-4 xl:py-20 xl:px-44 lg:px-12 lg:pt-12 lg:pb-16"
     >
-      <div>
+      <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="150"
+      >
         <h2
           class="text-yellowcolor text-xl md:py-4 px-0 font-semibold md:text-custrem sm:text-text1rem xl:text-2xl"
         >
@@ -230,7 +237,11 @@
           industry. Lorem Ipsum has been the industry's standard dummy
         </p>
       </div>
-      <div>
+      <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+        data-aos-delay="350"
+      >
         <h2
           class="text-yellowcolor text-xl md:py-4 px-0 font-semibold md:text-custrem sm:text-text1rem xl:text-2xl"
         >
@@ -241,7 +252,11 @@
           industry. Lorem Ipsum has been the industry's standard dummy
         </p>
       </div>
-      <div>
+      <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+        data-aos-delay="650"
+      >
         <h2
           class="text-yellowcolor text-xl md:py-4 px-0 font-semibold md:text-custrem sm:text-text1rem xl:text-2xl"
         >
@@ -1220,21 +1235,21 @@
     }
 
     // animation
-    ScrollReveal({
-      reset: true,
-      distance: "60px",
-      delay: 400,
-      duration: 2500,
-    });
+    // ScrollReveal({
+    //   reset: true,
+    //   distance: "60px",
+    //   delay: 400,
+    //   duration: 2500,
+    // });
 
-    ScrollReveal().reveal(".services_home_text,.services_centertext", {
-      delay: 200,
-      origin: "left",
-    });
-    ScrollReveal().reveal(".services_secondflex_heading", {
-      delay: 500,
-      origin: "left",
-    });
+    // ScrollReveal().reveal(".services_home_text", {
+    //   delay: 200,
+    //   origin: "left",
+    // });
+    // ScrollReveal().reveal(".services_secondflex_heading", {
+    //   delay: 500,
+    //   origin: "left",
+    // });
 
     function toggleVisibility(cardId) {
       var card = document.getElementById(cardId);
