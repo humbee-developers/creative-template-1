@@ -6,33 +6,30 @@
     <title>services</title>
     <link rel="stylesheet" href="services.css" />
     <!-- Slick CSS -->
+    <link rel="stylesheet" href="../global.css" />
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../custom.js"></script>
+    <script src="../jquery.selectric.min.js"></script>
+    <link rel="stylesheet" href="../selectric.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:wght@200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300;400;500;600;700;800&family=Praise&family=Rubik:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <!-- Slick theme CSS -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Slick JS -->
     <script
       type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <link rel="stylesheet" href="../global.css" />
-    <script src="../custom.js"></script>
-    <!-- cdn scrollreveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- cdn tailwindcss -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- aos animation -->
+    <script src="jquery.selectric.min.js"></script>
+    <link rel="stylesheet" href="selectric.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -209,9 +206,6 @@
     <div>
       <h2
         class="services_centertext flex justify-center pt-12 text-[22px] text-black sm:text-2xl sm:pt-16 md:text-[2rem] md:pt-20 lg:text-5xl lg:pt-24"
-        data-aos="slide-right"
-        data-aos-duration="1000"
-        data-aos-delay="10"
       >
         Lorem Ipsum is simply dummy text of
         <br />
@@ -222,11 +216,7 @@
     <div
       class="px-8 py-8  flex flex-col sm:flex sm:flex-row gap-4 xl:py-20 xl:px-44 lg:px-12 lg:pt-12 lg:pb-16"
     >
-      <div
-      data-aos="fade-up"
-      data-aos-duration="1000"
-      data-aos-delay="150"
-      >
+      <div>
         <h2
           class="text-yellowcolor  text-xl md:py-4 px-0 font-semibold md:text-custrem sm:text-text1rem xl:text-2xl"
         >
@@ -237,11 +227,7 @@
           industry. Lorem Ipsum has been the industry's standard dummy
         </p>
       </div>
-      <div
-      data-aos="fade-up"
-      data-aos-duration="1000"
-        data-aos-delay="350"
-      >
+      <div>
         <h2
           class="text-yellowcolor text-xl md:py-4 px-0 font-semibold md:text-custrem sm:text-text1rem xl:text-2xl"
         >
@@ -252,11 +238,7 @@
           industry. Lorem Ipsum has been the industry's standard dummy
         </p>
       </div>
-      <div
-      data-aos="fade-up"
-      data-aos-duration="1000"
-        data-aos-delay="650"
-      >
+      <div>
         <h2
           class="text-yellowcolor text-xl md:py-4 px-0 font-semibold md:text-custrem sm:text-text1rem xl:text-2xl"
         >
@@ -871,7 +853,7 @@
       </div>
     </div>
     <!-- 8th sectionprogress bar -->
-    <div
+    <!-- <div
       class="circless mt-16 p-4 items-center flex justify-center sm:grid sm:grid-cols-2 sm:gap-8 lg:gap-2 xl:gap-20 md:flex flex-wrap flex-row"
     >
       <div
@@ -956,7 +938,180 @@
           industry. Lorem Ipsum has been the industry's standard dummy
         </p>
       </div>
-    </div>
+    </div> -->
+
+    <!--  -->
+
+    <section>
+      <div class="px-[20px] mt-[100px] mb-[100px] md:px-[63px] 3xl:px-[100px]">
+        <div class="flex flex-col flex-wrap md:flex-row">
+          <div
+            class="w-full md:w-[50%] lg:w-[25%] px-[10px] mb-[50px] lg:mb-0"
+          >
+            <div class="flex flex-col items-center">
+              <div class="mb-[40px]">
+                <div
+                  class="circular-progress h-[150px] w-[150px] md:h-[207px] md:w-[207px] rounded-full relative flex items-center justify-center sm:mb-0"
+                  data-speed="20"
+                  data-end-value="25"
+                >
+                  <div
+                    class="absolute h-[130px] w-[130px] md:h-[180px] md:w-[180px] rounded-full bg-white"
+                  ></div>
+                  <span class="progress-value relative text-[35px]">0</span>
+                </div>
+              </div>
+              <div class="">
+                <div class="text-[#4D5F75] text-[27px] text-center mb-[20px]" 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+                >
+                  Lorem Ipsum is simply
+                </div>
+                <div
+                  class="text-[#818181] text-[15px] text-center w-full lg:w-[90%] 2xl:w-[304px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full md:w-[50%] lg:w-[25%] px-[10px] mb-[50px] lg:mb-0"
+          >
+            <div class="flex flex-col items-center">
+              <div class="mb-[40px]">
+                <div
+                  class="circular-progress h-[150px] w-[150px] md:h-[207px] md:w-[207px] rounded-full relative flex items-center justify-center sm:mb-0"
+                  data-speed="20"
+                  data-end-value="55"
+                >
+                  <div
+                    class="absolute h-[130px] w-[130px] md:h-[180px] md:w-[180px] rounded-full bg-white"
+                  ></div>
+                  <span class="progress-value relative text-[35px]">0</span>
+                </div>
+              </div>
+              <div class="">
+                <div class="text-[#4D5F75] text-[27px] text-center mb-[20px]"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+                >
+                  Lorem Ipsum is simply
+                </div>
+                <div
+                  class="text-[#818181] text-[15px] text-center w-full lg:w-[90%] 2xl:w-[304px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full md:w-[50%] lg:w-[25%] px-[10px] mb-[50px] lg:mb-0"
+          >
+            <div class="flex flex-col items-center">
+              <div class="mb-[40px]">
+                <div
+                  class="circular-progress h-[150px] w-[150px] md:h-[207px] md:w-[207px] rounded-full relative flex items-center justify-center sm:mb-0"
+                  data-speed="20"
+                  data-end-value="60"
+                >
+                  <div
+                    class="absolute h-[130px] w-[130px] md:h-[180px] md:w-[180px] rounded-full bg-white"
+                  ></div>
+                  <span class="progress-value relative text-[35px]">0</span>
+                </div>
+              </div>
+              <div class="">
+                <div class="text-[#4D5F75] text-[27px] text-center mb-[20px]"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+                >
+                  Lorem Ipsum is simply
+                </div>
+                <div
+                  class="text-[#818181] text-[15px] text-center w-full lg:w-[90%] 2xl:w-[304px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full md:w-[50%] lg:w-[25%] px-[10px] mb-[50px] lg:mb-0"
+          >
+            <div class="flex flex-col items-center">
+              <div class="mb-[40px]">
+                <div
+                  class="circular-progress h-[150px] w-[150px] md:h-[207px] md:w-[207px] rounded-full relative flex items-center justify-center sm:mb-0"
+                  data-speed="20"
+                  data-end-value="85"
+                >
+                  <div
+                    class="absolute h-[130px] w-[130px] md:h-[180px] md:w-[180px] rounded-full bg-white"
+                  ></div>
+                  <span class="progress-value relative text-[35px]">0</span>
+                </div>
+              </div>
+              <div class="">
+                <div class="text-[#4D5F75] text-[27px] text-center mb-[20px]"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+                >
+                  Lorem Ipsum is simply
+                </div>
+                <div
+                  class="text-[#818181] text-[15px] text-center w-full lg:w-[90%] 2xl:w-[304px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-out"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- 9thgridsection -->
     <div
       class="block h-auto w-full p-8 md:p-8 bg-gray-200 justify-around text-gray-800 lg:flex"
@@ -1319,44 +1474,44 @@
   <script>
     // circularprogress bar
 
-    let circularProgresses = document.querySelectorAll(".circular-progress");
-    let speeds = [20, 20, 20, 20];
+    // let circularProgresses = document.querySelectorAll(".circular-progress");
+    // let speeds = [20, 20, 20, 20];
 
-    let observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            startProgressAnimation(entry.target);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
+    // let observer = new IntersectionObserver(
+    //   (entries) => {
+    //     entries.forEach((entry) => {
+    //       if (entry.isIntersecting) {
+    //         startProgressAnimation(entry.target);
+    //         observer.unobserve(entry.target);
+    //       }
+    //     });
+    //   },
+    //   { threshold: 0.5 }
+    // );
 
-    circularProgresses.forEach((circularProgress) => {
-      observer.observe(circularProgress);
-    });
+    // circularProgresses.forEach((circularProgress) => {
+    //   observer.observe(circularProgress);
+    // });
 
-    function startProgressAnimation(element) {
-      let progressValue = element.querySelector(".progress-value");
-      let progressStartValue = 0;
-      let progressEndValue = parseInt(progressValue.textContent);
-      let speed = speeds.shift();
+    // function startProgressAnimation(element) {
+    //   let progressValue = element.querySelector(".progress-value");
+    //   let progressStartValue = 0;
+    //   let progressEndValue = parseInt(progressValue.textContent);
+    //   let speed = speeds.shift();
 
-      let progress = setInterval(() => {
-        progressStartValue++;
+    //   let progress = setInterval(() => {
+    //     progressStartValue++;
 
-        progressValue.textContent = `${progressStartValue}%`;
-        element.style.background = `conic-gradient(#dfa621 ${
-          progressStartValue * 3.6
-        }deg, #ededed 0deg)`;
+    //     progressValue.textContent = `${progressStartValue}%`;
+    //     element.style.background = `conic-gradient(#dfa621 ${
+    //       progressStartValue * 3.6
+    //     }deg, #ededed 0deg)`;
 
-        if (progressStartValue == progressEndValue) {
-          clearInterval(progress);
-        }
-      }, speed);
-    }
+    //     if (progressStartValue == progressEndValue) {
+    //       clearInterval(progress);
+    //     }
+    //   }, speed);
+    // }
 
     // animation
     // ScrollReveal({
@@ -1366,7 +1521,7 @@
     //   duration: 2500,
     // });
 
-    // ScrollReveal().reveal(".services_home_text", {
+    // ScrollReveal().reveal(".services_home_text,.services_centertext", {
     //   delay: 200,
     //   origin: "left",
     // });
@@ -1375,42 +1530,42 @@
     //   origin: "left",
     // });
 
-    function toggleVisibility(cardId) {
-      var card = document.getElementById(cardId);
-      var cardSlider = card.querySelector(".card_slider");
-      cardSlider.classList.toggle("hidden");
-    }
+    // function toggleVisibility(cardId) {
+    //   var card = document.getElementById(cardId);
+    //   var cardSlider = card.querySelector(".card_slider");
+    //   cardSlider.classList.toggle("hidden");
+    // }
 
     // Object to keep track of rotations
-    const rotations = {
-      img1: 0,
-      img2: 0,
-      img3: 0,
-      img4: 0,
-    };
+    // const rotations = {
+    //   img1: 0,
+    //   img2: 0,
+    //   img3: 0,
+    //   img4: 0,
+    // };
 
-    const imageStates = {
-      img1: { rotated: false, degrees: 0 },
-      img2: { rotated: false, degrees: 0 },
-      img3: { rotated: false, degrees: 0 },
-      img4: { rotated: false, degrees: 0 },
-    };
+    // const imageStates = {
+    //   img1: { rotated: false, degrees: 0 },
+    //   img2: { rotated: false, degrees: 0 },
+    //   img3: { rotated: false, degrees: 0 },
+    //   img4: { rotated: false, degrees: 0 },
+    // };
 
-    function rotateImage(imgId) {
-      if (!imageStates[imgId].rotated) {
-        imageStates[imgId].rotated = true;
-        imageStates[imgId].degrees += 180;
-        document.getElementById(
-          imgId
-        ).style.transform = `rotate(${imageStates[imgId].degrees}deg)`;
-        Object.keys(imageStates).forEach((key) => {
-          if (key !== imgId && imageStates[key].rotated) {
-            document.getElementById(key).style.transform = "rotate(0deg)";
-            imageStates[key].degrees = 0;
-            imageStates[key].rotated = false;
-          }
-        });
-      }
-    }
+    // function rotateImage(imgId) {
+    //   if (!imageStates[imgId].rotated) {
+    //     imageStates[imgId].rotated = true;
+    //     imageStates[imgId].degrees += 180;
+    //     document.getElementById(
+    //       imgId
+    //     ).style.transform = `rotate(${imageStates[imgId].degrees}deg)`;
+    //     Object.keys(imageStates).forEach((key) => {
+    //       if (key !== imgId && imageStates[key].rotated) {
+    //         document.getElementById(key).style.transform = "rotate(0deg)";
+    //         imageStates[key].degrees = 0;
+    //         imageStates[key].rotated = false;
+    //       }
+    //     });
+    //   }
+    // }
   </script>
 </html>
