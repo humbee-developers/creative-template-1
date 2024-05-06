@@ -211,6 +211,16 @@ input:checked + label .description {
   display: flex !important;
 }
 
+/* CSS for transparent background */
+#main-header {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+/* CSS for red background when scrolled */
+#main-header.scrolled {
+  background-color: #4D5F75;
+}
 
 
 

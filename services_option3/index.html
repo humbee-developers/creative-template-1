@@ -62,7 +62,7 @@
   </head>
   <body>
     
-    <header class="z-[100]  pt-[20px] pb-[10px] pr-[37px] pb-[0] pl-[50px] fixed top-[0px] w-[100%] bg-[#4D5F75]">
+    <header id="main-header" class="z-[100]  pt-[20px] pb-[10px] pr-[37px] pb-[0] pl-[50px] fixed top-[0px] w-[100%] bg-transparent">
       <nav class="flex justify-between items-center mx-auto my-auto  ">
         <div
           class="logo"
@@ -190,7 +190,7 @@
         </div>
       </section>
       <!-- 4 cards section -->
-      <section class="bg-[#4D5F75] px-8 py-8">
+      <section class="bg-[#4D5F75] pt-[8rem] pb-[2rem] pl-[1rem] pr-[1rem] md:pt-[10rem] pb-[2rem]">
       <div
       data-aos="fade-up" 
                 data-aos-duration="1000"
@@ -1206,6 +1206,23 @@
       AOS.init();
     </script>
     <script>
+      // Select the header element
+const header = document.getElementById('main-header');
+
+// Function to toggle background color based on scroll position
+function toggleHeaderBackground() {
+  if (window.scrollY >  0) {
+    // Add a class to the header when scrolled
+    header.classList.add('scrolled');
+  } else {
+    // Remove the class when not scrolled
+    header.classList.remove('scrolled');
+  }
+}
+
+// Listen for the scroll event and call toggleHeaderBackground function
+window.addEventListener('scroll', toggleHeaderBackground);
+
       ScrollReveal({
         reset: true,
         distance: "60px",
