@@ -537,6 +537,7 @@ body {
   animation: rotate-btn 10s linear infinite;
 }
 
+
 .services_op5_slider .slick-dots {
   display: flex;
   justify-content: end;
@@ -567,3 +568,12 @@ body {
   padding: 5px;
   cursor: pointer;
 }
+
+.about_slider {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.about_slider.active {
+  opacity: 1;
+}
+
