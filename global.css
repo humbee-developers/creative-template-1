@@ -583,3 +583,10 @@ body {
 .nav_search.hideSearch {
   width: 0;
 }
+.imgwithtext .texthoverimg{
+  opacity: 0;
+  transition: all 0.4s;
+}
+.imgwithtext:hover .texthoverimg{
+  opacity: 1;
+}
