@@ -54,19 +54,21 @@ div {
   font-family: "nueu_montreal_regular";
 }
 .selectric-selectDrp {
-  width: 287px;
+  width: 264px;
   background-color: #fff;
   margin: 0 0 60px;
+  padding-left: 15px;
 }
 .selectric-selectDrp .selectric {
   background-color: #fff;
   position: relative;
-  border: 1px solid #000 !important;
+  border: none;
+  border-bottom: 1px solid #B8B8B8 !important;
   padding: 3px 0;
 }
 .selectric-selectDrp .selectric::before {
   content: "";
-  background-image: url("../images//drpdwn_icon.svg");
+  background-image: url("./images/drpdwn_icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -106,8 +108,12 @@ div {
 .selectric-selectDrp .selectric .label {
   font-size: 14px;
   font-weight: 600;
-  color: #000;
+  color: #B8B8B8;
   letter-spacing: 0.3px;
+  letter-spacing: 1px;
+}
+.selectric-items{
+  left: 15px !important;
 }
 @media (max-width: 640px) {
   .selectric-selectDrp {
@@ -153,6 +159,9 @@ div {
   display: block;
 }
 
+.dropdown_menu li{
+  width: 200px;
+}
 .dropdown:hover .dropdown_menu li {
   display: block;
 }
@@ -583,10 +592,71 @@ body {
 .nav_search.hideSearch {
   width: 0;
 }
-.imgwithtext .texthoverimg{
+.imgwithtext .texthoverimg {
   opacity: 0;
   transition: all 0.4s;
 }
-.imgwithtext:hover .texthoverimg{
+.imgwithtext:hover .texthoverimg {
   opacity: 1;
+}
+
+/* Home Banner button */
+
+.home_banner_btn:hover img {
+  transform: translateX(10px);
+}
+
+/* Home Tab section */
+
+.home_tab_link1:hover img {
+  transform: translateX(10px);
+}
+/* Home Cards */
+
+.home_cards_item_right_wrapper_link a:hover img {
+  transform: rotate(360deg);
+}
+.card_item_link a:hover img {
+  transform: rotate(360deg);
+}
+/* Home Why Chooes Us */
+img.blackRightArrow2 {
+  opacity: 1;
+}
+img.whiteRightArrow2 {
+  opacity: 0;
+  transform: translateX(-20px);
+  width: 0;
+}
+.why_us_link:hover img.blackRightArrow2 {
+  opacity: 0;
+  width: 0;
+}
+.why_us_link:hover img.whiteRightArrow2 {
+  opacity: 1;
+  transform: translateX(-10px);
+  transition: all 0.5s;
+  width: auto;
+}
+/* Home Card Slider */
+
+img.slider_link_arrow {
+  opacity: 0;
+}
+
+.cardSldier_item a:hover img.slider_link_arrow {
+  opacity: 1;
+  transition: all 0.5s;
+}
+.card_img_text{
+  position: relative;
+}
+.cardSldier_item:hover .card_img_text::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: #14111152;
 }
