@@ -1,4 +1,9 @@
 jQuery(document).ready(function ($) {
+  AOS.refresh();
+  $(function () {
+    AOS.init();
+  });
+
   $(".tab1").addClass("active");
   $(".tab1_content").addClass("active");
   $(".tab").on("click", function () {
@@ -57,7 +62,6 @@ jQuery(document).ready(function ($) {
   $(".s_op1_card").on("click", function () {
     $(this).addClass("expand");
     $(this).siblings().removeClass("expand");
-   
   });
 
   $(".has-children").on("click", function () {
@@ -89,40 +93,33 @@ jQuery(document).ready(function ($) {
     pauseOnHover: false,
   });
 
-// verticalswiper
-  $(document).ready(function(){
+  // verticalswiper
+  $(document).ready(function () {
     var slider = $(".vertical-slider").slick({
-        vertical: false,
-        verticalSwiping: true,
-        infinite: true,
-        autoplay:true,
-        fade: true,
-        cssEase: 'ease-in-out',
-        touchThreshold: 100,
-        arrows: false,
-        speed: 500,
-        slidesToShow: 1
+      vertical: false,
+      verticalSwiping: true,
+      infinite: true,
+      autoplay: true,
+      fade: true,
+      cssEase: "ease-in-out",
+      touchThreshold: 100,
+      arrows: false,
+      speed: 500,
+      slidesToShow: 1,
     });
 
-  
-    $(".text-center p").click(function(){
+    $(".text-center p").click(function () {
       $(".text-center p").removeClass("text-yellow-500 scale-110");
       $(this).addClass("text-yellow-500 scale-110");
-     var index = $(this).index();
-     slider.slick('slickGoTo', index);
+      var index = $(this).index();
+      slider.slick("slickGoTo", index);
     });
 
-  
-    slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-   $(".text-center p").removeClass("text-yellow-500 scale-110");
-   $(".text-center p").eq(nextSlide).addClass("text-yellow-500 scale-110");
+    slider.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+      $(".text-center p").removeClass("text-yellow-500 scale-110");
+      $(".text-center p").eq(nextSlide).addClass("text-yellow-500 scale-110");
     });
-});
-
-
-
-
-
+  });
 
   $(".services_op5_slider").slick({
     dots: true,
@@ -130,7 +127,10 @@ jQuery(document).ready(function ($) {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
     arrows: true,
+    pauseOnHover: false,
     nextArrow: $(".services_op5_arrow"),
     prevArrow: $(".services_op5_arrow_prev"),
   });
@@ -152,6 +152,9 @@ jQuery(document).ready(function ($) {
     speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplaySpeed: 5000,
+    arrows: true,
+    pauseOnHover: false,
     arrows: true,
     centerMode: true,
     centerPadding: "150px",
@@ -475,5 +478,3 @@ jQuery(document).ready(function ($) {
     });
   });
 });
-
-
