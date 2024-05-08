@@ -188,7 +188,7 @@
     </section>
     <section>
       <div
-        class="p-8 sm:p-0 md:grid md:w-[80%] md:mx-auto md:grid-cols-2  pb-8 md:block md:pt-48 w-[100%] text-black"
+        class="p-8 sm:p-0 md:grid md:w-[80%] md:mx-auto md:grid-cols-2 pb-8 md:block md:pt-48 w-[100%] text-black"
       >
         <div class="left h-4/6">
           <img
@@ -234,8 +234,12 @@
                   x-cloak
                   x-show="selected === 1"
                   class="text-sm text-black/50 p-3"
-                  x-transition:enter="transition ease-out duration-100"
-                  x-transition:enter-start="transform opacity-0 scale-95"
+                  x-transition:enter="transition ease-out duration-500 transform"
+                  x-transition:enter-start="opacity-0 scale-95"
+                  x-transition:enter-end="opacity-100 scale-100"
+                  x-transition:leave="transition ease-in duration-500 transform"
+                  x-transition:leave-start="opacity-100 scale-100"
+                  x-transition:leave-end="opacity-0 scale-95"
                 >
                   Nibh quisque suscipit fermentum netus nulla cras porttitor
                   euismod nulla. Orci, dictumst nec aliquet id ullamcorper
@@ -263,8 +267,12 @@
                   x-cloak
                   x-show="selected === 2"
                   class="text-sm text-black/50 p-3"
-                  x-transition:enter="transition ease-out duration-100"
-                  x-transition:enter-start="transform opacity-0 scale-95"
+                  x-transition:enter="transition ease-out duration-500 transform"
+                  x-transition:enter-start="opacity-0 scale-95"
+                  x-transition:enter-end="opacity-100 scale-100"
+                  x-transition:leave="transition ease-in duration-500 transform"
+                  x-transition:leave-start="opacity-100 scale-100"
+                  x-transition:leave-end="opacity-0 scale-95"
                 >
                   Once your order ships, you will receive a shipping
                   confirmation email with a tracking number. You can track your
@@ -292,8 +300,12 @@
                   x-cloak
                   x-show="selected === 3"
                   class="text-sm text-black/50 p-3"
-                  x-transition:enter="transition ease-out duration-100"
-                  x-transition:enter-start="transform opacity-0 scale-95"
+                  x-transition:enter="transition ease-out duration-500 transform"
+                  x-transition:enter-start="opacity-0 scale-95"
+                  x-transition:enter-end="opacity-100 scale-100"
+                  x-transition:leave="transition ease-in duration-500 transform"
+                  x-transition:leave-start="opacity-100 scale-100"
+                  x-transition:leave-end="opacity-0 scale-95"
                 >
                   Yes, we offer international shipping to select countries.
                   Please see our shipping policy for
@@ -320,8 +332,12 @@
                   x-cloak
                   x-show="selected === 4"
                   class="text-sm text-black/50 p-3"
-                  x-transition:enter="transition ease-out duration-100"
-                  x-transition:enter-start="transform opacity-0 scale-95"
+                  x-transition:enter="transition ease-out duration-500 transform"
+                  x-transition:enter-start="opacity-0 scale-95"
+                  x-transition:enter-end="opacity-100 scale-100"
+                  x-transition:leave="transition ease-in duration-500 transform"
+                  x-transition:leave-start="opacity-100 scale-100"
+                  x-transition:leave-end="opacity-0 scale-95"
                 >
                   Your Accordion Item 4 Content
                 </div>
@@ -348,8 +364,12 @@
                   x-cloak
                   x-show="selected === 5"
                   class="text-sm text-black/50 p-3"
-                  x-transition:enter="transition ease-out duration-100"
-                  x-transition:enter-start="transform opacity-0 scale-95"
+                  x-transition:enter="transition ease-out duration-500 transform"
+                  x-transition:enter-start="opacity-0 scale-95"
+                  x-transition:enter-end="opacity-100 scale-100"
+                  x-transition:leave="transition ease-in duration-500 transform"
+                  x-transition:leave-start="opacity-100 scale-100"
+                  x-transition:leave-end="opacity-0 scale-95"
                 >
                   Your Accordion Item 5 Content
                 </div>
@@ -375,8 +395,12 @@
                   x-cloak
                   x-show="selected === 6"
                   class="text-sm text-black/50 p-3"
-                  x-transition:enter="transition ease-out duration-100"
-                  x-transition:enter-start="transform opacity-0 scale-95"
+                  x-transition:enter="transition ease-out duration-500 transform"
+                  x-transition:enter-start="opacity-0 scale-95"
+                  x-transition:enter-end="opacity-100 scale-100"
+                  x-transition:leave="transition ease-in duration-500 transform"
+                  x-transition:leave-start="opacity-100 scale-100"
+                  x-transition:leave-end="opacity-0 scale-95"
                 >
                   Your Accordion Item 6 Content
                 </div>
@@ -406,8 +430,12 @@
                   x-cloak
                   x-show="selected === 7"
                   class="text-sm text-black/50 p-3"
-                  x-transition:enter="transition ease-out duration-100"
-                  x-transition:enter-start="transform opacity-0 scale-95"
+                  x-transition:enter="transition ease-out duration-500 transform"
+                  x-transition:enter-start="opacity-0 scale-95"
+                  x-transition:enter-end="opacity-100 scale-100"
+                  x-transition:leave="transition ease-in duration-500 transform"
+                  x-transition:leave-start="opacity-100 scale-100"
+                  x-transition:leave-end="opacity-0 scale-95"
                 >
                   Your Accordion Item 7 Content
                 </div>
@@ -417,7 +445,6 @@
         </div>
       </div>
     </section>
-
     <!-- footer -->
     <footer
       class="bg-black text-white pt-20 pb-12 px-[20px] sm:px-12 flex justify-center items-end overflow-y-hidden overflow-x-hidden"
