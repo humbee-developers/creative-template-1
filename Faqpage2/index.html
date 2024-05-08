@@ -181,8 +181,11 @@
     <section class="hero_section h-[calc(100vh_-_117px)]">
       <div class="herosection absolute top-0 left-0 w-full">
         <div class="inner_banner_image relative h-screen">
-          <img src="../images/Faqhomeimg.png" alt="about_image"
-          class="max-w-full block w-full h-full object-cover" />
+          <img
+            src="../images/Faqhomeimg.png"
+            alt="about_image"
+            class="max-w-full block w-full h-full object-cover"
+          />
         </div>
       </div>
     </section>
@@ -203,242 +206,260 @@
           />
         </div>
 
-        <div class="container mx-auto p-4">
-          <div x-data="{ selected: null }" class="" class="p-3">
-            <h1 class="text-xl sm:text-3xl font-bold mb-2">
-              Frequently Asked Questions
-            </h1>
-            <!-- The accordion items -->
-            <div class="[&>*]:border-b [&>*]:border-b-2 border-gray-400">
-              <!-- Accordion item 1 -->
-              <div>
-                <!-- The button that toggles the accordion item -->
-                <button
-                  @click="selected !== 1 ? selected = 1 : selected = null"
-                  class="w-full flex justify-between items-center p-3"
-                >
-                  <!-- The title of the accordion item -->
-                  <h3 class="text-base sm:text-lg font-semibold text-left">
-                    Where can I watch?
-                  </h3>
-                  <!-- The icon that indicates whether the accordion item is expanded or collapsed -->
-                  <div>
-                    <span
-                      class="text-3xl transition-all block"
-                      :class="selected === 1 ? 'rotate-45' : ''"
-                      >+</span
+        <div class="container mx-auto">
+          <div class="bg-gray-100 flex justify-center">
+            <div>
+              <h1 class="font-bold max-w-xl mx-auto pb-4 pt-4 text-[30px] md:pt-0 lg:pt-0">
+                Frequently Asked Questions
+              </h1>
+              <div class="max-w-xl mx-auto" x-data="{selected:1}">
+                <ul class="shadow-box">
+                  <li class="relative border-b-2 border-blue-300">
+                    <button
+                      type="button"
+                      class="w-full py-3.5 text-left"
+                      @click="selected !== 1 ? selected = 1 : selected = null"
                     >
-                  </div>
-                </button>
-                <div
-                  x-cloak
-                  x-show="selected === 1"
-                  class="text-sm text-black/50 p-3 max-h-[none]"
-                  x-transition:enter="transition ease-out duration-500 transform"
-                  x-transition:enter-start="opacity-0 scale-95"
-                  x-transition:enter-end="opacity-100 scale-100"
-                  x-transition:leave="transition ease-in duration-500 transform"
-                  x-transition:leave-start="opacity-100 scale-100"
-                  x-transition:leave-end="opacity-0 scale-95"
-                >
-                  Nibh quisque suscipit fermentum netus nulla cras porttitor
-                  euismod nulla. Orci, dictumst nec aliquet id ullamcorper
-                  venenatis.
-                </div>
-              </div>
-              <!-- Accordion item 2 -->
-              <div>
-                <button
-                  @click="selected !== 2 ? selected = 2 : selected = null"
-                  class="w-full flex justify-between items-center p-3"
-                >
-                  <h3 class="text-base sm:text-lg font-semibold text-left">
-                    How do I track my order?
-                  </h3>
-                  <div>
-                    <span
-                      class="text-3xl transition-all block"
-                      :class="selected === 2 ? 'rotate-45' : ''"
-                      >+</span
-                    >
-                  </div>
-                </button>
-                <div
-                  x-cloak
-                  x-show="selected === 2"
-                  class="text-sm text-black/50 p-3 max-h-[none]"
-                  x-transition:enter="transition ease-out duration-500 transform"
-                  x-transition:enter-start="opacity-0 scale-95"
-                  x-transition:enter-end="opacity-100 scale-100"
-                  x-transition:leave="transition ease-in duration-500 transform"
-                  x-transition:leave-start="opacity-100 scale-100"
-                  x-transition:leave-end="opacity-0 scale-95"
-                >
-                  Once your order ships, you will receive a shipping
-                  confirmation email with a tracking number. You can track your
-                  order on our website using this tracking number.
-                </div>
-              </div>
-              <!-- Accordion item 3 -->
-              <div>
-                <button
-                  @click="selected !== 3 ? selected = 3 : selected = null"
-                  class="w-full flex justify-between items-center p-3"
-                >
-                  <h3 class="text-base sm:text-lg font-semibold text-left">
-                    Do you offer international shipping?
-                  </h3>
-                  <div>
-                    <span
-                      class="text-3xl transition-all block"
-                      :class="selected === 3 ? 'rotate-45' : ''"
-                      >+</span
-                    >
-                  </div>
-                </button>
-                <div
-                  x-cloak
-                  x-show="selected === 3"
-                  class="text-sm text-black/50 p-3 max-h-[none]"
-                  x-transition:enter="transition ease-out duration-500 transform"
-                  x-transition:enter-start="opacity-0 scale-95"
-                  x-transition:enter-end="opacity-100 scale-100"
-                  x-transition:leave="transition ease-in duration-500 transform"
-                  x-transition:leave-start="opacity-100 scale-100"
-                  x-transition:leave-end="opacity-0 scale-95"
-                >
-                  Yes, we offer international shipping to select countries.
-                  Please see our shipping policy for
-                </div>
-              </div>
-              <!-- Accordion Item 4 -->
-              <div>
-                <button
-                  @click="selected !== 4 ? selected = 4 : selected = null"
-                  class="w-full flex justify-between items-center p-3"
-                >
-                  <h3 class="text-base sm:text-lg font-semibold text-left">
-                    Fames imperdiet quam fermentum?
-                  </h3>
-                  <div>
-                    <span
-                      class="text-3xl transition-all block"
-                      :class="selected === 4 ? 'rotate-45' : ''"
-                      >+</span
-                    >
-                  </div>
-                </button>
-                <div
-                  x-cloak
-                  x-show="selected === 4"
-                  class="text-sm text-black/50 p-3 max-h-[none]"
-                  x-transition:enter="transition ease-out duration-500 transform"
-                  x-transition:enter-start="opacity-0 scale-95"
-                  x-transition:enter-end="opacity-100 scale-100"
-                  x-transition:leave="transition ease-in duration-500 transform"
-                  x-transition:leave-start="opacity-100 scale-100"
-                  x-transition:leave-end="opacity-0 scale-95"
-                >
-                  Your Accordion Item 4 Content
-                </div>
-              </div>
+                      <div class="flex items-center justify-between">
+                        <span class="font-bold text-[18px]"
+                          >Where can i watch ?</span
+                        >
+                        <div>
+                          <span
+                            class="text-3xl transition-all block"
+                            :class="selected === 1 ? 'rotate-45' : ''"
+                            >+</span
+                          >
+                        </div>
+                      </div>
+                    </button>
 
-              <!-- Accordion Item 5 -->
-              <div>
-                <button
-                  @click="selected !== 5 ? selected = 5 : selected = null"
-                  class="w-full flex justify-between items-center p-3"
-                >
-                  <h3 class="text-base sm:text-lg font-semibold text-left">
-                    Varius vitae, convallis amet lacus sit aliquet nibh?
-                  </h3>
-                  <div>
-                    <span
-                      class="text-3xl transition-all block"
-                      :class="selected === 5 ? 'rotate-45' : ''"
-                      >+</span
+                    <div
+                      class="relative overflow-hidden transition-all max-h-0 duration-700"
+                      style=""
+                      x-ref="container1"
+                      x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
                     >
-                  </div>
-                </button>
-                <div
-                  x-cloak
-                  x-show="selected === 5"
-                  class="text-sm text-black/50 p-3 max-h-[none]"
-                  x-transition:enter="transition ease-out duration-500 transform"
-                  x-transition:enter-start="opacity-0 scale-95"
-                  x-transition:enter-end="opacity-100 scale-100"
-                  x-transition:leave="transition ease-in duration-500 transform"
-                  x-transition:leave-start="opacity-100 scale-100"
-                  x-transition:leave-end="opacity-0 scale-95"
-                >
-                  Your Accordion Item 5 Content
-                </div>
-              </div>
-              <!-- Accordion Item 6 -->
-              <div>
-                <button
-                  @click="selected !== 6 ? selected = 6 : selected = null"
-                  class="w-full flex justify-between items-center p-3"
-                >
-                  <h3 class="text-base sm:text-lg font-semibold text-left">
-                    Tortor nisl pellentesque sit quis orci dolor?
-                  </h3>
-                  <div>
-                    <span
-                      class="text-3xl transition-all block"
-                      :class="selected === 6 ? 'rotate-45' : ''"
-                      >+</span
+                      <div class="py-3.5 text-[16px]">
+                        <p>
+                          Nibh quisque suscipit fermentum netus nulla cras
+                          porttitor euismod nulla. Orci, dictumst nec aliquet id
+                          ullamcorper venenatis.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="relative border-b-2 border-blue-300">
+                    <button
+                      type="button"
+                      class="w-full  py-3.5 text-left"
+                      @click="selected !== 2 ? selected = 2 : selected = null"
                     >
-                  </div>
-                </button>
-                <div
-                  x-cloak
-                  x-show="selected === 6"
-                  class="text-sm text-black/50 p-3 max-h-[none]"
-                  x-transition:enter="transition ease-out duration-500 transform"
-                  x-transition:enter-start="opacity-0 scale-95"
-                  x-transition:enter-end="opacity-100 scale-100"
-                  x-transition:leave="transition ease-in duration-500 transform"
-                  x-transition:leave-start="opacity-100 scale-100"
-                  x-transition:leave-end="opacity-0 scale-95"
-                >
-                  Your Accordion Item 6 Content
-                </div>
-              </div>
+                      <div class="flex items-center justify-between">
+                        <span class="font-bold text-[18px]"
+                          >Mauris id nibh eu fermentum mattis purus?</span
+                        >
+                        <div>
+                          <span
+                            class="text-3xl transition-all block"
+                            :class="selected === 2 ? 'rotate-45' : ''"
+                            >+</span
+                          >
+                        </div>
+                      </div>
+                    </button>
 
-              <!-- Accordion Item 7 -->
-              <div>
-                <button
-                  @click="selected !== 7 ? selected = 7 : selected = null"
-                  class="w-full flex justify-between items-center p-3"
-                >
-                  <h3
-                    class="text-base sm:text-lg font-semibold text-left w-11/12"
-                  >
-                    Vestibulum mauris mauris elementum proin amet auctor ipsum
-                    nibh sollicitudin?
-                  </h3>
-                  <div>
-                    <span
-                      class="text-3xl transition-all block"
-                      :class="selected === 7 ? 'rotate-45' : ''"
-                      >+</span
+                    <div
+                      class="relative overflow-hidden transition-all max-h-0 duration-700"
+                      style=""
+                      x-ref="container2"
+                      x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
                     >
-                  </div>
-                </button>
-                <div
-                  x-cloak
-                  x-show="selected === 7"
-                  class="text-sm text-black/50 p-3 max-h-[none]"
-                  x-transition:enter="transition ease-out duration-500 transform"
-                  x-transition:enter-start="opacity-0 scale-95"
-                  x-transition:enter-end="opacity-100 scale-100"
-                  x-transition:leave="transition ease-in duration-500 transform"
-                  x-transition:leave-start="opacity-100 scale-100"
-                  x-transition:leave-end="opacity-0 scale-95"
-                >
-                  Your Accordion Item 7 Content
-                </div>
+                      <div class="py-3.5 text-[16px]">
+                        <p>
+                          Nibh quisque suscipit fermentum netus nulla cras
+                          porttitor euismod nulla. Orci, dictumst nec aliquet id
+                          ullamcorper venenatis.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="relative border-b-2 border-blue-300">
+                    <button
+                      type="button"
+                      class="w-full py-3.5 text-left"
+                      @click="selected !== 3 ? selected = 3 : selected = null"
+                    >
+                      <div class="flex items-center justify-between">
+                        <span class="font-bold text-[18px]"
+                          >Eros imperdiet rhoncus?</span
+                        >
+                        <div>
+                          <span
+                            class="text-3xl transition-all block"
+                            :class="selected === 3 ? 'rotate-45' : ''"
+                            >+</span
+                          >
+                        </div>
+                      </div>
+                    </button>
+
+                    <div
+                      class="relative overflow-hidden transition-all max-h-0 duration-700"
+                      style=""
+                      x-ref="container3"
+                      x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''"
+                    >
+                      <div class="py-3.5 text-[16px]">
+                        <p>
+                          Nibh quisque suscipit fermentum netus nulla cras
+                          porttitor euismod nulla. Orci, dictumst nec aliquet id
+                          ullamcorper venenatis.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="relative border-b-2 border-blue-300">
+                    <button
+                      type="button"
+                      class="w-full py-3.5 text-left"
+                      @click="selected !== 4 ? selected = 4 : selected = null"
+                    >
+                      <div class="flex items-center justify-between">
+                        <span class="font-bold text-[18px]"
+                          >Fames imperdiet quam fermentum?</span
+                        >
+                        <div>
+                          <span
+                            class="text-3xl transition-all block"
+                            :class="selected === 4 ? 'rotate-45' : ''"
+                            >+</span
+                          >
+                        </div>
+                      </div>
+                    </button>
+
+                    <div
+                      class="relative overflow-hidden transition-all max-h-0 duration-700"
+                      style=""
+                      x-ref="container4"
+                      x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''"
+                    >
+                      <div class="py-3.5 text-[16px]">
+                        <p>
+                          Nibh quisque suscipit fermentum netus nulla cras
+                          porttitor euismod nulla. Orci, dictumst nec aliquet id
+                          ullamcorper venenatis.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="relative border-b-2 border-blue-300">
+                    <button
+                      type="button"
+                      class="w-full py-3.5 text-left"
+                      @click="selected !== 5 ? selected = 5 : selected = null"
+                    >
+                      <div class="flex items-center justify-between">
+                        <span class="font-bold text-[18px]"
+                          >Varius vitae, convallis amet lacus sit aliquet nibh?</span
+                        >
+                        <div>
+                          <span
+                            class="text-3xl transition-all block"
+                            :class="selected === 5 ? 'rotate-45' : ''"
+                            >+</span
+                          >
+                        </div>
+                      </div>
+                    </button>
+
+                    <div
+                      class="relative overflow-hidden transition-all max-h-0 duration-700"
+                      style=""
+                      x-ref="container5"
+                      x-bind:style="selected == 5 ? 'max-height: ' + $refs.container5.scrollHeight + 'px' : ''"
+                    >
+                      <div class="py-3.5 text-[16px]">
+                        <p>
+                          Nibh quisque suscipit fermentum netus nulla cras
+                          porttitor euismod nulla. Orci, dictumst nec aliquet id
+                          ullamcorper venenatis.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="relative border-b-2 border-blue-300">
+                    <button
+                      type="button"
+                      class="w-full py-3.5 text-left"
+                      @click="selected !== 6 ? selected = 6 : selected = null"
+                    >
+                      <div class="flex items-center justify-between">
+                        <span class="font-bold text-[18px]"
+                          >Tortor nisl pellentesque sit quis orci dolor?</span
+                        >
+                        <div>
+                          <span
+                            class="text-3xl transition-all block"
+                            :class="selected === 6 ? 'rotate-45' : ''"
+                            >+</span
+                          >
+                        </div>
+                      </div>
+                    </button>
+
+                    <div
+                      class="relative overflow-hidden transition-all max-h-0 duration-700"
+                      style=""
+                      x-ref="container6"
+                      x-bind:style="selected == 6 ? 'max-height: ' + $refs.container6.scrollHeight + 'px' : ''"
+                    >
+                      <div class="py-3.5 text-[16px]">
+                        <p>
+                          Nibh quisque suscipit fermentum netus nulla cras
+                          porttitor euismod nulla. Orci, dictumst nec aliquet id
+                          ullamcorper venenatis.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="relative border-b-2 border-blue-300">
+                    <button
+                      type="button"
+                      class="w-full py-3.5 text-left"
+                      @click="selected !== 7 ? selected = 7 : selected = null"
+                    >
+                      <div class="flex items-center justify-between">
+                        <span class="font-bold text-[18px]"
+                          >Vestibulum mauris mauris elementum proin amet auctor ipsum nibh sollicitudin?</span
+                        >
+                        <div>
+                          <span
+                            class="text-3xl transition-all block"
+                            :class="selected === 7 ? 'rotate-45' : ''"
+                            >+</span
+                          >
+                        </div>
+                      </div>
+                    </button>
+
+                    <div
+                      class="relative overflow-hidden transition-all max-h-0 duration-700"
+                      style=""
+                      x-ref="container7"
+                      x-bind:style="selected == 7 ? 'max-height: ' + $refs.container7.scrollHeight + 'px' : ''"
+                    >
+                      <div class="py-3.5 text-[16px]">
+                        <p>
+                          Nibh quisque suscipit fermentum netus nulla cras
+                          porttitor euismod nulla. Orci, dictumst nec aliquet id
+                          ullamcorper venenatis.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
