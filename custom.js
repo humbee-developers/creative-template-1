@@ -1,4 +1,6 @@
 jQuery(document).ready(function ($) {
+
+
   AOS.refresh();
   $(function () {
     AOS.init();

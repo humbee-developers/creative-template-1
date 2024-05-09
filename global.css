@@ -160,7 +160,7 @@ div {
 }
 
 .dropdown_menu li{
-  width: 200px;
+  width: 160px;
 }
 .dropdown:hover .dropdown_menu li {
   display: block;

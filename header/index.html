@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <title>Document</title> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../mobileMenu.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../gsap.min.js"></script>
+    <script src="../ScrollTrigger.min.js"></script>
+    <script src="../smooth-scrollbar.js"></script>
+    <script src="../custom.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:wght@200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300;400;500;600;700;800&family=Praise&family=Rubik:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="../jquery.selectric.min.js"></script>
+    <link rel="stylesheet" href="../selectric.css" />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              "3xl": "1600px",
+            },
+            colors: {
+              yellowcolor: "#DFA621",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header
+      class="z-[100] relative pt-[43px] pr-[20px] md:pr-[37px] pb-[0] pl-[20px] md:pl-[50px] w-full"
+    >
+      <nav class="flex justify-between items-center">
+        <div
+          class="logo"
+          
+        >
+          <a href="../home/index.html">
+            <img src="../images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div
+          class="navigation flex w-[65%] lg:w-[700px] justify-between px-[5px] py-0 border-b-white border-b border-solid hidden md:flex"
+        
+        >
+          <ul class="nav flex items-center">
+            <li
+              class="dropdown pr-5 pb-5 mr-5 md:pr-10 lg:mr-10 lg:pr-15 xl:pr-20 relative"
+            >
+              <a
+                class="text-white text-[15px] font-normal leading-8 no-underline"
+                href="#"
+                >Home</a
+              >
+              <ul
+                class="dropdown_menu dropdown_menu--animated dropdown_menu-6 pr-[5rem] w-[200px] md:pr-[5rem] lg:pr-10 mr-2 absolute top-[98%] left-[-15px] w-[200px] z-[1] hidden"
+              >
+                <li
+                  class="dropdown_item-1 block opacity-100 hover:block hover:bg-gray-600 pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../home2/index.html"
+                    >Home2</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-1 block opacity-100 hover:block hover:bg-gray-600 pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../home3/index.html"
+                    >Home3</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li
+              class="dropdown dropdown-6 pr-5 pb-5 mr-5 md:pr-10 lg:pr-15 xl:pr-20 lg:mr-10 flex justify-center items-center text-white relative text-lg z-[100]"
+            >
+              <a
+                class="text-white text-[15px] font-normal leading-8 no-underline"
+                href="#"
+                >Company</a
+              >
+              <ul
+                class="dropdown_menu dropdown_menu--animated dropdown_menu-6 pr-[5rem] md:pr-[5rem] lg:pr-10 mr-5 absolute top-[100%] left-[-15px] w-[200px] z-[-1] hidden"
+              >
+                <li
+                  class="dropdown_item-1 block opacity-100 hover:block hover:bg-gray-600 pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../aboutUs/index.html"
+                    >About Us</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-2 block opacity-100 hover:block hover:bg-gray-600 pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../services/services.html"
+                    >Service Option 1</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block hover:bg-gray-600 pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../services_option2/index.html"
+                    >Service Option 2</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block hover:bg-gray-600 pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../services_option3/index.html"
+                    >Service Option 3</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block hover:bg-gray-600 pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../services_option4/index.html"
+                    >Service Option 4</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block hover:bg-gray-600 pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../services_option5/index.html"
+                    >Service Option 5</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block hover:bg-gray-600 pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../services_option6/index.html"
+                    >Service Option 6</a
+                  >
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:block hover:bg-gray-600 pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../contactPage2/index.html"
+                    >Contact page 2</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown pb-5">
+              <a
+                class="text-white text-[15px] font-normal leading-8 no-underline"
+                href="../aboutUs/index.html"
+                >Products</a
+              >
+              <ul
+                class="dropdown_menu dropdown_menu--animated dropdown_menu-6 pr-[5rem] md:pr-[5rem] lg:pr-10 mr-5 absolute top-[93%] w-[200px] z-[1] hidden"
+              >
+                <li
+                  class="dropdown_item-1 block opacity-100 hover:bg-gray-600 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../ourpricing/index.html"
+                  >
+                    Pricing1
+                  </a>
+                </li>
+                <li
+                  class="dropdown_item-2 block opacity-100 hover:bg-gray-600 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../ourpricing_secondpage/index.html"
+                  >
+                    Pricing2
+                  </a>
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:bg-gray-600 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../ourclients/index.html"
+                  >
+                    Our client
+                  </a>
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:bg-gray-600 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../Faqpage/index.html"
+                  >
+                    Faq 1
+                  </a>
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:bg-gray-600 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../Faqpage2/index.html"
+                  >
+                    Faq 2
+                  </a>
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:bg-gray-600 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../page404/index.html"
+                  >
+                    404page 1
+                  </a>
+                </li>
+                <li
+                  class="dropdown_item-3 block opacity-100 hover:bg-gray-600 hover:block pr-5 mr-5 lg:mr-10 md:pr-10 lg:pr-15 xl:pr-[20px] hidden text-blue-900 bg-gray-400 text-base px-[10px] py-[10px]"
+                >
+                  <a
+                    class="text-white text-[15px] font-normal leading-8 no-underline"
+                    href="../page404_2/index.html"
+                  >
+                    404page 2
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a
+            href="../contactPage1/index.html"
+            class="contact_menu text-white text-[15px] font-normal leading-8 no-underline mt-0 mb-5 mx-0 pl-[45px] border-l-white border-l border-solid"
+            >Contact Us</a
+          >
+        </div>
+        <div class="hamburger-menu md:hidden">
+          <div class="bar"></div>
+        </div>
+
+        <nav
+          class="mobile-menu md:hidden bg-gray-400 max-w-full sm:max-w-[360px] mt-[0] pt-[100px]"
+        >
+          <ul>
+            <li class="has-children">
+              <div
+                class="w-full transition-all duration-500 hover:bg-white cursor-pointer py-[5px]"
+              >
+                <span class="w-full block px-[5px] pr-[5px] pl-[15px]"
+                  >Home</span
+                >
+                <span class="icon-arrow"></span>
+              </div>
+              <ul class="children py-[10px]">
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a class="w-full block pl-[40px]" href="../home/index.html">Home</a>
+                </li>
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a class="w-full block pl-[40px]" href="../home2/index.html"
+                    >Home OP2</a
+                  >
+                </li>
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a class="w-full block pl-[40px]" href="../home3/index.html"
+                    >Home OP3</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="has-children">
+              <div
+                class="w-full transition-all duration-500 hover:bg-white cursor-pointer py-[5px]"
+              >
+                <span class="w-full block px-[5px] pr-[5px] pl-[15px]"
+                  >Services</span
+                >
+                <span class="icon-arrow"></span>
+              </div>
+              <ul class="children py-[10px]">
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a
+                    class="w-full block pl-[40px]"
+                    href="../services/services.html"
+                    >Services OP1</a
+                  >
+                </li>
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a
+                    class="w-full block pl-[40px]"
+                    href="../services_option2/index.html"
+                    >Services OP2</a
+                  >
+                </li>
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a
+                    class="w-full block pl-[40px]"
+                    href="../services_option3/index.html"
+                    >Services OP3</a
+                  >
+                </li>
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a
+                    class="w-full block pl-[40px]"
+                    href="../services_option4/index.html"
+                    >Services OP4</a
+                  >
+                </li>
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a
+                    class="w-full block pl-[40px]"
+                    href="../services_option5/index.html"
+                    >Services OP5</a
+                  >
+                </li>
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a
+                    class="w-full block pl-[40px]"
+                    href="../services_option6/index.html"
+                    >Services OP6</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li
+              class="transition-all duration-500 hover:bg-white py-[5px] pl-[15px]"
+            >
+              <a class="w-full block" href="../aboutUs/index.html">About</a>
+            </li>
+            <li class="has-children">
+              <div
+                class="w-full transition-all duration-500 hover:bg-white cursor-pointer py-[5px]"
+              >
+                <span class="w-full block px-[5px] pr-[5px] pl-[15px]"
+                  >FAQs</span
+                >
+                <span class="icon-arrow"></span>
+              </div>
+              <ul class="children py-[10px]">
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a class="w-full block pl-[40px]" href="../Faqpage/index.html"
+                    >FAQs OP1</a
+                  >
+                </li>
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a class="w-full block pl-[40px]" href="../Faqpage2/index.html"
+                    >FAQs OP2</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="has-children">
+              <div
+                class="w-full transition-all duration-500 hover:bg-white cursor-pointer py-[5px]"
+              >
+                <span class="w-full block px-[5px] pr-[5px] pl-[15px]"
+                  >Pricing</span
+                >
+                <span class="icon-arrow"></span>
+              </div>
+              <ul class="children py-[10px]">
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a
+                    class="w-full block pl-[40px]"
+                    href="../ourpricing/index.html"
+                    >Pricing OP1</a
+                  >
+                </li>
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a
+                    class="w-full block pl-[40px]"
+                    href="../ourpricing_secondpage/index.html"
+                    >Pricing OP2</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li
+              class="transition-all duration-500 hover:bg-white py-[5px] pl-[15px]"
+            >
+              <a class="w-full block" href="../ourclients/index.html"
+                >Our Client</a
+              >
+            </li>
+            <li class="has-children">
+              <div
+                class="w-full transition-all duration-500 hover:bg-white cursor-pointer py-[5px]"
+              >
+                <span class="w-full block px-[5px] pr-[5px] pl-[15px]"
+                  >Contact Us</span
+                >
+                <span class="icon-arrow"></span>
+              </div>
+              <ul class="children py-[10px]">
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a
+                    class="w-full block pl-[40px]"
+                    href="../contactPage1/index.html"
+                    >Contact OP1</a
+                  >
+                </li>
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a
+                    class="w-full block pl-[40px]"
+                    href="../contactPage2/index.html"
+                    >Contact OP2</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="has-children">
+              <div
+                class="w-full transition-all duration-500 hover:bg-white cursor-pointer py-[5px]"
+              >
+                <span class="w-full block px-[5px] pr-[5px] pl-[15px]"
+                  >404</span
+                >
+                <span class="icon-arrow"></span>
+              </div>
+              <ul class="children py-[10px]">
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a class="w-full block pl-[40px]" href="../page404/index.html"
+                    >404 OP1</a
+                  >
+                </li>
+                <li class="transition-all duration-500 hover:bg-white py-[5px]">
+                  <a
+                    class="w-full block pl-[40px]"
+                    href="../page404_2/index.html"
+                    >404 OP2</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

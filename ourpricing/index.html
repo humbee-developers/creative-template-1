@@ -193,201 +193,225 @@
             dolor posuere vel venenatis eu sit massa volutpat.
           </p>
         </div>
-        <!-- choose currency -->
+        
        <div>
-        <div class="flex justify-center p-6">
-          <div class="relative inline-block text-left sm:flex">
-            <div>
-                <label for="currancy" class="mr-2">choose your currency:</label>
-            </div>
-            <div>
-              <select name="currancy" id="currancy" class="py-2 px-10 rounded-lg ">
-                <option value="usd"> USD</option>
-                <option value="usd">USD</option>
-                <option value="usd">EUR</option>
-                <option value="usd">GBP</option>
-              </select>
-            </div>
-              
-              
-          </div>
+    <!-- toggle -->
+     <div x-data="{ isAnnual: true }">
+      
+      <div class="sm:flex gap-4 justify-center">
+        <div class="flex  max-w-[14rem]  mb-8 lg:mb-16">
+            <span class="mr-2 text-lg font-medium">Monthly</span>
+            <label for="toggle" class="flex items-center cursor-pointer">
+                <div class="relative">
+                    <input type="checkbox" id="toggle" class="sr-only " @change="isAnnual = !isAnnual">
+                    <div class="w-12 h-6 bg-bluecolor rounded-full shadow-inner"></div>
+                    <div class="absolute inset-0 w-5 h-5 mt-0.5 ml-0.5 bg-white  rounded-full shadow-md transform transition-transform duration-150 ease-in-out" :class="{'translate-x-full': isAnnual}"></div>
+                </div>
+            </label>
+            <span class="ml-2 text-lg font-medium">Yearly</span>
+        </div>
+    </div>
+    <!-- choose currency -->
+    <div class="flex justify-center p-6">
+      <div class="relative inline-block text-left sm:flex">
+        <div>
+            <label for="currancy" class="mr-2">choose your currency:</label>
+        </div>
+        <div>
+          <select name="currancy" id="currancy" class="py-2 px-10 rounded-lg ">
+            <option value="usd"> USD</option>
+            <option value="usd">USD</option>
+            <option value="usd">EUR</option>
+            <option value="usd">GBP</option>
+          </select>
+        </div>
+          
+          
       </div>
-    
+  </div>
+  
+
+
+
+  <!-- pricing -->
       <div
-        class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-4 lg:space-y-0"
+      class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-4 lg:space-y-0"
+    >
+      <!-- basic -->
+      <div
+        class="abcd flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:px-8 xl:py-12 border border-base-300 shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20  hover:scale-105 transition duration-300 hover:bg-bluecolor"
       >
-        <!-- basic -->
-        <div
-          class="abcd flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:px-8 xl:py-12 border border-base-300 shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20  hover:scale-105 transition duration-300 hover:bg-bluecolor"
-        >
-          <div class="flex gap-2 mb-3 ">
-            <div><img class="" src="../images/bacicicon.png" /></div>
-            <div>
-              <p class="hovercustomcolor  text-gray-500">For individuals</p>
-              <h3 class="hovercustomcolor  text-2xl font-semibold">Basic</h3>
-            </div>
+        <div class="flex gap-2 mb-3 ">
+          <div><img class="" src="../images/bacicicon.png" /></div>
+          <div>
+            <p class="hovercustomcolor  text-gray-500">For individuals</p>
+            <h3 class="hovercustomcolor  text-2xl font-semibold">Basic</h3>
           </div>
-          <div class="flex items-baseline my-1 ">
-            <p class="hovercustomcolor w-11/12 md:w-full text-left text-gray-500 font-light sm:text-lg">
-              Lorem ipsum dolor sit amet doloroli sitiol conse ctetur
-              adipiscing elit.
-            </p>
-          </div>
-          
-          <div class="flex items-baseline my-2">
-            <span class="hovercustomcolor mr-2 text-5xl font-extrabold ">$99</span>
-            <span class="hovercustomcolor text-xl text-gray-500">/monthly</span>
-          </div>
-          <div class="flex my-2">
-              <span class="hovercustomcolor mr-2 text-xl font-bold">What’s included</span>
-          </div>
-          <ul role="list" class="mb-8 space-y-4 text-left">
-            <li class="flex items-center space-x-3">
-              <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
-              <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
-              <span class="hovercustomcolor text-base-content/80">All analytics features</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
-              <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
-              <span class="hovercustomcolor text-base-content/80"
-                >Up to 1,000,000 tracked visits</span
-              >
-            </li>
-            <li class="flex items-center space-x-3">
-              <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
-              <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
-              <span class="hovercustomcolor text-base-content/80">Premium support</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
-              <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
-              <span class="hovercustomcolor text-base-content/80">Up to 10 team members</span>
-            </li>
-          </ul>
-          <button
-            class="hovergetbuttonclr w-full font-bold gap-2 shadow uppercase p-3 bg-bluecolor text-white hover:bg-white hover:text-bluecolor"
-          >
-            Get started
-          </button>
         </div>
-
-        <!-- for startup -->
-        <div
-          class="abcd flex flex-col  p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:px-8 xl:py-12 border border-base-300 shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20  hover:scale-105 transition duration-300 hover:bg-bluecolor"
-        >
-          <div class="flex gap-2 mb-3 ">
-            <div><img class="" src="../images/proicon.png" /></div>
-            <div>
-              <p class="hovercustomcolor text-black">For startups</p>
-              <h3 class="hovercustomcolor text-2xl text-black font-semibold">Pro</h3>
-            </div>
-          </div>
-
-          <div class="flex items-baseline my-1">
-            <p class="hovercustomcolor w-11/12 md:w-full text-left text-gray-500 sm:text-lg">
-              Lorem ipsum dolor sit amet doloroli sitiol conse ctetur
-              adipiscing elit.
-            </p>
-          </div>
-          
-          <div class="flex items-baseline my-2">
-            <span class="hovercustomcolor text-black mr-2 text-5xl font-extrabold">$199</span>
-            <span class="hovercustomcolor text-xl text-black">/monthly</span>
-          </div>
-          <div class="flex my-2">
-              <span class="hovercustomcolor mr-2 text-xl font-bold text-black">What’s included</span>
-          </div>
-          <ul role="list" class="mb-8 space-y-4 text-left">
-            <li class="flex items-center space-x-3">
-              <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
-              <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
-              <span class="hovercustomcolor text-black text-base-content/80"
-                >All analytics features</span
-              >
-            </li>
-            <li class="flex items-center space-x-3">
-              <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
-              <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
-              <span class="hovercustomcolor text-black text-base-content/80"
-                >Up to 1,000,000 tracked visits</span
-              >
-            </li>
-            <li class="flex items-center space-x-3">
-              <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
-              <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
-              <span class="hovercustomcolor text-black text-base-content/80"
-                >Premium support</span
-              >
-            </li>
-            <li class="flex items-center space-x-3">
-              <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
-              <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
-              <span class="hovercustomcolor text-black text-base-content/80"
-                >Up to 10 team members</span
-              >
-            </li>
-          </ul>
-          <button
-            class="hovergetbuttonclr w-full p-3 bg-bluecolor text-white font-bold gap-2 shadow uppercase"
-          >
-            Get started
-          </button>
+        <div class="flex items-baseline my-1 ">
+          <p class="hovercustomcolor w-11/12 md:w-full text-left text-gray-500 font-light sm:text-lg">
+            Lorem ipsum dolor sit amet doloroli sitiol conse ctetur
+            adipiscing elit.
+          </p>
         </div>
-        <!-- enterprise -->
-        <div
-          class="abcd flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:px-8 xl:py-12 border border-base-300 shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20  hover:scale-105 transition duration-300 hover:bg-bluecolor"
-        >
-          <div class="flex gap-2 mb-3 ">
-            <div><img class="" src="../images/enterpriceicon.png" /></div>
-            <div>
-              <p class="hovercustomcolor text-gray-500">For big companies</p>
-              <h3 class="hovercustomcolor text-2xl font-semibold">Enterprise</h3>
-            </div>
-          </div>
-          <div class="flex items-baseline my-1">
-            <p class="hovercustomcolor w-11/12 md:w-full text-left text-gray-500 font-light sm:text-lg">
-              Lorem ipsum dolor sit amet doloroli sitiol conse ctetur
-              adipiscing elit.
-            </p>
-          </div>
-          
-          <div class="flex items-baseline my-2">
-            <span class="hovercustomcolor mr-2 text-5xl font-extrabold">$399</span>
-            <span class="hovercustomcolor text-xl text-gray-500">/monthly</span>
-          </div>
-          <div class="flex my-2">
-              <span class="hovercustomcolor mr-2 text-xl font-bold">What’s included</span>
-          </div>
-          <ul role="list" class="mb-8 space-y-4 text-left">
-            <li class="flex items-center space-x-3">
-              <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
-              <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
-              <span class="hovercustomcolor text-base-content/80">All analytics features</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
-              <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
-              <span class="hovercustomcolor text-base-content/80">Up to 1,000,000 tracked visits</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
-              <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
-              <span class="hovercustomcolor text-base-content/80">Premium support</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
-              <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
-              <span class="hovercustomcolor text-base-content/80">Up to 10 team members</span>
-            </li>
-          </ul>
-          <button
-            class="hovergetbuttonclr w-full p-3 bg-bluecolor text-white font-bold gap-2 shadow uppercase"
-          >
-            Get started
-          </button>
+        
+        <div class="flex items-baseline my-2">
+          <span class="hovercustomcolor mr-2 text-5xl font-extrabold " x-text="isAnnual ? '$99' : '$199'"></span>
+          <span class="hovercustomcolor text-xl text-gray-500">/monthly</span>
         </div>
+        <div class="flex my-2">
+            <span class="hovercustomcolor mr-2 text-xl font-bold">What’s included</span>
+        </div>
+        <ul role="list" class="mb-8 space-y-4 text-left">
+          <li class="flex items-center space-x-3">
+            <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+            <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+            <span class="hovercustomcolor text-base-content/80">All analytics features</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+            <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+            <span class="hovercustomcolor text-base-content/80"
+              >Up to 1,000,000 tracked visits</span
+            >
+          </li>
+          <li class="flex items-center space-x-3">
+            <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+            <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+            <span class="hovercustomcolor text-base-content/80">Premium support</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+            <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+            <span class="hovercustomcolor text-base-content/80">Up to 10 team members</span>
+          </li>
+        </ul>
+        <button
+          class="hovergetbuttonclr w-full font-bold gap-2 shadow uppercase p-3 bg-bluecolor text-white hover:bg-white hover:text-bluecolor"
+        >
+          Get started
+        </button>
       </div>
+
+      <!-- for startup -->
+      <div
+        class="abcd flex flex-col  p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:px-8 xl:py-12 border border-base-300 shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20  hover:scale-105 transition duration-300 hover:bg-bluecolor"
+      >
+        <div class="flex gap-2 mb-3 ">
+          <div><img class="" src="../images/proicon.png" /></div>
+          <div>
+            <p class="hovercustomcolor text-black">For startups</p>
+            <h3 class="hovercustomcolor text-2xl text-black font-semibold">Pro</h3>
+          </div>
+        </div>
+
+        <div class="flex items-baseline my-1">
+          <p class="hovercustomcolor w-11/12 md:w-full text-left text-gray-500 sm:text-lg">
+            Lorem ipsum dolor sit amet doloroli sitiol conse ctetur
+            adipiscing elit.
+          </p>
+        </div>
+        
+        <div class="flex items-baseline my-2">
+          <span class="hovercustomcolor text-black mr-2 text-5xl font-extrabold" x-text="isAnnual ? '$199' : '$399'"></span>
+          <span class="hovercustomcolor text-xl text-black">/monthly</span>
+        </div>
+        <div class="flex my-2">
+            <span class="hovercustomcolor mr-2 text-xl font-bold text-black">What’s included</span>
+        </div>
+        <ul role="list" class="mb-8 space-y-4 text-left">
+          <li class="flex items-center space-x-3">
+            <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+            <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+            <span class="hovercustomcolor text-black text-base-content/80"
+              >All analytics features</span
+            >
+          </li>
+          <li class="flex items-center space-x-3">
+            <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+            <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+            <span class="hovercustomcolor text-black text-base-content/80"
+              >Up to 1,000,000 tracked visits</span
+            >
+          </li>
+          <li class="flex items-center space-x-3">
+            <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+            <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+            <span class="hovercustomcolor text-black text-base-content/80"
+              >Premium support</span
+            >
+          </li>
+          <li class="flex items-center space-x-3">
+            <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+            <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+            <span class="hovercustomcolor text-black text-base-content/80"
+              >Up to 10 team members</span
+            >
+          </li>
+        </ul>
+        <button
+          class="hovergetbuttonclr w-full p-3 bg-bluecolor text-white font-bold gap-2 shadow uppercase"
+        >
+          Get started
+        </button>
+      </div>
+      <!-- enterprise -->
+      <div
+        class="abcd flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:px-8 xl:py-12 border border-base-300 shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20  hover:scale-105 transition duration-300 hover:bg-bluecolor"
+      >
+        <div class="flex gap-2 mb-3 ">
+          <div><img class="" src="../images/enterpriceicon.png" /></div>
+          <div>
+            <p class="hovercustomcolor text-gray-500">For big companies</p>
+            <h3 class="hovercustomcolor text-2xl font-semibold">Enterprise</h3>
+          </div>
+        </div>
+        <div class="flex items-baseline my-1">
+          <p class="hovercustomcolor w-11/12 md:w-full text-left text-gray-500 font-light sm:text-lg">
+            Lorem ipsum dolor sit amet doloroli sitiol conse ctetur
+            adipiscing elit.
+          </p>
+        </div>
+        
+        <div class="flex items-baseline my-2">
+          <span class="hovercustomcolor mr-2 text-5xl font-extrabold" x-text="isAnnual ? '$399' : '$599'"></span>
+          <span class="hovercustomcolor text-xl text-gray-500">/monthly</span>
+        </div>
+        <div class="flex my-2">
+            <span class="hovercustomcolor mr-2 text-xl font-bold">What’s included</span>
+        </div>
+        <ul role="list" class="mb-8 space-y-4 text-left">
+          <li class="flex items-center space-x-3">
+            <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+            <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+            <span class="hovercustomcolor text-base-content/80">All analytics features</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+            <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+            <span class="hovercustomcolor text-base-content/80">Up to 1,000,000 tracked visits</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+            <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+            <span class="hovercustomcolor text-base-content/80">Premium support</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <img class="checkboxicon" src="../images/blueCheck Circle.png" alt="checkcircle" />
+            <img class="checkbox2icon" src="../images/whiteCheck Circle.png" alt="checkcircle" />
+            <span class="hovercustomcolor text-base-content/80">Up to 10 team members</span>
+          </li>
+        </ul>
+        <button
+          class="hovergetbuttonclr w-full p-3 bg-bluecolor text-white font-bold gap-2 shadow uppercase"
+        >
+          Get started
+        </button>
+      </div>
+      
+    </div>
+     </div>
+
        </div>
       </div>
       

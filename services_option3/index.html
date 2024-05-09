@@ -47,6 +47,12 @@
     rel="stylesheet"
   />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script>
+    jQuery(document).ready(function () {
+      $("#header").load("../header/index.html");
+      $("#footer").load("../footer/index.html");
+    });
+  </script>
 
     <script>
       tailwind.config = {
@@ -62,7 +68,7 @@
   </head>
   <body>
     
-    <header id="main-header" class="z-[100]  pt-[20px] pb-[10px] pr-[37px] pb-[0] pl-[50px] fixed top-[0px] w-[100%] bg-transparent">
+    <!-- <header id="main-header" class="z-[100]  pt-[20px] pb-[10px] pr-[37px] pb-[0] pl-[50px] fixed top-[0px] w-[100%] bg-transparent">
       <nav class="flex justify-between items-center mx-auto my-auto  ">
         <div
           class="logo"
@@ -153,7 +159,8 @@
           >
         </div>
       </nav>
-    </header>
+    </header> -->
+    <div id="header"></div>
     <main>
       <section class="hero_section h-[calc(100vh_-_117px)]">
         <div class="herosection absolute top-0 left-0 w-full">
@@ -1102,7 +1109,7 @@
         </div>
       </section>
     </main>
-    <footer
+    <!-- <footer
       class="bg-[#4D5F75] text-white pt-20 pb-12 px-[20px] sm:px-12 flex justify-center items-end overflow-y-hidden overflow-x-hidden"
     >
       <div
@@ -1201,7 +1208,8 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <div id="footer"></div>
     <script>
       AOS.init();
     </script>
