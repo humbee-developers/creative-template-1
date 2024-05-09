@@ -31,6 +31,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
+      jQuery(document).ready(function () {
+        $("#header").load("../header/index.html");
+        $("#footer").load("../footer/index.html");
+      });
+    </script>
+    <script>
       tailwind.config = {
         theme: {
           extend: {
@@ -71,7 +77,7 @@
     </script>
   </head>
   <body>
-    <header class="z-[100] relative pt-[43px] pr-[37px] pb-[0] pl-[50px]">
+    <!-- <header class="z-[100] relative pt-[43px] pr-[37px] pb-[0] pl-[50px]">
       <nav class="flex justify-between items-center">
         <div
           class="logo"
@@ -170,7 +176,8 @@
           </a>
         </div>
       </nav>
-    </header>
+    </header> -->
+   <div id="header"></div>
     <section class="hero_section  h-[calc(100vh_-_117px)]">
       <div class="herosection absolute top-0 left-0 w-full">
         <div class="inner_banner_image relative h-screen">
@@ -1370,7 +1377,7 @@
     </div>
 
     <!-- footer -->
-    <footer
+    <!-- <footer
       class="bg-black text-white pt-20 pb-12 px-[20px] sm:px-12 flex justify-center items-end overflow-y-hidden overflow-x-hidden"
     >
       <div
@@ -1489,7 +1496,8 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
+  <div id="footer"></div>
   </body>
   <script>
     AOS.init();

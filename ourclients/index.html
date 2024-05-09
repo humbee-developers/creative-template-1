@@ -45,6 +45,13 @@
     <!-- aos animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      jQuery(document).ready(function () {
+        $("#header").load("../header/index.html");
+        $("#footer").load("../footer/index.html");
+      });
+    </script>
     <script>
       tailwind.config = {
         theme: {
@@ -70,7 +77,7 @@
     <title>OurClients</title>
   </head>
   <body>
-    <header class="z-[100] relative pt-[43px] pr-[37px] pb-[0] pl-[50px]">
+    <!-- <header class="z-[100] relative pt-[43px] pr-[37px] pb-[0] pl-[50px]">
       <nav class="flex justify-between items-center">
         <div class="logo" data-aos="fade-up"
         data-aos-duration="1000"
@@ -167,8 +174,9 @@
           >
         </div>
       </nav>
-    </header>
-      <section class="hero_section h-[calc(100vh_-_117px)]">
+    </header> -->
+    <div id="header"></div> 
+    <section class="hero_section h-[calc(100vh_-_117px)]">
         <div class="herosection absolute top-0 left-0 w-full ">
           <div class="inner_banner_image relative h-screen">
             <img src="../images/imgone.png"" alt="about_image" class="max-w-full block w-full h-full" />
