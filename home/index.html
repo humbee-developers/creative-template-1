@@ -7,7 +7,7 @@
     <!-- <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-      jQuery(document).ready(function () {
+      jQuery(document).ready(function ($) {
         $("#header").load("../header/index.html");
         $("#footer").load("../footer/index.html");
       });
@@ -41,7 +41,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../mobileMenu.css" />
-
     <script>
       tailwind.config = {
         theme: {
@@ -491,7 +490,7 @@
       </nav>
     </header> -->
     <div id="header"></div>
-    <main>
+    <main class="">
       <section class="hero_section h-[calc(100vh_-_100px)]">
         <div class="absolute w-full left-0 top-0">
           <div class="herosection_wrapper">
@@ -1130,7 +1129,7 @@
       </section>
       <section>
         <div
-          class="why_choose_us pt-[20px] pb-[20px] px-[20px] md:px-[30px] xl:pt-[131px] xl:pb-[125px] lg:px-[40px] xl:px-[100px] 3xl:px-[350px] overflow-x-hidden"
+          class="why_choose_us pt-[20px] pb-[20px] px-[20px] md:px-[30px] xl:pt-[131px] xl:pb-[125px] lg:px-[40px] xl:px-[100px] 2xl:px-[180px] 3xl:mx-[100px]  overflow-x-hidden"
         >
           <div class="why_choose_us_wrapper">
             <div
