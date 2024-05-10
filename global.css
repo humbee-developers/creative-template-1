@@ -669,3 +669,20 @@ img.slider_link_arrow {
   display: block;
 }
 
+.ciclehover {
+  position: relative;
+  color: #4D5F75;
+  font-size: 30px;
+  font-family: arial;
+  background-image: linear-gradient(#4D5F75, #4D5F75);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 0%;
+  transition: background-size .5s, color .5s;
+}
+
+.ciclehover:hover {
+  background-size: 100% 100%;
+  color: #fff;
+  background-position: 0% 50%; 
+}
