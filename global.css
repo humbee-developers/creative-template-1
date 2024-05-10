@@ -206,6 +206,7 @@ div {
 .about_secondflex .box:hover:before {
   transform: scaleX(1);
 }
+
 .card > .row > .description {
   rotate: -90deg;
 }
