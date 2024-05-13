@@ -218,6 +218,19 @@ input:checked + label .description {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
+
+
+@media(min-width:200px) and (max-width:767px){
+  .services_sliders {
+    display: block !important;
+  }
+
+.slick-initialized .slick-slide{
+  display: block !important;
+}
+
+
+}
 .services_sliders {
   display: flex !important;
 }
