@@ -686,3 +686,9 @@ img.slider_link_arrow {
   color: #fff;
   background-position: 0% 50%; 
 }
+.ciclehover:hover .hoveredtext {
+  color: white !important;
+}
+.ciclehover:hover .readmorehovertext {
+  color: white !important;
+}
