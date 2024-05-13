@@ -63,7 +63,7 @@ div {
   background-color: #fff;
   position: relative;
   border: none;
-  border-bottom: 1px solid #B8B8B8 !important;
+  border-bottom: 1px solid #b8b8b8 !important;
   padding: 3px 0;
 }
 .selectric-selectDrp .selectric::before {
@@ -108,11 +108,11 @@ div {
 .selectric-selectDrp .selectric .label {
   font-size: 14px;
   font-weight: 600;
-  color: #B8B8B8;
+  color: #b8b8b8;
   letter-spacing: 0.3px;
   letter-spacing: 1px;
 }
-.selectric-items{
+.selectric-items {
   left: 15px !important;
 }
 @media (max-width: 640px) {
@@ -159,7 +159,7 @@ div {
   display: block;
 }
 
-.dropdown_menu li{
+.dropdown_menu li {
   width: 160px;
 }
 .dropdown:hover .dropdown_menu li {
@@ -206,6 +206,7 @@ div {
 .about_secondflex .box:hover:before {
   transform: scaleX(1);
 }
+
 .card > .row > .description {
   rotate: -90deg;
 }
@@ -216,6 +217,19 @@ input:checked + label {
 input:checked + label .description {
   opacity: 1 !important;
   transform: translateY(0) !important;
+}
+
+
+@media(min-width:200px) and (max-width:767px){
+  .services_sliders {
+    display: block !important;
+  }
+
+.slick-initialized .slick-slide{
+  display: block !important;
+}
+
+
 }
 .services_sliders {
   display: flex !important;
@@ -591,6 +605,7 @@ body {
 }
 .nav_search.hideSearch {
   width: 0;
+  padding: 0;
 }
 .imgwithtext .texthoverimg {
   opacity: 0;
@@ -648,15 +663,45 @@ img.slider_link_arrow {
   opacity: 1;
   transition: all 0.5s;
 }
-.card_img_text{
+.card_img_text {
   position: relative;
 }
-.cardSldier_item:hover .card_img_text::before{
-content: "";
-position: absolute;
-width: 100%;
-height: 100%;
-top: 0;
-left: 0;
-background-color: #14111152;
+.cardSldier_item:hover .card_img_text::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #14111152;
+}
+.s_op4_tab_content {
+  display: none;
+}
+.s_op4_tab_content.active {
+  display: block;
+}
+
+.ciclehover {
+  position: relative;
+  color: #4D5F75;
+  font-size: 30px;
+  font-family: arial;
+  background-image: linear-gradient(#4D5F75, #4D5F75);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 0%;
+  transition: background-size .5s, color .5s;
+}
+
+.ciclehover:hover {
+  background-size: 100% 100%;
+  color: #fff;
+  background-position: 0% 50%; 
+}
+.ciclehover:hover .hoveredtext {
+  color: white !important;
+}
+.ciclehover:hover .readmorehovertext {
+  color: white !important;
 }
