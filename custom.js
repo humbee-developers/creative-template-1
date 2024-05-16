@@ -26,6 +26,7 @@ jQuery(document).ready(function ($) {
   });
 
   $(".s_op4_tab1").addClass("active");
+  $(".s_op4_tab_content1").addClass("active")
   $(".s_op4_tab").on("click", function () {
     var dataTab = $(this).attr("data-tab");
     if ($(this).hasClass("active")) {
