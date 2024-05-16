@@ -7,7 +7,7 @@
     <!-- <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-      jQuery(document).ready(function () {
+      jQuery(document).ready(function ($) {
         $("#header").load("../header/index.html");
         $("#footer").load("../footer/index.html");
       });
@@ -41,7 +41,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../mobileMenu.css" />
-
     <script>
       tailwind.config = {
         theme: {
@@ -491,7 +490,7 @@
       </nav>
     </header> -->
     <div id="header"></div>
-    <main>
+    <main class="">
       <section class="hero_section h-[calc(100vh_-_100px)]">
         <div class="absolute w-full left-0 top-0">
           <div class="herosection_wrapper">
@@ -1130,7 +1129,7 @@
       </section>
       <section>
         <div
-          class="why_choose_us pt-[20px] pb-[20px] px-[20px] md:px-[30px] xl:pt-[131px] xl:pb-[125px] lg:px-[40px] xl:px-[100px] 3xl:px-[350px] overflow-x-hidden"
+          class="why_choose_us pt-[20px] pb-[20px] px-[20px] md:px-[30px] xl:pt-[131px] xl:pb-[125px] lg:px-[40px] xl:px-[100px] 2xl:px-[180px] 3xl:mx-[100px]  overflow-x-hidden"
         >
           <div class="why_choose_us_wrapper">
             <div
@@ -1347,6 +1346,8 @@
           </div>
         </div>
       </section>
+
+    
       <section>
         <div class="factoryImage">
           <div
@@ -1359,18 +1360,15 @@
               >
                 <div class="factory_item_wrapper flex">
                   <div
-                    data-aos="fade-down"
-                    data-aos-duration="1000"
-                    data-aos-delay="500"
-                    data-aos-once="true"
-                    data-aos-easing="ease-in-out"
-                    class="factory_item_line"
                   >
-                    <img
-                      class="h-[90%]"
-                      src="../images/factoryFirstLine.svg"
-                      alt="factoryFirstLine"
-                    />
+                  <div class="progress-wrapper h-[200px] flex items-end relative">
+                    <div class="progress-bar h-full w-1 bg-gray-300 rounded-lg relative overflow-hidden">
+                      <div class="progress-value absolute top-0 left-0 block h-full w-full bg-white "></div>
+                    </div>
+                    <div class="progress-dot absolute bottom-0 left-1/2 transform -translate-x-1/2 w-2.5 h-2.5  bg-white rounded-full" id="dot"></div>
+                  </div>
+                  
+                  
                   </div>
                   <div class="factory_image_text pl-5 xl:pl-10 pr-0 pt-5 pb-0">
                     <div
@@ -1391,18 +1389,13 @@
               >
                 <div class="factory_item_wrapper flex">
                   <div
-                    data-aos="fade-down"
-                    data-aos-duration="1000"
-                    data-aos-delay="1200"
-                    data-aos-once="true"
-                    data-aos-easing="ease-in-out"
-                    class="factory_item_line"
                   >
-                    <img
-                      class="h-[90%]"
-                      src="../images/factorySecondLine.svg"
-                      alt="factoryFirstLine"
-                    />
+                  <div class="progress-wrapper h-[300px] flex items-end relative">
+                    <div class="progress-bar h-full w-1 bg-gray-300 rounded-lg relative overflow-hidden">
+                      <div class="progress-value absolute top-0 left-0 block h-full w-full bg-white "></div>
+                    </div>
+                    <div class="progress-dot absolute bottom-0 left-1/2 transform -translate-x-1/2 w-2.5 h-2.5 bg-white rounded-full" id="dot"></div>
+                  </div>
                   </div>
                   <div class="factory_image_text pl-5 xl:pl-10 pr-0 pt-5 pb-0">
                     <div
@@ -1423,18 +1416,13 @@
               >
                 <div class="factory_item_wrapper flex">
                   <div
-                    data-aos="fade-down"
-                    data-aos-duration="1000"
-                    data-aos-delay="1900"
-                    data-aos-once="true"
-                    data-aos-easing="ease-in-out"
-                    class="factory_item_line"
                   >
-                    <img
-                      class="h-[90%]"
-                      src="../images/factoryThirdLine.svg"
-                      alt="factoryFirstLine"
-                    />
+                  <div class="progress-wrapper h-[500px] flex items-end relative">
+                    <div class="progress-bar h-full w-1 bg-gray-300 rounded-lg relative overflow-hidden">
+                      <div class="progress-value absolute top-0 left-0 block h-full w-full bg-white "></div>
+                    </div>
+                    <div class="progress-dot absolute bottom-0 left-1/2 transform -translate-x-1/2 w-2.5 h-2.5  bg-white rounded-full" id="dot"></div>
+                  </div>
                   </div>
                   <div class="factory_image_text pl-5 xl:pl-10 pr-0 pt-5 pb-0">
                     <div
@@ -1455,18 +1443,13 @@
               >
                 <div class="factory_item_wrapper flex">
                   <div
-                    data-aos="fade-down"
-                    data-aos-duration="1000"
-                    data-aos-delay="2600"
-                    data-aos-once="true"
-                    data-aos-easing="ease-in-out"
-                    class="factory_item_line"
                   >
-                    <img
-                      class="h-auto"
-                      src="../images/factoryForthLine.svg"
-                      alt="factoryFirstLine"
-                    />
+                  <div class="progress-wrapper h-[150px] flex items-end relative">
+                    <div class="progress-bar h-full w-1 bg-gray-300 rounded-lg relative overflow-hidden">
+                      <div class="progress-value absolute top-0 left-0 block h-full w-full bg-white "></div>
+                    </div>
+                    <div class="progress-dot absolute bottom-0 left-1/2 transform -translate-x-1/2 w-2.5 h-2.5 bg-white rounded-full" id="dot"></div>
+                  </div>
                   </div>
                   <div class="factory_image_text pl-5 xl:pl-10 pr-0 pt-5 pb-0">
                     <div
@@ -1486,6 +1469,7 @@
           </div>
         </div>
       </section>
+      
       <!-- <section class="timeline">
         <div id="section-timeline" class="section-timeline">
           <div class="timeline-container">
